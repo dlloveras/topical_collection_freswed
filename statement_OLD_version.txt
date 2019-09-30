@@ -1,0 +1,32 @@
+Statement of Interest for the Topical Collection of Solar Physics “Towards Future Research on the Drivers of Space Weather”.
+
+TITLE: Thermodynamic Structure of the Solar Corona: Tomographic Reconstructions and MHD Modeling.
+
+AUTHORS: D.G. Lloveras(1), A.M. Vásquez(1), F.A. Nuevo (1),  N. Sachdeva(2), W. Manchester IV(2), B. Van der Holst(2), R.A. Frazin(2)
+
+(1) IAFE (UBA-CONICET), Ciudad Autónoma de Buenos Aires, Argentina.
+(2) CLaSP (Univ. of Michigan), Ann Arbor - Michigan, EEUU.
+
+ABSTRACT: To advance our understanding of the physics of the solar corona and to improve three-dimensional (3D) magnetohydrodynamic (MHD) models if its structure, key to enhance space weather forecasting capabilities, validation observational tools play an essential role. Solar rotational tomography (SRT) is currently the sole observational technique that provides an empirical 3D description of fundamental plasma parameters of the solar corona at a global scale. Based on EUV data of space borne instruments, SRT allows constructing 3D maps of the coronal electron density and temperature at heliocentric heights below 1.25 Rsun. We carry out a study of the corona combining tomographic reconstructions with MHD simulations of the latest version of the Alfvén Wave Solar Model (AWSoM) of the Space Weather Modeling Framework (SWMF). Target rotations were selected from the solar minimum between solar cycles (SC) 23 and 24 and the current declining phase of solar cycle 24. Based on the modeled magnetic structure, tomographic reconstructions and results of the model are analyzed in distinct magnetic structures. We study magnetically closed structures associated to the equatorial streamer belt, as well as magnetically open regions enclosing it. We report on the tomographic results in the different structures, their implications for the physics of the solar corona, and the capability of the AWSoM model to reproduce the tomographic reconstructions in different regions.
+
+The contribution fits the following FRESWED topics:
+
+-Tools and simulations for space weather predictions
+-Coronal large-scale structuring and coupling with the solar wind
+
+Suggested Referees: All three care about (and/or work on) tomography.
+
+* Markus Aschwanden (aschwand@lmsal.com): highly recommended, he cares *A LOT* about tomography and knows about it.
+* Huw Morgan (hmorgan@aber.ac.uk)
+* Tongjiang Wang (tongjiang.wang@nasa.gov)
+* Steven Cranmer (Steven.Cranmer@lasp.colorado.edu)
+
+
+------------------LEFT OUT, FOR NOW------------------------------------------------------
+
+C. Mac Cormack(1), Philippe Lamy (3), Julien Wojak (4)
+
+(3) Laboratoire Atmosphères, Milieux et Observations Spatiales, CNRS & UVSQY, Guyancourt, France
+(4) Laboratoire d’Astrophysique de Marseilles, UMR 7326, CNRS & Aix-Marseille Université, Marseilles France
+
+Based on LASCO-C2 white light images of the corona, SRT allows constructing 3D maps of the coronal electron density in the range of heliocentric heights 2.5-6.5 Rsun.
