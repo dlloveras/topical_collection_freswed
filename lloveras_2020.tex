@@ -71,11 +71,13 @@
 
 \author[addressref={aff1,aff2},corref,email={federico@iafe.uba.ar}]{\inits{F.A.}\fnm{Federico A.}~\lnm{Nuevo}\orcid{0000-0003-2355-5853}} 
 
-\author[addressref={},corref,email={nishthas@umich.edu}]{\inits{N.}\fnm{Nishtha}\lnm{Sachdeva}\orcid{1}}
+\author[addressref={aff1,aff3,aff2},corref,email={cmaccormack@iafe.uba.ar}]{\inits{C.}\fnm{Cecilia}~\lnm{Mac Cormack}}
 
-\author[addressref={},corref,email={chipm@umich.edu}]{\inits{W.}\fnm{Ward}\lnm{Manchester IV}\orcid{2}}
+\author[addressref={aff4},corref,email={nishthas@umich.edu}]{\inits{N.}\fnm{Nishtha}~\lnm{Sachdeva}\orcid{1}}
 
-\author[addressref={},corref,email={bartvand@umich.edu}]{\inits{B.}\fnm{Bartholomeus}\lnm{Van der Holst}\orcid{3}}
+\author[addressref={aff4},corref,email={chipm@umich.edu}]{\inits{W.}\fnm{Ward}~\lnm{Manchester IV}\orcid{2}}
+
+\author[addressref={aff4},corref,email={bartvand@umich.edu}]{\inits{B.}\fnm{Bartholomeus}~\lnm{Van der Holst}\orcid{3}}
 
 \author[addressref={aff4},corref,email={rfrazin@umich.edu}]{\inits{R.A.}\fnm{Richard A.}~\lnm{Frazin}\orcid{0000-0002-0281-7677}}
 
@@ -176,7 +178,7 @@ Carrington maps of the Lat/Lon location at 1.105 Rs of the field lines I (in blu
 \includegraphics[width=0.495\textwidth,clip=]{figs/Highpoint_2208_demt_paper_cr2208_up_Rpoint-map.eps}
 %\includegraphics[width=0.495\textwidth,clip=]{Highpoint_2208_awsom_paper_Rpoint-map.eps}
 \caption{Latitude-longitude location of field lines meeting the criteria listed in Section \ref{trace} traced with DEMT results, at heights $1.105\,\mrsun$, for CR-2082(left panel) and CR-2208 (right panel). Different colors identify diverse thermodynamical and magnetic structures, as described in the text.}
-\label{rpoint}
+\label{rpoint_demt}
 \end{center}
 \end{figure} 
 
@@ -220,7 +222,7 @@ C) and D) will be complemented with companion histograms showing in a statistica
 \end{center}
 \end{figure} 
 
-For both rotations, all field lines that meet the criteria listed in Section \ref{trace} were separated into the coronal {regions described in Section \ref{regions} and summarized in Table \ref{tabregions}}. For each field line, the data points of electron density and electron mean temperature versus height were fitted to the functions given by Equations 5 and 6 of Section \ref{trace}. As a result, the footpoint electron density $N_0$ and scale height $\lN$ were computed for each field line, as well as the temperature gradient $a=\textrm{d}T_m/\textrm{d}r$, and the height-averaged (along the loop) electron mean temperature $\aTm$. As the DEMT technique studies only coronal conditions, \textit{i.e.} above height $r\approx 1.025\,\mrsun$, the exponential fit to the electron density data versus height was used to compute the {coronal base electron density} here defined as $\NCB\equiv N_e(r=1.025\,\mrsun)$. Also, for each field line the coronal base magnetic field strength $B_{\rm CB}\equiv B(r=1.025\,\mrsun)$ and its height-averaged value along the loop $\left<B\right>$ were also computed.
+%For both rotations, all field lines that meet the criteria listed in Section \ref{trace} were separated into the coronal {regions described in Section \ref{regions} and summarized in Table \ref{tabregions}}. For each field line, the data points of electron density and electron mean temperature versus height were fitted to the functions given by Equations 5 and 6 of Section \ref{trace}. As a result, the footpoint electron density $N_0$ and scale height $\lN$ were computed for each field line, as well as the temperature gradient $a=\textrm{d}T_m/\textrm{d}r$, and the height-averaged (along the loop) electron mean temperature $\aTm$. As the DEMT technique studies only coronal conditions, \textit{i.e.} above height $r\approx 1.025\,\mrsun$, the exponential fit to the electron density data versus height was used to compute the {coronal base electron density} here defined as $\NCB\equiv N_e(r=1.025\,\mrsun)$. Also, for each field line the coronal base magnetic field strength $B_{\rm CB}\equiv B(r=1.025\,\mrsun)$ and its height-averaged value along the loop $\left<B\right>$ were also computed.
 
 \begin{figure}[ht!]
 \begin{center}
@@ -282,10 +284,30 @@ This plot (E) has never been shown before and I believe it is a very nice result
 \includegraphics[width=0.495\textwidth,clip=]{figs/Highpoint_2082_awsom_paper_cr2082_up_Rpoint-map.eps}
 %\includegraphics[width=0.495\textwidth,clip=]{Highpoint_2208_demt_paper_Rpoint-map.eps}
 \includegraphics[width=0.495\textwidth,clip=]{figs/Highpoint_2208_awsom_paper_cr2208_up_Rpoint-map.eps}
-\caption{Same as \ref{rpoint_demt} but for AWSoM loops.}
+\caption{Same as Figure \ref{rpoint_demt} but for AWSoM loops.}
 \label{rpoint_awsom}
 \end{center}
 \end{figure} 
+
+\begin{figure}%[ht!]
+\begin{center}
+\includegraphics[width=0.495\textwidth]{figs/Perfil_Ne_demt_awsom_2082_1105.eps}
+\includegraphics[width=0.495\textwidth]{figs/Perfil_Ne_demt_awsom_2208_1105.eps}
+\caption{Longitude-averaged of DEMT (blue) and AWSoM (red) results at $1.105\,\mrsun$. On the left CR2082 and on the right CR2208, the vertical black lines indicates the longitude-averaged latitudes of the open/close magnetic boundaries.}
+\label{perf_lon_ne}
+\end{center}
+\end{figure}
+
+
+\begin{figure}%[ht!]
+\begin{center}
+\includegraphics[width=0.495\textwidth]{figs/Perfil_Vr_2082_5995.eps}
+\includegraphics[width=0.495\textwidth]{figs/Perfil_Vr_2208_5995.eps}
+\caption{Longitude-averaged of radial wind speed at $6\,\mrsun$ given by AWSoM.}
+\label{perf_lon_vr}
+\end{center}
+\end{figure}
+
 
 
 \section{Discussion}\label{discu} 
