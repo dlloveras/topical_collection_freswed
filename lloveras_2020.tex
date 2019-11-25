@@ -125,6 +125,18 @@ Observational tools play an essential role in advancing our understanding of the
 
 \subsection{DEMT reconstructions}\label{demt} 
 
+Once the LDEM is determined at each voxel, the average {squared electron density $N_e^2$} and the electron mean temperature $T_\textrm{m}$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
+\begin{eqnarray}\label{momento1}
+ N_{e,i}^2 &=& \int\,\textrm{d}T\,\LDEM_i(T),\label{Ne} \\ 
+\label{momento2}
+ T_{\textrm{m},i}   &=& \frac{1}{N_{e,i}^2}\,\int\,\textrm{d}T\,T\,\LDEM_i(T),\label{Tm} 
+\end{eqnarray}
+
+
+so that the final product of DEMT is in the form of 3D maps of the electron density and mean temperature. {Once again, these relationships (derived in detail in \citealt{frazin_2009}, see Appendix C) are similar to those in standard DEM analysis, in which the line-of-sight DEM appears instead of the voxel's LDEM, and the EM appears instead of the squared electron density.} 
+
+
+
 \subsection{AWSoM simulations}\label{awsom} 
 
 \subsection{Tracing results along fieldlines}\label{trace} 
@@ -132,27 +144,28 @@ Observational tools play an essential role in advancing our understanding of the
 For both rotations, the DEMT AWSoM 3D maps of electron density $N_e$ and electron mean temperature $T_\textrm{m}$ were traced along the magnetic field lines modeled with AWSoM as described at the end of Section \ref{awsom}. In the case of closed loops, results were separated into their two {legs}, defined as the two segments that go from the coronal base up to the apex.
 
 
-Se eligen loops con $abs(person_temp) mayor a .5$ lo cual nos permite descartar loops QI.
-OBS: Esto es valido para hasta la fig 7 inclusive.
+\textcolor{red}{Se eligen loops con abs(person temp) mayor a .5 lo cual nos permite descartar loops QI.
+OBS: Esto es valido para hasta la fig 7 inclusive.}
 
 
 For each open field line, and for each leg of the closed ones, an exponential fit was then applied to the $N_e(r)$ data points, and a linear fit applied to the $T_m(r)$ data points, as described by
 
-\begin{eqnarray}
-N_e &=& N_0\,\exp{\left[\,-\,\left(h/\l\right)\,/\,\left(r/\mrsun\right)\,\right]},\label{Nfit}\\
-T_\textrm{m} &=& a\,r\,+\,b,\label{Tfit}
+\begin{eqnarray}\label{Nfit}
+N_e &=& N_0\,\exp{\left[\,-\,\left(h/\l\right)\,/\,\left(r/\mrsun\right)\,\right]}\\
+\label{Tfit}
+T_\textrm{m} &=& a\,r\,+\,b
 \end{eqnarray}
  
 \noindent
 where $h \equiv r - 1\,\mrsun$, and $a$ and $b$ are constants. 
 
-In the case of the electron density, the fitted function corresponds to the isothermal hydrostatic equilibrium solution, allowing for variation of the solar gravitational acceleration with height. After computing the footpoint ($r=1.0\,\mrsun$) electron density $N_{0}\,[\cm^{-3}]$ and scale height $\lN\,[\mrsun]$, this choice of function provides a straightforward means to directly evaluate how compatible is the observed coronal thermodynamical state with the hydrostatic solution, as analyzed in Section \ref{qi}. In the case of the DEMT electron mean temperature, the linear fit allows characterization of its variation with height by means of a characteristic temperature gradient $a = \textrm{d}T_m/\textrm{d}r\,[\MK/\mrsun]$ along each leg/loop. 
+In the case of the electron density, the fitted function corresponds to the isothermal hydrostatic equilibrium solution, allowing for variation of the solar gravitational acceleration with height. After computing the footpoint ($r=1.0\,\mrsun$) electron density $N_{0}\,[\cm^{-3}]$ and scale height $\lN\,[\mrsun]$, this choice of function provides a straightforward means to directly evaluate how compatible is the observed coronal thermodynamical state with the hydrostatic solution. In the case of the DEMT electron mean temperature, the linear fit allows characterization of its variation with height by means of a characteristic temperature gradient $a = \textrm{d}T_m/\textrm{d}r\,[\MK/\mrsun]$ along each leg/loop. 
 
-*Nos quedamos con los fiteos que cumplen test de hipotesis chi cuadrado en temp y densidad.
-OBS: Esta es la seleccion para las figuras 8 en adelante.
+\textcolor{red}{*Nos quedamos con los fiteos que cumplen test de hipotesis chi cuadrado en temp y densidad.
+OBS: Esta es la seleccion para las figuras 8 en adelante.}
 
 
-*Types of field lines
+*Types of field lines\\
  I - Small-closed field lines. Small meaning with apex within the DEMT range of heights. This class thoroughly probes the inner core of the Streamer belt, where most of the DOWN loops showed up before, and will show up now.
 
   II - Large-closed field lines. Large meaning their apex surpasses the DEMT range of heights. This class is mostly populated by very large trans-equatorial field lines forming the "envelope" of the Streamer belt.
@@ -161,8 +174,10 @@ OBS: Esta es la seleccion para las figuras 8 en adelante.
 
 
 \section{Results}\label{resu} 
+
 \subsection{Tomographic Results}\label{demt_res} 
 
+Once the LDEM was determined for each rotation, the electron density $N_e$ and electron mean temperature $T_\textrm{m}$ were computed at each voxel of the tomographic computational grid by means of Equations \ref{momento1} and \ref{momento2}. As an example, Figures \ref{carmaps_demt_2082} and \ref{carmaps_demt_2208} show the results for both rotations at $r=1.025, 1.065 and 1.105\,\mrsun$. Black voxels correspond to non-reconstructed regions.
 
 \begin{figure}[h!]
 \begin{center}
@@ -313,17 +328,11 @@ This plot (E) has never been shown before and I believe it is a very nice result
 
 
 
-
-
-
-
-
-
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.495\textwidth]{figs/Perfil_Ne_demt_awsom_2082_1105.eps}
 \includegraphics[width=0.495\textwidth]{figs/Perfil_Ne_demt_awsom_2208_1105.eps}
-\caption{Longitude-averaged of DEMT (blue) and AWSoM (red) results at $1.105\,\mrsun$. On the left CR2082 and on the right CR2208, the vertical black lines indicates the longitude-averaged latitudes of the open/close magnetic boundaries.}
+\caption{Longitude-averaged of electron density for DEMT (blue) and AWSoM (red) results at $1.105\,\mrsun$. On the left CR2082 and on the right CR2208, the vertical black lines indicates the longitude-averaged latitudes of the open/close magnetic boundaries.}
 \label{perf_lon_ne}
 \end{center}
 \end{figure}
