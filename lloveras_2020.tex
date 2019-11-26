@@ -121,11 +121,14 @@ Observational tools play an essential role in advancing our understanding of the
 %% Sections
 \section{Introduction}\label{intro} 
 
+Being the place where the solar atmosphere is heated and the solar wind accelerated, and where impulsive events such as solar flares and coronal mass ejections are energized, observation and modeling of the solar corona are tasks of great relevance to improve our understanding of the Sun-Earth environment. To advance our knowledge of the physics of the solar corona, as well as to improve its three-dimensional (3D) models, information derived from observational data plays a key role. Solar rotational tomography is currently the sole observational technique able to provide a quantitative empirical description of the 3D distribution of some fundamental plasma parameters of the solar corona at a global scale.
+
+
 \section{Methodology}\label{meto}   
 
 \subsection{DEMT reconstructions}\label{demt} 
 
-Once the LDEM is determined at each voxel, the average {squared electron density $N_e^2$} and the electron mean temperature $T_\textrm{m}$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
+Once the LDEM is determined at each voxel, the average squared electron density $\langle N_e^2 \rangle$ and the electron mean temperature $T_\textrm{m}$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
 \begin{eqnarray}\label{momento1}
  N_{e,i}^2 &=& \int\,\textrm{d}T\,\LDEM_i(T),\label{Ne} \\ 
 \label{momento2}
@@ -133,15 +136,15 @@ Once the LDEM is determined at each voxel, the average {squared electron density
 \end{eqnarray}
 
 
-so that the final product of DEMT is in the form of 3D maps of the electron density and mean temperature. {Once again, these relationships (derived in detail in \citealt{frazin_2009}, see Appendix C) are similar to those in standard DEM analysis, in which the line-of-sight DEM appears instead of the voxel's LDEM, and the EM appears instead of the squared electron density.} 
+so that the final product of DEMT is in the form of 3D maps of the electron density and mean temperature. These relationships was derived in detail in \citealt{frazin_2009} (see Appendix C). 
 
-
+\textcolor{red}{aclarar que consideramos Ne como $\sqrt{<N_e ^2>}$.}
 
 \subsection{AWSoM simulations}\label{awsom} 
 
 \subsection{Tracing results along fieldlines}\label{trace} 
 
-For both rotations, the DEMT AWSoM 3D maps of electron density $N_e$ and electron mean temperature $T_\textrm{m}$ were traced along the magnetic field lines modeled with AWSoM as described at the end of Section \ref{awsom}. In the case of closed loops, results were separated into their two {legs}, defined as the two segments that go from the coronal base up to the apex.
+For both rotations, the DEMT and AWSoM 3D maps of electron density $N_e$, electron mean temperature $T_\textrm{m}$ and electron temperature $T_\textrm{e}$ respectively were traced along the magnetic field lines modeled using AWSoM as described at the end of Section \ref{awsom}. In the case of closed loops, results were separated into their two legs, defined as the two segments that go from the coronal base up to the apex.
 
 
 \textcolor{red}{Se eligen loops con abs(person temp) mayor a .5 lo cual nos permite descartar loops QI.
@@ -159,14 +162,19 @@ T_\textrm{m} &=& a\,r\,+\,b
 \noindent
 where $h \equiv r - 1\,\mrsun$, and $a$ and $b$ are constants. 
 
-In the case of the electron density, the fitted function corresponds to the isothermal hydrostatic equilibrium solution, allowing for variation of the solar gravitational acceleration with height. After computing the footpoint ($r=1.0\,\mrsun$) electron density $N_{0}\,[\cm^{-3}]$ and scale height $\lN\,[\mrsun]$, this choice of function provides a straightforward means to directly evaluate how compatible is the observed coronal thermodynamical state with the hydrostatic solution. In the case of the DEMT electron mean temperature, the linear fit allows characterization of its variation with height by means of a characteristic temperature gradient $a = \textrm{d}T_m/\textrm{d}r\,[\MK/\mrsun]$ along each leg/loop. 
+In the case of the electron density, the fitted function corresponds to the isothermal hydrostatic equilibrium solution, allowing for variation of the solar gravitational acceleration with height. After computing the footpoint ($r=1.0\,\mrsun$) electron density $N_{0}\,[\cm^{-3}]$ and scale height $\lN\,[\mrsun]$\textcolor{blue}{, this choice of function provides a straightforward means to directly evaluate how compatible is the observed coronal thermodynamical state with the hydrostatic solution}. The linear fit allows characterization of its variation with height by means of a characteristic temperature gradient $a = \textrm{d}T_m/\textrm{d}r\,[\MK/\mrsun]$ along each leg.
+
+
+\textcolor{red}{Podriamos comentar acá las mejoras hechas a la tomo desde la ultima publicacion.}
+DEMT has been improved since the previously published work. We now perform hollow-tomography with the EUV images, \textcolor{red}{definir hollow-tom} and a 3D regularized of the solution was applyed to obtain smother and more reliable result at the edge of the tomographic grid.
 
 \textcolor{red}{*Nos quedamos con los fiteos que cumplen test de hipotesis chi cuadrado en temp y densidad.
 OBS: Esta es la seleccion para las figuras 8 en adelante. Citar numerical recipes seccion 15.2}
 
 
-*Types of field lines\\
- I - Small-closed field lines. Small meaning with apex within the DEMT range of heights. This class thoroughly probes the inner core of the Streamer belt, where most of the DOWN loops showed up before, and will show up now.
+For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSoM field lines, which provides a way to characterize the global thermodynamic state of the inner solar corona and to compare them. To that end three different types of magnetic lines corresponding with three different types of magnetic structures where selected:
+
+  I - Small-closed field lines. Small meaning with apex within the DEMT range of heights. %This class thoroughly probes the inner core of the Streamer belt, where most of the DOWN loops showed up before, and will show up now.
 
   II - Large-closed field lines. Large meaning their apex surpasses the DEMT range of heights. This class is mostly populated by very large trans-equatorial field lines forming the "envelope" of the Streamer belt.
 
@@ -254,7 +262,7 @@ For the two analyzed rotations, Figure \ref{rpoint_demt} shows the latitudinal-l
 \includegraphics[width=0.495\textwidth]{figs/map_Te_awsom_2082_185_short_1065_Rsun.pdf}
 \includegraphics[width=0.495\textwidth]{figs/map_Ne_awsom_2082_185_short_1105_Rsun.pdf}
 \includegraphics[width=0.495\textwidth]{figs/map_Te_awsom_2082_185_short_1105_Rsun.pdf}
-\caption{Same as Figure \ref{carmaps_demt_2082} but for AWSoM results.}
+\caption{Same as Figure \ref{carmaps_awsom_2082} but for AWSoM results.}
 \label{carmaps_awsom_2082}
 \end{center}
 \end{figure}
@@ -267,7 +275,7 @@ For the two analyzed rotations, Figure \ref{rpoint_demt} shows the latitudinal-l
 \includegraphics[width=0.495\textwidth]{figs/map_Te_awsom_2208_185_short_1065_Rsun.pdf}
 \includegraphics[width=0.495\textwidth]{figs/map_Ne_awsom_2208_185_short_1105_Rsun.pdf}
 \includegraphics[width=0.495\textwidth]{figs/map_Te_awsom_2208_185_short_1105_Rsun.pdf}
-\caption{Same as Figure \ref{carmaps_demt_2208} but for AWSoM results.}
+\caption{Same as Figure \ref{carmaps_awsom_2208} but for AWSoM results.}
 \label{carmaps_awsom_2208}
 \end{center}
 \end{figure}
@@ -338,14 +346,11 @@ As way of example, Figure \ref{histos_2082} and \ref{histos_2208} shows the stat
 \end{figure} 
 
 
-
-
-%E) As the two rotations are strongly axis-symmetric we want to show the longitude-averaged results of DEMT at a low height, say 1.105 Rsun, along with AWSoM results. In the attached plot we show the DEMT and AWSoM longitude-averaged results at 1.105 Rsun in the top two panels (one for each rotation). The vertical lines indicate the longitude-averaged latitudes of the North and South OC boundary. The LOW panels show the longitude-averaged AWSoM wind speed Vr at 6 Rsun, where all field lines are open. The HCS location is indicated by the minimum of the speed curve. Everything to the South of the HCS maps down to the Southern OPEN region in the top panels, and the same for the Northern hemisphere. It is pretty obvious the ANTI-CORRELATION between the tomographic Ne at low heights (coronal source region of the wind) and the Vr.
-
 %This plot (E) has never been shown before and I believe it is a very nice result. There are of course previous studies on this, but this would be the first time this is evaluated with tomography. It is not the terminal speed, but it already shows the fast/slow components. We can show this, or we can go for more. Diego can QUANTIFY the correlation by carefully mapping all open field lines at 6 Rsun down to the DEMT region. He needs to code a bit more to achieve this goal, but we believe it is worth. With that tool done Diego can explore other terminal values of quantities of the AWSoM model and the DEMT results below (expansion factor maybe?). This will be nice to do also for the July-2-2019 Eclipse rotation that we will analyze after this paper. 
 
+Visual inspection of the results for CR-2082 in Figure \ref{carmaps_demt_2082} and \ref{carmaps_awsom_2082} reveals two clearly distinct thermodynamical states between the streamer (closed field lines) and the coronal holes (open lines). \\
 
-
+Figure \ref{perf_lon_ne} shows for both rotations the DEMT and AWSoM longitude-averaged variation of the electron density at the height $r=1.105\,\mrsun$. Density shows higher values in the low-latitudes of the streamer and a nearly monotonic decrease towards the poles. The vertical black lines indicates the longitude-averaged latitudes of the open/close magnetic boundaries (excluding the AR in the case of CR-2082)
 
 \begin{figure}[h!]
 \begin{center}
@@ -356,12 +361,16 @@ As way of example, Figure \ref{histos_2082} and \ref{histos_2208} shows the stat
 \end{center}
 \end{figure}
 
+Figure \ref{perf_lon_vr} show the longitude-averaged AWSoM radial wind speed $V_r$ at $6\,\mrsun$, where all field lines are open. The heliocentric current sheet (HCS) location is indicated by the minimum of the speed curve.\\
+
+Everything to the south of the HCS maps down to the southern open region in the Figures \ref{perf_lon_ne}, and the same for the northern hemisphere, showing an anti-correlation between $N_e$ at low heights and $V_r$.
+
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.495\textwidth]{figs/Perfil_Vr_2082_5995.eps}
 \includegraphics[width=0.495\textwidth]{figs/Perfil_Vr_2208_5995.eps}
-\caption{Longitude-averaged of radial wind speed at $6\,\mrsun$ given by AWSoM.}
+\caption{Longitude-averaged of radial wind speed at $6\,\mrsun$ given by AWSoM for both rotations.}
 \label{perf_lon_vr}
 \end{center}
 \end{figure}
@@ -411,8 +420,8 @@ As way of example, Figure \ref{histos_2082} and \ref{histos_2208} shows the stat
 %
 % Using BibTeX
 %
-% \bibliographystyle{spr-mp-sola}
-% \bibliography{<bib file>}  
+\bibliographystyle{spr-mp-sola}
+\bibliography{solphys_dglloveras}  
 %
 % Without BibTeX 
 % \begin{thebibliography}{}
