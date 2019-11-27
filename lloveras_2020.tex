@@ -130,9 +130,9 @@ Being the place where the solar atmosphere is heated and the solar wind accelera
 
 Once the LDEM is determined at each voxel, the average squared electron density $\langle N_e^2 \rangle$ and the electron mean temperature $T_\textrm{m}$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
 \begin{eqnarray}\label{momento1}
- N_{e,i}^2 &=& \int\,\textrm{d}T\,\LDEM_i(T),\label{Ne} \\ 
+ \langle N_{e,i}^2 \rangle &=& \int\,\textrm{d}T\,\LDEM_i(T),\label{Ne} \\ 
 \label{momento2}
- T_{\textrm{m},i}   &=& \frac{1}{N_{e,i}^2}\,\int\,\textrm{d}T\,T\,\LDEM_i(T),\label{Tm} 
+ T_{\textrm{m},i}   &=& \frac{1}{\langle N_{e,i}^2 \rangle}\,\int\,\textrm{d}T\,T\,\LDEM_i(T),\label{Tm} 
 \end{eqnarray}
 
 
@@ -180,6 +180,8 @@ For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSo
 
  III - Open field lines.
 
+\textcolor{red}{que quede claro que de ahora en mas solo consideramos ajustes de loops up, es decir pearson temp > 0.5 debido a que awsom solo tiene up.}
+
 
 \section{Results}\label{resu} 
 
@@ -224,16 +226,16 @@ Once the LDEM was determined for each rotation, the electron density $N_e$ and e
 \textcolor{red}{
 *Para las piernas trazadas que cumplen  |pearson de temp| > 0.5 se calcularon los gradientes de temp que cumplen test de hipotesis. Estos gradientes se muestran en la Figura \ref{gradientes} para las 3 regiones definidas para ambas rotaciones. Esto muestra up y down loops.
 OBS: esto da pie a hablar y proponer mejoras en la conversion de modos de alfven. citar paper fede.
-*Como el modelo awsom no presenta down loops, se selecciona de ahora en mas los loops con pearson de temp > 0.5
+%*Como el modelo awsom no presenta down loops, se selecciona de ahora en mas los loops con pearson de temp > 0.5
 }
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.495\textwidth,clip=]{figs/histo_cr2082_updowntriple_gradt.eps}
-\includegraphics[width=0.495\textwidth,clip=]{figs/histo_cr2208_updowntriple_gradt.eps}
-\caption{Frequency histogram of the temperature radial gradient of along each leg of type I (in blue), type II (in red) and type III (in green) meeting the criteria listed in Section \ref{trace} for CR-2082 (left panel) and CR-2208 (right panel). In solid lines DEMT traced data and in dashed lines AWSoM data.}
-\label{gradientes}
-\end{center}
-\end{figure} 
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[width=0.495\textwidth,clip=]{figs/histo_cr2082_updowntriple_gradt.eps}
+%\includegraphics[width=0.495\textwidth,clip=]{figs/histo_cr2208_updowntriple_gradt.eps}
+%\caption{Frequency histogram of the temperature radial gradient of along each leg of type I (in blue), type II %(in red) and type III (in green) meeting the criteria listed in Section \ref{trace} for CR-2082 (left panel) and CR-2208 (right panel). In solid lines DEMT traced data and in dashed lines AWSoM data.}
+%\label{gradientes}
+%\end{center}
+%\end{figure} 
 
 \textcolor{red}{
 For the two analyzed rotations, Figure \ref{rpoint_demt} shows the latitudinal-longitudinal location of all field lines that meet the criteria listed in Section \ref{trace} at $1.105\,\mrsun$.
@@ -249,6 +251,29 @@ For the two analyzed rotations, Figure \ref{rpoint_demt} shows the latitudinal-l
 \label{rpoint_demt}
 \end{center}
 \end{figure} 
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_up_Tm.eps}
+\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_bound_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_bound_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_bound_up_Tm.eps}
+\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_Tm.eps}
+\caption{Comparative statistical distributions of (from left to right): the coronal base electron density $N_e(r=1.055\,\mrsun)$, the electron density scale height $\lN$ and the average electron mean temperature $\aTm$, along all field lines traced in the streamer (type I, top panels), the boundary of the streamer (type II, mid panels) and the Coronal Holes (type III, bottom panels). for CR-2082. DEMT results of CR2082 are shown in blue while those of CR2208 in red. In each panel the median $m$ is indicated.}
+\label{histos_fulldemt}
+\end{center}
+\end{figure} 
+
+
+
+
+
+
 
 \subsection{Tomography and Models}\label{awsom_res} 
 
@@ -302,7 +327,7 @@ For the two analyzed rotations, Figure \ref{rpoint_demt} shows the latitudinal-l
 \includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_te_cr2082_up.eps}
 \includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_ne_cr2208_up.eps}
 \includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_te_cr2208_up.eps}
-\caption{Average fitted of $N_e(r)$ and $T_e(r)$ along all field lines of type I (in blue), of type II (in red) and of type III (in green) meeting the criteria listed in Section \ref{trace} for CR-2082 (top panel) and CR-2208 (bottom panel). In solid lines DEMT traced results and in dashed lines AWSoM results.}
+\caption{Average fits of $N_e(r)$ and $T_e(r)$ along all field lines of type I (in blue), of type II (in red) and of type III (in green) meeting the criteria listed in Section \ref{trace} for CR-2082 (top panel) and CR-2208 (bottom panel). In solid lines DEMT traced results and in dashed lines AWSoM results.}
 \label{perfiles_promedio}
 \end{center}
 \end{figure} 
@@ -322,7 +347,7 @@ As way of example, Figure \ref{histos_2082} and \ref{histos_2208} shows the stat
 \includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_ne_1055.eps}
 \includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_lambda_n.eps}
 \includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_Tm.eps}
-\caption{Comparative statistical distributions of (from left to right): the coronal base electron density $\NCB\equiv N_e(r=1.055\,\mrsun)$, the electron density scale height $\lN$ and the average electron mean temperature $\aTm$, along all field lines traced in the streamer (type I, top panels), the boundary of the streamer (type II, mid panels) and the Coronal Holes (type III, bottom panels) for CR-2082. In blue the data of DEMT are shown while those of AWSoM in red. In each panel the median $m$ is indicated.}
+\caption{Comparative statistical distributions of (from left to right): the coronal base electron density $N_e(r=1.055\,\mrsun)$, the electron density scale height $\lN$ and the average electron mean temperature $\aTm$, along all field lines traced in the streamer (type I, top panels), the boundary of the streamer (type II, mid panels) and the Coronal Holes (type III, bottom panels) for CR-2082. In blue the data of DEMT are shown while those of AWSoM in red. In each panel the median $m$ is indicated.}
 \label{histos_2082}
 \end{center}
 \end{figure} 
