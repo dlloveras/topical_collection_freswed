@@ -132,6 +132,13 @@ Being the place where the solar atmosphere is heated and the solar wind accelera
 \textcolor{red}{*LDEM}
 
 
+*Paso 1: obtencion de FBE
+*Paso 2: obtencion LDEM
+\begin{equation}\label{fbeldem}
+\FBE_i^{(k)}  = \int\,\textrm{d}T\,\LDEM_i(T)\,{\TRF}^{(k)}(T), \ \ \ {k=1,...,K}
+\end{equation}
+
+
 Once the LDEM is determined at each voxel, the average squared electron density $\langle N_e^2 \rangle$ and the electron mean temperature $T_\textrm{m}$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
 \begin{eqnarray}\label{momento1}
  \langle N_{e,i}^2 \rangle &=& \int\,\textrm{d}T\,\LDEM_i(T),\label{Ne} \\ 
@@ -139,6 +146,10 @@ Once the LDEM is determined at each voxel, the average squared electron density 
  T_{\textrm{m},i}   &=& \frac{1}{\langle N_{e,i}^2 \rangle}\,\int\,\textrm{d}T\,T\,\LDEM_i(T),\label{Tm} 
 \end{eqnarray}
 
+*Una medida del grado de acuerdo de la reconstruccion
+\begin{equation}\label{R}
+R_i \, \equiv \ (1/K) \, \sum_{k=1}^K \left| \, 1 - \FBE^{(k)}_{i,\rm syn} / \,\FBE^{(k)}_{i,\rm tom}\, \right| \,,
+\end{equation}
 
 so that the final product of DEMT is in the form of 3D maps of the electron density and mean temperature. These relationships was derived in detail in \citealt{frazin_2009} (see Appendix C). 
 
@@ -146,18 +157,17 @@ so that the final product of DEMT is in the form of 3D maps of the electron dens
 
 \textcolor{red}{*Mejoras de la tecnica con respecto a trabajos previos}
 
+\textcolor{red}{DEMT has been improved since the previously published work. We now perform hollow-tomography with the EUV images, (definir hollow-tom) and a 3D regularized of the solution was applyed to obtain smother and more reliable result at the edge of the tomographic grid.}
+
 \subsection{AWSoM simulations}\label{awsom} 
 \textcolor{red}{*Que es, que modela, que datos usa, y que se obtiene en general y en particular para este trabajo}
 
 
 \subsection{Tracing results along fieldlines}\label{trace} 
 
+
+
 For both rotations, the DEMT and AWSoM 3D maps of electron density $N_e$, electron mean temperature $T_\textrm{m}$ and electron temperature $T_\textrm{e}$ respectively were traced along the magnetic field lines modeled using AWSoM as described at the end of Section \ref{awsom}. In the case of closed loops, results were separated into their two legs, defined as the two segments that go from the coronal base up to the apex.
-
-
-\textcolor{red}{Se eligen loops con abs(person temp) mayor a .5 lo cual nos permite descartar loops QI.
-OBS: Esto es valido para hasta la fig 7 inclusive.}
-
 
 For each open field line, and for each leg of the closed ones, an exponential fit was then applied to the $N_e(r)$ data points, and a linear fit applied to the $T_m(r)$ data points, as described by
 
@@ -174,24 +184,24 @@ In the case of the electron density, the fitted function corresponds to the isot
 
 
 
-DEMT has been improved since the previously published work. We now perform hollow-tomography with the EUV images, \textcolor{red}{definir hollow-tom} and a 3D regularized of the solution was applyed to obtain smother and more reliable result at the edge of the tomographic grid.
 
 \textcolor{red}{*Nos quedamos con los fiteos que cumplen test de hipotesis chi cuadrado en temp y densidad.
-OBS: Esta es la seleccion para las figuras 8 en adelante. Citar numerical recipes seccion 15.2}
+OBS: SE usan los errores en temp y densidad. Citar numerical recipes seccion 15.2}
 
+\textcolor{red}{Se eligen loops con abs(person temp) mayor a .5 lo cual nos permite descartar loops QI. gradT suficientemente grandes.}
 
-For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSoM field lines, which provides a way to characterize the global thermodynamic state of the inner solar corona and to compare them. To that end three different types of magnetic lines corresponding with three different types of magnetic structures where selected:
+For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSoM field lines, which provides a way to characterize the global thermodynamic state of the inner solar corona and to compare them. To that end four different types of legs corresponding with four different types of magnetic structures where selected:
 
-  0 - Small-closed field lines footlat $<30$ y gradt neg. where most of the DOWN loops showed up before
+  0 - Small (meaning with apex within the DEMT range of heights) closed field lines in the latitudes range $[-30\mdeg,+30\mdeg]$ and $\nabla_r T_m < 0$. This class thoroughly populates the equator of the Streamer belt during a minimum solar rotation.
 
-  I - Small-closed field lines. Small meaning with apex within the DEMT range of heights. gradt pos
-   %This class thoroughly probes the inner core of the Streamer belt, where most of the DOWN loops showed up before, and will show up now.
+  I - Small closed field lines in all latitudes, with $\nabla_r T_m > 0$. This class thoroughly populates the inner of the Streamer belt.
 
-  II - Large-closed field lines. Large meaning their apex surpasses the DEMT range of heights. This class is mostly populated by very large trans-equatorial field lines forming the "envelope" of the Streamer belt. footlat $>30$ y gradt pos
+  II - Large (meaning their apex surpasses the DEMT range of heights) closed field lines in the latitudes range $[-90\mdeg,-30\mdeg] \cup [+30\mdeg,+90\mdeg]$ and $\nabla_r T_m > 0$. This class is mostly populated by very large trans-equatorial field lines forming the envelope of the Streamer belt. 
 
- III - Open field lines. footlat $>60$ y gradt pos
+ III - Open (meaning with apex out the DEMT range of heights) field lines in the latitudes range $[-90\mdeg,-60\mdeg] \cup [+60\mdeg,+90\mdeg]$ and $\nabla_r T_m > 0$.
 
-\textcolor{red}{que quede claro que de ahora en mas solo consideramos ajustes de loops up, es decir pearson temp > 0.5 debido a que awsom solo tiene up.}
+\textcolor{red}{Hice las definiciones con gradiente de temperatura para que quede mas claro, pero en realidad uso el pearson.} 
+%\textcolor{red}{que quede claro que de ahora en mas solo consideramos ajustes de loops up, es decir pearson temp > 0.5 debido a que awsom solo tiene up.}
 
 
 \section{Results}\label{resu} 
@@ -207,6 +217,10 @@ Once the LDEM was determined for each rotation, the electron density $N_e$ and e
 -CH
 -Matcheo entre open-closed boundaries y las estructuras termodinamicas.
 }
+
+
+While CR-2082 was highly axisymmetric and showed virtually no ARs\textcolor{red}{(ver si en lat 50 y long 70 hay una.)}, CR-2208 showed an AR around latitude $+10\mdeg$ and longitude $300\mdeg$ \textcolor{red}{(ver la region open en lat 0 y long 200)}. Except for this AR, in both rotations the open-closed boundaries derived from the respective AWSoM model match the shape of the contour levels of the tomographic maps of both the electron density and the electron mean temperature. In these regions, there is a lack of match between the open-closed boundaries and the tomographic reconstructions of density and temperature. This range of longitudes was excluded from the analysis. Closed regions are characterized by relatively larger values of density and temperature in comparison to the open regions.
+
 
 
 \begin{figure}[h!]
@@ -234,6 +248,15 @@ Once the LDEM was determined for each rotation, the electron density $N_e$ and e
 \label{carmaps_demt_2208}
 \end{center}
 \end{figure}
+
+
+
+\textcolor{blue}{seccion 3.5 del otro paper}
+
+
+
+
+
 
 \textcolor{red}{
 *Para las piernas trazadas que cumplen  |pearson de temp| > 0.5 se calcularon los gradientes de temp que cumplen test de hipotesis. Estos gradientes se muestran en la Figura \ref{gradientes} para las 3 regiones definidas para ambas rotaciones. Esto muestra up y down loops.
