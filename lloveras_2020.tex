@@ -132,12 +132,15 @@ Being the place where the solar atmosphere is heated and the solar wind accelera
 \textcolor{red}{*LDEM}
 
 
-*Paso 1: obtencion de FBE
+*Paso 1: obtencion de FBE\\
 *Paso 2: obtencion LDEM
 \begin{equation}\label{fbeldem}
 \FBE_i^{(k)}  = \int\,\textrm{d}T\,\LDEM_i(T)\,{\TRF}^{(k)}(T), \ \ \ {k=1,...,K}
 \end{equation}
 
+\textcolor{red}{
+Due to unresolved coronal dynamics, tomographic reconstructions exhibit negative values of the reconstructed FBE, or zero when the solution is constrained to positive values \citep{frazin_2000,frazin_2009}. {These non-reconstructed voxels are indicated in black in the Carrington maps of reconstructed FBE}.
+}
 
 Once the LDEM is determined at each voxel, the average squared electron density $\langle N_e^2 \rangle$ and the electron mean temperature $T_\textrm{m}$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
 \begin{eqnarray}\label{momento1}
