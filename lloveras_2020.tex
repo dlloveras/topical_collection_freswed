@@ -51,6 +51,35 @@
 \newcommand{\BibTeX}{\textsc{Bib}\TeX}
 \newcommand{\etal}{{\it et al.}}
 
+\def\Pl{\texttt{+}}
+\def\Mi{\texttt{-}}
+
+% Definitions for the journal names
+\newcommand{\adv}{    {\it Adv. Space Res.}} 
+\newcommand{\annG}{   {\it Ann. Geophys.}} 
+\newcommand{\aap}{    {\it Astron. Astrophys.}}
+\newcommand{\aaps}{   {\it Astron. Astrophys. Suppl.}}
+\newcommand{\aapr}{   {\it Astron. Astrophys. Rev.}}
+\newcommand{\ag}{     {\it Ann. Geophys.}}
+\newcommand{\aj}{     {\it Astron. J.}} 
+\newcommand{\apj}{    {\it Astrophys. J.}}
+\newcommand{\apjs}{   {\it Astrophys. J. Suppl.}}
+\newcommand{\apjl}{   {\it Astrophys. J. Lett.}}
+\newcommand{\apss}{   {\it Astrophys. Space Sci.}} 
+\newcommand{\cjaa}{   {\it Chin. J. Astron. Astrophys.}} 
+\newcommand{\gafd}{   {\it Geophys. Astrophys. Fluid Dyn.}}
+\newcommand{\grl}{    {\it Geophys. Res. Lett.}}
+\newcommand{\ijga}{   {\it Int. J. Geomagn. Aeron.}}
+\newcommand{\jastp}{  {\it J. Atmos. Solar-Terr. Phys.}} 
+\newcommand{\jgr}{    {\it J. Geophys. Res.}}
+\newcommand{\mnras}{  {\it Mon. Not. Roy. Astron. Soc.}}
+\newcommand{\nat}{    {\it Nature}}
+\newcommand{\pasp}{   {\it Pub. Astron. Soc. Pac.}}
+\newcommand{\pasj}{   {\it Pub. Astron. Soc. Japan}}
+\newcommand{\pre}{    {\it Phys. Rev. E}}
+\newcommand{\solphys}{{\it Solar Phys.}}
+\newcommand{\sovast}{ {\it Soviet  Astron.}} 
+\newcommand{\ssr}{    {\it Space Sci. Rev.}} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -139,7 +168,7 @@ Being the place where the solar atmosphere is heated and the solar wind accelera
 \end{equation}
 
 \textcolor{red}{
-Due to unresolved coronal dynamics, tomographic reconstructions exhibit negative values of the reconstructed FBE, or zero when the solution is constrained to positive values \citep{frazin_2000,frazin_2009}. {These non-reconstructed voxels are indicated in black in the Carrington maps of reconstructed FBE}.
+Due to unresolved coronal dynamics, tomographic reconstructions exhibit negative values of the reconstructed FBE, or zero when the solution is constrained to positive values \citep{frazin_2000,frazin_2009}. These non-reconstructed voxels are indicated as black voxels in the Carrington maps of the reconstructed DEMT reults in Section \ref{resu}.
 }
 
 Once the LDEM is determined at each voxel, the average squared electron density $\langle N_e^2 \rangle$ and the electron mean temperature $T_\textrm{m}$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
@@ -211,26 +240,14 @@ For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSo
 
 \subsection{Tomographic Results}\label{demt_res} 
 
-Once the LDEM was determined for each rotation, the electron density $N_e$ and electron mean temperature $T_\textrm{m}$ were computed at each voxel of the tomographic computational grid by means of Equations \ref{momento1} and \ref{momento2}. As an example, Figures \ref{carmaps_demt_2082} and \ref{carmaps_demt_2208} show the results for both rotations at $r=1.025, 1.065$ and $1.105\,\mrsun$. Black voxels correspond to non-reconstructed regions.
-
-\textcolor{red}{
-*explicar voxel negros
-*Comentarios descriptivos sobre las rotaciones:
--Simetria
--CH
--Matcheo entre open-closed boundaries y las estructuras termodinamicas.
-}
+Once the LDEM was determined for each rotation, the electron density $N_e$ and electron mean temperature $T_\textrm{m}$ were computed at each voxel of the tomographic computational grid by means of Equations \ref{momento1} and \ref{momento2}. As an example, Figures \ref{carmaps_demt_2082} and \ref{carmaps_demt_2208} shows the latitude-longitude maps for both tomographic results for CR-2082 and CR-2208 at $r=1.025, 1.065$ and $1.105\,\mrsun$. Black voxels correspond to non-reconstructed regions (explained in Section \ref{demt}).
 
 
 While CR-2082 was highly axisymmetric and showed virtually no ARs (active region) \textcolor{red}{(ver si en lat 50 y long 70 hay una.)}, CR-2208 showed an AR around latitude $+10\mdeg$ and longitude $300\mdeg$ \textcolor{red}{(ver la region open en lat 0 y long 200)}. Except for these ARs, in both rotations the open-closed boundaries derived from the respective AWSoM model match the shape of the contour levels of the tomographic maps of both the electron density and the electron mean temperature. In the AR, there is a lack of match between the open-closed boundaries and the tomographic reconstructions of density and temperature, that is why those ranges were excluded from the analysis. Closed regions are characterized by relatively larger values of density and temperature in comparison to the open regions.
 
-\textcolor{red}{A visual inspection of Figures \ref{momento1} and \ref{momento2} suggest/indicates:
-PARRAFO CORTO DE OBSERVACIONES QUE LUEGO SERAN CORROBORADAS CON HISTOGRAMAS.
-*that the streamer region of CR-2082 was denser and colder than CR-2208. 
-*a diminishing of the temperatures conform the height increase in the the most equatorial latitudes in both rotations, asociated with the type 0 lines.
-*}
+\textcolor{red}{PARRAFO CORTO DE OBSERVACIONES QUE LUEGO SERAN CORROBORADAS CON HISTOGRAMAS.}
+A visual inspection of Figures \ref{momento1} and \ref{momento2} suggest/indicates that the streamer region of CR-2082 was denser and colder than CR-2208. In both rotations, but specifically in CR-2082 the temperature in the equatorial latitudes tend to decrease with height while the latitudes between the open-close boundaries and the equatorial latitudes tend to increase. These thermodynamic structures have been reported for other rotations in previous works \citep{lloveras_2017}.
 
-\textcolor{red}{Esto me suena a un indicador de mas actividad en 2208, pero deberia justificarlo. Y podria ser una buena idea asi queda un parrafito que compare los mapas de carrington de ambas rotaciones.}
 
 \begin{figure}[h!]
 \begin{center}
@@ -260,16 +277,16 @@ PARRAFO CORTO DE OBSERVACIONES QUE LUEGO SERAN CORROBORADAS CON HISTOGRAMAS.
 
 
 
-\textcolor{blue}{seccion 3.5 del otro paper}
-
-For both rotations, all field lines that meet the criteria listed in Section \ref{trace} were selected. For each field line, the data points of electron density and electron mean temperature as a function of height were fitted to the Equations \ref{momento1} and \ref{momento2}.
+For both rotations, all field lines that meet the criteria listed in Section \ref{trace} were selected. For each field line, the data points of electron density and electron mean temperature as a function of height were fitted to the Equations \ref{Nfit} and \ref{Tfit}.
 \textcolor{red}{aca los highpoints, comentar los colores y enunciar que cada uno puebla una regino termodinamica diferente}
 
 
- As a result, the electron density $N_0(r=1.0\,\mrsun)$ and scale height $\lN$ were computed for each field line, as well as the temperature gradient $\nabla_r T_m$, and the height-averaged (along the loop) electron mean temperature $\aTm$. As the DEMT technique studies only coronal conditions, \textit{i.e.} above height $r\approx 1.025\,\mrsun$, the exponential fit to the electron density data as a function of height was used to compute the coronal base electron density here defined as $\NCB\equiv N_e(r=1.025\,\mrsun)$. 
+ As a result, the electron density $N_0(r=1.0\,\mrsun)$ and scale height $\lN$ were computed for each field line, as well as the temperature gradient $\nabla_r T_m$, and the height-averaged (along the loop) electron mean temperature $\aTm$. As the DEMT technique studies only coronal conditions, \textit{i.e.} above height $r\approx 1.025\,\mrsun$, the exponential fit to the electron density data as a function of height may be used to compute the tomographic basal electron density at $ N_e(r=1.025\,\mrsun)$ as in previous articles. In this case, for an further comparison analysis with the AWSoM results, we selected the lowest height where the results of the MHD model are reliable, that is $1,065\,\mrsun)$.
 
-\textcolor{red}{the temperature gradient $\nabla_r T_m$ fue computada}\\
-Figure \ref{rpoint_demt} shows the latitudinal-longitudinal location of the selected lines. In cyan the type 0 lines are indicated, populating the most equatorial latitudes. In blue the type 1, populating mostly the mid latitudes  of the streamer. In red the type 2, populating the edge that assemble the envelope arround the streamer, and in green dots the type 3 lines, populating the coronal holes.
+\textcolor{red}{Aca una linea que linkee la definicion del tipo de lineas en la seccion anterior con las regiones que se ven en la figura que se describe a continuacion}
+Figure \ref{rpoint_demt} shows the latitudinal-longitudinal location of the selected lines at $1.105\,\mrsun$ for both rotations. In cyan the type 0 lines are indicated, populating the most equatorial latitudes (dominated mostly by down loops). In blue the type 1 lines, populating mostly the mid latitudes of the streamer. In red the type 2 lines, populating the edge that assemble the envelope around the streamer, and in green dots the type 3 lines, populating the coronal holes.
+
+This selection of the types of lines automatically leads to thermodynamic regions arranged along all longitudes with good symmetry in both rotations, this is because the rotations are at a minimum of activity and the static corona is a good approximation.
 
 
 \begin{figure}[h!]
@@ -285,9 +302,11 @@ Figure \ref{rpoint_demt} shows the latitudinal-longitudinal location of the sele
 \end{center}
 \end{figure} 
 
-Figure \ref{gradt_demt} is a frequency histogram normalized to the total amount of legs concidered of $\nabla_r T_m$ for every type of legs for both rotations.
-\textcolor{red}{Aun no se que decir sobre esto, sobre los downs se puede citar nuevo et al 2013 y decir algo sobre hay menos cantidad en cr2208 haciendo enfoque en que podria ser un indicador de que aun no esta en un minimo} 
+Figure \ref{gradt_demt} shows histograms (normalized to the total amount of field lines) of the temperature radial gradients ($\nabla_r T_m$) for every type of line and for both rotations.
+The lack of population around values close to zero is due to the strict condition $|\rho_t| > 0.5$ that discards possible isothermal values.
 
+\textcolor{red}{Aun no se que decir sobre esto, sobre los downs se puede citar nuevo et al 2013 y decir algo sobre hay menos cantidad en cr2208 haciendo enfoque en que podria ser un indicador de que aun no esta en un minimo. Por otro lado mostrar los gradientes negativos va a ser util en los parrafos posteriores que expliquen porque en las lineas tipo 0 hay valores de $\phi_c$ negativos.} 
+\textcolor{blue}{Quizas sea un buen lugar para comentar el paper up down de Fede, y el de shift y cramer, para decir un poco sobre los down, xq en la prox seccion voy a decir que no hay lineas tipo 0 justamente xq el modelo es incapaz de reproducir los down}
 
 
 \begin{figure}[h!]
@@ -300,11 +319,7 @@ Figure \ref{gradt_demt} is a frequency histogram normalized to the total amount 
 \end{figure} 
 
 
-As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the statistical results of both rotations for all field lines traced. From top to bottom type 0 to type 4. From left to right the panels show the statistical distribution of $\NCB$, $\lN$, $\aTm$, in each panel the median $m$ is indicated.
-
-\textcolor{red}{Podria ir una tabla resumiendo las comparaciones y luego un parrafo que indique brevemente que la densidad a 1.055 de CR2208 fué en general mas grande, que la escala de altura es casi la misma y que ademas cr2208 fue mas caliente.}
-
-
+As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the statistical results of both rotations for all field lines types. From top to bottom type 0 to type 4. From left to right the panels show the statistical distribution of $\NCB$, $\lN$, $\aTm$, in each panel the median $m$ is indicated.
 
 
 \begin{figure}[h!]
@@ -326,7 +341,39 @@ As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the s
 \end{center}
 \end{figure} 
 
-\textcolor{red}{Aca vienen quizas 1 o 2 parrafos introduciendo y explicando los phi, los resultados de la Figura \ref{energia_demt} y un parrafo comentando esos resultados.}
+
+\begin{table}
+\begin{tabular}{l r@{.}l@{\hskip 0.05in} r@{\hskip 0.01in} r@{.}l  r@{.}l@{\hskip 0.05in} r@{\hskip 0.01in} r@{.}l r@{.}l@{\hskip 0.05in} r@{\hskip 0.01in} r@{.}l }
+% r@{.}l@{\hskip 0.05in} r@{\hskip 0.01in} r@{.}l@{\hskip 0.01in} l}
+\hline
+Type    & \multicolumn{5}{c}{$\med(\NCB)$}             & \multicolumn{5}{c}{$\med(\lN)$} & \multicolumn{5}{c}{$\med(\avgTe)$} \\
+       & \multicolumn{5}{c}{$[10^8\,{\rm cm}^{-3}]$}  & \multicolumn{5}{c}{$[{\rm 10}^{-2}\,\mrsun]$} & \multicolumn{5}{c}{$[\MK]$} \\
+\hline
+0  & 0&93 &(\Mi&12&9\%)  &   7&4 &(\Pl&~3&9\%) &   1&11 &(\Pl&20&7\%) \\
+1  & 0&84 &(\Mi&11&3\%)  &   8&3 &(\Pl&15&3\%) &   1&30 &(\Pl&16&1\%) \\
+2  & 0&69 &(\Mi&10&1\%)  &   8&9 &(\Pl&19&1\%) &   1&33 &(\Pl&14&2\%) \\
+3  & 0&48 &(\Mi&12&5\%)  &   7&7 &(\Pl&10&5\%) &   0&98 &(\Pl&~5&7\%) \\
+\hline          
+\end{tabular}
+\caption{Median value (indicated as ``Md'') of the statistical distribution of $\NCB$, $\lN$, and $\aTm$ for each coronal type of lines defined in Section \ref{trace}. For CR-2082 values are expressed in absolute terms, while for CR-2208 they are informed as a percentual variation relative to the CR-2082 value.}
+\label{tabla_demt}
+\end{table}
+
+
+Table \ref{tabla_demt} summarize the quantitative comparative analysis between the results of the two target rotations sampling both minima. The following major results concerning the structure of each rotation individually and their comparison can be drawn.
+
+In the equatorial streamer of both rotations, increasing latitudes show decreasing \textcolor{red}{coronal base (1.055)} density, and increasing density scale height and electron temperature. In both rotations the CH regions are characterized sub-MK temperatures, and coronal base densities of order $\approx 1/2$ of the equatorial streamer. Histograms with sharp populations indicates that for both rotations the values of all physical quantities exhibit a strong symmetry between both hemispheres.
+
+A comparison of the results between the two rotations within the closed field lines \textcolor{red}{equatorial streamer belt} shows that CR-2208 is characterized by lower values of electron density and larger of temperature compared to CR-2082, as well as larger values of the density scale height.
+\textcolor{red}{Comentario sobre la estimacion de errores del paper pasado?}
+
+In the coronal hole region, \textcolor{red}{No se si se puede aclarar algo en particular, quizas decir que ahora que tomamos una gran region abierta (en comparacion con el paper pasado) la seleccion toma lineas en la transicion de viento lento y rapido y eso genera que el histograma de Tm sea tan disperso}
+
+%To establish if the differences in the results between the two rotations are significant, Section \ref{uncertainties} estimates the error bars due the dominating systematic uncertainties.
+
+%{Also, within the streamer belt the magnetic field strength is similar in both rotations in the northern hemisphere, while in the southern hemisphere CR-1915 exhibits $10-80\%$ larger values compared to CR-2081, with increasing difference for larger latitudes. In the coronal holes, the magnetic field strength of CR-1915 is much larger than for CR-2081, exhibiting values up to 50\% larger in the northern hemisphere and more than twice larger in the southern hemisphere.}
+
+\textcolor{red}{Aca vienen quizas 1 o 2 parrafos introduciendo y explicando los phi, los resultados de la Figura \ref{energia_demt} y un parrafo comentando esos resultados. Este parrafo va escrito por Ceci.}
 
 
 \begin{figure}[h!]
@@ -347,7 +394,16 @@ As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the s
 
 \subsection{Tomography and Models}\label{awsom_res} 
 
-\textcolor{red}{Se presentan los resultados de Ne y Te del modelo AWSoM}
+\textcolor{red}{Parrafo introductorio}
+
+As an example of the AWSoM results, Figures \ref{carmaps_awsom_2082} and \ref{carmaps_awsom_2208} shows the latitude-longitude maps for $N_e$ and $T_e$ modeled for CR-2082 and CR-2208 at $r=1.025, 1.065$ and $1.105\,\mrsun$. The black curve denotes the open-close boundary.
+
+\textcolor{red}{No pondría los mapas de 1.025 y diria algo asi como:\\}
+In the transition region, the plasma heats up and becomes less dense in several orders of magnitude in a short distance. Modeling this region correctly requires a high computational cost. For this reason the model uses a extended transition region and not real initial conditions of contour in density and electronic temperature. Consequently, the results below $1.065\,\mrsun$ were not taken into account in this article.
+
+A visual inspection of the AWSoM results shows that both reconstruction are very axysimmetric for $N_e$ and $T_e$ as well. The closed region is denser and hotter than the open region. The density and temperature gradients are maximum in the open-close boundary. The open field regions in low latitudes maintain thermodynamic values associated with open regions. CR-2208 shows a well reconstruction of the AR around latitude $+10\mdeg$ and longitude $300\mdeg$ and a slight temperature difference between the poles \textcolor{red}{estoy asumiento que es una AR}. 
+In both rotations the open-closed boundaries derived from the respective AWSoM model match the shape of the contour levels of the tomographic maps of both the electron density and the electron mean temperature.
+
 
 \begin{figure}[h!]
 \begin{center}
@@ -357,7 +413,7 @@ As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the s
 \includegraphics[width=0.495\textwidth]{figs/map_Te_awsom_2082_185_short_1065_Rsun.pdf}
 \includegraphics[width=0.495\textwidth]{figs/map_Ne_awsom_2082_185_short_1105_Rsun.pdf}
 \includegraphics[width=0.495\textwidth]{figs/map_Te_awsom_2082_185_short_1105_Rsun.pdf}
-\caption{Carrington maps of density (left panels) and temperature (right panels)) obtained with AWSoM model for the three heights shown in Figure \ref{carmaps_awsom_2082}.}
+\caption{Carrington maps of density (left panels) and temperature (right panels) obtained with AWSoM model for the same three heights shown in Figure \ref{carmaps_demt_2082}.}
 \label{carmaps_awsom_2082}
 \end{center}
 \end{figure}
@@ -377,6 +433,17 @@ As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the s
 
 \textcolor{red}{Se presentan los midpoints para awsom que lucen mas rellenos xq no hay down loops y todo es super suave.}
 
+In the same way as in Section \ref{demt_res}, the model results were traced along the magnetic lines obtained with it. This allowed to obtain $N_e(r)$ and $T_e(r)$ along the magnetic lines and fit them to the Equations \ref{Nfit} and \ref{Tfit}.
+
+Due to the inability of the model to reproduce down legs, in this section we only use lines type 1, 2 and 3 and only select those that meet the chi square hypothesis test.
+
+Figure \ref{rpoint_awsom} shows the latitudinal-longitudinal location of the selected lines at $1.105\,\mrsun$ for both rotations. In blue the type 1 lines, populating mostly the entire streamer. In red the type 2 lines, populating the edge that assemble the envelope around the streamer, and in green dots the type 3 lines, populating the coronal holes.
+
+The fact that Figure \ref{rpoint_awsom} looks much fuller than Figure \ref{rpoint_demt} is because giving the model smoother results, fewer fitted lines are filtered.
+
+The reader may notice that these structures are the same as those in Figure \ref{rpoint_demt} but more filled, this is because the same magnetic result was used to trace both DEMT and AWSoM results.
+
+
 \begin{figure}[h!]
 \begin{center}
 %\includegraphics[width=0.495\textwidth,clip=]{Highpoint_2082_demt_paper_Rpoint-map.eps}
@@ -388,6 +455,16 @@ As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the s
 \end{center}
 \end{figure} 
 
+
+To highlight the latitudinal structures, Figure \ref{perf_lat} shows for both rotations the latitudinal variation  of both the electron density and the electron mean temperature at the height $r=1.105\,\mrsun$, averaged over all longitudes (excluding the AR). DEMT results are shown in blue lines while AWSoM results in red. While the temperature shows a maximum in each hemisphere, the density has a simpler behavior, with higher values in the low-latitudes of the streamer and a nearly monotonic decrease towards larger latitudes. The vertical black lines denotes the average of the open-close boundary in both hemispheres to each rotation.
+
+\textcolor{red}{
+*awsom da valores mas altos en los polos\\
+*Parece haber una buena coincidencia en CR2082 en Te yen CR2208 en Ne.
+*En CR2082 en Ne demt es 20 \% mas grande que awsom en la zona cerrada.
+*En cr2208 en Te, en la zona polar awsom es 30\% mas grande y awsom es 25\% mas grande en la region cerrada.
+}
+
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.495\textwidth]{figs/Perfil_Ne_demt_awsom_2082_1105.eps}
@@ -395,9 +472,13 @@ As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the s
 \includegraphics[width=0.495\textwidth]{figs/Perfil_Te_demt_awsom_2082_1105.eps}
 \includegraphics[width=0.495\textwidth]{figs/Perfil_Te_demt_awsom_2208_1105.eps}
 \caption{Longitude-averaged electron density (top) and temperature (bottom) for DEMT (blue) and AWSoM (red) results at $1.105\,\mrsun$. The left (right) panels correspond to CR-2082 (CR2208). The vertical black line indicates the longitude-averaged latitudes of the open/close magnetic boundary.}
-\label{perf_lon_ne}
+\label{perf_lat}
 \end{center}
 \end{figure}
+
+To summarize the comparison between both results during both rotations at full height, it is shown in Figure \ref{perfiles_promedio} the average fits of $N_e(r)$ and $T_e(r)$ for every type of legs.
+
+\textcolor{red}{Explicar lo que se observa}
 
 
 
@@ -407,7 +488,7 @@ As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the s
 \includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_te_cr2082_up_short.eps}
 \includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_ne_cr2208_up_short.eps}
 \includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_te_cr2208_up_short.eps}
-\caption{Average fits of $N_e(r)$ and $T_e(r)$ for all legs of type I (blue), type II (red) and type III (green) for CR-2082 (top panel) and CR-2208 (bottom panel) using DEMT (solid) and AWSoM (dashed) results.}
+\caption{Average fits of $N_e(r)$ and $T_e(r)$ for legs of type I (blue), type II (red) and type III (green) for CR-2082 (top panel) and CR-2208 (bottom panel) using DEMT (solid) and AWSoM (dashed) results.}
 \label{perfiles_promedio}
 \end{center}
 \end{figure} 
@@ -453,7 +534,7 @@ As way of example, Figure \ref{histos_2082} and \ref{histos_2208} shows the stat
 
 %This plot (E) has never been shown before and I believe it is a very nice result. There are of course previous studies on this, but this would be the first time this is evaluated with tomography. It is not the terminal speed, but it already shows the fast/slow components. We can show this, or we can go for more. Diego can QUANTIFY the correlation by carefully mapping all open field lines at 6 Rsun down to the DEMT region. He needs to code a bit more to achieve this goal, but we believe it is worth. With that tool done Diego can explore other terminal values of quantities of the AWSoM model and the DEMT results below (expansion factor maybe?). This will be nice to do also for the July-2-2019 Eclipse rotation that we will analyze after this paper. 
 
-Visual inspection of the results for CR-2082 in Figure \ref{carmaps_demt_2082} and \ref{carmaps_awsom_2082} reveals two clearly distinct thermodynamical states between the streamer (closed field lines) and the coronal holes (open lines). \\
+
 
 Figure \ref{perf_lon_ne} shows for both rotations the DEMT and AWSoM longitude-averaged variation of the electron density at the height $r=1.105\,\mrsun$. Density shows higher values in the low-latitudes of the streamer and a nearly monotonic decrease towards the poles. The vertical black lines indicates the longitude-averaged latitudes of the open/close magnetic boundaries (excluding the AR in the case of CR-2082)
 
