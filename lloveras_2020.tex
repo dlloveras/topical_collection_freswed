@@ -194,6 +194,8 @@ so that the final product of DEMT is in the form of 3D maps of the electron dens
 \subsection{AWSoM simulations}\label{awsom} 
 \textcolor{red}{*Que es, que modela, que datos usa, y que se obtiene en general y en particular para este trabajo}
 
+\textcolor{red}{Se debe aclarar que solo produce resultados razonables arriba de 1.065}
+
 
 \subsection{Tracing results along fieldlines}\label{trace} 
 
@@ -223,7 +225,7 @@ OBS: SE usan los errores en temp y densidad. Citar numerical recipes seccion 15.
 \textcolor{red}{Se eligen loops con abs(person temp) mayor a .5 lo cual nos permite descartar loops QI. gradT suficientemente grandes.}
 
 For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSoM field lines, which provides a way to characterize the global thermodynamic state of the inner solar corona and to compare them. To that end four different types of legs corresponding with four different types of magnetic structures where selected:
-
+\textcolor{red}{Hacer explicacion de los tipos de lineas bien secos, luego en fig 3 hacer notar que implica cada una en cuanto a estructura magnetica}
   0 - Small (meaning with apex within the DEMT range of heights) closed field lines in the latitudes range $[-30\mdeg,+30\mdeg]$ and $\nabla_r T_m < 0$. This class thoroughly populates the equator of the Streamer belt during a minimum solar rotation.
 
   I - Small closed field lines in all latitudes, with $\nabla_r T_m > 0$. This class thoroughly populates the inner of the Streamer belt.
@@ -235,6 +237,9 @@ For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSo
 \textcolor{red}{Hice las definiciones con gradiente de temperatura para que quede mas claro, pero en realidad uso el pearson.} 
 %\textcolor{red}{que quede claro que de ahora en mas solo consideramos ajustes de loops up, es decir pearson temp > 0.5 debido a que awsom solo tiene up.}
 
+
+\subsection{Energy flux ?}\label{energia} 
+\textcolor{red}{Aca se introduce la seccion de energia con sus ecuaciones etc}
 
 \section{Results}\label{resu} 
 
@@ -306,7 +311,9 @@ Figure \ref{gradt_demt} shows histograms (normalized to the total amount of fiel
 The lack of population around values close to zero is due to the strict condition $|\rho_t| > 0.5$ that discards possible isothermal values.
 
 \textcolor{red}{Aun no se que decir sobre esto, sobre los downs se puede citar nuevo et al 2013 y decir algo sobre hay menos cantidad en cr2208 haciendo enfoque en que podria ser un indicador de que aun no esta en un minimo. Por otro lado mostrar los gradientes negativos va a ser util en los parrafos posteriores que expliquen porque en las lineas tipo 0 hay valores de $\phi_c$ negativos.} 
-\textcolor{blue}{Quizas sea un buen lugar para comentar el paper up down de Fede, y el de shift y cramer, para decir un poco sobre los down, xq en la prox seccion voy a decir que no hay lineas tipo 0 justamente xq el modelo es incapaz de reproducir los down}
+\textcolor{blue}{Quizas sea un buen lugar para comentar el paper up down de Fede, diciendo que estas estructuras ya se han visto antes, etc., suena bien que les de algo de importancia xq en la prox seccion voy a decir que no hay lineas tipo 0 justamente xq el modelo es incapaz de reproducir los down}
+
+\textcolor{red}{ Comentar en la discusion el paper de shift y cramer, para decir un poco sobre los down y la incapacidad del modelo en reproducirlos}
 
 
 \begin{figure}[h!]
@@ -557,6 +564,12 @@ Everything to the south of the HCS maps down to the southern open region in the 
 
 
 \section{Discussion}\label{discu} 
+
+*Down loops, shiff y cranmer comentarios.
+
+
+
+
 %% Figure 
 %
 % \begin{figure} 
