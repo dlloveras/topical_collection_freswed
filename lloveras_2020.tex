@@ -214,7 +214,7 @@ In the transition region, the plasma heats up and becomes less dense in several 
 
 \subsection{Tracing results along fieldlines}\label{trace} 
 
-\diego{Abajo una copia del paper anterior, esta seccion debe ser reescrita.}
+\diego{Falta explicar que todos los resultados pasamos a tenerlos en la grilla demt, y que en esa grilla se traza el campo.}
 
 For both rotations, the DEMT and AWSoM 3D maps of electron density $N_e$, electron mean temperature $T_\textrm{m}$ and electron temperature $T_\textrm{e}$ respectively were traced along the magnetic field lines modeled using AWSoM as described at the end of Section \ref{demt}. In the case of closed loops, results were separated into their two legs, defined as the two segments that go from the coronal base up to the apex.
 
@@ -231,39 +231,55 @@ where $h \equiv r - 1\,\mrsun$, and $a$ and $b$ are constants.
 
 In the case of the electron density, the fitted function corresponds to the isothermal hydrostatic equilibrium solution, allowing for variation of the solar gravitational acceleration with height. After computing the footpoint ($r=1.0\,\mrsun$) electron density $N_{0}\,[\cm^{-3}]$ and scale height $\lN\,[\mrsun]$\temp{, this choice of function provides a straightforward means to directly evaluate how compatible is the observed coronal thermodynamical state with the hydrostatic solution}.
 
-\temp{
-La temperatura en funcion de la altura a lo largo de lineas muestra comportamientos lineales. En el presente trabajo nos focalizamos en lineas con temperaturas crecientes y decrecientes en foma lineal. Es decir nos quedamos con aquellas piernas donde el coeficiente de pearson entre la temperatura y la altura (rho) cumple rho mayor 0.5 (con p-value 0.05) y de esta forma se descartan aquellas piernas en las que los resultados DEMT no pueden asegurar un cambio notable de temperatura entre la base y el apice (asi no uso la palabra isotermico y evado ese problema)
-}
+%La temperatura en funcion de la altura a lo largo de lineas muestra comportamientos lineales. En el presente trabajo nos focalizamos en lineas con temperaturas crecientes y decrecientes en foma lineal. Es decir nos quedamos con aquellas piernas donde el coeficiente de pearson entre la temperatura y la altura (rho) cumple rho mayor 0.5 (con p-value 0.05) y de esta forma se descartan aquellas piernas en las que los resultados DEMT no pueden asegurar un cambio notable de temperatura entre la base y el apice (asi no uso la palabra isotermico y evado ese problema)
+
+
+%The temperature as a function of height along legs shows linear behaviors. 
+In the present work we focus on lines with increasing and decreasing temperatures in linear form. In other words, we selected those legs where the pearson coefficient between temperature and height ($\rho_{T,r}$) meets $|\rho_{T,r}| > 0.5$ \temp{(with p-value less than 0.05)}. In this way, those legs in which the DEMT results cannot ensure a noticeable change in temperature between the base and the apex, are discarded.
+
 
 The linear fit allows characterization of its variation with height by means of a characteristic temperature gradient $\nabla_r T_m\,[\MK/\mrsun]$ along each leg.
-\diego{ambos fiteos utilizan los errores del paper anterior!!}
+\diego{En realidad esta regresion lineal utiliza de por si los errores, pero luego tmb los uso para el test de hipotesis, quizas vale la pena ponerlo solo ahi.}
 
-\temp{
-*to measure how good the quality of the exponential fit to the electron density and the linear fit to the temperature data are, a chi-square merit function was used \temp{eq 15.2.2}. The errors were estimated in lloveras-2017 $tanto y tanto \%$ and the lesg with p-value $>0.005$ were rejected. 
-*aplicamos un test de hipotesis chi cuadrado asumiendo como hipotesis nula que los valores ajustados a cada pierna corresponden al valor esperado de la funcion distribucion chi cuadrado Df,E. Donde DF es la cantidad de datos en cada linea-2 y E
-2) el p-valor es un concepto estadístico, no veo xq deberia ser explicado. Lo que si, en el paper explicare bien las hipotesis nulas y de esa forma el p-valor queda bien claro.
-El p-valor es una cuantificacion de con cuanta probabilidad de exito estas rechazando o aceptando una hipotesis en particular que se la suele denominar hipotesis nula.
-En este caso, con 95$\%$ de seguridad estas rechazando las piernas que tienen un $pearson_x,y = 0$. Es decir te estarias quedando con aquellas que tienen una dependencia lineal entre x e y.
-En el segundo caso, el test de hipotesis seria sobre la hip nula de que los datos provienen una funcion distribucion donde la recta fiteada de esos datos es el valor esperado de la distribucion. Con lo cual hacerle un test chi cuadrado te da una idea de cuan acertado o no es el ajuste. En este caso la hipotesis nula es que los datos provienen de esa distrib, con lo cual el chi deberia dar bajo y descartas los que dan valores altos con un 95$\%$ de seguridad. Eso es lo que representa el p-valor =0.05 en este caso (el area bajo la funcion distribucion, es decir, probabilidad).
-}
 
-\temp{*Nos quedamos con los fiteos que cumplen test de hipotesis chi cuadrado en temp y densidad.
-OBS: SE usan los errores en temp y densidad. Citar numerical recipes seccion 15.2 \citet{recipes}}
+To measure how good the quality of the exponential fit to the electron density and the linear fit to the temperature data are, a chi-square merit function was used (see Section 15.2 \citet{recipes}). The errors were estimated in \citet{lloveras_2017}, $0.07$ MK for $T_m$ and $0.04 10^8 cm^{-3}$ for $N_e$ and legs with p-value $>0.005$ were rejected. 
 
-\temp{Se eligen loops con abs(person temp) mayor a .5 lo cual nos permite descartar loops QI. gradT suficientemente grandes.}
+
+%el p-valor es un concepto estadístico, no veo xq deberia ser explicado. Lo que si, en el paper explicare bien las hipotesis nulas y de esa forma el p-valor queda bien claro.
+%El p-valor es una cuantificacion de con cuanta probabilidad de exito estas rechazando o aceptando una hipotesis en particular que se la suele denominar hipotesis nula.
+%En este caso, con 95$\%$ de seguridad estas rechazando las piernas que tienen un $pearson_x,y = 0$. Es decir te estarias quedando con aquellas que tienen una dependencia lineal entre x e y.
+%En el segundo caso, el test de hipotesis seria sobre la hip nula de que los datos provienen una funcion distribucion donde la recta fiteada de esos datos es el valor esperado de la distribucion. Con lo cual hacerle un test chi cuadrado te da una idea de cuan acertado o no es el ajuste. En este caso la hipotesis nula es que los datos provienen de esa distrib, con lo cual el chi deberia dar bajo y descartas los que dan valores altos con un 95$\%$ de seguridad. Eso es lo que representa el p-valor =0.05 en este caso (el area bajo la funcion distribucion, es decir, probabilidad).
+
+To be selected a loop must meet all following conditions.
+
+\begin{enumerate}
+
+\item 
+Each leg of the loop must go through at least five tomographic grid cells with reconstructed data, and there must be at least one data point in each third of the range of heights spanned by the loop.
+
+\item 
+The pearson value must comply $|\rho_{T,r}| > 0.5$.
+
+\item 
+The p-value of both the exponential and linear fit must be less than 0.05.
+
+\end{enumerate}
+
 
 For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSoM field lines, which provides a way to characterize the global thermodynamic state of the inner solar corona and to compare them. To that end four different types of legs corresponding with four different types of magnetic structures where selected:
-\temp{Hacer explicacion de los tipos de lineas bien secos, luego en fig 3 hacer notar que implica cada una en cuanto a estructura magnetica}\\
-  0 - Small (meaning with apex within the DEMT range of heights) closed field lines in the latitudes range $[-30\mdeg,+30\mdeg]$ and $\nabla_r T_m < 0$. This class thoroughly populates the equator of the Streamer belt during a minimum solar rotation.
+%\temp{Hacer explicacion de los tipos de lineas bien secos, luego en fig 3 hacer notar que implica cada una en cuanto a estructura magnetica}\\
 
-  I - Small closed field lines in all latitudes, with $\nabla_r T_m > 0$. This class thoroughly populates the inner of the Streamer belt.
+\begin{itemize}
+ \item Type 0 - Small (meaning with apex within the DEMT range of heights) closed field lines in the latitudes range $[-30\mdeg,+30\mdeg]$ and $\nabla_r T_m < 0$. %This class thoroughly populates the equator of the Streamer belt during a minimum solar rotation.
 
-  II - Large (meaning their apex surpasses the DEMT range of heights) closed field lines in the latitudes range $[-90\mdeg,-30\mdeg] \cup [+30\mdeg,+90\mdeg]$ and $\nabla_r T_m > 0$. This class is mostly populated by very large trans-equatorial field lines forming the envelope of the Streamer belt. 
+\item  Type I - Small closed field lines in all latitudes, with $\nabla_r T_m > 0$. %This class thoroughly populates the inner of the Streamer belt.
 
- III - Open (meaning with apex out the DEMT range of heights) field lines in the latitudes range $[-90\mdeg,-60\mdeg] \cup [+60\mdeg,+90\mdeg]$ and $\nabla_r T_m > 0$.
+\item  Type II - Large closed field lines (meaning their apex surpasses the DEMT range of heights) in the latitudes range $[-90\mdeg,-30\mdeg] \cup [+30\mdeg,+90\mdeg]$ and $\nabla_r T_m > 0$. %This class is mostly populated by very large trans-equatorial field lines forming the envelope of the Streamer belt. 
 
-\temp{Hice las definiciones con gradiente de temperatura para que quede mas claro, pero en realidad uso el pearson.} 
-%\temp{que quede claro que de ahora en mas solo consideramos ajustes de loops up, es decir pearson temp > 0.5 debido a que awsom solo tiene up.}
+\item Type III - Open field lines (meaning with apex out the DEMT range of heights) in the latitudes range $[-90\mdeg,-60\mdeg] \cup [+60\mdeg,+90\mdeg]$ and $\nabla_r T_m > 0$.
+
+\end{itemize}
+\diego{Hice las definiciones con gradiente de temperatura para que quede mas claro, pero en realidad uso el pearson.} 
 
 
 
@@ -271,13 +287,17 @@ For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSo
 \subsection{Energy flux ?}\label{energia} 
 \temp{Aca se introduce la seccion de energia con sus ecuaciones etc}
 \diego{sugerencias para el nombre?}
+
+
+
+
 \section{Results}\label{resu} 
 
 
 
 \subsection{Tomographic Results}\label{demt_res} 
 
-Once the LDEM was determined for each rotation, the electron density $N_e$ and electron mean temperature $T_\textrm{m}$ were computed at each voxel of the tomographic computational grid by means of Equations \ref{momento1} and \ref{momento2}. As an example, Figures \ref{carmaps_demt_2082} and \ref{carmaps_demt_2208} shows the latitude-longitude maps for both tomographic results for CR-2082 and CR-2208 at $r=1.025, 1.065$ and $1.105\,\mrsun$. Black voxels correspond to non-reconstructed regions (explained in Section \ref{demt}).
+Once the LDEM was determined for each rotation, the electron density $N_e$ and electron mean temperature $T_\textrm{m}$ were computed at each voxel of the tomographic computational grid by means of Equations \ref{momento1} and \ref{momento2}. As an example, Figures \ref{carmaps_demt_2082} and \ref{carmaps_demt_2208} shows the latitude-longitude maps for both tomographic results for CR-2082 and CR-2208 at $r=1.025, 1.065$ and $1.105\,\mrsun$. Black voxels correspond to non-reconstructed voxels (explained in Section \ref{demt}).
 
 
 While CR-2082 was highly axisymmetric and showed virtually no ARs (active region) \temp{(ver si en lat 50 y long 70 hay una.)}, CR-2208 showed an AR around latitude $+10\mdeg$ and longitude $300\mdeg$ \temp{(ver la region open en lat 0 y long 200)}. Except for these ARs, in both rotations the open-closed boundaries derived from the respective AWSoM model match the shape of the contour levels of the tomographic maps of both the electron density and the electron mean temperature. In the AR, there is a lack of match between the open-closed boundaries and the tomographic reconstructions of density and temperature, that is why those ranges were excluded from the analysis. Closed regions are characterized by relatively larger values of density and temperature in comparison to the open regions.
