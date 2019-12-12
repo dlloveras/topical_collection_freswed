@@ -21,7 +21,7 @@
 \def\UrlFont{\sf}                        % define the fonts for the URLs
 \usepackage{comment}
 \usepackage{setspace}
-
+\usepackage[utf8]{inputenc}
 \usepackage[dvipsnames]{xcolor}
 
 %% Local definitions
@@ -34,7 +34,7 @@
 \renewcommand{\l}{\lambda_{\rm N}}%\lambda_
 \newcommand{\mrsun}{{\rm R_\odot}}
 \newcommand{\med}{{\rm Md}}
-\newcommand{\avgTe}{\left<T_\textrm{m}\right>}
+\newcommand{\avgTe}{\left<\Tm\right>}
 \newcommand{\MK}{{\rm MK}}
 \newcommand{\cm}{{\rm cm}}
 \newcommand{\sdev}{{\rm SD}}
@@ -45,10 +45,15 @@
 \newcommand{\TRF}{{\rm TRF}}
 \newcommand{\lN}{\lambda_N}
 \newcommand{\NCB}{N_{\rm CB}}
-\newcommand{\aTm}{\left< T_\textrm{m}\right>}
+\newcommand{\aTm}{\left< \Tm\right>}
 \newcommand{\Nqi}{N_{\rm QI}}
 \newcommand{\sqravgN}{\sqrt{\langle N_{e,i}^2 \rangle}}
-
+\newcommand{\dr}{\triangledown_r}
+\newcommand{\er}{\mathbf{e}_r}
+\newcommand{\Te}{T_{\rm e}}
+\newcommand{\Tm}{T_{\rm m}}
+\newcommand{\Ne}{N_{\rm e}}
+\newcommand{\rhoTr}{\rho(T,r)}
 \newcommand{\Tefit}{T_{e,{\rm fit}}}
 
 \newcommand{\BibTeX}{\textsc{Bib}\TeX}
@@ -185,7 +190,7 @@ Being the place where the solar atmosphere is heated and the solar wind accelera
 Due to unresolved coronal dynamics, tomographic reconstructions exhibit negative values of the reconstructed FBE, or zero when the solution is constrained to positive values \citep{frazin_2000,frazin_2009}. These non-reconstructed voxels are indicated as black voxels in the Carrington maps of the reconstructed DEMT reults in Section \ref{resu}.
 }
 
-Once the LDEM is determined at each voxel, the average squared electron density $\langle N_e^2 \rangle$ and the electron mean temperature $T_\textrm{m}$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
+Once the LDEM is determined at each voxel, the average squared electron density $\langle \Ne^2 \rangle$ and the electron mean temperature $\Tm$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
 
 \begin{eqnarray}\label{momento1}
 \langle N_{e,i}^2 \rangle &=& \int\,\textrm{d}T\,\LDEM_i(T),\label{Ne} \\ 
@@ -201,7 +206,7 @@ R_i \, \equiv \ (1/K) \, \sum_{k=1}^K \left| \, 1 - \FBE^{(k)}_{i,\rm syn}\,/\,\
 \end{equation}
 
 so that the final product of DEMT is in the form of 3D maps of the electron density and mean temperature. These relationships \albert{were} derived in detail in \citealt{frazin_2009} (see Appendix C).\\
-\temp{* Aclarar que consideramos Ne como $\sqrt{<N_e ^2>}$.} \albert{ALBERT: Yo creo que es mejor simplemente hablar de $\sqravgN$}\\
+\temp{* Aclarar que consideramos Ne como $\sqrt{<\Ne ^2>}$.} \albert{ALBERT: Yo creo que es mejor simplemente hablar de $\sqravgN$}\\
 \temp{* Mejoras de la DEMT con respecto a trabajos previos}.
 
 \temp{DEMT has been improved since the previously published work. We now perform hollow-tomography with the EUV images, (definir hollow-tom) and a 3D regularized of the solution was applyed to obtain smother and more reliable result at the edge of the tomographic grid.}
@@ -216,18 +221,18 @@ In the transition region \albert{(TR)}, the plasma heats up and becomes less den
 
 \diego{Falta explicar que todos los resultados pasamos a tenerlos en la grilla demt, y que en esa grilla se traza el campo.}
 
-For both rotations, the DEMT and AWSoM 3D maps of electron density $N_e$, electron mean temperature $T_\textrm{m}$ and electron temperature $T_\textrm{e}$ respectively were traced along the magnetic field lines modeled using AWSoM as described at the end of Section \ref{demt}. In the case of closed loops, results were separated into their two legs, defined as the two segments that go from the coronal base up to the apex.
+For both rotations, the DEMT and AWSoM 3D maps of electron density $\Ne$, electron mean temperature $\Tm$ and electron temperature $\Te$ respectively were traced along the magnetic field lines modeled using AWSoM as described at the end of Section \ref{demt}. In the case of closed loops, results were separated into their two legs, defined as the two segments that go from the coronal base up to the apex.
 
-For each open field line, and for each leg of the closed ones, an exponential fit was then applied to the $N_e(r)$ data points, and a linear fit applied to the $T_m(r)$ data points, as described by
+For each open field line, and for each leg of the closed ones, an exponential fit was then applied to the $\Ne(r)$ data points, and a linear fit applied to the $\Tm(r)$ data points, as described by
 
 \begin{eqnarray}\label{Nfit}
-N_e &=& N_0\,\exp{\left[\,-\,\left(h/\l\right)\,/\,\left(r/\mrsun\right)\,\right]}\\
+\Ne &=& N_0\,\exp{\left[\,-\,\left(h/\l\right)\,/\,\left(r/\mrsun\right)\,\right]}\\
 \label{Tfit}
-T_\textrm{m} &=&  \nabla_r T_m \,r\,+\,T_\textrm{0}
+\albert{\Tm} &=& \albert{\dr \Tm(r) \ r\,+\,T_0}
 \end{eqnarray}
  
 \noindent
-where $h \equiv r - 1\,\mrsun$, and $a$ and $b$ are constants. 
+\albert{where $\l$ is the electron density scale height, $h \equiv r - 1\,\mrsun$ is the coronal height measured from the photosphere, $\dr\equiv\er\cdot\nabla$ is the radial derivative operator (being $\er$ the heliocentric radial unit vector), and $T_0$ and $N_0$ are constants.}
 
 In the case of the electron density, the fitted function corresponds to the isothermal hydrostatic equilibrium solution, allowing for variation of the solar gravitational acceleration with height. After computing the footpoint ($r=1.0\,\mrsun$) electron density $N_{0}\,[\cm^{-3}]$ and scale height $\lN\,[\mrsun]$\temp{, this choice of function provides a straightforward means to directly evaluate how compatible is the observed coronal thermodynamical state with the hydrostatic solution}.
 
@@ -235,14 +240,14 @@ In the case of the electron density, the fitted function corresponds to the isot
 
 
 %The temperature as a function of height along legs shows linear behaviors. 
-In the present work we focus on lines with increasing and decreasing temperatures in linear form. In other words, we selected those legs where the pearson coefficient between temperature and height ($\rho_{T,r}$) meets $|\rho_{T,r}| > 0.5$ \temp{(with p-value less than 0.05)}. In this way, those legs in which the DEMT results cannot ensure a noticeable change in temperature between the base and the apex, are discarded.
+In the present work we focus on lines with increasing and decreasing temperatures in linear form. In other words, we selected those legs where the \albert{Pearson correlation coefficient $\rho$ between temperature $T$ and radius $r$ meets $|\rhoTr| > 0.5$}. \temp{(with p-value less than 0.05)}. In this way, those legs in which the DEMT results cannot ensure a noticeable change in temperature between the base and the apex, are discarded.
 
 
-The linear fit allows characterization of its variation with height by means of a characteristic temperature gradient $\nabla_r T_m\,[\MK/\mrsun]$ along each leg.
+The linear fit allows characterization of its variation with height by means of a characteristic temperature gradient $\dr \Tm\,[\MK/\mrsun]$ along each leg.
 \diego{En realidad esta regresion lineal utiliza de por si los errores, pero luego tmb los uso para el test de hipotesis, quizas vale la pena ponerlo solo ahi.}
 
 
-To measure how good the quality of the exponential fit to the electron density and the linear fit to the temperature data are, a chi-square merit function was used (see Section 15.2 \citet{recipes}). The errors were estimated in \citet{lloveras_2017}, $0.07$ MK for $T_m$ and $0.04 10^8 cm^{-3}$ for $N_e$ and legs with p-value $>0.005$ were rejected. 
+To measure how good the quality of the exponential fit to the electron density and the linear fit to the temperature data are, a chi-square merit function was used (see Section 15.2 \citet{recipes}). The errors were estimated in \citet{lloveras_2017}, $0.07$ MK for $\Tm$ and $0.04 10^8 cm^{-3}$ for $\Ne$ and legs with p-value $>0.005$ were rejected. 
 
 
 %el p-valor es un concepto estadístico, no veo xq deberia ser explicado. Lo que si, en el paper explicare bien las hipotesis nulas y de esa forma el p-valor queda bien claro.
@@ -258,7 +263,7 @@ To be selected a loop must meet all following conditions.
 Each leg of the loop must go through at least five tomographic grid cells with reconstructed data, and there must be at least one data point in each third of the range of heights spanned by the loop.
 
 \item 
-The pearson value must comply $|\rho_{T,r}| > 0.5$.
+The \albert{value of the Pearson correation coefficient meets $|\rhoTr| > 0.5$.}
 
 \item 
 The p-value of both the exponential and linear fit must be less than 0.05.
@@ -270,13 +275,13 @@ For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSo
 %\temp{Hacer explicacion de los tipos de lineas bien secos, luego en fig 3 hacer notar que implica cada una en cuanto a estructura magnetica}\\
 
 \begin{itemize}
- \item Type 0 - Small (meaning with apex within the DEMT range of heights) closed field lines in the latitudes range $[-30\mdeg,+30\mdeg]$ and $\nabla_r T_m < 0$. %This class thoroughly populates the equator of the Streamer belt during a minimum solar rotation.
+ \item Type 0 - Small (meaning with apex within the DEMT range of heights) closed field lines in the latitudes range $[-30\mdeg,+30\mdeg]$ and $\dr \Tm < 0$. %This class thoroughly populates the equator of the Streamer belt during a minimum solar rotation.
 
-\item  Type I - Small closed field lines in all latitudes, with $\nabla_r T_m > 0$. %This class thoroughly populates the inner of the Streamer belt.
+\item  Type I - Small closed field lines in all latitudes, with $\dr \Tm > 0$. %This class thoroughly populates the inner of the Streamer belt.
 
-\item  Type II - Large closed field lines (meaning their apex surpasses the DEMT range of heights) in the latitudes range $[-90\mdeg,-30\mdeg] \cup [+30\mdeg,+90\mdeg]$ and $\nabla_r T_m > 0$. %This class is mostly populated by very large trans-equatorial field lines forming the envelope of the Streamer belt. 
+\item  Type II - Large closed field lines (meaning their apex surpasses the DEMT range of heights) in the latitudes range $[-90\mdeg,-30\mdeg] \cup [+30\mdeg,+90\mdeg]$ and $\dr \Tm > 0$. %This class is mostly populated by very large trans-equatorial field lines forming the envelope of the Streamer belt. 
 
-\item Type III - Open field lines (meaning with apex out the DEMT range of heights) in the latitudes range $[-90\mdeg,-60\mdeg] \cup [+60\mdeg,+90\mdeg]$ and $\nabla_r T_m > 0$.
+\item Type III - Open field lines (meaning with apex out the DEMT range of heights) in the latitudes range $[-90\mdeg,-60\mdeg] \cup [+60\mdeg,+90\mdeg]$ and $\dr \Tm > 0$.
 
 \end{itemize}
 \diego{Hice las definiciones con gradiente de temperatura para que quede mas claro, pero en realidad uso el pearson.} 
@@ -297,7 +302,7 @@ For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSo
 
 \subsection{Tomographic Results}\label{demt_res} 
 
-Once the LDEM was determined for each rotation, the electron density $N_e$ and electron mean temperature $T_\textrm{m}$ were computed at each voxel of the tomographic computational grid by means of Equations \ref{momento1} and \ref{momento2}. As an example, Figures \ref{carmaps_demt_2082} and \ref{carmaps_demt_2208} shows the latitude-longitude maps for both tomographic results for CR-2082 and CR-2208 at $r=1.025, 1.065$ and $1.105\,\mrsun$. Black voxels correspond to non-reconstructed voxels (explained in Section \ref{demt}).
+Once the LDEM was determined for each rotation, the electron density $\Ne$ and electron mean temperature $\Tm$ were computed at each voxel of the tomographic computational grid by means of Equations \ref{momento1} and \ref{momento2}. As an example, Figures \ref{carmaps_demt_2082} and \ref{carmaps_demt_2208} shows the latitude-longitude maps for both tomographic results for CR-2082 and CR-2208 at $r=1.025, 1.065$ and $1.105\,\mrsun$. Black voxels correspond to non-reconstructed voxels (explained in Section \ref{demt}).
 
 
 While CR-2082 was highly axisymmetric and showed virtually no ARs (active region) \temp{(ver si en lat 50 y long 70 hay una.)}, CR-2208 showed an AR around latitude $+10\mdeg$ and longitude $300\mdeg$ \temp{(ver la region open en lat 0 y long 200)}. Except for these ARs, in both rotations the open-closed boundaries derived from the respective AWSoM model match the shape of the contour levels of the tomographic maps of both the electron density and the electron mean temperature. In the AR, there is a lack of match between the open-closed boundaries and the tomographic reconstructions of density and temperature, that is why those ranges were excluded from the analysis. Closed regions are characterized by relatively larger values of density and temperature in comparison to the open regions.
@@ -314,7 +319,7 @@ A visual inspection of Figures \ref{momento1} and \ref{momento2} suggest/indicat
 \includegraphics[width=0.495\textwidth]{figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_Rsun.pdf}
 \includegraphics[width=0.495\textwidth]{figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf}
 \includegraphics[width=0.495\textwidth]{figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf}
-\caption{Carrington maps of DEMT results: $N_e$ (left panels) and $T_\textrm{m}$ (right panels) for CR-2082. Top, middle and bottom panels show the results at three heliocentric heights, $1.025$, $1.065$ and $1.105\,\mrsun$ respectively. Black voxels correspond to non-reconstructed regions (see text in Section \ref{demt_res}) and thick-black curves indicate the open/closed boundaries.}
+\caption{Carrington maps of DEMT results: $\Ne$ (left panels) and $\Tm$ (right panels) for CR-2082. Top, middle and bottom panels show the results at three heliocentric heights, $1.025$, $1.065$ and $1.105\,\mrsun$ respectively. Black voxels correspond to non-reconstructed regions (see text in Section \ref{demt_res}) and thick-black curves indicate the open/closed boundaries.}
 \label{carmaps_demt_2082}
 \end{center}
 \end{figure}
@@ -338,7 +343,7 @@ For both rotations, all field lines that meet the criteria listed in Section \re
 \temp{aca los highpoints, comentar los colores y enunciar que cada uno puebla una regino termodinamica diferente}
 
 
- As a result, the electron density $N_0(r=1.0\,\mrsun)$ and scale height $\lN$ were computed for each field line, as well as the temperature gradient $\nabla_r T_m$, and the height-averaged (along the loop) electron mean temperature $\aTm$. As the DEMT technique studies only coronal conditions, \textit{i.e.} above height $r\approx 1.025\,\mrsun$, the exponential fit to the electron density data as a function of height may be used to compute the tomographic basal electron density at $ N_e(r=1.025\,\mrsun)$ as in previous articles. In this case, for an further comparison analysis with the AWSoM results, we selected the lowest height where the results of the MHD model are reliable, that is $1,065\,\mrsun)$.
+ As a result, the electron density $N_0(r=1.0\,\mrsun)$ and scale height $\lN$ were computed for each field line, as well as the temperature gradient $\dr \Tm$, and the height-averaged (along the loop) electron mean temperature $\aTm$. As the DEMT technique studies only coronal conditions, \textit{i.e.} above height $r\approx 1.025\,\mrsun$, the exponential fit to the electron density data as a function of height may be used to compute the tomographic basal electron density at $ \Ne(r=1.025\,\mrsun)$ as in previous articles. In this case, for an further comparison analysis with the AWSoM results, we selected the lowest height where the results of the MHD model are reliable, that is $1,065\,\mrsun)$.
 
 \temp{Aca una linea que linkee la definicion del tipo de lineas en la seccion anterior con las regiones que se ven en la figura que se describe a continuacion}
 Figure \ref{rpoint_demt} shows the latitudinal-longitudinal location of the selected lines at $1.105\,\mrsun$ for both rotations. In cyan the type 0 lines are indicated, populating the most equatorial latitudes (dominated mostly by down loops). In blue the type 1 lines, populating mostly the mid latitudes of the streamer. In red the type 2 lines, populating the edge that assemble the envelope around the streamer, and in green dots the type 3 lines, populating the coronal holes.
@@ -359,7 +364,7 @@ This selection of the types of lines automatically leads to thermodynamic region
 \end{center}
 \end{figure} 
 
-Figure \ref{gradt_demt} shows histograms (normalized to the total amount of field lines) of the temperature radial gradients ($\nabla_r T_m$) for every type of line and for both rotations.
+Figure \ref{gradt_demt} shows histograms (normalized to the total amount of field lines) of the temperature radial gradients ($\dr \Tm$) for every type of line and for both rotations.
 The lack of population around values close to zero is due to the strict condition $|\rho_t| > 0.5$ that discards possible isothermal values.
 
 \temp{Aun no se que decir sobre esto, sobre los downs se puede citar nuevo et al 2013 y decir algo sobre hay menos cantidad en cr2208 haciendo enfoque en que podria ser un indicador de que aun no esta en un minimo. Por otro lado mostrar los gradientes negativos va a ser util en los parrafos posteriores que expliquen porque en las lineas tipo 0 hay valores de $\phi_c$ negativos.} 
@@ -395,7 +400,7 @@ As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the s
 \includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_ne_1055.eps}
 \includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_lambda_n.eps}
 \includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_Tm.eps}
-\caption{Comparative statistical distributions of DEMT reults. From left to right: the coronal base electron density $N_e(r=1.055\,\mrsun)$, the electron density scale height $\lN$ and the average electron mean temperature $\aTm$, along all types of legs defined in Section \ref{trace}. Results of CR2082 are shown in blue while those of CR-2208 in red. In each panel the median $m$ is indicated.}
+\caption{Comparative statistical distributions of DEMT reults. From left to right: the coronal base electron density $\Ne(r=1.055\,\mrsun)$, the electron density scale height $\lN$ and the average electron mean temperature $\aTm$, along all types of legs defined in Section \ref{trace}. Results of CR2082 are shown in blue while those of CR-2208 in red. In each panel the median $m$ is indicated.}
 \label{histos_fulldemt}
 \end{center}
 \end{figure} 
@@ -455,11 +460,11 @@ In the coronal hole region, \temp{No se si se puede aclarar algo en particular, 
 \temp{Parrafo introductorio?}
 
 
-As an example of the AWSoM results, Figures \ref{carmaps_awsom_2082} and \ref{carmaps_awsom_2208} shows the latitude-longitude maps for $N_e$ and $T_e$ modeled for CR-2082 and CR-2208 at $r=1.025, 1.065$ and $1.105\,\mrsun$. The black curve denotes the open-close boundary.
+As an example of the AWSoM results, Figures \ref{carmaps_awsom_2082} and \ref{carmaps_awsom_2208} shows the latitude-longitude maps for $\Ne$ and $T_e$ modeled for CR-2082 and CR-2208 at $r=1.025, 1.065$ and $1.105\,\mrsun$. The black curve denotes the open-close boundary.
 
 
 
-A visual inspection of the AWSoM results shows that both reconstruction are very axysimmetric for $N_e$ and $T_e$ as well. The closed region is denser and hotter than the open region. The density and temperature gradients are maximum in the open-close boundary. The open field regions in low latitudes maintain thermodynamic values associated with open regions. CR-2208 shows a well reconstruction of the AR around latitude $+10\mdeg$ and longitude $300\mdeg$ and a slight temperature difference between the poles \temp{estoy asumiento que es una AR}. 
+A visual inspection of the AWSoM results shows that both reconstruction are very axysimmetric for $\Ne$ and $T_e$ as well. The closed region is denser and hotter than the open region. The density and temperature gradients are maximum in the open-close boundary. The open field regions in low latitudes maintain thermodynamic values associated with open regions. CR-2208 shows a well reconstruction of the AR around latitude $+10\mdeg$ and longitude $300\mdeg$ and a slight temperature difference between the poles \temp{estoy asumiento que es una AR}. 
 In both rotations the open-closed boundaries derived from the respective AWSoM model match the shape of the contour levels of the tomographic maps of both the electron density and the electron mean temperature.
 
 
@@ -491,7 +496,7 @@ In both rotations the open-closed boundaries derived from the respective AWSoM m
 
 \temp{Se presentan los midpoints para awsom que lucen mas rellenos xq no hay down loops y todo es super suave.}
 
-In the same way as in Section \ref{demt_res}, the model results were traced along the magnetic lines obtained with it. This allowed to obtain $N_e(r)$ and $T_e(r)$ along the magnetic lines and fit them to the Equations \ref{Nfit} and \ref{Tfit}.
+In the same way as in Section \ref{demt_res}, the model results were traced along the magnetic lines obtained with it. This allowed to obtain $\Ne(r)$ and $T_e(r)$ along the magnetic lines and fit them to the Equations \ref{Nfit} and \ref{Tfit}.
 
 Due to the inability of the model to reproduce down legs, in this section we only used lines type 1, 2 and 3 and only were selected those that meet the chi square hypothesis test.
 
@@ -538,7 +543,7 @@ This longitude-averaged behaviors match well with the physical locations of the 
 \end{center}
 \end{figure}
 
-To summarize the comparison between both results during both rotations at full height, it is shown in Figure \ref{perfiles_promedio} the average fits of $N_e(r)$ and $T_e(r)$ for every type of legs.
+To summarize the comparison between both results during both rotations at full height, it is shown in Figure \ref{perfiles_promedio} the average fits of $\Ne(r)$ and $T_e(r)$ for every type of legs.
 
 \diego{Explicar lo que se observa:
 - Ne 1.65 awsom menor que la de demt en CR2082 y mayor que la de CR2208 y debido a que decaen esponencialmente, el hecho que tiendan a valores similares conforme aumenta la altura implica escalas de altura similares. \\
@@ -552,7 +557,7 @@ To summarize the comparison between both results during both rotations at full h
 \includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_te_cr2082_up_short.eps}
 \includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_ne_cr2208_up_short.eps}
 \includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_te_cr2208_up_short.eps}
-\caption{Average fits of $N_e(r)$ and $T_e(r)$ for legs of type I (blue), type II (red) and type III (green) for CR-2082 (top panel) and CR-2208 (bottom panel) using DEMT (solid) and AWSoM (dashed) results.}
+\caption{Average fits of $\Ne(r)$ and $T_e(r)$ for legs of type I (blue), type II (red) and type III (green) for CR-2082 (top panel) and CR-2208 (bottom panel) using DEMT (solid) and AWSoM (dashed) results.}
 \label{perfiles_promedio}
 \end{center}
 \end{figure} 
@@ -572,7 +577,7 @@ As way of example, Figure \ref{histos_2082} and \ref{histos_2208} shows the stat
 \includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_ne_1055.eps}
 \includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_lambda_n.eps}
 \includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_Tm.eps}
-\caption{Comparative statistical distributions for CR-2082 between DEMT (blue) and AWSoM (red). From left to right: the coronal base electron density $N_e(r=1.055\,\mrsun)$, the electron density scale height $\lN$ and the average $\aTm$ along the four types of legs considered in Section \ref{trace}. In each panel the median ($m$) is indicated.}
+\caption{Comparative statistical distributions for CR-2082 between DEMT (blue) and AWSoM (red). From left to right: the coronal base electron density $\Ne(r=1.055\,\mrsun)$, the electron density scale height $\lN$ and the average $\aTm$ along the four types of legs considered in Section \ref{trace}. In each panel the median ($m$) is indicated.}
 \label{histos_2082}
 \end{center}
 \end{figure} 
@@ -601,7 +606,7 @@ CR-2208\\
 
 
 
-%For both rotations, all field lines that meet the criteria listed in Section \ref{trace} were separated into the coronal {regions described in Section \ref{regions} and summarized in Table \ref{tabregions}}. For each field line, the data points of electron density and electron mean temperature versus height were fitted to the functions given by Equations 5 and 6 of Section \ref{trace}. As a result, the footpoint electron density $N_0$ and scale height $\lN$ were computed for each field line, as well as the temperature gradient $a=\textrm{d}T_m/\textrm{d}r$, and the height-averaged (along the loop) electron mean temperature $\aTm$. As the DEMT technique studies only coronal conditions, \textit{i.e.} above height $r\approx 1.025\,\mrsun$, the exponential fit to the electron density data versus height was used to compute the {coronal base electron density} here defined as $\NCB\equiv N_e(r=1.025\,\mrsun)$. Also, for each field line the coronal base magnetic field strength $B_{\rm CB}\equiv B(r=1.025\,\mrsun)$ and its height-averaged value along the loop $\left<B\right>$ were also computed.
+%For both rotations, all field lines that meet the criteria listed in Section \ref{trace} were separated into the coronal {regions described in Section \ref{regions} and summarized in Table \ref{tabregions}}. For each field line, the data points of electron density and electron mean temperature versus height were fitted to the functions given by Equations 5 and 6 of Section \ref{trace}. As a result, the footpoint electron density $N_0$ and scale height $\lN$ were computed for each field line, as well as the temperature gradient $a=\textrm{d}\Tm/\textrm{d}r$, and the height-averaged (along the loop) electron mean temperature $\aTm$. As the DEMT technique studies only coronal conditions, \textit{i.e.} above height $r\approx 1.025\,\mrsun$, the exponential fit to the electron density data versus height was used to compute the {coronal base electron density} here defined as $\NCB\equiv \Ne(r=1.025\,\mrsun)$. Also, for each field line the coronal base magnetic field strength $B_{\rm CB}\equiv B(r=1.025\,\mrsun)$ and its height-averaged value along the loop $\left<B\right>$ were also computed.
 
 \begin{figure}[h!]
 \begin{center}
@@ -627,7 +632,7 @@ CR-2208\\
 Figure \ref{perf_lon_vr} show the longitude-averaged AWSoM radial wind speed $V_r$ at $6\,\mrsun$, where all field lines are open. The heliocentric current sheet (HCS) location is indicated by the minimum of the speed curve.\\
 \diego{can we say something without having traced the lines?}
 
-For each rotation, everything to the south of the HCS maps down to the southern open region in the Figures \ref{perf_lat}, and the same for the northern hemisphere, showing an anti-correlation between $N_e$ at low heights and high $V_r$ at $6\,\mrsun$.
+For each rotation, everything to the south of the HCS maps down to the southern open region in the Figures \ref{perf_lat}, and the same for the northern hemisphere, showing an anti-correlation between $\Ne$ at low heights and high $V_r$ at $6\,\mrsun$.
 
 \diego{Voy a intentar jugar con las lineas tipo 3 aumentando su cota inferior de latitud para ver si los histogramas de temp media dejan de ser tan dispersos y se vuelven mas sub-1MK. }
 
