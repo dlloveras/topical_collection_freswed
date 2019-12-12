@@ -1,9 +1,33 @@
+From: Alberto Marcos Vásquez Schubert <albert@iafe.uba.ar>
+Date: Tue, 15 Oct 2019 at 16:59
+Subject: Estructura paper FRESWED
+To: dlloveras <dlloveras@iafe.uba.ar>, Federico Nuevo <federico@iafe.uba.ar>
+
+
+Hola Diego,
+
+recién charlamos con Fede del paper. Dos comentarios. Uno es la estructura. Propongo una que creo que puede andar bien como arranque, o quizá ya queda así, parece bastante simple acomodar aquí cualquiera que sea el resultado que queramos mostrar:
+
+0- Title / Abstract
+
+1- Introduction. Aquí se da contexto, se anuncian las técnicas y los targets.
+
+2- Methodology
+   2.1 DEMT reconstructions.
+   2.2 AWSoM simulations.
+   2.3 Tracing results along fieldlines.
+
+3- Results
+   3.1 Tomographic Results. Aquí se analizan los resultados DEMT per se y también trazados a lo largo de las lineas. Se comparan las dos rotaciones entre si e incluso con tu paper previo.
+   3.2 Tomography and Models
+
+4- Discussion
+
+Con respecto a que mostrar en la sección 3.1. Hay varias cosas. Una que Fede propone es repetir quizá de arranque la misma Figura de Rona a una altura dada versus latitudes. Eso exige saber la latitud promedio de la frontera O/C. A discutir, debo mirar el paper de Rona.
+---------------------------------------------------------------------------------------
 Alberto Marcos Vásquez Schubert <albert@iafe.uba.ar>
-￼
 25 Oct 2019, 15:27
-￼￼
 to Nishtha, Ward, dlloveras, Federico
-￼
 hi Chip, Nishtha,
 
 (this one is a bit long, two full pages of email, but worth it as is defining a series of papers that close Diego's thesis)
