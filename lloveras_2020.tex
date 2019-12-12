@@ -15,14 +15,14 @@
 %\usepackage{epsfig}                     % For eps figures, old commands
 \usepackage{graphicx}                    % For eps figures, newer & more powerfull
 %\usepackage{courier}                    % Change the \texttt command to courier style
-\usepackage{amssymb}                    % useful mathematical symbols
+\usepackage{amssymb}                     % useful mathematical symbols
 \usepackage{color}                       % For color text: \color command
-\usepackage{breakurl}                         % For breaking URLs easily trough lines
+\usepackage{breakurl}                    % For breaking URLs easily trough lines
 \def\UrlFont{\sf}                        % define the fonts for the URLs
 \usepackage{comment}
 \usepackage{setspace}
 
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 
 %% Local definitions
 %% please place your own definitions here and don't use \def but
@@ -47,14 +47,15 @@
 \newcommand{\NCB}{N_{\rm CB}}
 \newcommand{\aTm}{\left< T_\textrm{m}\right>}
 \newcommand{\Nqi}{N_{\rm QI}}
+\newcommand{\sqravgN}{\sqrt{\langle N_{e,i}^2 \rangle}}
 
 \newcommand{\Tefit}{T_{e,{\rm fit}}}
 
 \newcommand{\BibTeX}{\textsc{Bib}\TeX}
 \newcommand{\etal}{{\it et al.}}
 
-\def\Pl{\texttt{+}}
-\def\Mi{\texttt{-}}
+\newcommand{\Pl}{\texttt{+}}
+\newcommand{\Mi}{\texttt{-}}
 
 % Definitions for the journal names
 \newcommand{\adv}{    {\it Adv. Space Res.}} 
@@ -86,11 +87,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% temporales
 \definecolor{mygray}{gray}{0.6}
 
-\def\diego#1{\textcolor{red}{DIEGO: #1}}
-\def\albert#1{\textcolor{blue}{ALBERT: #1}}
-\def\fede#1{\textcolor{green}{FEDE: #1}}
 
-\def\temp#1{\textcolor{mygray}{TEMPORAL: #1}}
+%---------REMOVE DEFs BEFORE SUMBISSION----------------
+\def\diego#1{\textcolor{red}{DIEGO: #1}}
+\def\albert#1{\textcolor{blue}{#1}}
+\def\fede#1{\textcolor{ForestGreen}{FEDE: #1}}
+\def\temp#1{\textcolor{mygray}{#1}}
+\def\edit#1{\textcolor{Apricot}{#1}}
+%------------------------------------------------------
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -142,7 +147,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Abstract 
 \begin{abstract}
-Observational tools play an essential role in advancing our understanding of the physics of the solar corona. They provide validation data to improve three-dimensional (3D) magnetohydrodynamic (MHD) models of the solar atmosphere, key to enhance their space weather forecasting capabilities. Solar rotational tomography (SRT) is currently the sole observational technique that provides an empirical 3D description of fundamental plasma parameters of the solar corona at a global scale. Based on EUV data of space borne instruments, SRT allows constructing 3D maps of the coronal electron density and temperature at heliocentric heights below 1.25 Rsun. We carry out a study of the corona combining tomographic reconstructions with MHD simulations of the latest version of the Alfv\'en Wave Solar Model (AWSoM) of the Space Weather Modeling Framework (SWMF). Target rotations were selected from the solar minimum between solar cycles (SC) 23 and 24 and the current declining phase of solar cycle 24. Tomographic reconstructions and results of the model are analyzed in distinct coronal magnetic structures. We study magnetically closed structures associated with the equatorial streamer belt, as well as magnetically open regions enclosing it. We report on the tomographic results in the different structures, their implications for the physics of the solar corona, and the capability of the AWSoM model to reproduce the tomographic reconstructions in different regions.
+Observational \albert{techniques} play an essential role in advancing our understanding of the physics of the solar corona. They provide validation data to improve three-dimensional (3D) magnetohydrodynamic (MHD) models of the solar atmosphere, \albert{enhancing} their space weather forecasting capabilities. Solar rotational tomography (SRT) is currently the sole observational technique that provides an empirical 3D description of some \albert{of the fundamental} plasma parameters of the solar corona at a global scale. Based on EUV data of space borne instruments, SRT allows constructing 3D maps of the coronal electron density and temperature at heliocentric heights below 1.25 Rsun. We carry out a study of the corona combining tomographic reconstructions with MHD simulations \albert{using} the latest version of the Alfv\'en Wave Solar Model (AWSoM) of the Space Weather Modeling Framework (SWMF). Target rotations were selected from the solar minimum between solar cycles (SC) 23 and 24 and the current declining phase of solar cycle 24. Tomographic reconstructions and results of the model are analyzed in distinct coronal magnetic structures. We study magnetically closed structures associated with the equatorial streamer belt, as well as magnetically open regions enclosing it. We report on the tomographic results in the different structures, their implications for the physics of the solar corona, and the capability of the AWSoM model to reproduce the tomographic reconstructions in different regions.
 
 \end{abstract}
 
@@ -166,12 +171,10 @@ Being the place where the solar atmosphere is heated and the solar wind accelera
 
 \section{Methodology}\label{meto}   
 
-\subsection{DEMT reconstructions}\label{demt} 
-\temp{*Tratado de imagenes}
-\temp{*FBE}
-\temp{*LDEM}
-
-
+\subsection{DEMT reconstructions}\label{demt}
+\temp{* Procesado de imagenes}\\
+\temp{* FBE}\\
+\temp{* LDEM}\\
 *Paso 1: obtencion de FBE\\
 *Paso 2: obtencion LDEM
 \begin{equation}\label{fbeldem}
@@ -183,34 +186,31 @@ Due to unresolved coronal dynamics, tomographic reconstructions exhibit negative
 }
 
 Once the LDEM is determined at each voxel, the average squared electron density $\langle N_e^2 \rangle$ and the electron mean temperature $T_\textrm{m}$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
+
 \begin{eqnarray}\label{momento1}
- \langle N_{e,i}^2 \rangle &=& \int\,\textrm{d}T\,\LDEM_i(T),\label{Ne} \\ 
+\langle N_{e,i}^2 \rangle &=& \int\,\textrm{d}T\,\LDEM_i(T),\label{Ne} \\ 
 \label{momento2}
  T_{\textrm{m},i}   &=& \frac{1}{\langle N_{e,i}^2 \rangle}\,\int\,\textrm{d}T\,T\,\LDEM_i(T),\label{Tm} 
 \end{eqnarray}
 
-*Una medida del grado de acuerdo de la reconstruccion
+
+\albert{We define next a measure of the average relative difference between the tomographic and the synthetic FBE in each voxel, as}
+
 \begin{equation}\label{R}
-R_i \, \equiv \ (1/K) \, \sum_{k=1}^K \left| \, 1 - \FBE^{(k)}_{i,\rm syn} / \,\FBE^{(k)}_{i,\rm tom}\, \right| \,,
+R_i \, \equiv \ (1/K) \, \sum_{k=1}^K \left| \, 1 - \FBE^{(k)}_{i,\rm syn}\,/\,\FBE^{(k)}_{i,\rm tom}\, \right| \,,
 \end{equation}
 
-so that the final product of DEMT is in the form of 3D maps of the electron density and mean temperature. These relationships was derived in detail in \citealt{frazin_2009} (see Appendix C). 
-
-\temp{*aclarar que consideramos Ne como $\sqrt{<N_e ^2>}$.}
-
-\temp{red}{*Mejoras de la tecnica con respecto a trabajos previos}
+so that the final product of DEMT is in the form of 3D maps of the electron density and mean temperature. These relationships \albert{were} derived in detail in \citealt{frazin_2009} (see Appendix C).\\
+\temp{* Aclarar que consideramos Ne como $\sqrt{<N_e ^2>}$.} \albert{ALBERT: Yo creo que es mejor simplemente hablar de $\sqravgN$}\\
+\temp{* Mejoras de la DEMT con respecto a trabajos previos}.
 
 \temp{DEMT has been improved since the previously published work. We now perform hollow-tomography with the EUV images, (definir hollow-tom) and a 3D regularized of the solution was applyed to obtain smother and more reliable result at the edge of the tomographic grid.}
 
-
-
 \subsection{AWSoM simulations}\label{awsom} 
-\temp{*Que es, que modela, que datos usa, y que se obtiene en general y en particular para este trabajo}
-
-\temp{Se debe aclarar que solo produce resultados razonables arriba de 1.065}
-
-\temp{No pondría los mapas de 1.025 y diria algo asi como:\\}
-In the transition region, the plasma heats up and becomes less dense in several orders of magnitude in a short distance. Modeling this region correctly requires a high computational cost. For this reason the model uses a extended transition region and not real initial conditions of contour in density and electronic temperature. Consequently, the results below $1.065\,\mrsun$ were not taken into account in this article.
+\temp{* Qué es, qué modela, qué datos usa, y qué se obtiene en general y en particular para este trabajo}\\
+\temp{* Se debe aclarar que solo produce resultados razonables arriba de 1.065}\\
+\temp{No pondría los mapas de 1.025 y diria algo asi como:}\\
+In the transition region \albert{(TR)}, the plasma heats up and becomes less dense \albert{by} several orders of magnitude \albert{over} a short distance. Modeling this region \albert{realistically has a very high computational cost}. For this \albert{reason,} the model uses \albert{an artificially} extended \albert{TR about $\approx 0.05\,\mrsun$ thick, as well as artificially high boundary conditions for the electronic density and temperature}. Consequently, model results below \albert{$\approx 1.05\,\mrsun$} were not taken into account in this article.
 
 \subsection{Tracing results along fieldlines}\label{trace} 
 
