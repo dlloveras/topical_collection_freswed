@@ -45,16 +45,20 @@
 \newcommand{\TRF}{{\rm TRF}}
 \newcommand{\lN}{\lambda_N}
 \newcommand{\NCB}{N_{\rm CB}}
-\newcommand{\aTm}{\left< \Tm\right>}
+\newcommand{\aTm}{\left<\Tm\right>}
 \newcommand{\Nqi}{N_{\rm QI}}
-\newcommand{\sqravgN}{\sqrt{\langle N_{e,i}^2 \rangle}}
+
 \newcommand{\dr}{\triangledown_r}
 \newcommand{\er}{\mathbf{e}_r}
 \newcommand{\Te}{T_{\rm e}}
 \newcommand{\Tm}{T_{\rm m}}
+\newcommand{\Tmi}{T_{{\rm m},i}}
 \newcommand{\Ne}{N_{\rm e}}
+\newcommand{\Nm}{N_{\rm m}}
+\newcommand{\Nsqmi}{N^2_{{\rm m},i}}
 \newcommand{\rhoTr}{\rho(T,r)}
 \newcommand{\Tefit}{T_{e,{\rm fit}}}
+\newcommand{\sqravgN}{\sqrt{\Nsqmi}}
 
 \newcommand{\BibTeX}{\textsc{Bib}\TeX}
 \newcommand{\etal}{{\it et al.}}
@@ -192,12 +196,13 @@ Due to unresolved coronal dynamics, tomographic reconstructions exhibit negative
 
 Once the LDEM is determined at each voxel, the average squared electron density $\langle \Ne^2 \rangle$ and the electron mean temperature $\Tm$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
 
+\albert{
 \begin{eqnarray}\label{momento1}
-\langle N_{e,i}^2 \rangle &=& \int\,\textrm{d}T\,\LDEM_i(T),\label{Ne} \\ 
+ \Nsqmi = \langle \Ne^2 \rangle_i &=& \int\,\textrm{d}T\,\LDEM_i(T),\label{Ne} \\ 
 \label{momento2}
- T_{\textrm{m},i}   &=& \frac{1}{\langle N_{e,i}^2 \rangle}\,\int\,\textrm{d}T\,T\,\LDEM_i(T),\label{Tm} 
+ \Tmi  = \langle \Te \rangle_i &=& \frac{1}{\langle N_{e,i}^2 \rangle}\,\int\,\textrm{d}T\,T\,\LDEM_i(T),\label{Tm} 
 \end{eqnarray}
-
+}
 
 \albert{We define next a measure of the average relative difference between the tomographic and the synthetic FBE in each voxel, as}
 
