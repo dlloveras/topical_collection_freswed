@@ -22,8 +22,7 @@
 \usepackage{comment}
 \usepackage{setspace}
 \usepackage[utf8]{inputenc}
-\usepackage[dvipsnames]{xcolor}
-
+                                         
 %% Local definitions
 %% please place your own definitions here and don't use \def but
 %% \newcommand{}{} or 
@@ -37,6 +36,8 @@
 \newcommand{\avgTe}{\left<\Tm\right>}
 \newcommand{\MK}{{\rm MK}}
 \newcommand{\cm}{{\rm cm}}
+\newcommand{\cminvc}{\cm^{-3}}
+\newcommand{\cminvs}{\cm^{-2}}
 \newcommand{\sdev}{{\rm SD}}
 \newcommand{\mean}{{\rm Mn}}
 \newcommand{\deltat}{$\delta$}
@@ -45,20 +46,22 @@
 \newcommand{\TRF}{{\rm TRF}}
 \newcommand{\lN}{\lambda_N}
 \newcommand{\NCB}{N_{\rm CB}}
-\newcommand{\aTm}{\left<\Tm\right>}
 \newcommand{\Nqi}{N_{\rm QI}}
 
 \newcommand{\dr}{\triangledown_r}
 \newcommand{\er}{\mathbf{e}_r}
 \newcommand{\Te}{T_{\rm e}}
 \newcommand{\Tm}{T_{\rm m}}
+\newcommand{\aTm}{\left<\Tm\right>}
 \newcommand{\Tmi}{T_{{\rm m},i}}
 \newcommand{\Ne}{N_{\rm e}}
 \newcommand{\Nm}{N_{\rm m}}
 \newcommand{\Nsqmi}{N^2_{{\rm m},i}}
+\newcommand{\Nsqm}{N^2_{{\rm m}}}
 \newcommand{\rhoTr}{\rho(T,r)}
 \newcommand{\Tefit}{T_{e,{\rm fit}}}
-\newcommand{\sqravgN}{\sqrt{\Nsqmi}}
+\newcommand{\sqravgNi}{\sqrt{\Nsqmi}}
+\newcommand{\sqravgN}{\sqrt{\Nsqm}}
 
 \newcommand{\BibTeX}{\textsc{Bib}\TeX}
 \newcommand{\etal}{{\it et al.}}
@@ -93,39 +96,34 @@
 \newcommand{\sovast}{ {\it Soviet  Astron.}} 
 \newcommand{\ssr}{    {\it Space Sci. Rev.}} 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% temporales
-\definecolor{mygray}{gray}{0.6}
-
-
-%---------REMOVE DEFs BEFORE SUMBISSION----------------
-\def\diego#1{\textcolor{red}{DIEGO: #1}}
+%---------REMOVE THESE OPTIONS AND DEFs BEFORE SUMBISSION---------------------------------------
+\usepackage[usenames,dvipsnames]{xcolor} % Las opciones: [USENAMES,DVIPSNAMES] 
+                                         % ponen a disposición los colores ejemplificados aquí:
+                                         % https://en.wikibooks.org/wiki/LaTeX/Colors
+\def\diego#1{\textcolor{red}{#1}}
 \def\albert#1{\textcolor{blue}{#1}}
-\def\fede#1{\textcolor{ForestGreen}{FEDE: #1}}
-\def\temp#1{\textcolor{mygray}{#1}}
-\def\edit#1{\textcolor{Apricot}{#1}}
-%------------------------------------------------------
+\def\fede#1{\textcolor{ForestGreen}{#1}}
+\def\temp#1{\textcolor{gray}{#1}}
+\def\notebyalbert#1{\textcolor{blue}{NOTE: #1}}
+%-----------------------------------------------------------------------------------------------
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 \begin{article}
 
 \begin{opening}
 
-\title{Thermodynamic Structure of the Solar Corona: Tomographic Reconstructions and MHD Modeling}
+\title{Thermodynamic Structure of the Solar Corona: Tomographic Reconstructions and MHD Modeling\\
+      \notebyalbert{\small Corregí filiación UNTREF, agregué segunda filiación para Fede (creo que no es preciso poner CBC, Fede?). Diego, ORCID IDs faltantes sacalos de {\tt orcid.org}}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Authors Names
-%
-% \author[addressref={},corref,email={}]{\inits{}\fnm{}\lnm{}\orcid{}}
 \author[addressref={aff1},corref,email={dlloveras@iafe.uba.ar}]{\inits{D.G.}\fnm{Diego G.}~\lnm{Lloveras}\orcid{0000-0003-1402-0398}}
 
-\author[addressref={aff1,aff3},corref,email={albert@iafe.uba.ar}]{\inits{A.M.}\fnm{Alberto M.}~\lnm{V\'asquez}\orcid{0000-0003-3401-6409}} 
+\author[addressref={aff1,aff2},corref,email={albert@iafe.uba.ar}]{\inits{A.M.}\fnm{Alberto M.}~\lnm{V\'asquez}\orcid{0000-0003-3401-6409}} 
 
-\author[addressref={aff1},corref,email={federico@iafe.uba.ar}]{\inits{F.A.}\fnm{Federico A.}~\lnm{Nuevo}\orcid{0000-0003-2355-5853}} 
+\author[addressref={aff1,aff3},corref,email={federico@iafe.uba.ar}]{\inits{F.A.}\fnm{Federico A.}~\lnm{Nuevo}\orcid{0000-0003-2355-5853}} 
 
-\author[addressref={aff1,aff3},corref,email={cmaccormack@iafe.uba.ar}]{\inits{C.}\fnm{Cecilia}~\lnm{Mac Cormack}}
+\author[addressref={aff1,aff2},corref,email={cmaccormack@iafe.uba.ar}]{\inits{C.}\fnm{Cecilia}~\lnm{Mac Cormack}\orcid{0000-0003-1173-503X}}
 
 \author[addressref={aff4},corref,email={nishthas@umich.edu}]{\inits{N.}\fnm{Nishtha}~\lnm{Sachdeva}\orcid{1}}
 
@@ -148,44 +146,40 @@
 %\address[id={}]{}
 \address[id=aff1]{Instituto de Astronom\'{\i}a y F\'{\i}sica del Espacio (IAFE), CONICET-UBA, CC 67 - Suc 28,  (C1428ZAA) Ciudad Aut\'onoma de Buenos Aires, Argentina}
 
-%\address[id=aff2]{Departamento de F\'{\i}sica, Facultad de Ciencias Exactas y Naturales (FCEN), Universidad de Buenos Aires (UBA), Pabell\'on I, Ciudad Universitaria, (C1428ZAA) Ciudad Aut\'onoma de Buenos Aires, Argentina}
+\address[id=aff2]{Universidad Nacional de Tres de Febrero (UNTREF), Valent\'{\i}n G\'omez 4752, (B1678ABH) Caseros, Provincia de Buenos Aires, Argentina}
 
-\address[id=aff3]{Departamento de Ciencia y Tecnolog\'{\i}a, Universidad Nacional de Tres de Febrero (UNTREF), Valent\'{\i}n G\'omez 4752, (B1678ABH) Caseros, Provincia de Buenos Aires, Argentina}
+\address[id=aff3]{Facultad de Ciencias Exactas y Naturales (FCEN), Universidad de Buenos Aires (UBA), Pabell\'on II, Ciudad Universitaria, (C1428ZAA) Ciudad Aut\'onoma de Buenos Aires, Argentina}
 
 \address[id=aff4]{Department of Climate and Space Sciences and Engineering (CLaSP), University of Michigan, 2455 Hayward Street, Ann Arbor, MI 48109-2143, USA}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Abstract 
+
 \begin{abstract}
-Observational \albert{techniques} play an essential role in advancing our understanding of the physics of the solar corona. They provide validation data to improve three-dimensional (3D) magnetohydrodynamic (MHD) models of the solar atmosphere, \albert{enhancing} their space weather forecasting capabilities. Solar rotational tomography (SRT) is currently the sole observational technique that provides an empirical 3D description of some \albert{of the fundamental} plasma parameters of the solar corona at a global scale. Based on EUV data of space borne instruments, SRT allows constructing 3D maps of the coronal electron density and temperature at heliocentric heights below 1.25 Rsun. We carry out a study of the corona combining tomographic reconstructions with MHD simulations \albert{using} the latest version of the Alfv\'en Wave Solar Model (AWSoM) of the Space Weather Modeling Framework (SWMF). Target rotations were selected from the solar minimum between solar cycles (SC) 23 and 24 and the current declining phase of solar cycle 24. Tomographic reconstructions and results of the model are analyzed in distinct coronal magnetic structures. We study magnetically closed structures associated with the equatorial streamer belt, as well as magnetically open regions enclosing it. We report on the tomographic results in the different structures, their implications for the physics of the solar corona, and the capability of the AWSoM model to reproduce the tomographic reconstructions in different regions.
+Observational {techniques} play an essential role in advancing our understanding of the physics of the solar corona. They provide validation data \albert{for} three-dimensional (3D) magnetohydrodynamic (MHD) models of the solar atmosphere, \albert{key to improve} their space weather forecasting capabilities. Solar rotational tomography (SRT) is currently the sole observational technique that provides an empirical 3D description of some {of the fundamental} plasma parameters of the solar corona at a global scale. Based on EUV data of space borne instruments, SRT allows constructing 3D maps of the coronal electron density and temperature at heliocentric heights below 1.25 Rsun. We carry out a study of the corona combining tomographic reconstructions with MHD simulations {using} the latest version of the Alfv\'en Wave Solar Model (AWSoM) of the Space Weather Modeling Framework (SWMF). Target rotations were selected from the solar minimum between solar cycles (SC) 23 and 24 and the current declining phase of solar cycle 24. Tomographic reconstructions and results of the model are analyzed in distinct coronal magnetic structures. We study magnetically closed structures associated with the equatorial streamer belt, as well as magnetically open regions enclosing it. We report on the tomographic results in the different structures, their implications for the physics of the solar corona, and the \albert{current} capability of the AWSoM model to reproduce the tomographic reconstructions in different regions.
 
 \end{abstract}
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Keywords
-%
 \keywords{Solar Cycle, Observations; Corona,E; Corona, Structures}
 
-
 \end{opening}
-%-------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Sections
 \section{Introduction}\label{intro} 
 
 Being the place where the solar atmosphere is heated and the solar wind accelerated, and where impulsive events such as solar flares and coronal mass ejections are energized, observation and modeling of the solar corona are tasks of great relevance to improve our understanding of the Sun-Earth environment. To advance our knowledge of the physics of the solar corona, as well as to improve its three-dimensional (3D) models, information derived from observational data plays a key role. Solar rotational tomography is currently the sole observational technique able to provide a quantitative empirical description of the 3D distribution of some fundamental plasma parameters of the solar corona at a global scale.
 
+\noindent\notebyalbert{Here we will put in a couple of paragraphs summarizing what SRT and DEMT are, including references and defining the accronyms in the process. We should refer to minima in particular. We should mention the instruments and missions we use as data for DEMT, and define their accronyms too. Also, a couple of paragraphs on the AWSoM model and the SWMF, including references and defining the accronyms in the process.}
 
 \section{Methodology}\label{meto}   
 
 \subsection{DEMT reconstructions}\label{demt}
-\temp{* Procesado de imagenes}\\
-\temp{* FBE}\\
-\temp{* LDEM}\\
-*Paso 1: obtencion de FBE\\
-*Paso 2: obtencion LDEM
+
+\noindent\notebyalbert{This section will summarize DEMT's main aspects and equations, only those needed to understand the paper. Nothing not needed to read this paper is provided. Also, no derivation of equations are provided. References are given so that the reader can dig deeper if so desires. Points to cover are:
+\begin{itemize}
+  \item Selected targets, instruments used. One paragraph.
+  \item Characteristics of the data (specific time series, dates, bands, etc.), SolarSoft software version used for their processing. One paragraph.
+  \item Technical aspects of DEMT (grid, regularization, off-limb data is only used) and how these differ from previous versions (rereferences). One paragraph.
+  \item What is FBE, what is LDEM, what is R. Why we care about these three quantities and what is their physical meaning should be clear. Then the final products $\Nm$ and $\Tm$, and what is their physical meaning.
+\end{itemize}
+}
+
 \begin{equation}\label{fbeldem}
 \FBE_i^{(k)}  = \int\,\textrm{d}T\,\LDEM_i(T)\,{\TRF}^{(k)}(T), \ \ \ {k=1,...,K}
 \end{equation}
@@ -196,7 +190,7 @@ Due to unresolved coronal dynamics, tomographic reconstructions exhibit negative
 
 Once the LDEM is determined at each voxel, the average squared electron density $\langle \Ne^2 \rangle$ and the electron mean temperature $\Tm$ in the voxel can be computed by taking its zeroth and first moments over temperature. More specifically, at the $i$-th voxel,
 
-\albert{
+{
 \begin{eqnarray}\label{momento1}
  \Nsqmi = \langle \Ne^2 \rangle_i &=& \int\,\textrm{d}T\,\LDEM_i(T),\label{Ne} \\ 
 \label{momento2}
@@ -204,48 +198,62 @@ Once the LDEM is determined at each voxel, the average squared electron density 
 \end{eqnarray}
 }
 
-\albert{We define next a measure of the average relative difference between the tomographic and the synthetic FBE in each voxel, as}
+{We define next a measure of the average relative difference between the tomographic and the synthetic FBE in each voxel, as}
 
 \begin{equation}\label{R}
 R_i \, \equiv \ (1/K) \, \sum_{k=1}^K \left| \, 1 - \FBE^{(k)}_{i,\rm syn}\,/\,\FBE^{(k)}_{i,\rm tom}\, \right| \,,
 \end{equation}
 
-so that the final product of DEMT is in the form of 3D maps of the electron density and mean temperature. These relationships \albert{were} derived in detail in \citealt{frazin_2009} (see Appendix C).\\
-\temp{* Aclarar que consideramos Ne como $\sqrt{<\Ne ^2>}$.} \albert{ALBERT: Yo creo que es mejor simplemente hablar de $\sqravgN$}\\
-\temp{* Mejoras de la DEMT con respecto a trabajos previos}.
+so that the final product of DEMT is in the form of 3D maps of the electron density and mean temperature. These relationships {were} derived in detail in \citealt{frazin_2009} (see Appendix C).\\
+\temp{Aclarar que consideramos Ne como $\sqrt{<\Ne ^2>}$.} {ALBERT: Yo creo que es mejor hablar de $\sqravgN$}
 
-\temp{DEMT has been improved since the previously published work. We now perform hollow-tomography with the EUV images, (definir hollow-tom) and a 3D regularized of the solution was applyed to obtain smother and more reliable result at the edge of the tomographic grid.}
+\temp{DEMT has been improved since the previously published work. We now perform hollow-tomography with the EUV images, (definir hollow-tom) and a 3D regularized of the solution was applyed to obtain smother and more reliable result at the edge of the tomographic grid.} \albert{NOTA de Albert: Explicá que hacés sin justificarte. Luego aclará como se hizo eso en trabajos previos, y cual es el impacto esperado. Puedo proveer un párrafo de ejemplo, pero creo que será mejor que vos escribas como te salga y yo luego edito. Algo muy importante para todo el paper: proponete escribir ``párrafos modulares". Es decir que, con las razonables limitaciones, puedan moverse de lugar, de orden, y sigan funcionando. No definiría hollow-tomography, es un término coloquial interno nuestro. Lo correcto es que al hablar de datos mucho más arribas expliques que los datos del disco no se utilizan, pero no le des un nombre a la tomografía.}
 
 \subsection{AWSoM simulations}\label{awsom} 
-\temp{* Qué es, qué modela, qué datos usa, y qué se obtiene en general y en particular para este trabajo}\\
-\temp{* Se debe aclarar que solo produce resultados razonables arriba de 1.065}\\
-\temp{No pondría los mapas de 1.025 y diria algo asi como:}\\
-In the transition region \albert{(TR)}, the plasma heats up and becomes less dense \albert{by} several orders of magnitude \albert{over} a short distance. Modeling this region \albert{realistically has a very high computational cost}. For this \albert{reason,} the model uses \albert{an artificially} extended \albert{TR about $\approx 0.05\,\mrsun$ thick, as well as artificially large values for the electronic density and temperature as boundary conditions in $r=1\,\mrsun$.} Consequently, model results below \albert{$\approx 1.05\,\mrsun$} were not taken into account in this article.
 
-\subsection{Tracing results along fieldlines}\label{trace} 
+\noindent\notebyalbert{This section will summarize the AWSoM model. After a first version is written we will surely require some input from the Michigan friends. Points to cover:
+\begin{itemize}
+  \item Data input. Link with the data input for DEMT in terms of dates, etc. One paragraph.
+  \item Main physical and technical aspects (grid in particular) of the model.  One paragraph. 
+  \item Explain the artificially extended TR. One paragraph.
+  \item What are the products of the model we care about in this paper. One paragraph.
+\end{itemize}
+}
 
-\diego{Falta explicar que todos los resultados pasamos a tenerlos en la grilla demt, y que en esa grilla se traza el campo.}
+In the transition region {(TR)}, the plasma heats up and becomes less dense {by} several orders of magnitude {over} a short distance. Modeling this region {realistically has a very high computational cost}. For this {reason,} the model uses {an artificially} extended {TR about $\approx 0.05\,\mrsun$ thick, as well as artificially large values for the electronic density and temperature as boundary conditions in $r=1\,\mrsun$.} Consequently, model results below {$\approx 1.05\,\mrsun$} were not taken into account in this article.
+
+\subsection{Tracing of results along fieldlines}\label{trace} 
+
+\noindent\notebyalbert{This section will explain how the AWSoM magnetic model is used to trace the thermodynamic products of both DEMT and AWSoM along the fieldlines of AWSoM. This requires covering the following points:
+\begin{itemize}
+  \item A first paragraph qualitatively describing the process. This includes mentioning that the AWSoM products are first interpolated into the DEMT grid.
+  \item A short paragraph describing the numerical method used to trace field lines. We have a nice version of this in your previous paper.  At this point the reader should understand that for each field line we have its geometry $\mathbf{r}(s)$ as a function of the distance $s$ along the loop, with $s(1\,\mrsun)\equiv 0$. 
+  \item Explain very simply how then that for each voxel the middle point of the field line is selected and assigned the DEMT and AWSoM products of that cell. At this point the reader should understand that for each field line we have: $Q[r(s)]$, where $Q$ is any given quantity from either the DEMT model (specifically $\sqravgN$ and $\Tm$) or the AWSoM model (specifically $\Ne$ and $\Te$).
+  \item Explain fits to the DEMT results  $\sqravgN(r)$, $\Tm(r)$.
+  \item Explain then the classification of field lines.
+\end{itemize}
+} 
 
 For both rotations, the DEMT and AWSoM 3D maps of electron density $\Ne$, electron mean temperature $\Tm$ and electron temperature $\Te$ respectively were traced along the magnetic field lines modeled using AWSoM as described at the end of Section \ref{demt}. In the case of closed loops, results were separated into their two legs, defined as the two segments that go from the coronal base up to the apex.
 
-For each open field line, and for each leg of the closed ones, an exponential fit was then applied to the $\Ne(r)$ data points, and a linear fit applied to the $\Tm(r)$ data points, as described by
+For each open field line, and for each leg of the closed ones, an exponential fit was then applied to \albert{the $\sqravgN(r)$ data points, and a linear fit applied to the $\Tm(r)$ data points}, as described by
 
+\albert{
 \begin{eqnarray}\label{Nfit}
-\Ne &=& N_0\,\exp{\left[\,-\,\left(h/\l\right)\,/\,\left(r/\mrsun\right)\,\right]}\\
+\sqravgN &=& N_0\,\exp{\left[\,-\,\left(h/\l\right)\,/\,\left(r/\mrsun\right)\,\right]}\\
 \label{Tfit}
-\albert{\Tm} &=& \albert{\dr \Tm(r) \ r\,+\,T_0}
+\Tm &=& T_0\,+\,m\,h
 \end{eqnarray}
- 
 \noindent
-\albert{where $\l$ is the electron density scale height, $h \equiv r - 1\,\mrsun$ is the coronal height measured from the photosphere, $\dr\equiv\er\cdot\nabla$ is the radial derivative operator (being $\er$ the heliocentric radial unit vector), and $T_0$ and $N_0$ are constants.}
+where $h \equiv r - 1\,\mrsun$ is the coronal height measured from the photosphere. In the electron density fit, $\l\,[\mrsun]$ is the density scale height and $N_0\,[\cminvc]$ is the electron density at the footpoint ($h=0$) of the loop. In the electron temperature fit, $m\,[\MK/\mrsun]$ is the slope and $T_0\,[\MK]$ is the electron temperature at the footpoint of the loop. The slope $m$ is the radial gradient of the electron temperature along the loop, which we denote as $m = \dr\Tm$ hereafter, being $\dr\equiv\er\cdot\nabla$ the radial derivative operator, where $\er$ is the heliocentric radial unit vector.}
 
-In the case of the electron density, the fitted function corresponds to the isothermal hydrostatic equilibrium solution, allowing for variation of the solar gravitational acceleration with height. After computing the footpoint ($r=1.0\,\mrsun$) electron density $N_{0}\,[\cm^{-3}]$ and scale height $\lN\,[\mrsun]$\temp{, this choice of function provides a straightforward means to directly evaluate how compatible is the observed coronal thermodynamical state with the hydrostatic solution}.
+In the case of the electron density, the fitted function corresponds to the isothermal hydrostatic equilibrium solution, allowing for variation of the solar gravitational acceleration with height. This choice of function provides a straightforward means to directly evaluate how compatible is the observed coronal thermodynamical state with the hydrostatic solution.
 
 %La temperatura en funcion de la altura a lo largo de lineas muestra comportamientos lineales. En el presente trabajo nos focalizamos en lineas con temperaturas crecientes y decrecientes en foma lineal. Es decir nos quedamos con aquellas piernas donde el coeficiente de pearson entre la temperatura y la altura (rho) cumple rho mayor 0.5 (con p-value 0.05) y de esta forma se descartan aquellas piernas en las que los resultados DEMT no pueden asegurar un cambio notable de temperatura entre la base y el apice (asi no uso la palabra isotermico y evado ese problema)
 
 
 %The temperature as a function of height along legs shows linear behaviors. 
-In the present work we focus on lines with increasing and decreasing temperatures in linear form. In other words, we selected those legs where the \albert{Pearson correlation coefficient $\rho$ between temperature $T$ and radius $r$ meets $|\rhoTr| > 0.5$}. \temp{(with p-value less than 0.05)}. In this way, those legs in which the DEMT results cannot ensure a noticeable change in temperature between the base and the apex, are discarded.
+In the present work we focus on lines with increasing and decreasing temperatures in linear form. In other words, we selected those legs where the {Pearson correlation coefficient $\rho$ between temperature $T$ and radius $r$ meets $|\rhoTr| > 0.5$}. \temp{(with p-value less than 0.05)}. In this way, those legs in which the DEMT results cannot ensure a noticeable change in temperature between the base and the apex, are discarded.
 
 
 The linear fit allows characterization of its variation with height by means of a characteristic temperature gradient $\dr \Tm\,[\MK/\mrsun]$ along each leg.
@@ -268,7 +276,7 @@ To be selected a loop must meet all following conditions.
 Each leg of the loop must go through at least five tomographic grid cells with reconstructed data, and there must be at least one data point in each third of the range of heights spanned by the loop.
 
 \item 
-The \albert{value of the Pearson correlation coefficient meets $|\rhoTr| > 0.5$.}
+The {value of the Pearson correlation coefficient meets $|\rhoTr| > 0.5$.}
 
 \item 
 The p-value of both the exponential and linear fit must be less than 0.05.
@@ -289,23 +297,17 @@ For the two targeted rotations, DEMT and AWSoM resuls were traced along the AWSo
 \item Type III - Open field lines (meaning with apex out the DEMT range of heights) in the latitudes range $[-90\mdeg,-60\mdeg] \cup [+60\mdeg,+90\mdeg]$ and $\dr \Tm > 0$.
 
 \end{itemize}
-\diego{Hice las definiciones con gradiente de temperatura para que quede mas claro, pero en realidad uso el pearson.} 
+\diego{Hice las definiciones con gradiente de temperatura para que quede mas claro, pero en realidad uso el pearson.} \notebyalbert{Charlemos los tres en persona de esto.}
 
+\subsection{\albert{Energy input flux}}\label{energia} 
 
-
-
-\subsection{Energy flux ?}\label{energia} 
-\temp{Aca se introduce la seccion de energia con sus ecuaciones etc}
-\diego{sugerencias para el nombre?}
-
-
-
+\noindent\notebyalbert{This section will summarize how loop integrated energy quantities are computed from the DEMT products and the AWSoM magetic model alone. The summary will not include any derivation and will refer to Cecilia's paper. Only the results that are relevant are to be explicited. Start by explaining the model and assumptions, and end up summarizing the loop-integrated products (radiative and conductive fluxes). At the end the reader should understand that their sum is the enery input flux required at the coronal base to maintain the loop stable. This should be a very short section, as it is a summary of one previous paper alone.}
 
 \section{Results}\label{resu} 
 
-
-
 \subsection{Tomographic Results}\label{demt_res} 
+
+\noindent\notebyalbert{This section will show first the DEMT products in the form of Carrington maps at three heights, for the two target rotations. It will then show the latitude/longitude location of the four types of  magnetic loops (defined in Section 2.3) at a sample height. Then, for the each type of loop, we will show histograms of the values of different DEMT products traced along them, charerizing in a quantitative fashion the DEMT results in distinct magnetic structures. It will also include a quantitative comparison between the two target rotations of the median values of the DEMT products in each type of loop.}
 
 Once the LDEM was determined for each rotation, the electron density $\Ne$ and electron mean temperature $\Tm$ were computed at each voxel of the tomographic computational grid by means of Equations \ref{momento1} and \ref{momento2}. As an example, Figures \ref{carmaps_demt_2082} and \ref{carmaps_demt_2208} shows the latitude-longitude maps for both tomographic results for CR-2082 and CR-2208 at $r=1.025, 1.065$ and $1.105\,\mrsun$. Black voxels correspond to non-reconstructed voxels (explained in Section \ref{demt}). Thick-black curves indicate the open/closed boundaries based on the AWSoM model.
 
@@ -316,7 +318,6 @@ While CR-2082 was highly axisymmetric and showed virtually no ARs (active region
 A visual inspection of Figures \ref{momento1} and \ref{momento2} suggest/indicates that the streamer region of CR-2082 was denser and colder than CR-2208. In both rotations, but specifically in CR-2082 the temperature in the equatorial latitudes tend to decrease with height while the latitudes between the open-close boundaries and the equatorial latitudes tend to increase. These thermodynamic structures have been reported for other rotations in previous works \citep{lloveras_2017}. Closed regions are characterized by relatively larger values of density and temperature in comparison to the open regions.
 \diego{que mas se puede agregar?}
 
-
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.495\textwidth]{figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1025_Rsun.pdf}
@@ -325,7 +326,7 @@ A visual inspection of Figures \ref{momento1} and \ref{momento2} suggest/indicat
 \includegraphics[width=0.495\textwidth]{figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_Rsun.pdf}
 \includegraphics[width=0.495\textwidth]{figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf}
 \includegraphics[width=0.495\textwidth]{figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf}
-\caption{Carrington maps of DEMT results: $\Ne$ (left panels) and $\Tm$ (right panels) for CR-2082. Top, middle and bottom panels show the results at three heliocentric heights, $1.025$, $1.065$ and $1.105\,\mrsun$ respectively. Black voxels correspond to non-reconstructed regions (see text in Section \ref{demt_res}) and thick-black curves indicate the open/closed boundaries.}
+\caption{Carrington maps of DEMT \albert{products $\sqravgN$} (left panels) and $\Tm$ (right panels) for CR-2082. Top, middle and bottom panels show the results at three heliocentric heights, $1.025$, $1.065$ and $1.105\,\mrsun$ respectively. Black voxels correspond to non-reconstructed regions (see text in Section \ref{demt_res}) and thick-black curves indicate the open/closed boundaries.}
 \label{carmaps_demt_2082}
 \end{center}
 \end{figure}
@@ -343,13 +344,11 @@ A visual inspection of Figures \ref{momento1} and \ref{momento2} suggest/indicat
 \end{center}
 \end{figure}
 
-
 For both rotations, all field lines that meet the criteria listed in Section \ref{trace} were selected. For each field line, the data points of electron density and electron mean temperature as a function of height were fitted to the Equations \ref{Nfit} and \ref{Tfit}.
 
 \temp{aca se defininen los highpoints, se comentan los colores y enunciar que cada uno puebla una regino termodinamica diferente}
 
-
- As a result, the electron density $N_0(r=1.0\,\mrsun)$ and scale height $\lN$ were computed for each field line, as well as the temperature gradient $\dr \Tm$, and the height-averaged (along the loop) electron mean temperature $\aTm$. As the DEMT technique studies only coronal conditions, \textit{i.e.} above height $r\approx 1.025\,\mrsun$, the exponential fit to the electron density data as a function of height may be used to compute the tomographic basal electron density at $ \Ne(r=1.025\,\mrsun)$ as in previous articles. In this case, for further comparison analysis with the AWSoM results, we selected the lowest height where the results of the MHD model are reliable, that is $1,065\,\mrsun$.
+As a result, the electron density $N_0(r=1.0\,\mrsun)$ and scale height $\lN$ were computed for each field line, as well as the temperature gradient $\dr \Tm$, and the height-averaged (along the loop) \albert{electron temperature} $\aTm$. As the DEMT technique studies only coronal conditions, \textit{i.e.} above height $r\approx 1.025\,\mrsun$, the exponential fit to the electron density data as a function of height may be used to compute the tomographic basal electron density at $ \Ne(r=1.025\,\mrsun)$ as in previous articles. In this case, for further comparison analysis with the AWSoM results, we selected the lowest height where the results of the MHD model are reliable, that is $1,065\,\mrsun$.
 
 \temp{Aca una linea que linkea la definicion del tipo de lineas en la seccion anterior con las regiones que se ven en la figura que se describe a continuacion}
 
@@ -368,7 +367,7 @@ This selection of types of lines automatically leads to specific regions arrange
 \includegraphics[width=0.495\textwidth,clip=]{figs/Highpoint_2208_demt_paper_cr2208_full_Rpoint-map.eps}
 %\includegraphics[width=0.495\textwidth,clip=]{figs/Highpoint_2208_demt_paper_cr2208_up_Rpoint-map.eps}
 %\includegraphics[width=0.495\textwidth,clip=]{Highpoint_2208_awsom_paper_Rpoint-map.eps}
-\caption{Latitude-longitude location of each leg of type 0 (in cyan), type I (in blue), type II (in red) and type III (in green) at $1.105\,\mrsun$ for CR-2082 (left panel) and CR-2208 (right panel). See Section \ref{trace} for a definition of the different types of legs.}
+\caption{Latitude-longitude location of each leg of \albert{loops of type 0 (cyan), I (blue), II (red) and III (green)} at $1.105\,\mrsun$ for CR-2082 (left panel) and CR-2208 (right panel). See Section \ref{trace} for a definition of the different types of \albert{loops}. \notebyalbert{(by ALBERT) This Figure is great, but I do not quite like the choice of colors. I suggest these changes: cyan$\rightarrow$blue, blue$\rightarrow$red, red$\rightarrow$violet. In this way, blue will be DOWN loops and red will be UP loops, as in previous papers. The same change applies to Figure 4. Also, how about making Figures 3 and 4 a single Figure of four panels? Just an idea.}}
 \label{rpoint_demt}
 \end{center}
 \end{figure} 
@@ -383,31 +382,31 @@ Both rotations are characterized by lines of type 0 with mean values of $-2.5\, 
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.495\textwidth,clip=]{figs/histo_cr2082_fulltriple_gradt.eps}
-\includegraphics[width=0.495\textwidth,clip=]{figs/histo_cr2208_fulltriple_gradt.eps}
-\caption{Frequency histograms of the temperature radial gradient for the different types of legs shown in Figure \ref{rpoint_demt} (same colour code) for CR-2082 (left panel) and CR-2208 (right panel).}
+\includegraphics[width=0.495\textwidth,height=0.25\textwidth,clip=]{figs/histo_cr2082_fulltriple_gradt.eps}
+\includegraphics[width=0.495\textwidth,height=0.25\textwidth,clip=]{figs/histo_cr2208_fulltriple_gradt.eps}
+\caption{Frequency histograms of the temperature radial gradient for the different \albert{four types of loops} shown in Figure \ref{rpoint_demt} (using the same color code) for CR-2082 (left panel) and CR-2208 (right panel).}
 \label{gradt_demt}
 \end{center}
 \end{figure} 
 
 \temp{este inicio de linea se repite del anterior}\\
-As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the statistical results of both rotations for all field lines types. From top to bottom type 0 to type 4. From left to right the panels show the statistical distribution of $\NCB$, $\lN$, $\aTm$, in each panel the median $m$ is indicated.
+As an example of the traced magnitudes, Figure \ref{histos_fulldemt} shows the statistical results of both rotations for all field lines types. From top to bottom type 0 to type 4. From left to right the panels show the statistical distribution of \albert{$\NCB\equiv\sqravgN(r=1.055\,\mrsun)$}, $\lN$, $\aTm$, in each panel the median $m$ is indicated.
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_down_ne_1055.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_down_lambda_n.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_down_Tm.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_up_ne_1055.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_up_lambda_n.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_up_Tm.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_bound_up_ne_1055.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_bound_up_lambda_n.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_bound_up_Tm.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_ne_1055.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_lambda_n.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_Tm.eps}
-\caption{Comparative statistical distributions of DEMT reults. From left to right: the coronal base electron density $\Ne(r=1.055\,\mrsun)$, the electron density scale height $\lN$ and the average electron mean temperature $\aTm$, along all types of legs defined in Section \ref{trace}. Results of CR2082 are shown in blue while those of CR-2208 in red. In each panel the median $m$ is indicated.}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_down_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_down_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_down_Tm.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_streamer_up_Tm.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_bound_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_bound_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_bound_up_Tm.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_2208_fulldemt_CH_up_Tm.eps}
+\caption{\albert{Statistical distribution of DEMT results traced along the type of loops 0, I, II and III (from top to bottom), as defined in Section \ref{trace}. From left to right: electron density at the coronal base $\NCB\equiv\sqravgN(r=1.055\,\mrsun)$, electron density scale height $\lN$, and loop-averaged electron temperature $\aTm$. Results for target rotations CR2082 and CR2208 are shown in blue and red color, respectively. In each panel the median value $m$ is indicated.} \notebyalbert{The histogram Figures in this draft need to be improved, in particular font size-and-type need to be optimized for a clear reading.}}
 \label{histos_fulldemt}
 \end{center}
 \end{figure} 
@@ -451,22 +450,16 @@ A comparison of the results between the two rotations shows that CR-2208 is char
 \includegraphics[width=0.495\textwidth,clip=]{figs/histocr2208_ccenergia.eps}
 \includegraphics[width=0.495\textwidth,clip=]{figs/histocr2082_cgenergia.eps}
 \includegraphics[width=0.495\textwidth,clip=]{figs/histocr2208_cgenergia.eps}
-\caption{Statistical results of the loop integrated energy flux quantities $\phi_r,\phi_c,$ and $\phi_h$ in colours blu, red and green, respectively for CR-2082 (left) and CR-2208 (right). From top to left the type 0, 1 and 2 field of lines defined in Section \ref{trace}. }
+\caption{Statistical results of the loop integrated energy flux quantities $\phi_r,\phi_c,$ and $\phi_h$ in colors blu, red and green, respectively for CR-2082 (left) and CR-2208 (right). From top to left the type 0, 1 and 2 field of lines defined in Section \ref{trace}. \notebyalbert{Utilizar los colores del paper de Cecilia, notar que el conductivo debe ser el verde y el energy input flux (h) debe ser el rojo. De paso, haría el verde un poco menos chillón, como en el paper de Ceci, se verá mejor. En el XYOUTS podés poner la letra griega $\phi$,  y para que te salga r,c,h como subíndice pero no pequeño usá: ``!Dp!N", donde p=r,c,h.}}
 \label{energia_demt}
 \end{center}
 \end{figure} 
-
-
-
 
 \subsection{Tomography and Models}\label{awsom_res} 
 
 \temp{Parrafo introductorio?}
 
-
 As an example of the AWSoM results, Figures \ref{carmaps_awsom_2082} and \ref{carmaps_awsom_2208} shows the latitude-longitude maps for $\Ne$ and $T_e$ modeled for CR-2082 and CR-2208 at $r=1.025, 1.065$ and $1.105\,\mrsun$. The black curve denotes the open-close boundary.
-
-
 
 A visual inspection of the AWSoM results shows that both reconstruction are very axysimmetric for $\Ne$ and $T_e$ as well. The closed region is denser and hotter than the open region. The density and temperature gradients are maximum in the open-close boundary. The open field regions in low latitudes maintain thermodynamic values associated with open regions. CR-2208 shows a well reconstruction of the AR around latitude $+10\mdeg$ and longitude $300\mdeg$ and a slight temperature difference between the poles \temp{estoy asumiento que es una AR}. 
 In both rotations the open-closed boundaries derived from the respective AWSoM model match the shape of the contour levels of the tomographic maps of both the electron density and the electron mean temperature.
@@ -572,15 +565,15 @@ As way of example, Figure \ref{histos_2082} and \ref{histos_2208} shows the stat
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_streamer_up_ne_1055.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_streamer_up_lambda_n.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_streamer_up_Tm.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_bound_up_ne_1055.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_bound_up_lambda_n.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_bound_up_Tm.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_ne_1055.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_lambda_n.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_Tm.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_demt_awsom_streamer_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_demt_awsom_streamer_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_demt_awsom_streamer_up_Tm.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_demt_awsom_bound_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_demt_awsom_bound_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_demt_awsom_bound_up_Tm.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2082_demt_awsom_CH_up_Tm.eps}
 \caption{Comparative statistical distributions for CR-2082 between DEMT (blue) and AWSoM (red). From left to right: the coronal base electron density $\Ne(r=1.055\,\mrsun)$, the electron density scale height $\lN$ and the average $\aTm$ along the four types of legs considered in Section \ref{trace}. In each panel the median ($m$) is indicated.}
 \label{histos_2082}
 \end{center}
@@ -614,15 +607,15 @@ CR-2208\\
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2208_demt_awsom_streamer_up_ne_1055.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2208_demt_awsom_streamer_up_lambda_n.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2208_demt_awsom_streamer_up_Tm.eps}\\
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2208_demt_awsom_bound_up_ne_1055.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2208_demt_awsom_bound_up_lambda_n.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2208_demt_awsom_bound_up_Tm.eps}\\
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2208_demt_awsom_CH_up_ne_1055.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2208_demt_awsom_CH_up_lambda_n.eps}
-\includegraphics[width=0.31\textwidth,clip=]{figs/histo_2208_demt_awsom_CH_up_Tm.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2208_demt_awsom_streamer_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2208_demt_awsom_streamer_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2208_demt_awsom_streamer_up_Tm.eps}\\
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2208_demt_awsom_bound_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2208_demt_awsom_bound_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2208_demt_awsom_bound_up_Tm.eps}\\
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2208_demt_awsom_CH_up_ne_1055.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2208_demt_awsom_CH_up_lambda_n.eps}
+\includegraphics[width=0.31\textwidth,height=0.18\textwidth,clip=]{figs/histo_2208_demt_awsom_CH_up_Tm.eps}
 \caption{Same as Figure \ref{histos_2082} for CR-2208.}
 \label{histos_2208}
 \end{center}
