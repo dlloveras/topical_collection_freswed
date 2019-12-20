@@ -328,7 +328,7 @@ where $A(s)$ represent the magnetic flux tube area along the position $s$.
 Radiative power depends on the amount of plasma in certain temperatures that can radiate. The model estimate it by integrating the squared density multiplied by a radiative loss function $\Lambda(T)$. This function depends on plasma temperature and is calculated by the atomic database and the plasma emission model from CHIANTI \citep{delzanna_2015}. Then, the expression for radiative power obtained is:
 
 \begin{equation}\label{Er}
-E_r = \int\,\textrm{d}T\,T\,\LDEM(T)\,\Lambda(T)
+E_r = \int\,\textrm{d}T\,\LDEM(T)\,\Lambda(T)
 \end{equation}
 
 Taking into acount the null divergence condition of magnetic field, the model integrate, between tomographic limits, each power quantities over magnetic flux tube independently of its area. Therefore, a loop-integrated equation for the energy flux balance is obtained ($[\rm{erg\,sec^{-1}\,cm^{-2}}]$):
@@ -613,10 +613,10 @@ The coronal base densities of AWSoM were lower than those of DEMT in CR-2082 and
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_ne_cr2082_up_short.eps}
-\includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_te_cr2082_up_short.eps}
-\includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_ne_cr2208_up_short.eps}
-\includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_te_cr2208_up_short.eps}
+\includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_ne_cr2082_up.eps}
+\includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_te_cr2082_up.eps}
+\includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_ne_cr2208_up.eps}
+\includegraphics[width=0.495\textwidth,clip=]{figs/perfil_paper_te_cr2208_up.eps}
 \caption{{Average fits to $\Ne(r)$ (left panels) and $T_e(r)$ (right panels) for legs of type I (blue), II (red), and III (green), for CR-2082 (top panel) and CR-2208 (bottom panel). Solid lines correspond to DEMT results while dashed lines correspond to AWSoM results.}}
 \label{perfiles_promedio}
 \end{center}
@@ -716,6 +716,10 @@ For each rotation, everything to the south of the HCS maps down to the southern 
 \section{Discussion}\label{discu} 
 
 \noindent\notebyalbert{Antes de enviar esto a Michigan se precisa un conjunto de conclusiones compacto y claro. Creo que yo las pondría en tres grupos: a) conclusiones DEMT solas (esto incluye estructura termodinámica, up/down loops, energía), b) comparación AWSoM/DEMT (la clobal, es decir promedio longitudinal, y la que difernecia estructuras magnéticas), c) Wind Speed y Densidad basal.}
+
+
+In comparing the DEMT results obtained for the two selected targets, it is important to bear in mind they rely on data provided by two different instruments: AIA and EUVI. In order to quantify the systematic difference of the DEMT products based on both instruments, \citet{nuevo_2015}, who were the first to apply DEMT to AIA data, analyzed a single target using both instruments independently. They found that while the density product is essentially equal, the temperature product of DEMT based on AIA data is systematically 8\% larger than the one based on EUVI data, i.e. $\Tm^{\rm(AIA)}/\Tm^{\rm(EUVI)} \approx 1.08$. Considering such correction, Figure \ref{histos_fulldemt} and Table \ref{tabla_demt} indicate that CR-2208 was $\approx 10-15\%$ hotter than CR-2082 throughout the streamer belt region. As for the electron density products, CR-2208 was found to be $\approx 15-20\%$ less dense than CR-2082 throughout the streamer belt region. These systematic differences are beyond the uncertainty level in the DEMT products due to systematic sources (radiometric calibration and tomographic regularization), that \citet{lloveras_2017} estimated to be $\lesssim 5\%$ and $\approx 2\%$ for the electron temperature and density, respectively.
+
 
 *Down loops, shiff y cranmer comentarios.
 
