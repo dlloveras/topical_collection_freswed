@@ -182,11 +182,19 @@ Being the place where the solar atmosphere is heated and the solar wind accelera
 
 To perform the comparison two specific rotations were selected, CR-2082 (2009, 05 April through 03 May), a deep minimum period between solar cycles (SCs) 23 and 24 characterized by virtually no ARs, and CR-2208 (2018, 02 September through 29 September), a rotation during the early declining fase of SC 24.
 
-To determine the thermodynamical structure of both rotations, the DEMT technique was applied to respective time series of EUV images covering each first half rotation. To study CR-2082 and CR-2208 data taken by the EUVI/STEREO and AIA/SDO instruments was used, respectively.
+To determine the thermodynamical structure of both rotations, the DEMT technique was applied to respective time series of EUV images covering each first half rotation. To study CR-2082 and CR-2208 data taken by the EUVI-B/STEREO and AIA/SDO instruments was used, respectively.
 
-In DEMT, the low corona in the height range $1.0$ to $1.25\,\mrsun$ is discretized in a spherical computational grid. The size of the tomographic cell (or voxel) is set to 0.01 \rsun \ in the radial direction, while is set 2\deg\ in both the latitudinal and longitudinal directions. We carried out a reconstruction using half of a solar rotation blocking the lines-of-sight comming from the disk (i.e. only using off-limb data). With this angular resolution one image every 6 hours is the cadence needed to fully constrain the inversion problem, for a total of about 55 images to cover a half solar rotation. We refer the reader to \citet{frazin_2009} for a detailed description of the technique, and to \citet{vasquez_2016} for a recent review on all published work based on it. Here we summarize the key points. The technique involves two consecutive procedures.
+EUV images are affected by instrumental stray light contamination, which can be corrected by deconvolution of the point spread function (PSF). While in the case of AIA images there is no reliable determination of its PSF, it has been well determined for EUVI-B by \citet{shearer_2012}. For this article, all EUVI images were stray-light corrected. For the details of impact in $\Nm$ and $\Tm$, refer to \citet{lloveras_ba2017}.
 
- \diego{creo que es la primera vez que exploramos con hollow, vale la pena explicar la diferencia en detalle?}
+In DEMT, the low corona in the height range $1.0$ to $1.25\,\mrsun$ is discretized in a spherical computational grid. The size of the tomographic cell (or voxel) is set to 0.01 \rsun \ in the radial direction, while is set 2\deg\ in both the latitudinal and longitudinal directions. We carried out a reconstruction using half of a solar rotation blocking the lines-of-sight comming from the disk (i.e. only using off-limb data).
+
+Using the high cadence of data available, one image every 10 minutes were used. The selected images were averaged in 6-hour intervals. Which, given the angular resolution, is the cadence needed to fully constrain the inversion problem, for a total of about 55 images to cover a half solar rotation. For both rotations, the first 14 days of data were used.
+
+\diego{
+Some technical improvements were applied in this work, a 3D regularization scheme was used instead of the latitude-longitude regularization scheme used in previous DEMT reconstructions. This implies that the results of the tomography are now more reliable at lower heights and limit-induced artifacts are minimized. For each instrument, the DEMT analysis involves a cross-validation study to determine the optimal level of regularization. This level is different for each wavelength band and is sensitive to}
+
+
+We refer the reader to \citet{frazin_2009} for a detailed description of the technique, and to \citet{vasquez_2016} for a recent review on all published work based on it. Here we summarize the key points. The technique involves two consecutive procedures.
 
 In a first step, the time series of EUV images is used to solve a SRT problem, for each EUV band independently. As a result, the 3D distribution of the so called {filter band emissivity} (FBE) is determined for each band separately. The FBE, {an emissivity-type quantity}, is defined as the wavelength integral of the coronal EUV spectral emissivity and the telescope's passband function of each EUV channel. Line-of-sight (LOS) integration of the FBE provides synthetic images that can be quantitatively compared to the real data in the time series. To find the FBE, the tomographic problem is posed a global optimization problem in which the quadratic norm of the difference between all pairs of synthetic and real images is minimized. Spatial regularization terms are also included in the objective function as to minimize high frequency spurious artifacts that are due to the specific characteristics of the SRT sparse projection matrix \citep{frazin_2009,frazin_2000}. {Due to optical depth issues that may affect LOSs} passing very close to the limb, and to the decay of intensity with radii, the 3D maps produced by DEMT analysis typically cover the height range 1.02 to 1.23 \rsun \ \citep{frazin_2009}.
 
@@ -211,16 +219,18 @@ Once the LDEM is determined at each voxel, the average squared electron density 
 \end{eqnarray}
 }
 
-{We define next a measure of the average relative difference between the tomographic and the synthetic FBE in each voxel, as}
+We define next a measure of the accuracy of the LDEM model to predict the tomographic FBEs in each voxel, as
 
 \begin{equation}\label{R}
 R_i \, \equiv \ (1/K) \, \sum_{k=1}^K \left| \, 1 - \FBE^{(k)}_{i,\rm syn}\,/\,\FBE^{(k)}_{i,\rm tom}\, \right| \,,
 \end{equation}
 
-so that the final product of DEMT is in the form of 3D maps of the electron density and mean temperature. These relationships {were} derived in detail in \citealt{frazin_2009} (see Appendix C).\\
-\temp{Aclarar que consideramos Ne como $\sqrt{<\Ne ^2>}$.} {ALBERT: Yo creo que es mejor hablar de $\sqravgN$}
+being the average relative difference between the tomographic and the synthetic FBEs. The final product of DEMT is in the form of 3D maps of the electron density and mean temperature. These relationships {were} derived in detail in \citealt{frazin_2009} (see Appendix C).\\
+%\temp{Aclarar que consideramos Ne como $\sqrt{<\Ne ^2>}$.} {ALBERT: Yo creo que es mejor hablar de $\sqravgN$}
 
-\temp{DEMT has been improved since the previously published work. We now perform hollow-tomography with the EUV images, (definir hollow-tom) and a 3D regularized of the solution was applyed to obtain smother and more reliable result at the edge of the tomographic grid.} \notebyalbert{NOTA de Albert: Explicá que hacés sin justificarte. Luego aclará como se hizo eso en trabajos previos, y cual es el impacto esperado. Puedo proveer un párrafo de ejemplo, pero creo que será mejor que vos escribas como te salga y yo luego edito. Algo muy importante para todo el paper: proponete escribir ``párrafos modulares". Es decir que, con las razonables limitaciones, puedan moverse de lugar, de orden, y sigan funcionando. No definiría hollow-tomography, es un término coloquial interno nuestro. Lo correcto es que al hablar de datos mucho más arribas expliques que los datos del disco no se utilizan, pero no le des un nombre a la tomografía.}
+%\temp{DEMT has been improved since the previously published work. We now perform hollow-tomography with the EUV images, (definir hollow-tom) and a 3D regularized of the solution was applyed to obtain smother and more reliable result at the edge of the tomographic grid.} \notebyalbert{NOTA de Albert: Explicá que hacés sin justificarte. Luego aclará como se hizo eso en trabajos previos, y cual es el impacto esperado. Puedo proveer un párrafo de ejemplo, pero creo que será mejor que vos escribas como te salga y yo luego edito. Algo muy importante para todo el paper: proponete escribir ``párrafos modulares". Es decir que, con las razonables limitaciones, puedan moverse de lugar, de orden, y sigan funcionando. No definiría hollow-tomography, es un término coloquial interno nuestro. Lo correcto es que al hablar de datos mucho más arribas expliques que los datos del disco no se utilizan, pero no le des un nombre a la tomografía.}
+
+
 
 \subsection{AWSoM simulations}\label{awsom} 
 
@@ -360,7 +370,7 @@ where the line integrated flux quantities $\phi_{r,c}\,[\rm{erg\,sec^{-1}\,cm^{-
 \phi_c = \left( \frac{B_0 \ F_{c,L} - B_L \ F_{c,0}}{B_0 + B_L} \right) 
 \end{equation}
 
-{Note that, for any given field line, all quantities in these two expresions can be computed from the DEMT and AWSoM models through Equations (\ref{Fc})-(\ref{Er}). Once computed, the quantity $\phi_h$ can be calculated, which is the energy input flux required at the coronal base of each coronal field-line required to mantain a stable coronal structure.}
+{Note that, for any given field line, all quantities in these two expresions can be computed from the DEMT and AWSoM models through Equations (\ref{Fc})-(\ref{Er}). Once computed, the quantity $\phi_h$ can be calculated, which is the energy input flux required at the coronal base of each coronal field-line to mantain a stable coronal structure.}
 
 
 \section{Results}\label{resu} 
@@ -404,6 +414,21 @@ A visual inspection of Figures \ref{momento1} and \ref{momento2} suggest/indicat
 \label{carmaps_demt_2208}
 \end{center}
 \end{figure}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.495\textwidth]{figs/map_R_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1025_Rsun.pdf}
+\includegraphics[width=0.495\textwidth]{figs/map_R_CR2208_DEMT-AIA_H1_L522_r3d_1025_Rsun.pdf}
+\includegraphics[width=0.495\textwidth]{figs/map_R_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_Rsun.pdf}
+\includegraphics[width=0.495\textwidth]{figs/map_R_CR2208_DEMT-AIA_H1_L522_r3d_1065_Rsun.pdf}
+\includegraphics[width=0.495\textwidth]{figs/map_R_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf}
+\includegraphics[width=0.495\textwidth]{figs/map_R_CR2208_DEMT-AIA_H1_L522_r3d_1105_Rsun.pdf}
+\caption{{Carrington maps of the measure $R$ defined by Equation (\ref{R}), for CR-2082 (left panels) and CR-2208 (right panels), at heights $1.025$, $1.065$ and $1.105\,\mrsun$, from top to bottom}. }
+\label{carmaps_R_2082_2208}
+\end{center}
+\end{figure}
+
+
 
 {To study the variation of the DEMT results in different magnetic structures we traced $\sqravgN$ and $\Tm$ along the magnetic field lines of the AWSoM model.} For both rotations, all field lines that meet the criteria listed in Section \ref{trace} were selected. For each field line, the data points of electron density and electron mean temperature as a function of height were fitted to the Equations \ref{Nfit} and \ref{Tfit}.
 
