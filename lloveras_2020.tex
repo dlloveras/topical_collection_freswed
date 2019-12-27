@@ -188,15 +188,16 @@ EUV images are affected by instrumental stray light contamination, which can be 
 
 In DEMT, the low corona in the height range $1.0$ to $1.25\,\mrsun$ is discretized in a spherical computational grid. The size of the tomographic cell (or voxel) is set to 0.01 \rsun \ in the radial direction, while is set 2\deg\ in both the latitudinal and longitudinal directions. We carried out a reconstruction using half of a solar rotation blocking the lines-of-sight comming from the disk (i.e. only using off-limb data).
 
-Using the high cadence of data available, one image every 10 minutes were used. The selected images were averaged in 6-hour intervals. Which, given the angular resolution, is the cadence needed to fully constrain the inversion problem, for a total of about 55 images to cover a half solar rotation. For both rotations, the first 14 days of data were used.
+Using the high cadence of data available, one image every 10 minutes were used. The selected images were averaged in 6-hour intervals which, given the angular resolution, is the cadence needed to fully constrain the inversion problem, for a total of about 55 images to cover a half solar rotation. For both rotations, the first 14 days of data were used.
 
-\diego{
-Some technical improvements were applied in this work, a 3D regularization scheme was used instead of the latitude-longitude regularization scheme used in previous DEMT reconstructions. This implies that the results of the tomography are now more reliable at lower heights and limit-induced artifacts are minimized. For each instrument, the DEMT analysis involves a cross-validation study to determine the optimal level of regularization. This level is different for each wavelength band and is sensitive to}
-
+\diego{ DONDE QUEDA MEJOR COMENTAR ESTA MEJORA?
+Unlike in previous works, a 3D regularization scheme was applied, thus spurious artifacts (nduced by the previous longitude latitude regularization schemei) were minimized in the first two heights of the tomographic grid.}
 
 We refer the reader to \citet{frazin_2009} for a detailed description of the technique, and to \citet{vasquez_2016} for a recent review on all published work based on it. Here we summarize the key points. The technique involves two consecutive procedures.
 
 In a first step, the time series of EUV images is used to solve a SRT problem, for each EUV band independently. As a result, the 3D distribution of the so called {filter band emissivity} (FBE) is determined for each band separately. The FBE, {an emissivity-type quantity}, is defined as the wavelength integral of the coronal EUV spectral emissivity and the telescope's passband function of each EUV channel. Line-of-sight (LOS) integration of the FBE provides synthetic images that can be quantitatively compared to the real data in the time series. To find the FBE, the tomographic problem is posed a global optimization problem in which the quadratic norm of the difference between all pairs of synthetic and real images is minimized. Spatial regularization terms are also included in the objective function as to minimize high frequency spurious artifacts that are due to the specific characteristics of the SRT sparse projection matrix \citep{frazin_2009,frazin_2000}. {Due to optical depth issues that may affect LOSs} passing very close to the limb, and to the decay of intensity with radii, the 3D maps produced by DEMT analysis typically cover the height range 1.02 to 1.23 \rsun \ \citep{frazin_2009}.
+
+\diego{COMO INTRODUZCO EL NIVEL DE REGULARIZACION? For each instrument, the DEMT analysis involves a cross-validation study to determine the optimal level of regularization.}
 
 {In a second step, the FBE values obtained for all bands in each voxel are used to constrain the determination of a {local differential emission measure} (LDEM) distribution, which describes the temperature distribution of the electron plasma contained in each individual tomographic grid voxel. Specifically, at each tomographic voxel $i$, the FBE of the band $k$ is related to the LDEM of the voxel according to}
 
@@ -437,10 +438,8 @@ A visual inspection of Figures \ref{momento1} and \ref{momento2} suggest/indicat
 As a result, the electron density $N_0(r=1.0\,\mrsun)$ and scale height $\lN$ were computed for each leg, as well as the temperature gradient $\dr \Tm$, and the height-averaged (along the leg) {electron temperature} $\aTm$. As the DEMT technique studies only coronal conditions, \textit{i.e.} above height $r\approx 1.025\,\mrsun$, the exponential fit to the electron density data as a function of height may be used to compute the tomographic electron density at the coronal base $\sqravgN(r=1.025\,\mrsun)$ as in previous articles. In this case, for further comparison analysis with the AWSoM results, we selected the lowest height where the results of the MHD model are reliable, that is $1,055\,\mrsun$.
 
 
-
-\diego{
 As a way of knowing the physical position of all traced lines, Figure \ref{rpoint_demt} shows the latitudinal-longitudinal location of all open and closed file lines traced in gray scale at $1.105\,\mrsun$ for both rotations, where the ARs where excluded. At top, all traced legs with enaugh tomographic data are shown. In black all legs corresponding to closed lines and in grey corresponding to open lines. This traced lines were divided into four types as explained in Section \ref{trace} and the fit in density and temperature was applied, selecting only those legs that met the criteria. The bottom figure shows the latitudinal-longitudinal location of this selected lines at same height. In blue the type 0 lines are indicated, populating the most equatorial latitudes (dominated mostly by down legs). This kind of structures has been informed in previous works, \citet{lloveras_2017} observed down legs in a rotation during the solar minima of 1996 and for the previous rotation CR-2081. A decrease in the amount of down legs in equatorial latitudes could be an indicator of increased coronal activity \citet{nuevo_2013}. In red the type I lines, populating all the streamer but mostly the mid latitudes. In violet the type II lines, which are mostly very large trans-equatorial field lines forming the envelope of the Streamer belt, and in green dots the type III lines, populating the coronal holes.
-}
+
 
 Of the 45000 legs selected in 2082, 14\% are type 0, 38\% are type I, 23\% are type II and 25\% type III, on the other hand of the 59000 legs selected in 2208, 8\% are type 0, 43\% are type I, 22\% are type II and 30\% type III.
 
@@ -516,7 +515,7 @@ II   & 0&97 &(\Mi&20&6\%)  &   8&9 &(\Pl&29&1\%) &   1&33 &(\Pl&16&5\%) \\
 III  & 0&66 &(\Mi&16&2\%)  &   7&7 &(\Pl&11&4\%) &   0&98 &(\Pl&~6&1\%) \\
 \hline          
 \end{tabular}
-\caption{Median value (indicated as ``Md'') of the statistical distribution of $\NCB$, $\lN$, and $\aTm$ for each coronal type of lines defined in Section \ref{trace}. For CR-2082 values are expressed in absolute terms, while for CR-2208 they are informed as a percentual variation relative to the CR-2082 value.}
+\caption{Median value (indicated as ``Md'') of the statistical distribution of $\NCB$, $\lN$, and $\aTm$ for each coronal type of lines defined in Section \ref{trace}. For CR-2082 values are expressed in absolute terms, while for CR-2208 they are informed as a percentual variation relative to the CR-2082 value.\albert{Propongo que para todas las cantidades absolutas informes siempre dos cifras significativas, y que todos los porcentajes los redondees a cero decimales (o sea, a veces una y a veces dos cifras significativas) y que no uses puntos para estos nunca. Doy dos ejemplos para no dejar dudas. Para $\NCB$ de Type-II: $1.0\,(-21\%)$. Para $\aTm$ de Type-III: $1.0\,(+6\%)$.}}
 \label{tabla_demt}
 \end{table}
 
@@ -559,7 +558,6 @@ We can see, on type 0 loops, a median value of energy input flux for CR2082 twic
 The type I loops show a loop-integrated positive conductive for each loop in both rotations consistent with positive gradients of temperatures. The conductive flux have values around 0.3 $10^{5}[\rm{erg\,sec^{-1}\,cm^{-2}}]$ in both rotations. Similar results have been found for loop-integrated radiative flux and energy input flux for both rotations.
 
 
-\diego{No son los mismos colores que el paper de ceci, tmb quizas podriamos poner la cant de LOOPS y los valores medianos, ceci insiste.}
 
 
 \subsection{Tomography and Models}\label{awsom_res} 
@@ -727,7 +725,7 @@ I  & 0&97 &(\Pl&~9&3\%)  &   9&8 &(\Mi&~7&1\%) &   1&55 &(\Mi&14&2\%) \\
 II  & 0&77 &(\Pl&11&7\%)  &  11&6 &(\Mi&17&2\%) &   1&55 &(\Mi&~9&7\%) \\
 III  & 0&56 &(\Mi&~1&9\%)  &   8&6 &(\Mi&16&3\%) &   1&04 &(\Mi&~9&6\%) \\
 \end{tabular}
-\caption{Median value (indicated as ``Md'') of the statistical distribution of $\NCB$, $\lN$, and $\aTm$ for each coronal type of lines defined in Section \ref{trace}. DEMT values are expressed in absolute terms, while AWSoM results are informed as a percentual variation relative to the corresponding DEMT value.}
+\caption{Median value (indicated as ``Md'') of the statistical distribution of $\NCB$, $\lN$, and $\aTm$ for each coronal type of lines defined in Section \ref{trace}. DEMT values are expressed in absolute terms, while AWSoM results are informed as a percentual variation relative to the corresponding DEMT value. \albert{Propongo que para todas las cantidades absolutas informes siempre dos cifras significativas, y que todos los porcentajes los redondees a cero decimales (o sea, a veces una y a veces dos cifras significativas) y que no uses puntos para estos nunca. Ejemplo para CR-2082 $\NCB$ de Type-II: $1.0\,(-23\%)$. Ejemplo para CR-2208 $\lambda_N$ de Type-II: $12.0\,(-17\%)$. Ejemplo para CR-2208 $\aTm$ de Type-II: $1.6\,(-10\%)$.}}
 \label{tabla_comp}
 \end{table}
 
