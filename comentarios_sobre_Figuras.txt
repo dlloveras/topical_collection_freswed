@@ -1,0 +1,23 @@
+
+** Comentarios de CONTENIDO. Son los prioritarios **
+
+Figura 5: El beneficio obvio es que las áreas de los 4 histogramas se condicen con las áreas respectivas de los mapas de la Figura 4.
+
+Figura 6: Type 0, I y II "conservan" los histogramas, me refiero a que sus medianas y stdev no han cambiado, al no cambiar los dos indicadores indica que la versión más raleada, la intermedia y la nueva (la menos raleada), dan siempre resultados estadísticamente casi idénticos. La excepción es Type III, los nuevos lucen mucho más ordenados. Notar algo interesante en el de <Tm> de CR-2208: apareció una población mayoritaria sub-MK. 
+
+Figura 7: Aquí algo interesante al pasar de más raleado (el más viejo), a raleado a medias (el de ayer), a el menos raleado (el de hoy). Notá que PHI_c deja de tener un signo definido ESTRICTO, pero sin embargo está CASI COMPLETAMENTE dominado por un signo definido. Excelente. Tengo una consulta respecto de esta Figura, pero es mejor verlo juntos. Me interesa ver mucho el code que las produce. Cuando nos veamos te cuento por qué.
+
+Figura 12: Consistentemente con el resultado de Type-II en la Figura 6, el gradiente Type III de CR2208 es grande pero su valor medio bajó. la comparación de CR-2208 en densidad es notable, y consistente con el panel correspondiente de la Figura 11.
+
+Figuras 13 y 14: Aquí los histogramas de DEMT deben coincidir exactamente con los que mostrás en la Figura 6. revisalo porque esto de hecho nunca sucedió. Asegurate que todo sea consistente
+
+
+** Comentarios de FORMA. Miralos po favor, pero atacalos o discutámolos LUEGO de converger los de arriba **
+
+Figura 12: O eliminás las impresiones XYOUTS, o imprimís: 'Solid line-style: DEMT' y 'Dashed line-style: AWSoM' Posicionalo mejor, que no se sobre imprima sobre el borde superior.
+
+Figuras 13 y 14: Sus tamaños de letra, etc deben ser modificados para que sean iguales a los de la Figura 6.
+
+Figura 15: eliminar impresiones XYOUTS.
+
+No es lo prioritario, pero los colores de las Figuras 4, 5, 10, 12 no son óptimos creo yo. Los colores magenta y rojo se confunden. Vos proponías verde en lugar de magenta. Lo que no me piace de esa idea es que hay verde en los PHIs. Mi propuesta: que ahora dejes esto así y que PRUEBES hacer más grande el tamaño-Y de la Figura 12, que es donde más se confunde. Probá, es simple. Te va a separar un poquito las lineas que se superponen mucho y quizá con eso estamos. Dejame pensar la paleta de colores. Creo que la mejor para los Type I y II es la de Fede (mirá el adjunto). Pensá que no se va a confundir con la de los PHIs (que no lo tocaría).

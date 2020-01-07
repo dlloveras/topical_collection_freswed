@@ -1,0 +1,7 @@
+
+Para las conclusiones:
+
+* De 3.1 (DEMT):
+
+* Hablar de consistencia completa con resultados previos (valores característicos de Nm², Tm y R, de estructura termodinámica, de up/down loops, etc) siendo esta la primer DEMT hollow y 3D regularized.
+
