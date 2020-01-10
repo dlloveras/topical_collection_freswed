@@ -187,18 +187,19 @@ To perform the comparison two specific rotations were selected, CR-2082 (2009, 0
 
 To determine the thermodynamical structure of both rotations, the DEMT technique was applied to respective time series of EUV images covering each first half rotation. To study CR-2082 and CR-2208 data taken by the EUVI-B/STEREO and AIA/SDO instruments was used, respectively.
 
-EUV images are affected by instrumental stray light contamination, which can be corrected by deconvolution of the point spread function (PSF). While in the case of AIA images there is no reliable determination of its PSF, it has been well determined for EUVI-B by \citet{shearer_2012}. For this article, all EUVI images were stray-light corrected. For the details of impact in $\Nm$ and $\Tm$, refer to \citet{lloveras_ba2017}.
-
 In DEMT, the low corona in the height range $1.0$ to $1.25\,\mrsun$ is discretized in a spherical computational grid. The size of the tomographic cell (or voxel) is set to 0.01 \rsun \ in the radial direction, while is set 2\deg\ in both the latitudinal and longitudinal directions. We carried out a reconstruction using half of a solar rotation blocking the lines-of-sight comming from the disk (i.e. only using off-limb data).
 
 Using the high cadence of data available, one image every 10 minutes were used. The selected images were averaged in 6-hour intervals which, given the angular resolution, is the cadence needed to fully constrain the inversion problem, for a total of about 55 images to cover a half solar rotation. For both rotations, the first 14 days of data were used.
 
-\diego{ DONDE QUEDA MEJOR COMENTAR ESTA MEJORA?
+EUV images are affected by instrumental stray light contamination, which can be corrected by deconvolution of the point spread function (PSF). While in the case of AIA images there is no reliable determination of its PSF, it has been well determined for EUVI-B by \citet{shearer_2012}. For this article, all EUVI images were stray-light corrected. For details of the impact on the tomographic results, refer to \citet{lloveras_ba2017}.
+
+\diego{
 Unlike in previous works, a 3D regularization scheme was applied, thus spurious artifacts (nduced by the previous longitude latitude regularization schemei) were minimized in the first two heights of the tomographic grid.}
 
-We refer the reader to \citet{frazin_2009} for a detailed description of the technique, and to \citet{vasquez_2016} for a recent review on all published work based on it. Here we summarize the key points. The technique involves two consecutive procedures.
+We refer the reader to \citet{frazin_2009} for a detailed description of the technique, and to \citet{vasquez_2016} for a recent review on all published work based on it. Here we summarize the key points of the technique that involves two consecutive procedures.
 
-In a first step, the time series of EUV images is used to solve a SRT problem, for each EUV band independently. As a result, the 3D distribution of the so called {filter band emissivity} (FBE) is determined for each band separately. The FBE, {an emissivity-type quantity}, is defined as the wavelength integral of the coronal EUV spectral emissivity and the telescope's passband function of each EUV channel. Line-of-sight (LOS) integration of the FBE provides synthetic images that can be quantitatively compared to the real data in the time series. To find the FBE, the tomographic problem is posed a global optimization problem in which the quadratic norm of the difference between all pairs of synthetic and real images is minimized. Spatial regularization terms are also included in the objective function as to minimize high frequency spurious artifacts that are due to the specific characteristics of the SRT sparse projection matrix \citep{frazin_2009,frazin_2000}. {Due to optical depth issues that may affect LOSs} passing very close to the limb, and to the decay of intensity with radii, the 3D maps produced by DEMT analysis typically cover the height range 1.02 to 1.23 \rsun \ \citep{frazin_2009}.
+
+In a first step, the time series of EUV images is used to solve a solar rotational tomography (SRT) problem, for each EUV band independently. As a result, the 3D distribution of the so called {filter band emissivity} (FBE) is determined for each band separately. The FBE, {an emissivity-type quantity}, is defined as the wavelength integral of the coronal EUV spectral emissivity and the telescope's passband function of each EUV channel. Line-of-sight (LOS) integration of the FBE provides synthetic images that can be quantitatively compared to the real data in the time series. To find the FBE, the tomographic problem is posed a global optimization problem in which the quadratic norm of the difference between all pairs of synthetic and real images is minimized. Spatial regularization terms are also included in the objective function as to minimize high frequency spurious artifacts that are due to the specific characteristics of the SRT sparse projection matrix \citep{frazin_2009,frazin_2000}. {Due to optical depth issues that may affect LOSs} passing very close to the limb, and to the decay of intensity with radii, the 3D maps produced by DEMT analysis typically cover the height range 1.02 to 1.23 \rsun \ \citep{frazin_2009}.
 
 \diego{COMO INTRODUZCO EL NIVEL DE REGULARIZACION? For each instrument, the DEMT analysis involves a cross-validation study to determine the optimal level of regularization.}
 
@@ -260,12 +261,16 @@ In the transition region {(TR)}, the plasma heats up and becomes less dense {by}
 \end{itemize}
 } 
 
-Aiming determination of the electron density and temperature along individual magnetic field lines, first both the thermodynamic results and the magnetic field obtained with the AWSoM model were interpolated into the DEMT grid. Then, the geometry of the field lines is determined by numerical integration of the first order differential equations  ${\rm d}r/B_r = r{\rm d}\theta/B_\theta = r\,\sin(\theta)\,{\rm d}\phi/B_\phi$, both inwards and outwards, from the specified 3D coordinates of a starting point. In order to evenly sample the whole volume spanned by the DEMT reconstructions, one starting point is selected at the center of each tomographic cell at 6 uniformly spaced heights, ranging from $1.025$ to $1.225\,\mrsun$, and every 2$^\circ$ in both latitude and longitude, for a total of $96,000$ starting points. Each traced field line is classified as ``open" if it intersects the source surface, set in this work at $r=6\,\mrsun$ (where lines become radial), or as ``closed" otherwise. In the case of closed magnetic field lines, loops {are} further classified as ``small" and ``large" upon their apex height being within or beyond the range of heights studied by DEMT, respectively.
+Aiming determination of the electron density and temperature along individual magnetic field lines, first both the thermodynamic results and the magnetic field obtained with the AWSoM model were interpolated into the DEMT grid. Then, the geometry of the field lines is determined by numerical integration of the first order differential equations  ${\rm d}r/B_r = r{\rm d}\theta/B_\theta = r\,\sin(\theta)\,{\rm d}\phi/B_\phi$, both inwards and outwards, from the specified 3D coordinates of a starting point. In order to evenly sample the whole volume spanned by the DEMT reconstructions, one starting point is selected at the center of each tomographic cell at 6 uniformly spaced heights, ranging from $1.025$ to $1.225\,\mrsun$, and every 2$^\circ$ in both latitude and longitude, for a total of $96,000$ starting points. Each traced field line is classified as ``open" if it intersects the source surface, set in this work at $r=6\,\mrsun$ (where lines become radial), or as ``closed" otherwise. In the case of closed magnetic lines, they are separated in two ``legs", from the base to the apex. 
+
+%\diego{Of these legs, those whose size $L$ are smaller than the average lengths $\langle L \rangle$ are called small, and those with $L > \langle L \rangle$ ar called large.}
+\diego{
+In the case of closed magnetic field lines, legs {are} further classified as ``small" and ``large" upon their apex height being within or beyond the heigh average of the closed legs, respectively.
+}
 
 At this stage, all DEMT and AWSoM products, electron density and mean temperature in particular, can be traced along open and closed magnetic field lines. Once the field line geometry is computed in high spatial resolution, only one sample point per tomographic cell is kept (the median one). To each sample point, the results corresponding to the tomographic voxel where it is located are assigned to it. As a result, for each field line one data point per tomographic cell is obtained. This allows to analyze how density and temperature, comming from both models, vary with height along each individual field line. This approach was firstly used by \citet{huang_2012} to study inverted temperature structures in the solar minimum corona, and later on applied by \citet{nuevo_2013} to expand that analysis to rotations with different level of activity.
 
-\diego{aca estoy haciendo la distincion entre la densidad y temp obtenida por demt y awsom}
-For each open field line, and for each leg of the closed ones, an exponential fit was then applied to the electron density and a linear fit applied to the electron temperature. For DEMT results, the data points used were $\sqravgN(r)$ and $\Tm(r)$, in case of AWSoM the data points were $\Ne(r)$ and $\Te(r)$. The exponential and linear fit equations are described by
+For each open field line, and for each leg of the closed ones, an exponential fit was then applied to the electron density and a linear fit applied to the electron temperature. For DEMT results the data points used were $\sqravgN(r)$ and $\Tm(r)$, and in case of AWSoM the data points used were $\Ne(r)$ and $\Te(r)$. The exponential and linear fit equations are described by
 
 \begin{eqnarray}\label{Nfit}
 \sqravgN &=& N_0\,\exp{\left[\,-\,\left(h/\l\right)\,/\,\left(r/\mrsun\right)\,\right]}\\
@@ -277,18 +282,13 @@ where $h \equiv r - 1\,\mrsun$ is the coronal height measured from the photosphe
 
 In the case of the electron density, the fitted function corresponds to the isothermal hydrostatic equilibrium solution, allowing for variation of the solar gravitational acceleration with height. This choice of function provides a straightforward means to directly evaluate how compatible is the observed coronal thermodynamical state with the hydrostatic solution.
 
-%La temperatura en funcion de la altura a lo largo de lineas muestra comportamientos lineales. En el presente trabajo nos focalizamos en lineas con temperaturas crecientes y decrecientes en foma lineal. Es decir nos quedamos con aquellas piernas donde el coeficiente de pearson entre la temperatura y la altura (rho) cumple rho mayor 0.5 (con p-value 0.05) y de esta forma se descartan aquellas piernas en las que los resultados DEMT no pueden asegurar un cambio notable de temperatura entre la base y el apice (asi no uso la palabra isotermico y evado ese problema)
+In the present work we focus on legs with increasing and decreasing temperatures in linear form. In other words, we selected those legs where the {Pearson correlation coefficient $\rho$ between temperature $T$ and radius $r$ meets $|\rhoTr| > 0.5$} {(with 95\% confidence level)}. In this way, those legs in which the DEMT results cannot ensure a noticeable change in temperature between the base and the apex, are discarded.
 
 
-%The temperature as a function of height along legs shows linear behaviors. 
-In the present work we focus on lines with increasing and decreasing temperatures in linear form. In other words, we selected those legs where the {Pearson correlation coefficient $\rho$ between temperature $T$ and radius $r$ meets $|\rhoTr| > 0.5$}. \temp{(with p-value less than 0.05)}. In this way, those legs in which the DEMT results cannot ensure a noticeable change in temperature between the base and the apex, are discarded.
+The linear fit allows characterization of its variation with height by means of a characteristic temperature gradient $\dr \Tm\,[\MK/\mrsun]$ along each leg. Both fits consider tomographic systematic uncertainty estimated in \citet{lloveras_2017}, i.e. $0.07$ MK for $\Tm$ and $4.0\,10^6 cm^{-3}$ for $\Ne$.
 
 
-The linear fit allows characterization of its variation with height by means of a characteristic temperature gradient $\dr \Tm\,[\MK/\mrsun]$ along each leg.
-\diego{En realidad esta regresion lineal utiliza de por si los errores, pero luego tmb los uso para el test de hipotesis, quizas vale la pena ponerlo solo ahi.}
-
-
-To measure how good the quality of the exponential fit to the electron density and the linear fit to the temperature data are, a chi-square merit function was used (see Section 15.2 \citet{recipes}). The errors were estimated in \citet{lloveras_2017}, $0.07$ MK for $\Tm$ and $4.0\,10^6 cm^{-3}$ for $\Ne$ and legs with p-value $>0.005$ were rejected. 
+To measure how good the quality of the fit are, a chi-square merit function was used (Section 15.2 \citet{recipes}).%, selecting only legs with 95\% confidence level. 
 
 
 %el p-valor es un concepto estadístico, no veo xq deberia ser explicado. Lo que si, en el paper explicare bien las hipotesis nulas y de esa forma el p-valor queda bien claro.
@@ -298,34 +298,30 @@ To measure how good the quality of the exponential fit to the electron density a
 
 {To be selected a leg must meet all following conditions.}
 
+\diego{
 \begin{enumerate}
-
 \item 
 The leg must go through at least five tomographic grid cells with reconstructed data, and there must be at least one data point in each third of the range of heights spanned by the leg.
-
 \item 
 The {value of the Pearson correlation coefficient meets $|\rhoTr| > 0.5$.}
-
 \item 
-The p-value of both the exponential and linear fit must be less than 0.05.
-
+The coefficient level of both the exponential and linear fit must be grater than \%90.
 \end{enumerate}
-
+}
 
 For the two targeted rotations, DEMT and AWSoM results were traced along the AWSoM field lines, which provides a way to characterize the global thermodynamic state of the inner solar corona and to compare them. To that end four different types of {legs} corresponding with four different types of magnetic structures were selected:
 %\temp{Hacer explicacion de los tipos de lineas bien secos, luego en fig 3 hacer notar que implica cada una en cuanto a estructura magnetica}\\
-
+\diego{
 \begin{itemize}
- \item Type 0 - Small (meaning with apex within the DEMT range of heights) closed field lines in the latitudes range $[-30\mdeg,+30\mdeg]$ and $\dr \Tm < 0$. %This class thoroughly populates the equator of the Streamer belt during a minimum solar rotation.
-
-\item  Type I - Small closed field lines in all latitudes, with $\dr \Tm > 0$. %This class thoroughly populates the inner of the Streamer belt.
-
-\item  Type II - Large closed field lines (meaning their apex surpasses the DEMT range of heights) in the latitudes range $[-90\mdeg,-30\mdeg] \cup [+30\mdeg,+90\mdeg]$ and $\dr \Tm > 0$. %This class is mostly populated by very large trans-equatorial field lines forming the envelope of the Streamer belt. 
-
-\item Type III - Open field lines (meaning with apex out the DEMT range of heights) in the latitudes range $[-90\mdeg,-60\mdeg] \cup [+60\mdeg,+90\mdeg]$ and $\dr \Tm > 0$.
-
+\item Type 0 - Small legs (coming from closed field) in the latitudes range $[-50\mdeg,+50\mdeg]$, and $\rhoTr < -0.5$. 
+ %This class thoroughly populates the equator of the Streamer belt during a minimum solar rotation.
+\item Type I - Small legs (coming from closed field) in the latitudes range $[-50\mdeg,+50\mdeg]$, and $\rhoTr > 0.5$. 
+%This class thoroughly populates the inner of the Streamer belt.
+\item Type II - Large legs (coming from closed field) in the latitudes range $[-90\mdeg,-40\mdeg] \cup [+40\mdeg,+90\mdeg]$, and $\rhoTr > 0.5$. 
+%This class is mostly populated by very large trans-equatorial field lines forming the envelope of the Streamer belt. 
+\item Type III - Open field lines in the latitudes range $[-90\mdeg,-60\mdeg] \cup [+60\mdeg,+90\mdeg]$, and $\rhoTr > 0.5$.
 \end{itemize}
-\diego{Hice las definiciones con gradiente de temperatura para que quede mas claro, pero en realidad uso el pearson.} \notebyalbert{Charlemos los tres en persona de esto.}
+}
 
 \subsection{{Energy input flux}}\label{energia} 
 
