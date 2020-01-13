@@ -172,7 +172,7 @@ Being the place where the solar atmosphere is heated and the solar wind accelera
 
 \section{Methodology}\label{meto}   
 
-\subsection{\albert{DEMT Reconstructions}}\label{demt}
+\subsection{{DEMT Reconstructions}}\label{demt}
 
 \noindent\notebyalbert{This section will summarize DEMT's main aspects and equations, only those needed to understand the paper. Nothing not needed to read this paper is provided. Also, no derivation of equations are provided. References are given so that the reader can dig deeper if so desires. Points to cover are:
 \begin{itemize}
@@ -235,7 +235,7 @@ being the average relative difference between the tomographic and the synthetic 
 %\temp{DEMT has been improved since the previously published work. We now perform hollow-tomography with the EUV images, (definir hollow-tom) and a 3D regularized of the solution was applyed to obtain smother and more reliable result at the edge of the tomographic grid.} \notebyalbert{NOTA de Albert: Explicá que hacés sin justificarte. Luego aclará como se hizo eso en trabajos previos, y cual es el impacto esperado. Puedo proveer un párrafo de ejemplo, pero creo que será mejor que vos escribas como te salga y yo luego edito. Algo muy importante para todo el paper: proponete escribir ``párrafos modulares". Es decir que, con las razonables limitaciones, puedan moverse de lugar, de orden, y sigan funcionando. No definiría hollow-tomography, es un término coloquial interno nuestro. Lo correcto es que al hablar de datos mucho más arribas expliques que los datos del disco no se utilizan, pero no le des un nombre a la tomografía.}
 
 
-\subsection{\albert{AWSoM Simulations}}\label{awsom} 
+\subsection{{AWSoM Simulations}}\label{awsom} 
 
 \noindent\notebyalbert{This section will summarize the AWSoM model. After a first version is written we will surely require some input from the Michigan friends. Points to cover:
 \begin{itemize}
@@ -248,7 +248,7 @@ being the average relative difference between the tomographic and the synthetic 
 
 In the transition region {(TR)}, the plasma heats up and becomes less dense {by} several orders of magnitude {over} a short distance. Modeling this region {realistically has a very high computational cost}. For this {reason,} the model uses {an artificially} extended {TR about $\approx 0.05\,\mrsun$ thick, as well as artificially large values for the electronic density and temperature as boundary conditions in $r=1\,\mrsun$.} Consequently, model results below {$\approx 1.05\,\mrsun$} were not taken into account in this article.
 
-\subsection{\albert{Tracing Results Along Magnetic Fieldlines}}\label{trace} 
+\subsection{{Tracing Results Along Magnetic Fieldlines}}\label{trace} 
 
 %\noindent\notebyalbert{This section will explain how the AWSoM magnetic model is used to trace the thermodynamic products of both DEMT and AWSoM along the fieldlines of AWSoM. This requires covering the following points:
 %\begin{itemize}
@@ -259,13 +259,13 @@ In the transition region {(TR)}, the plasma heats up and becomes less dense {by}
 %  \item Explain then the classification of field lines.
 %\end{itemize}} 
 
-\albert{To determine} the electron density and temperature along individual magnetic field lines, first both the thermodynamic results and the magnetic field obtained with the AWSoM model were interpolated into the DEMT grid. Then, the geometry of the field lines is determined by numerical integration of the first order differential equations  ${\rm d}r/B_r = r{\rm d}\theta/B_\theta = r\,\sin(\theta)\,{\rm d}\phi/B_\phi$, both inwards and outwards, from the specified 3D coordinates of a starting point. In order to evenly sample the whole volume spanned by the DEMT reconstructions, one starting point is selected at the center of each tomographic cell at 6 uniformly spaced heights, ranging from $1.025$ to $1.225\,\mrsun$, and every 2$^\circ$ in both latitude and longitude, for a total of $96,000$ starting points. 
+{To determine} the electron density and temperature along individual magnetic field lines, first both the thermodynamic results and the magnetic field obtained with the AWSoM model were interpolated into the DEMT grid. Then, the geometry of the field lines is determined by numerical integration of the first order differential equations  ${\rm d}r/B_r = r{\rm d}\theta/B_\theta = r\,\sin(\theta)\,{\rm d}\phi/B_\phi$, both inwards and outwards, from the specified 3D coordinates of a starting point. In order to evenly sample the whole volume spanned by the DEMT reconstructions, one starting point is selected at the center of each tomographic cell at 6 uniformly spaced heights, ranging from $1.025$ to $1.225\,\mrsun$, and every 2$^\circ$ in both latitude and longitude, for a total of $96,000$ starting points. 
 
-\albert{For analysis purposes, the geometry of all traced magnetic field lines is classified. They are first classified as open or closed according to their full geometry. Each closed magnetic field line is further classified as ``small" or ``large", according to its coronal length $L$ being smaller or larger than the median value ${\rm Md}(L)$ of the whole population, respectively. This median value is ${\rm Md}(L)=0.51$ and $0.46\,\mrsun$ for CR-2082 and CR-2208, respectively. Finally, each closed magnetic field line is separated in its two ``legs", defined as the two segments that go from each of its two footpoints (i.e. their location at $r=1\,\mrsun$) to its apex (i.e., the location of maximum height).} \notebyalbert{Diego, aquí ordené y corregí mucho y creo que es un buen ejemplo de corrección de estilo de redacción, si querés comparar con como estaba antes. Nota: MHD no tiene source surface! Ahora bien, además informo ${\rm Md}(L)$. Para ello multipliqué por dos el valor mediano de las longitudes de las piernas (que recuerdo de memoria, por ahí la pifié). Vale la pena que le muestres estos histogramas a Fede y la pieza de código de donde sale, para confirmar la metodología y de paso los números. Es importante.} 
+{For analysis purposes, the geometry of all traced magnetic field lines is classified. They are first classified as open or closed according to their full geometry. Each closed magnetic field line is further classified as ``small" or ``large", according to its coronal length $L$ being smaller or larger than the median value ${\rm Md}(L)$ of the whole population, respectively. This median value is \diego{${\rm Md}(L)=0.50$} and $0.46\,\mrsun$ for CR-2082 and CR-2208, respectively. Finally, each closed magnetic field line is separated in its two ``legs", defined as the two segments that go from each of its two footpoints (i.e. their location at $r=1\,\mrsun$) to its apex (i.e., the location of maximum height).} \notebyalbert{Diego, aquí ordené y corregí mucho y creo que es un buen ejemplo de corrección de estilo de redacción, si querés comparar con como estaba antes. Nota: MHD no tiene source surface! Ahora bien, además informo ${\rm Md}(L)$. Para ello multipliqué por dos el valor mediano de las longitudes de las piernas (que recuerdo de memoria, por ahí la pifié). Vale la pena que le muestres estos histogramas a Fede y la pieza de código de donde sale, para confirmar la metodología y de paso los números. Es importante.} 
 
-At this stage, all DEMT and AWSoM products, electron density and \albert{temperature} in particular, can be traced along open and closed magnetic field lines. Once the field line geometry is computed in high spatial resolution, only one sample point per tomographic cell is kept (the median one). To each sample point, the results corresponding to the tomographic voxel where it is located are assigned to it. As a result, for each field line one data point per tomographic cell \albert{is obtained. This approach} was firstly used by \citet{huang_2012} to \albert{study temperature} structures in the solar minimum \albert{corona and by} \citet{nuevo_2013} to expand that analysis to rotations with different level of activity.
+At this stage, all DEMT and AWSoM products, electron density and {temperature} in particular, can be traced along open and closed magnetic field lines. Once the field line geometry is computed in high spatial resolution, only one sample point per tomographic cell is kept (the median one). To each sample point, the results corresponding to the tomographic voxel where it is located are assigned to it. As a result, for each field line one data point per tomographic cell {is obtained. This approach} was firstly used by \citet{huang_2012} to {study temperature} structures in the solar minimum {corona and by} \citet{nuevo_2013} to expand that analysis to rotations with different level of activity.
 
-For each open field line and \albert{for each closed field leg}, an exponential fit \albert{was applied} to the electron density \albert{data points} and a linear fit applied to the electron temperature \albert{data points}. For \albert{the DEMT model} the data points used were $\sqravgN(r)$ and $\Tm(r)$, and in case of \albert{the AWSoM models} the data points used were $\Ne(r)$ and $\Te(r)$. The exponential and linear fit equations are described by
+For each open field line and {for each closed field leg}, an exponential fit {was applied} to the electron density {data points} and a linear fit applied to the electron temperature {data points}. For {the DEMT model} the data points used were $\sqravgN(r)$ and $\Tm(r)$, and in case of {the AWSoM models} the data points used were $\Ne(r)$ and $\Te(r)$. The exponential and linear fit equations are described by
 
 \begin{eqnarray}\label{Nfit}
 \sqravgN &=& N_0\,\exp{\left[\,-\,\left(h/\l\right)\,/\,\left(r/\mrsun\right)\,\right]}\\
@@ -277,23 +277,23 @@ where $h \equiv r - 1\,\mrsun$ is the coronal height measured from the photosphe
 
 In the case of the electron density, the fitted function corresponds to the isothermal hydrostatic equilibrium solution, allowing for variation of the solar gravitational acceleration with height. This choice of function provides a straightforward means to directly evaluate how compatible is the observed coronal thermodynamical state with the hydrostatic solution.
 
-\notebyalbert{Este párrafo debe ser movido al menos aquí (estaba más abajo), pues el siguiente párrafo ya utiliza el concepto up/down. Además está corregido.} \albert{Coronal magnetic structures for which temperature increases/decreases with height (in the inner corona) were dubbed as “up”/“down” loops by \citet{huang_2012} and \citet{nuevo_2013}, who first reported their presence by means of DEMT studies. As speculated by the authors of those works, loops of type down can be expected if the heating deposition is strongly confined near the coronal base of a magnetic loop. Down loops were first predicted by \citet{serio_1981}, and later on by \citet{aschwanden_2002}. In a recent study, \citet{schiff_2016} reproduced both down and up loops by means of numerical simulations, using a 1D steady-state model and considering time-averaged heating rates.}
+\notebyalbert{Este párrafo debe ser movido al menos aquí (estaba más abajo), pues el siguiente párrafo ya utiliza el concepto up/down. Además está corregido.} {Coronal magnetic structures for which temperature increases/decreases with height (in the inner corona) were dubbed as “up”/“down” loops by \citet{huang_2012} and \citet{nuevo_2013}, who first reported their presence by means of DEMT studies. As speculated by the authors of those works, loops of type down can be expected if the heating deposition is strongly confined near the coronal base of a magnetic loop. Down loops were first predicted by \citet{serio_1981}, and later on by \citet{aschwanden_2002}. In a recent study, \citet{schiff_2016} reproduced both down and up loops by means of numerical simulations, using a 1D steady-state model and considering time-averaged heating rates.}
 
 \notebyalbert{Reordené y corregí mucho el siguiente párrafo. Lo que see lee es correcto en cada detalle y palabra? Está bien explicado todo lo que concierne a chi-suqared? La jerga estadística es precisa y correcta (no confundir confidence level con confidence interval, está bien?}
-\albert{To determine if a traced filed line leg is of type up or down, we first determine the Pearson correlation coefficient $\rhoTr$ between the DEMT temperature $\Tm$ and the heliocentric height $r$ data points. We then select field lines for which the temperature increases or decreases significantly with height by requiring $|\rhoTr| > 0.5$. We then measure the quality of the linear fit to the temperature-height data by means of a chi-squared test \citep{recipes}, and select legs for which the fit has a 90\% confidence level. In this way, legs for which the DEMT temperature does not show a significant variation with height, or the linear fit to temperature is good enough, are not considered in this analysis. Finally, selected legs are then classified as up or down according to if $\rhoTr > +0.5$ or $\rhoTr < -0.5$, respectively. The linear fit allows characterization of the variation of $\Tm$ with height by means of a characteristic temperature gradient $\dr \Tm\,[\MK/\mrsun]$ along each leg. Both fits consider tomographic systematic uncertainty of the electron temeprature and density, respectively estimated to be $\Delta(\Tm) \approx 0.07\,\MK$ and $\Delta(N_e)\approx 4.0\times 10^6\,\cm^{-3}$ by \citet{lloveras_2017}. \notebyalbert{No comprendo bien si esta última linea está bien ubicada aquí, de todas formas lo corregí un poco. Precisaría que discutamos los tres estos tres párrafos en naranja el lunes.} In summary, to be selected a leg must meet all three following conditions:}
+{To determine if a traced filed line leg is of type up or down, we first determine the Pearson correlation coefficient $\rhoTr$ between the DEMT temperature $\Tm$ and the heliocentric height $r$ data points. We then select field lines for which the temperature increases or decreases significantly with height by requiring $|\rhoTr| > 0.5$. \diego{hablemos sobre esta frase} We then measure the quality of the linear fit to the temperature-height data by means of a chi-squared test \citep{recipes}, and select legs for which the fit has a 90\% confidence level. In this way, legs for which the DEMT temperature does not show a significant variation with height, or the linear fit to temperature is good enough, are not considered in this analysis. Finally, selected legs are then classified as up or down according to if $\rhoTr > +0.5$ or $\rhoTr < -0.5$, respectively. The linear fit allows characterization of the variation of $\Tm$ with height by means of a characteristic temperature gradient $\dr \Tm\,[\MK/\mrsun]$ along each leg. Both fits consider tomographic systematic uncertainty of the electron temeprature and density, respectively estimated to be $\Delta(\Tm) \approx 0.07\,\MK$ and $\Delta(N_e)\approx 4.0\times 10^6\,\cm^{-3}$ by \citet{lloveras_2017}. \notebyalbert{No comprendo bien si esta última linea está bien ubicada aquí, de todas formas lo corregí un poco. Precisaría que discutamos los tres estos tres párrafos en naranja el lunes.} In summary, to be selected a leg must meet all three following conditions:}
 
 \begin{enumerate}
 \item 
-The leg must go through at least five tomographic grid cells with reconstructed data, and there must be at least one data point in each third of the range of heights spanned by the leg. \albert{This requirement is set to ensure a reasonably spread sample of heights along the leg.}
+The leg must go through at least five tomographic grid cells with reconstructed data, and there must be at least one data point in each third of the range of heights spanned by the leg. {This requirement is set to ensure a reasonably spread sample of heights along the leg.}
 \item 
-The \albert{DEMT temperature and height data points must meet} $|\rhoTr| > 0.5$.
+The {DEMT temperature and height data points must meet} $|\rhoTr| > 0.5$.
 \item 
-\albert{The condifence level of both the exponential and linear fits must be larger than 90\%.} \notebyalbert{Aquí corregí, está bien expresado?}
+{The condifence level of both the exponential and linear fits must be larger than 90\%.} \notebyalbert{Aquí corregí, está bien expresado?}\diego{si!}
 \end{enumerate}
 
 {To characterize the global thermodynamic state of the inner solar corona in distinct magnetic structures, the DEMT and AWSoM results were traced along the magnetic field lines of the latter model. Based on the geometry and size of the loops, as well as on their thermodynamical properties, their legs were classified in four different types in this work:} \notebyalbert{Simplifiqué mucho esto.}
 
-\albert{
+{
 \begin{itemize}
 \item Type 0: closed-small-down with footpoints in the range $|{\rm latitude}|<50\mdeg$. 
 \item Type I: closed-small-up with footpoints in the range $|{\rm latitude}|<50\mdeg$. 
@@ -302,22 +302,22 @@ The \albert{DEMT temperature and height data points must meet} $|\rhoTr| > 0.5$.
 \end{itemize}
 }
 
-In Section \ref{resu}, the results of both the DEMT and AWSoM models in the distinct magnetic strucures are statistically analysed. \albert{As shown below, classification of legs from type 0 through II allows studying the streamer belt in three distinct, progressively outer layers.}
+In Section \ref{resu}, the results of both the DEMT and AWSoM models in the distinct magnetic strucures are statistically analysed. {As shown below, classification of legs from type 0 through II allows studying the streamer belt in three distinct, progressively outer layers.}
 
-\subsection{\albert{Energy Input Flux}}\label{energia} 
+\subsection{{Energy Input Flux}}\label{energia} 
 
 %\noindent\notebyalbert{This section will summarize how loop integrated energy quantities are computed from the DEMT products and the AWSoM magetic model alone. The summary will not include any derivation and will refer to Cecilia's paper. Only the results that are relevant are to be explicited. Start by explaining the model and assumptions, and end up summarizing the loop-integrated products (radiative and conductive fluxes). At the end the reader should understand that their sum is the enery input flux required at the coronal base to maintain the loop stable. This should be a very short section, as it is a summary of a single previous paper.}
 
-\albert{The high temperature of the corona requires heating mechanisms to compensate for the the losses. While the vast majority of the existing literature on coronal heating focuses on ARs, some studies have been dedicated to the heating of quiet-Sun regions. In particular,  \citet{maccormack_2017} developed a new application of the DEMT technique to estimate the energy input flux required at the base of quiet-Sun coronal loops to mantain them stable. The technique is based on tracing the DEMT results along field lines of a global coronal magnetic model, just as described in the previous Section \ref{trace}.}
+{The high temperature of the corona requires heating mechanisms to compensate for the the losses. While the vast majority of the existing literature on coronal heating focuses on ARs, some studies have been dedicated to the heating of quiet-Sun regions. In particular,  \citet{maccormack_2017} developed a new application of the DEMT technique to estimate the energy input flux required at the base of quiet-Sun coronal loops to mantain them stable. The technique is based on tracing the DEMT results along field lines of a global coronal magnetic model, just as described in the previous Section \ref{trace}.}
 
-\albert{Consider} a simple energy balance for each magnetic flux tube, \albert{in which the dominating losses of} radiative power ($E_r$) and thermal conduction power ($E_c$) are compensated \albert{by a} coronal heating power($E_h$) \citep{aschwanden_2004}:
+{Consider} a simple energy balance for each magnetic flux tube, {in which the dominating losses of} radiative power ($E_r$) and thermal conduction power ($E_c$) are compensated {by a} coronal heating power($E_h$) \citep{aschwanden_2004}:
 
 \begin{equation}\label{Balance}
 E_h(s) = E_r(s)+ E_c(s),
 \end{equation}
 
 \noindent
-where $s$ is the position along \albert{the flux tube} and the \albert{power quntities} are in units of $[{\rm erg\,sec^{-1}\,cm^{-3}}]$.
+where $s$ is the position along {the flux tube} and the {power quntities} are in units of $[{\rm erg\,sec^{-1}\,cm^{-3}}]$.
 
 {The thermal conduction power $E_c$ equals the divergence of the conductive heat flux $F_c$, i.e. $E_c(s)=[1/A(s)]\,{\rm d}[A(s)\,F_c(s)]/{\rm d}s$, where $A(s)$ is the transversal area of the magnetic flux tube at position $s$. Under a quiescent solar corona plasma regime, the conductive flux is assumed to be dominated by the electron thermal conduction, described by the usual Spitzer model \citep{spitzer_1962}
 
@@ -425,7 +425,7 @@ where the line integrated flux quantities $\phi_{r,c}\,[\rm{erg\,sec^{-1}\,cm^{-
 \end{center}
 \end{figure}
 
-{For both target rotations, the top panels of Figure \ref{rpoint_demt} show the latitude-longitude location (at heliocentric height $r=1.105\,\mrsun$) of all traced field line legs for which criterion (i) of Section \ref{trace} is met. Open legs are indicated in gray color and closed ones in black color. For each leg, the fits to tomografic temperature and density were applied, as given by Equations (\ref{Nfit})-(\ref{Tfit}). Considering the DEMT data points and the resulting fits along each leg, the bottom panels of Figure \ref{rpoint_demt} show the latitude-longitude location of the subset for which also both criteria (ii) and (iii) of Section \ref{trace} are met. Using a four-color code, type 0, I, II and III legs are shown in blue, red, {magenta and cyan} color, respectively.} Of the 48000 legs selected for CR-2082, 21\% are type 0, 31\% are type I, 22\% are type II and 26\% type III. On the other hand, of the 57000 legs selected for CR-2208, 9\% are type 0, 36\% are type I, 26\% are type II and 29\% type III. \notebyalbert{Luego de des-ralear, las piernas seleccionadas en Figura 4 eran del orden de 100 mil, para  ambas rotaciones. Algo no está consistente aquí.}
+{For both target rotations, the top panels of Figure \ref{rpoint_demt} show the latitude-longitude location (at heliocentric height $r=1.105\,\mrsun$) of all traced field line legs for which criterion (i) of Section \ref{trace} is met. Open legs are indicated in gray color and closed ones in black color. For each leg, the fits to tomografic temperature and density were applied, as given by Equations (\ref{Nfit})-(\ref{Tfit}). Considering the DEMT data points and the resulting fits along each leg, the bottom panels of Figure \ref{rpoint_demt} show the latitude-longitude location of the subset for which also both criteria (ii) and (iii) of Section \ref{trace} are met. Using a four-color code, type 0, I, II and III legs are shown in blue, red, {magenta and cyan} color, respectively.} Of the 48000 legs selected for CR-2082, 21\% are type 0, 31\% are type I, 22\% are type II and 26\% type III. On the other hand, of the 57000 legs selected for CR-2208, 9\% are type 0, 36\% are type I, 26\% are type II and 29\% type III. \notebyalbert{Luego de des-ralear, las piernas seleccionadas en Figura 4 eran del orden de 100 mil, para  ambas rotaciones. Algo no está consistente aquí.}\diego{Statloop 6 alturas noda algo asi como 150k piernas, algunas no se trazan (entre 30 y 40k) lo cual nos deja aprox 110k. SUpongo que te quedaste con ese numero. Pero elimino los cuasi isotermicos, perdemos 30k en el streamer y 10k en CH. Luego hacemos una seleccion qie involucra footpoints y ahi perdemos lo que falta! Es decir, el numero del draft ya es des-raleado.}
 
 {Type 0 (small down) legs mainly populate the equatorial latitudes. This kind of structure was originally found by \citet{huang_2012}, and their existence was shown to be anti-correlated with the solar activity level {around the solar minimum between SCs 24 and 25} by \citet{nuevo_2013}. Later on, \citet{lloveras_2017} showed {that} equatorial down loops in streamers were also to be found in the deep minimum between SCs {23 and 24}. Here, we verify the existence of this type of structure for the two target rotations. The relatively smaller population of down loops seen in CR-2208, as compared to CR-2082, is consistent with the aforementioned results by \citet{nuevo_2013}. Type I (small up) mainly populate the mid-latitudes, while type II (large up) legs are mostly very large trans-equatorial field lines forming the envelope of the streamer belt. Finally, type III (open) legs populate of course the CHs.}
 
@@ -472,7 +472,7 @@ Figure \ref{gradt_demt} shows frequency histograms (normalized to the total amou
 Type    & \multicolumn{4}{c}{$\med(\NCB)$}             & \multicolumn{4}{c}{$\med(\lN)$} & \multicolumn{4}{c}{$\med(\avgTe)$} \\
         & \multicolumn{4}{c}{$[10^8\,{\rm cm}^{-3}]$}  & \multicolumn{4}{c}{$[{\rm 10}^{-2}\,\mrsun]$} & \multicolumn{4}{c}{$[\MK]$} \\
 \hline
-0    & 1&24 &(\Mi&19\%)  &   \albert{\bf 7}&\albert{\bf 1} &(\Pl&~3\%) &   1&09 &(\Pl&24\%) \\
+0    & 1&24 &(\Mi&19\%)  &   {\bf 7}&{\bf 1} &(\Pl&~3\%) &   1&09 &(\Pl&24\%) \\
 I    & 1&15 &(\Mi&10\%)  &   7&5 &(\Pl&29\%) &   1&25 &(\Pl&24\%) \\
 II   & 0&98 &(\Mi&20\%)  &   9&9 &(\Pl&19\%) &   1&36 &(\Pl&16\%) \\
 III  & 0&65 &(\Mi&15\%)  &   7&6 &(\Pl&12\%) &   0&97 &(\Pl&~7\%) \\
@@ -484,7 +484,7 @@ III  & 0&65 &(\Mi&15\%)  &   7&6 &(\Pl&12\%) &   0&97 &(\Pl&~7\%) \\
 
 {Throughout the magnetically closed region of both rotations, type 0, I and II legs, associated to  increasingly outer regions of the equatorial streamer belt, progressively exhibit decreasing coronal base density, increasing density scale height, and increasing electron temperature. In both rotations also, type III field lines in the CHs are characterized by sub-MK temperatures, and electron density values of order $\approx 1/2$ of those observed for the type 0 and type I lines in the core of the equatorial streamer.}
 
-{A comparison of the results between the two rotations shows that, compared to CR-2082, target rotation CR-2208 was characterized by \albert{$\approx 10-20\%$} lower values of the electron density at the coronal base, $\approx 5-30\%$ larger values of density scale height, and \albert{$\approx 5-25\%$} larger values of the electron temperature.} 
+{A comparison of the results between the two rotations shows that, compared to CR-2082, target rotation CR-2208 was characterized by {$\approx 10-20\%$} lower values of the electron density at the coronal base, $\approx 5-30\%$ larger values of density scale height, and {$\approx 5-25\%$} larger values of the electron temperature.} 
 
 {To analyze the loop-integrated energy flux quantities introduced in Section \ref{trace}, we selected closed loops for which both legs have the same sign of the radial gradient of the electron temperature $\dr\Tm$.} In this way, according to the classification of both its legs, each given loop was classified as of type 0 (small down loop), I (small up loop), or II (large up loop). {For both target rotations, and for loops of type 0, I and II, Figure \ref{energia_demt} shows the frequency histogram of the loop-integrated energy flux quantities {$\phi_r$, $\phi_c$ and $\phi_h$ in blue, green and red color}, respectively.}
 
@@ -505,9 +505,9 @@ III  & 0&65 &(\Mi&15\%)  &   7&6 &(\Pl&12\%) &   0&97 &(\Pl&~7\%) \\
 
 {{The sign of the quantity $\phi_c$ depends on that of the conductive flux $F_c$. Equations (\ref{Fc}) and (\ref{phi_c}) imply that } down loops (type 0) and up loops (type I and II) are characterized by $\phi_c<0$ and $\phi_c>0$, respectively, {as verified} in Figure \ref{energia_demt}.}
 
-{{Adding the} radiative and conductive terms, the characteristic energy input flux at the coronal base is in the range $\phi_h\approx 0.5-1.5 \times 10^5\,\erg\,\cminvs\,\s^{-1}$, depending on the rotation and the type of {loop, matching the values reported by} \citet{maccormack_2017}. Note that for type 0 loops there is a marginal population characterized by the unphysical result $\phi_h<0$. As shown by \citet{maccormack_2017}, {this affects only the smallest sized loops of the type 0}, and it is {most probably} due to the limited temperature sensitivity of the instrumental passbands. The radiative loss term is {here calculated based on plasma emission detected by three coronal bands of EUVI or AIA. Though accounting for most of the coronal plasma, there surely is additional emission out of the instrumental sensitivity range. As a result,} the positive term $\phi_r$ is most likely underestimated, leading to values $\phi_h<0$ in loops of type 0, \albert{being characterized by $\phi_c<0$. \vfill}} % NOTA el vfill
+{{Adding the} radiative and conductive terms, the characteristic energy input flux at the coronal base is in the range $\phi_h\approx 0.5-1.5 \times 10^5\,\erg\,\cminvs\,\s^{-1}$, depending on the rotation and the type of {loop, matching the values reported by} \citet{maccormack_2017}. Note that for type 0 loops there is a marginal population characterized by the unphysical result $\phi_h<0$. As shown by \citet{maccormack_2017}, {this affects only the smallest sized loops of the type 0}, and it is {most probably} due to the limited temperature sensitivity of the instrumental passbands. The radiative loss term is {here calculated based on plasma emission detected by three coronal bands of EUVI or AIA. Though accounting for most of the coronal plasma, there surely is additional emission out of the instrumental sensitivity range. As a result,} the positive term $\phi_r$ is most likely underestimated, leading to values $\phi_h<0$ in loops of type 0, {being characterized by $\phi_c<0$. \vfill}} % NOTA el vfill
 
-\subsection{\albert{Comparison of the DEMT and AWSoM Models}}\label{awsom_res} 
+\subsection{{Comparison of the DEMT and AWSoM Models}}\label{awsom_res} 
 
 %\noindent\notebyalbert{This section will show the results of AWSoM for $N_e$ and $T_e$, and how they compare with the corresponding results of DEMT ($\sqravgN$ and $\Tm$). It will first show the Carrington maps of $N_e$ and $T_e$ at the same three heights we showed the same maps for the DEMT results.  As the two targets are highly axis-symmetric, a first quantitative comparison between AWSoM and DEMT will be shown as longitude-averaged latitudinal profiles of the results of both models at a sample height. Then we will show the lat/lon location of loops of type I, II and III at a middle height, just loke for DEMT results. To make comparisons in distinct magnetic structures, we will show the average radial dependence of results for loops of type I, II and III, overplotting the AWSoM and the DEMT results. For the tree types of loops we will show histograms of the DEMT and AWSoM products along field lines. This is a LOT of information from which and we need to pull out a few clear conclusions.}
 
@@ -567,7 +567,7 @@ III  & 0&65 &(\Mi&15\%)  &   7&6 &(\Pl&12\%) &   0&97 &(\Pl&~7\%) \\
 \end{center}
 \end{figure} 
 
-To characterize the results of the AWSoM model in distinct magnetic structures, its results for electron density and temperature were traced along its magnetic field lines. For each field line leg, the results were then fit to Equations (\ref{Nfit}) and (\ref{Tfit})\albert{, considering only data points above heliocentric height $1.055\,\mrsun$. We then classified the traced legs into types I, II and III, according to the criteria described in Section \ref{trace}.  Legs of type 0 are not included for AWSoM, as in its current implementation it can not simulate down loops, a point we will discuss in the next section.}
+To characterize the results of the AWSoM model in distinct magnetic structures, its results for electron density and temperature were traced along its magnetic field lines. For each field line leg, the results were then fit to Equations (\ref{Nfit}) and (\ref{Tfit}){, considering only data points above heliocentric height $1.055\,\mrsun$. We then classified the traced legs into types I, II and III, according to the criteria described in Section \ref{trace}.  Legs of type 0 are not included for AWSoM, as in its current implementation it can not simulate down loops, a point we will discuss in the next section.}
 
 \begin{figure}[h!]
 \begin{center}
@@ -605,7 +605,7 @@ To characterize the results of the AWSoM model in distinct magnetic structures, 
 \end{center}
 \end{figure} 
 
-{For the two target rotations, Table \ref{tabla_comp} summarizes a quantitative comparative analysis between the results of the DEMT and AWSoM models \albert{based on the results shown in Figures \ref{histos_2082} and \ref{histos_2208}}. The DEMT results are expressed as absolute values, while the ASWSoM results are informed as a percentual variation relative to the corresponding result for DEMT. The following major results can be drawn.}
+{For the two target rotations, Table \ref{tabla_comp} summarizes a quantitative comparative analysis between the results of the DEMT and AWSoM models {based on the results shown in Figures \ref{histos_2082} and \ref{histos_2208}}. The DEMT results are expressed as absolute values, while the ASWSoM results are informed as a percentual variation relative to the corresponding result for DEMT. The following major results can be drawn.}
 
 {For target rotation CR-2082, the median value of the electron density $\NCB$ of both models agree within $\approx 10-25\%$, depending of the type of leg, while the median value of the scale height $\lN$ agree within $\approx 10\%$. The leg-averaged electron temperature $\aTm$ of both models also agree within $10\%$. For target rotation CR-2208 the agreement of the median value of $\NCB$ and $\lN$ of both models is within $5\%$, while median values of $\aTm$ agree within $15\%$. These detailed results informed per magnetic structure are fully consistent with the large-scale comparison provided in Figure \ref{perf_lat}.}
 
@@ -616,14 +616,14 @@ Type    & \multicolumn{4}{c}{$\med(\NCB)$}             & \multicolumn{4}{c}{$\me
         & \multicolumn{4}{c}{$[10^8\,{\rm cm}^{-3}]$}  & \multicolumn{4}{c}{$[{\rm 10}^{-2}\,\mrsun]$} & \multicolumn{4}{c}{$[\MK]$} \\
 \hline
 CR-2082\\
-I    & 1&15 &(\Mi&14\%)  &   7&5 &(\Pl&~8\%) &   1&25 &(\Mi&\albert{\bf 10}\%) \\
-II   & 0&99 &(\Mi&25\%)  &   \albert{\bf 9}&9 &(\Mi&~2\%) &   1&36 &(\Mi&~2\%) \\
+I    & 1&15 &(\Mi&14\%)  &   7&5 &(\Pl&~8\%) &   1&25 &(\Mi&{\bf 10}\%) \\
+II   & 0&99 &(\Mi&25\%)  &   {\bf 9}&9 &(\Mi&~2\%) &   1&36 &(\Mi&~2\%) \\
 III  & 0&65 &(\Mi&15\%)  &   7&6 &(\Mi&~8\%) &   0&97 &(\Mi&~9\%) \\
 \hline          
 CR-2208\\
 I    & 1&03 &(\Pl&~6\%)  &   9&7 &(\Mi&~8\%) &   1&55 &(\Mi&17\%) \\
 II   & 0&79 &(\Pl&~9\%)  &  11&8 &(\Mi&14\%) &   1&58 &(\Mi&~8\%) \\
-III  & 0&55 &(\Pl&~\albert{\bf 2}\%)  &   8&6 &(\Mi&16\%) &   1&04 &(\Mi&11\%) \\
+III  & 0&55 &(\Pl&~{\bf 2}\%)  &   8&6 &(\Mi&16\%) &   1&04 &(\Mi&11\%) \\
 \end{tabular}
 \caption{Median value (indicated as ``Md'') of the statistical distribution of $\NCB$, $\lN$, and $\aTm$ for each coronal type of lines defined in Section \ref{trace}. DEMT values are expressed in absolute terms, while AWSoM results are informed as a percentual variation relative to the corresponding DEMT value.}
 \label{tabla_comp}
@@ -655,7 +655,7 @@ III  & 0&55 &(\Pl&~\albert{\bf 2}\%)  &   8&6 &(\Mi&16\%) &   1&04 &(\Mi&11\%) \
 \end{center}
 \end{figure}
 
-\section{\albert{Discussion and Conclusions}}\label{discu} 
+\section{{Discussion and Conclusions}}\label{discu} 
 
 \notebyalbert{Propongo que Diego escriba una primer sección limpia, ordenada. Lo que vos mandarías al Solar Physics, sin asteriscos ni nada raro. Expresate con párrafos limpios. Si querés destacar algo para discutir ponelo como una nota en rojo al final del párrafo correspondiente, no en el medio de los mismos. Yo creo que esto debe estructurarse así: 
 \begin{enumerate}
