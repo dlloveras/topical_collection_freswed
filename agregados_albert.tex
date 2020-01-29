@@ -1,0 +1,13 @@
+
+* Un párrafo para poner al discutir la Figura 5 en las conclusiones. Tenés que agregar a tu BIB el ApJ 2015 de Nuevo et al.
+
+In comparing the DEMT results obtained for the two selected targets, it is important to bear in mind they rely on data provided by two different instruments: AIA and EUVI. In order to quantify the systematic difference of the DEMT products based on both instruments, \citet{nuevo_2015}, who were the first to apply DEMT to AIA data, analyzed a single target using both instruments independently. They found that while the density product is essentially equal, the temperature product of DEMT based on AIA data is systematically 8\% larger than the one based on EUVI data, i.e. $\Tm^{\rm(AIA)}/\Tm^{\rm(EUVI)} \approx 1.08$. Considering such correction, Figure \ref{histos_fulldemt} and Table \ref{tabla_demt} indicate that CR2208 was $\approx 10-15\%$ hotter than CR2082 throughout the streamer belt region. As for the electron density products, CR2208 was found to be $\approx 15-20\%$ less dense than CR2082 throughout the streamer belt region. These systematic differences are beyond the uncertainty level in the DEMT products due to systematic sources (radiometric calibration and tomographic regularization), that \citet{lloveras_2017} estimated to be $\lesssim 5\%$ and $\approx 2\%$ for the electron temperature and density, respectively.
+
+Aquí indico como estimé estas diferencias basado en los valores MEDIANOS informados en los paneles de la Figura 5 (no en la Tabla), y usando los factores de corrección 1.08 y 0.98 para Sqrt(Nm) y Tm del paper de Fede del 2015. Las incertezas las extraje de la Tabla 7 del SolPhys de Diego del 2017, usando los valores Sigma/Mu
+
+IDL> print,( [1.36,1.55,1.55]/1.08 - [1.09,1.29,1.33] ) / [1.09,1.29,1.33]
+     0.155284     0.112547    0.0790865
+IDL> 
+IDL> print,( [1.04,0.97,0.77]/0.98 - [1.26,1.13,0.98] ) / [1.26,1.13,0.98]
+    -0.157758    -0.124074    -0.198251
+

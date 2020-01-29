@@ -1,44 +1,5 @@
 
-%---------REMOVE THESE OPTIONS AND DEFs BEFORE SUMBISSION---------------------------------------
-\usepackage[usenames,dvipsnames]{xcolor} % Las opciones: [USENAMES,DVIPSNAMES] 
-                                         % ponen a disposición los colores ejemplificados aquí:
-                                         % https://en.wikibooks.org/wiki/LaTeX/Colors
-\def\diego#1{\textcolor{red}{#1}}
-\def\albert#1{\textcolor{orange}{#1}}
-\def\fede#1{\textcolor{ForestGreen}{#1}}
-\def\temp#1{\textcolor{gray}{#1}}
-\def\notebyalbert#1{\textcolor{blue}{NOTE: #1}}
-%-----------------------------------------------------------------------------------------------
 
- Indeed, visual inspection of the DEMT temperature maps for CR-2208 in Figure \ref{momento2}, {reveals that in most of the CH region the result for $\Tm$ below height $1.105\,\mrsun$ is quite uniform and artificially low}. As it turns out, around and above height this height the score $R$ is lower and the temperature results are more reliable. As a result, the temperature gradient along these legs is artificially larger, with the linear fit trying to simultaneously fit the artificially low values of $\Tm$ at lower heights. In this case, DEMT performs poorly in modeling a LDEM that predicts the tomographic FBEs with reasonable accuracy.
-
- to the limited temperature sensitivity of the instrumental passbands. The radiative loss term is {here calculated based on plasma emission detected by three coronal bands of EUVI or AIA.
- 
- Indeed, the top panels in Figures \ref{carmaps_awsom_2082} and \ref{carmaps_awsom_2208}, at height $1.025\,\mrsun$, clearly do not represent coronal conditions (although we include them here for completeness).
-
-\includegraphics[width=0.495\textwidth]{figs/map_Ne_awsom_2082_185_short_1025_Rsun.pdf}
-\includegraphics[width=0.495\textwidth]{figs/map_Te_awsom_2082_185_short_1025_Rsun.pdf}
- 
-\includegraphics[width=0.495\textwidth]{figs/map_Ne_awsom_2208_185_short_1025_Rsun.pdf}
-\includegraphics[width=0.495\textwidth]{figs/map_Te_awsom_2208_185_short_1025_Rsun.pdf}
-
-As a result of the former, artifacts introduced by coronal dynamics are mitigated, and as a result of the latter, tomographic reconstructions behave more smoothly close to the radial boundaries of the computational grid when compared to previous reconstructions. 
- 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.495\textwidth]{figs/map_R_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1025_Rsun.pdf}
-\includegraphics[width=0.495\textwidth]{figs/map_R_CR2208_DEMT-AIA_H1_L522_r3d_1025_Rsun.pdf}
-\includegraphics[width=0.495\textwidth]{figs/map_R_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_Rsun.pdf}
-\includegraphics[width=0.495\textwidth]{figs/map_R_CR2208_DEMT-AIA_H1_L522_r3d_1065_Rsun.pdf}
-\includegraphics[width=0.495\textwidth]{figs/map_R_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf}
-\includegraphics[width=0.495\textwidth]{figs/map_R_CR2208_DEMT-AIA_H1_L522_r3d_1105_Rsun.pdf}
-\caption{{Carrington maps of the measure $R$ defined by Equation \ref{R}, for CR-2082 (left panels) and CR-2208 (right panels), at heights $1.025$, $1.065$ and $1.105\,\mrsun$, from top to bottom}. }
-\label{carmaps_R_2082_2208}
-\end{center}
-\end{figure}
-
-
-{For both rotations, Figure \ref{carmaps_R_2082_2208} shows {latitude-longitude} maps of {the DEMT} measure $R$ defined by Equation \ref{R}, at the same three heights shown in Figures \ref{momento1} and \ref{momento2}.
 
 %\notebyalbert{No comprendo esta frase:} \emph{This classification of types of lines automatically leads to specific regions arranged along all longitudes associated with different thermodynamic, with good symmetry between both hemispheres in both rotations.}
 

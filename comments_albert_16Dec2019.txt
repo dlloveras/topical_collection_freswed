@@ -1,0 +1,40 @@
+EL texto del artículo va a requerir mucha re-escritura, pero a mi me sirve que los elementos estén todos y en un orden razonable, en ese sentido esto va bien. La colección de correcciones de abajo es solo algunos detalles, si me pongo a corregir ahora el artículo es mucho más, todo a lo largo, y prefiero que eso ocurra más adelante. Ahora debemos ir al meolllo de las cosas. No obstante, inluyo algunas correcciones, medio al azar, son muy poquitas.
+
+* Section 2.4:
+
+La Eq. (9), mejor escribila en términos de la LDEM, como en la Eq. (13) del paper de Ceci:
+\begin{equation}
+E_r = \int\,\textrm{d}T\,T\,\LDEM(T)\,\Lambda(T)
+\end{equation}
+
+Los términos de la Eq (10) requieren ser explicados. La explicación a conituación no es clara, y de hecho está mal escrita. La Eq. (7) se integra en el VOLUMEN CORONAL COMPLETO de cada tubo de flujo y se divide por el área basal del mismo. Utilizando la condición solenoidal de B se llega a la Eq. (7), dónde... y ahí deberían darse las expresiones de Phir y Phic porque no pertenecen a la literatura estandard, y explicar a continuación como todos los elementos de esas dos expresiones surgen de los fits de DEMT y del modelo magnético de AWSoM. Donde si se puede ahorrar mucho espacio es en lo previo, la Eq (8) podría no incluirse por ejemplo. Creo que ahora lo mejor es que trates de completar la explicación dando las expresiones de Phir y Phic, y luego vemos de como limarla, probablemente eliminando la ec. (8). y además el texto puede compactarse, corregirse y reordenarse mucho. Poné las unidades de las cantidades Phi entre paréntesis a continuación de $\Phi_{h,r,c}$.
+
+
+* Section 3.1:
+
+N_0 (r = 1.0 Rsun )
+->
+N_0
+
+the tomographic basal electron density at N e (r = 1.025 Rsun )
+->
+the tomographic electron density at the coronal base N e (r = 1.025 Rsun )
+
+to the strict condition |ρ t | > 0.5 that discards possible isothermal values, according to DEMT results.
+->
+to the requirement $\rhoTr > 0.5$, which discards quasi-isothermal legs.
+
+Insisto en mi comentario de que en las discusiones usás type 1, 2 y 3, pero son I, II y III. Ejemplo: 
+"In blue the type 1 lines, populating all the streamer but mostly the mid latitudes. In red the type 2 lines, are mostly very large trans-equatorial field lines forming the envelope of the Streamer belt, and in green dots the type 3 lines, populating the coronal holes."
+
+$\NCB$ debe ser definido la primera vez que aparece, que es en donde yo lo había colocado en el texto del cuerpo del paper, en el párrafo que empieza "As an example of traced magnitudes.." (sic, mo me piace...). Está bien que insistas en el Caption de la figura 5. Ahora, es importante que en el cuerpo del texto se EXPLIQUE por que se define a eso como CB para el propósito de ESTE paper, ya que en tu paper previo se definió como 1.025.  Aquí surge un conflicto, lo llamamos "CB"? Lo importante es se definió un símbolo \NCB. y luego podemos darle otro contenido si nos parece. Yo lo dejaría así, pero si debe explicarse por que se llama a esta altura coronal base y por qué la destacamos.
+
+La conclusión más importante de los gráficos energéticos es que $Phi_h \sim 10^5$, donto en down como up legs, siendo sistemáticamente mayor en el último caso.
+
+* Section 3.2:
+
+En el caption de la Fig 9: loops->legs (2 veces)
+
+En el caption de la Fig 12: loop-averaged -> leg-averaged
+
+
