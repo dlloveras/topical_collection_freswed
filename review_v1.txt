@@ -1,0 +1,97 @@
+COMMENTS FOR THE AUTHOR:
+
+Review of Thermodynamic Structure of the Solar corona: tomographic reconstructions and MHD modeling
+
+This is a well-structured and clearly-written paper, presenting a detailed comparison of tomographic reconstructions of the low solar corona (which gives density and temperature), and a global MHD model. The work is important and valuable to the field, and is suitable for publication in Solar Physics. There are no major scientific concerns. The paper should be ready for publication if the following, mostly minor, concerns are addressed:
+
+Medium concerns
+1. All of the multi-panel figures that show longitude-latitude maps (e.g. figure 1, 2, 3 etc) are too small, it is very difficult to see any details. There is a lot of white space between the panels that can be removed, and this would be one way to instantly make the maps larger.
+
+2. Figure 3 and 11, bottom panels. I find it difficult to distinguish between the red and magenta colours. Can you replace magenta with a different colour, maybe green?
+
+3. Page 14, paragraph starting at line 34. You discuss the latitudinal distribution of short and long loops, and state that the small legs mainly populate the equatorial latitudes, and longer legs at higher latitudes. But this is a skewed result - their spatial positioning was a criteria for their categorisation, so this should not be presented as a scientific result.
+
+4. Table 2 summarises the differences of the median values of the DEMT and MHD model. This is OK. However, there is an opportunity here to present a more detailed comparison, including in particular the mean (or median) absolute deviation (MAD) of values between DEMT and MHD. The MAD is a more stringent, voxel-by-voxel test of the comparison, which cannot be seen from the histogram comparisons (e.g. figure 12/13) nor the median values of Table 2.
+
+5. You discuss the less reliable results from AIA in coronal holes. The very recent paper by Saqri et al (Solar Physics 295, 2020) is relevant here, and should be referenced.
+
+6. The abstract can be shortened somewhat, reducing the number of introductory sentences and with a little less emphasis on the method and future improvements, and more on the science results. In particular: the results of the energy balance analysis and the estimate of energy flux at the coronal base, which are important.
+
+7. Page 5, paragraph beginning line 34. You briefly describe fitting the DEM to a Gaussian. I know this approach is covered in detail in Nuevo 2015, but I would like a little more detail here. You should mention that, in general, DEMs do not necessarily have a clean Gaussian profile and that more complicated inversions are needed (reference https://ui.adsabs.harvard.edu/abs/2012A%26A...539A.146H/abstract , https://ui.adsabs.harvard.edu/abs/2019SoPh..294..135M/abstract , https://ui.adsabs.harvard.edu/abs/2019SoPh..294..136P/abstract ). Then explain briefly why DEMT leads to cleaner, non-multithermal profiles (due to the 3D spatial reconstruction of the line of sight). I assume that this is why you can use a straightforward Gaussian fit? Also efficiency?
+
+8. The introduction does not have many references to works beyond DEMT and AWSoM. The 2nd paragraph of the introduction offers a chance to remedy this, where you discuss the quiet-Sun corona. I know there are very few works that address the quiet corona in the context of DEM analysis, but you can reference https://www.aanda.org/articles/aa/full_html/2014/04/aa23054-13/aa23054-13.html. You can also mention https://iopscience.iop.org/article/10.1088/0004-637X/795/2/111 here (although you do reference this paper in more detail in the discussion). Another relevant paper which can be referenced, with DEM analysis of a large amount of quiet coronal data over long time periods, is https://advances.sciencemag.org/content/3/7/e1602056 .
+
+9. Some sections can benefit from weeding out of repetitions. You tend to repeat statements regarding the method a lot. For example:
+- Paragraph starting page 13, line 41. This has already been said in the method.
+- Sentence Page 14, line 25 'For each leg…
+- statement in parenthesis at page 15, line 24.
+- Section 4, first two paragraphs.
+- Page 26, line 26:
+ 'In the streamer belt region we combined the DEMT results and the AWSom magnetic model to infer the energy input phi at the coronal base required to maintain stable coronal loops. We found characteristic values in the range…'
+Shorten to: 'The energy input phi at the coronal base, required to maintain stable coronal loops, is in the range…'
+- Page 26, lines 38-43, between 'Results of the AWSoM….summarized as follows.' can be omitted.
+
+Minor grammatical improvements, typos, and removal of redundant statements
+Page number, line number: 
+3,36: quantitive analysis
+3, 44: based on data
+4, 25: absent => is this the right choice of word? I would think that the effect of fast dynamics is reduced, rather than being completely absent?
+Equation 1 (and subsequent). You use LDEM and TRF. Is it more correct to use Greek symbols rather than acronyms in the equations? However, if you have used these acronyms in equations in previous studies, please leave as is.
+6, 9: average absolute relative difference
+6, 35: energy partitioning is improved
+6, 46: broadened
+6, 50 and 51: explain the subscripts for N and T
+7, 39: waves is set to L
+7, 41: radially stretched => is there a better description? 
+7, 41: The spherical grid… has an adaptive grid that has fine resolution near the Sun, and increases…
+7, 46: million cells on 6 x 
+7, 49: The AWSoM simulation of the solar corona for…to the DEMT in the results section.
+8, 23: products are traced
+8, 33: For DEMT the data points used are 
+8, 48: hereafter, with del_r=e_r.del being the radial derivative operator, and e_r is the 
+9, 2: to directly compare the observed
+9, 11: , and later by Aschwanden
+9, 17: and the heliocentric height r. We then
+9, 19: the goodness of fit  we perform
+9, 21: uncertainty of the DEMT, selecting legs
+9, 24: linear fit to temperature is weak, are excluded
+9, 28: according to del_r
+9, 31: quality of the fit considers
+9, 33: In summary, a selected leg must meet three conditions:
+9, 40: temperature and height points must meet
+9, 48: four different types:
+10, 12: type 0 to II allows a study of the streamer belt in three distinct layers at increasing height.
+10, 25: model, as described
+10, 35: transverse => cross-sectional?
+11, 44: Figures 1 and 2 show …. (omit 'As an example', not needed)
+12, 35: Rotation CR-2082 has two small… (and same in following sentence)
+13: 34: by Equation 4 show that the agreement… (omit 'in most of the coronal volume of the DEMT grid', not needed)
+13: 36: A similar result was
+15, 19: to this point in the Conclusions.
+15, 28: Caption to table 1. Informed => given? Also explain that the CR-2208 values are given in parenthesis.
+15, 42: Table 1 summarises the results of the…
+16, 51: , the temperature based on AIA data
+17, 45: Considering this error, Figure 5
+18, 8: legs, each loop was
+18, 20: characterised    by temperatures that are are progressively larger, and farther from T_c, for both rotations.
+18, 33: smallest sized loops of type 0, and it is likely due to emission out of the instrumental sensitivity range.
+19, 17: axisymmetric, similar to the tomographic results. (In fact, you should avoid using 'tomographic model' since it is not a model, this happens a few times in the text).
+19, 45: a visual comparison reveals similar
+19, 50: Such a comparison…, with the top
+20, 30: are worth highlighting.
+20, 43: boundary. Lastly, the DEMT… ('note that' is usually not needed, you use quite a lot in text)
+20, 47: For comparison, B_r in the CHs increases from
+22, 42: tomografic => tomographic
+22, 48: This figure can be compared
+22, 49: …DEMT results. The AWSoM maps are more densely populated
+22, 50: having spatially smoother distributions of electron density and temperature than those of DEMT.
+23, 38: variation relative to the DEMT. (Then omit 'The following major results can be drawn', not needed).
+25, 47: Omit 'Concerning the DEMT reconstructions, Figure 3 shows that, for both rotations, …'  Start paragraph with 'Magnetic field lines of type…'
+25, 50: Omit 'Figure 5 and Table 1 show in 3D quantitive detail how…', and start sentence with 'These progressively outer'
+26, 12: such comparison provided a consistency check. (And omit 'for the changes implemented in the DEMT technique.')
+26, 20: less reliable for CHs.
+26, 24: algorithm to deal
+27, 12: This is likely the cause of a more accurate match to the…
+27, 14: Omit first sentence of paragraph, not needed.
+27, 30: in the range of
+27, 33: This will be investigated in
