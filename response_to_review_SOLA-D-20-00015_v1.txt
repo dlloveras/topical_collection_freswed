@@ -2,7 +2,7 @@ Dear Editor,
 
 Thank you very much for you email with the report on the first version of our manuscript SOLA-D-20-00015, titled "Thermodynamic Structure of the Solar Corona: Tomographic Reconstructions and MHD Modeling". 
 
-We deeply acknowledge the reviewer, whose report not only reflects how carefully he/she read it, but which also contains a series highly relevant, useful, and very constructive criticisms and suggestions. It is the opinion of the authors that this review ranks among the very best they ever read.
+We deeply acknowledge the reviewer, whose report reflects her/his very careful and interested read, containing a series of highly relevant, useful, and very constructive comments, criticisms, and suggestions.
 
 Below, we paste the full review. Following each query we include a response, highlighting the changes in the manuscript, where all edited/new text is marked in RED COLOR fonts.
 
@@ -22,14 +22,14 @@ Medium concerns
 
 We fully  agree. We improved the use of space in Figures 1 through 3. We also changed colors in the latter (see also query #2 below). Let us know.
 
-(ESTO ES TRABAJO PARA DIEGO & ALBERT).
+(ESTO ES TRABAJO PARA DIEGO & ALBERT, XTOOLS).
 
 -----------------------------------------------------------------------------------------
 2. Figure 3 and 11, bottom panels. I find it difficult to distinguish between the red and magenta colours. Can you replace magenta with a different colour, maybe green?
 
 We fully agree. Actually this affects more figures: Figures 3, 4, 11, and 14. In all of these we made the changes: RED->ORANGE and MAGENTA->DarkRed. These changes emulate our previous choice of colors in Nuevo et al. 82013) and Lloveras et al. (2017). We like to keep all "up" structures in "warm" palette. We edited text accordingly all along the manuscript.
 
-(ESTO ES TRABAJO PARA DIEGO & ALBERT, CON LA ASESORIA ARTISTICA DE FEDE).
+(ESTO ES TRABAJO PARA DIEGO, CON LA ASESORIA ARTISTICA DE FEDE y ALBERT).
 
 -----------------------------------------------------------------------------------------
 3. Page 14, paragraph starting at line 34. You discuss the latitudinal distribution of short and long loops, and state that the small legs mainly populate the equatorial latitudes, and longer legs at higher latitudes. But this is a skewed result - their spatial positioning was a criteria for their categorisation, so this should not be presented as a scientific result.
@@ -39,7 +39,7 @@ We fully agree. Actually this affects more figures: Figures 3, 4, 11, and 14. In
 -----------------------------------------------------------------------------------------
 4. Table 2 summarises the differences of the median values of the DEMT and MHD model. This is OK. However, there is an opportunity here to present a more detailed comparison, including in particular the mean (or median) absolute deviation (MAD) of values between DEMT and MHD. The MAD is a more stringent, voxel-by-voxel test of the comparison, which cannot be seen from the histogram comparisons (e.g. figure 12/13) nor the median values of Table 2.
 
-(CREO QUE NO ES BUENA IDEA. ESTO ESTA HECHO EN EL PAPER DE NISCHTHA. DEBEMOS DISCUTIRLO LOS TRES Y DAR UNA EXPLICACION CLARA AL REFEREE. COMO MINIMO LA PREGUNTA DEL REFEREE INDICA UNA DEFICIENCIA DEL PAPER: ESTO NO ESTA CLARO.)
+(CREO QUE NO ES BUENA IDEA. ESTO ESTA HECHO EN EL PAPER DE NISCHTHA. DEBEMOS DISCUTIRLO LOS TRES Y DAR UNA EXPLICACION CLARA AL REFEREE. COMO MINIMO LA PREGUNTA DEL REFEREE INDICA UNA DEFICIENCIA DEL PAPER: ESTO NO ESTA CLARO. O YO NO ESTY ENTENDIENDO AÚN EL COMENTARIO.)
 
 -----------------------------------------------------------------------------------------
 5. You discuss the less reliable results from AIA in coronal holes. The very recent paper by Saqri et al (Solar Physics 295, 2020) is relevant here, and should be referenced.
@@ -64,7 +64,7 @@ We fully agree. Actually this affects more figures: Figures 3, 4, 11, and 14. In
 
 
 
-LO QUE SIGUE DEBE SER TODO HECHO POR DIEGO, CONSULTANDOME SOLO A MI (ALBERT). TODO CAMBIO DEBERÁ ESTAR DESTACADO CON \EDIT{} EN ROJO.
+LO QUE SIGUE DEBE SER TODO HECHO POR DIEGO, CONSULTANDO PRINCIPALMENTE A ALBERT. TODO CAMBIO DEBERÁ ESTAR DESTACADO CON \EDIT{} EN ROJO.
 -----------------------------------------------------------------------------------------
 9. Some sections can benefit from weeding out of repetitions. You tend to repeat statements regarding the method a lot. For example:
 - Paragraph starting page 13, line 41. This has already been said in the method.
