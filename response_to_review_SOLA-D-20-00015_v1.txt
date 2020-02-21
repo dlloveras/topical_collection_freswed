@@ -43,7 +43,6 @@ DIEGO, SUGERIMOS CON FEDE QUE REHAGAS COMO EXPERIMENTO LOS PANELES INFERIORES DE
 
 SI VEMOS QUE NO ES TAN SUCIO EL RESULTADO, PODEMOS DEJAR ESA SELEECCION YE INCLUIR QUIZA UN NUEVO GRAFICO: HISTOGRAMA DE FOOTPOINT DE LOS 4 TIPPOS. (UNA SOLA FIURA DE 4 COLORES) QUE SEAN LOS NUEVOS DOS PANELES INFERIORES DE LA fIGURA 3, QUE TENDRIA 6 PANELES EN TOTAL. LUEGO DECIDAMOS SI QUEDA COMO ESTA O USAMOS UNA NUEVA VERSION, Y EN CUALQUIERA DE AMBOS CASOS RETOCAMOS UN POCO EL TEXTO DE PAG 14 QUE QUEDO "MISSLEADING".
 
-
 -----------------------------------------------------------------------------------------
 4. Table 2 summarises the differences of the median values of the DEMT and MHD model. This is OK. However, there is an opportunity here to present a more detailed comparison, including in particular the mean (or median) absolute deviation (MAD) of values between DEMT and MHD. The MAD is a more stringent, voxel-by-voxel test of the comparison, which cannot be seen from the histogram comparisons (e.g. figure 12/13) nor the median values of Table 2.
 
@@ -72,12 +71,13 @@ YO PROPONGO HACER DOS O TRES EXPERIMENTOS DE CARACRTERIZACION Y RESOLUCION DEL P
 -----------------------------------------------------------------------------------------
 7. Page 5, paragraph beginning line 34. You briefly describe fitting the DEM to a Gaussian. I know this approach is covered in detail in Nuevo 2015, but I would like a little more detail here. You should mention that, in general, DEMs do not necessarily have a clean Gaussian profile and that more complicated inversions are needed (reference https://ui.adsabs.harvard.edu/abs/2012A%26A...539A.146H/abstract , https://ui.adsabs.harvard.edu/abs/2019SoPh..294..135M/abstract , https://ui.adsabs.harvard.edu/abs/2019SoPh..294..136P/abstract ). Then explain briefly why DEMT leads to cleaner, non-multithermal profiles (due to the 3D spatial reconstruction of the line of sight). I assume that this is why you can use a straightforward Gaussian fit? Also efficiency?
 
-(A DISCUTIR ENTRE LOS TRES. HABRÁ FRASES NUEVAS EN EL DRAFT COMO CONSECUENCIA DE ESTO).
-
+Thanks for this comment and the references. As the LDEM describes the temeprature distribution of the plasma in a specific voxel it does not deal with different large scale structures, as it usually it may be the case for the DEM describing the plasma alog a full line-of.sight (LOS). In that sense one can expect as you say, cleaner, profiles than those observed by DEM studies. Still, if one adds tbhe 335 A channel, which adds two sensitivity poits at ~ 1.0 MK and ~ 2.5 MK, one finds that a a bi-Gaussian LDEM model best predics all the tomographic emissivities. That is the main conclusion of Nuevo et. al. (2015). The interpretation in that case is that the unresolved independent strands threading the voxel can have two different characteristic temperatures. Nuevo et al. (2015). So in this sense, the plasma within the voxel can be multi-thermal. As for efficiency, the parametric technique is comparably efficient independently of the chosen model. We did read the  We expanded this discussion in the text.
+ 
+ 
 -----------------------------------------------------------------------------------------
 8. The introduction does not have many references to works beyond DEMT and AWSoM. The 2nd paragraph of the introduction offers a chance to remedy this, where you discuss the quiet-Sun corona. I know there are very few works that address the quiet corona in the context of DEM analysis, but you can reference https://www.aanda.org/articles/aa/full_html/2014/04/aa23054-13/aa23054-13.html. You can also mention https://iopscience.iop.org/article/10.1088/0004-637X/795/2/111 here (although you do reference this paper in more detail in the discussion). Another relevant paper which can be referenced, with DEM analysis of a large amount of quiet coronal data over long time periods, is https://advances.sciencemag.org/content/3/7/e1602056 .
 
-(CREO QUE DEBEMOS HACER ESTO AL FINAL DE TODO, Y LUEGO EDITAR EL ABSTRACT).
+ALBERT VA A ESCRIBIR UN POCO DE TEXTO.
 
 LO QUE SIGUE DEBE SER TODO HECHO POR DIEGO, CONSULTANDO PRINCIPALMENTE A ALBERT. TODO CAMBIO DEBERÁ ESTAR DESTACADO CON \EDIT{} EN ROJO.
 -----------------------------------------------------------------------------------------
