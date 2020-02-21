@@ -87,12 +87,19 @@
 \newcommand{\ssr}{    {\it Space Sci. Rev.}} 
 \newcommand{\procspie}{{\it Proc. SPIE}}
 
-%-------------remove these two lines before submision--------------------------
+%---------REMOVE THESE OPTIONS AND DEFs BEFORE SUMBISSION---------------------------------------
 \usepackage[usenames,dvipsnames]{xcolor} % Las opciones: [USENAMES,DVIPSNAMES] 
+                                         % ponen a disposición los colores ejemplificados aquí:
+                                         % https://en.wikibooks.org/wiki/LaTeX/Colors
+\def\note#1{\textcolor{blue}{NOTE: #1}}
+\def\diego#1{\textcolor{red}{#1}}
 \def\albert#1{\textcolor{orange}{#1}}
-%------------------------------------------------------------------------------
+\def\fede#1{\textcolor{ForestGreen}{#1}}
+\def\temp#1{\textcolor{gray}{#1}}
+%-----------------------------------------------------------------------------------------------
 
 \begin{document}
+
 \begin{article}
 
 \begin{opening}
@@ -256,7 +263,7 @@ The {DEMT temperature and height data points must meet} $|\rhoTr| > 0.5$.
 \item Type III: open with footpoint in the range $|{\rm latitude}|>60\mdeg$.
 \end{itemize}
 
-Legs of type down turn out to have a significant population only for closed-small loops. In the case of closed-large loops and open field lines, there are very few cases of type down. Hence, the requirement of being up for legs of type II and III is included above to select the vastly dominating population \albert{in each case. In Section} \ref{resu}, the results of both the DEMT and AWSoM models in the distinct magnetic structures are statistically analysed. As shown in Section \ref{demt_res}, classification of legs from type 0 through II allows studying the streamer belt in three distinct, progressively outer layers.
+{Legs of type down turn out to have a significant population only for closed-small loops. In the case of closed-large loops and open field lines, there are very few cases of type down. Hence, the requirement of being up for legs of type II and III is included above to select the vastly dominating population in each case}. In Section \ref{resu}, the results of both the DEMT and AWSoM models in the distinct magnetic structures are statistically analysed. {As shown in Section \ref{demt_res}, classification of legs from type 0 through II allows studying the streamer belt in three distinct, progressively outer layers.}
 
 \subsection{{Energy Input Flux}}\label{energia} 
 
@@ -513,7 +520,7 @@ The sign of the quantity $\phi_c$ depends on that of the conductive flux $F_c$. 
 \end{center}
 \end{figure} 
 
-To characterize the results of the AWSoM model in distinct magnetic structures, its results for electron density and temperature were traced along its magnetic field lines. For each field line leg, the results were then fit to Equations \ref{Nfit} and \ref{Tfit}{, considering only data points above heliocentric height $1.055\,\mrsun$. We then classified the traced legs into types I, II and III, according to the criteria described in Section \ref{trace}.  Legs of type 0 are not included for AWSoM \albert{as it currently can not simulate down loops, as discussed in Section \ref{discu}.}}
+To characterize the results of the AWSoM model in distinct magnetic structures, its results for electron density and temperature were traced along its magnetic field lines. For each field line leg, the results were then fit to Equations \ref{Nfit} and \ref{Tfit}{, considering only data points above heliocentric height $1.055\,\mrsun$. We then classified the traced legs into types I, II and III, according to the criteria described in Section \ref{trace}.  Legs of type 0 are not included for AWSoM as it currently can not simulate down loops, as discussed in Section \ref{discu}.}
 
 \begin{figure}[h!]
 \begin{center}
@@ -616,14 +623,14 @@ Results of the AWSoM model {were compared} to those of the DEMT reconstructions 
 
 {The overall better match of the results of the current version of the AWSoM model compared to DEMT reconstructions is partly due to the improved energy partitioning scheme of the model, described in Section \ref{awsom}. Note also that the simulation of CR-2082 used GONG maps as boundary condition, while the simulation of CR-2208 used the improved ADAPT-GONG maps. This is likely the cause that the results of the AWSoM model show a more accurate match to the DEMT reconstructions in the case of CR-2208.}
 
-Within the {quantitative match between both {models summarized} in the previous paragraph, there are some qualitative agreements and {disagreements worth noticing}. For both rotations, the AWSoM model reproduces the relatively lower temperatures found by DEMT to characterize the low-latitudes of the equatorial streamer belt compared to its mid-latitudes. On the other hand, while the latitude of the open/closed magnetic boundary in both hemispheres matches the location of the strongest latitudinal gradient of the DEMT electron density {(physically expected in transitioning from magnetically closed to open regions)}, this is not the case for the AWSoM model, that shows a minimum density at the open/closed boundary. Also, while the DEMT electron density decreases from the open/closed boundary towards the poles (in both hemispheres of the two rotations), {as expected in transitioning from the source region of the slow to the fast component of the solar wind}, the AWSoM model shows the opposite trend. This behavior is notoriously opposite to that reported in the AWSoM model version used by \citet{oran_2015}, in which the electron density decreases from the open/closed boundary towards the poles.} {These unphysical characteristics of the results of the AWSoM model in the rage of low heights analysed here ($r\lesssim 1.2\,\mrsun$), may be attributed to the less reliable values of $B_r$ provided by both the GONG and ADAPT-GONG maps at subpolar latitudes. This will be further investigated in a follow up article focusing on the current deep minimum epoch, during which the large-scale corona shows the simplest possible structure.} 
+Within the {quantitative match between both {models summarized} in the previous paragraph, there are some qualitative agreements and {disagreements worth noticing}. For both rotations, the AWSoM model reproduces the relatively lower temperatures found by DEMT to characterize the low-latitudes of the equatorial streamer belt compared to its mid-latitudes. On the other hand, while the latitude of the open/closed magnetic boundary in both hemispheres matches the location of the strongest latitudinal gradient of the DEMT electron density {(physically expected in transitioning from magnetically closed to open regions)}, this is not the case for the AWSoM model, that shows a minimum density at the open/closed boundary. Also, while the DEMT electron density decreases from the open/closed boundary towards the poles (in both hemispheres of the two rotations), {as expected in transitioning from the source region of the slow to the fast component of the solar wind}, the AWSoM model shows the opposite trend. This behavior is notoriously opposite to that reported in the AWSoM model version used by \citet{oran_2015}, in which the electron density decreases from the open/closed boundary towards the poles.} {These unphysical characteristics of the results of the AWSoM model in the rage of low heights analysed here ($r\lesssim 1.2\,\mrsun$), may be attributed to the less reliable values of $B_r$ provided by both the GONG and ADAPT-GONG maps at subpolar latitudes. This will be further investigated in a follow up article focusing on the current deep minimum epoch, during which the large-scale corona shows the simplest possible structure.}
 
-\albert{Down loops are to be expected if heating is enhanced at the footpoints of coronal structures. \citet{schiff_2016} reproduced down loops by means of numerical simulations based on a 1D steady-state model, by requiring that the initial population of Alfvén waves is efficiently converted into compressive modes. Mode conversion is favored by the $\beta\gtrsim 1 $ condition found to characterize the regions where down loops are observed in DEMT \citep{nuevo_2013}. In the AWSoM model, heating is controlled by two key parameters, namely, the Alfvén wave dissipation length, and its reflection coefficient. So far, attempts to reproduce down loops within AWSoM simulations by increasing the reflection coefficient have not been successful.}
+Down loops are to be expected if heating is enhanced at the footpoints of coronal structures. \citet{schiff_2016} numerically simulated stable down loops by means of a 1D steady-state model, requiring that the initial population of Alfvén waves is efficiently converted into compressive modes. Mode conversion is favored by the $\beta\gtrsim 1 $ condition found to characterize the regions where down loops are observed in DEMT analysis \citep{nuevo_2013}. In the AWSoM model, heating is controlled by two key parameters, namely, the Alfvén wave dissipation length, and its reflection coefficient. So far, attempts to reproduce observed down loops in AWSoM simulations by increasing the reflection coefficient have not been successful.
 
 A detailed empirical description of the 3D thermodynamic structure of the inner corona at a global scale is currently only possible with tomographic techniques, such as DEMT. Using tomographic results for continuous validation of 3D MHD models is of high relevance for the continued improvement of models. In {follow up articles} we will {carry out the 3D DEMT reconstruction and MHD modeling of} new target rotations {selected from} the current solar minimum {epoch} between SCs 24 and 25, {as well as rotation CR-2219 corresponding to the July 2nd 2019 total solar eclipse.}
 
 \begin{acks}
-D.G.Ll. and C.M.C. {acknowledge} CONICET doctoral {fellowships} (Res. Nr. 4870) to IAFE that supported {their} participation in this research. {D.G.Ll, A.M.V., F.A.N. and C.M.C. acknowledge ANPCyT grant 2016/0221 to IAFE that partially supported their participation in this research. A.M.V. also acknowledges UBACyT grant 20020160100072BA to DCAO-UBA to FCEyN-UBA and IAFE that partially supported his participation in this research.}
+D.G.L. and C.M.C. {acknowledge} CONICET doctoral {fellowships} (Res. Nr. 4870) to IAFE that supported {their} participation in this research. {D.G.L, A.M.V., F.A.N. and C.M.C. acknowledge ANPCyT grant 2016/0221 to IAFE that partially supported their participation in this research. A.M.V. also acknowledges UBACyT grant 20020160100072BA to DCAO-UBA to FCEyN-UBA and IAFE that partially supported his participation in this research.} W.M. and B.v.H acknowledge NSF grant 1663800 that partially supported his participation in this research. W.M. also acknowledges NASA grants NNX16AL12G and 80NSSC17K0686.
 \end{acks}
 
 \begin{footnotesize}

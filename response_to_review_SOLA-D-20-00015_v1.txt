@@ -2,7 +2,7 @@ Dear Editor,
 
 Thank you very much for your email with the report on the first version of our manuscript SOLA-D-20-00015, titled "Thermodynamic Structure of the Solar Corona: Tomographic Reconstructions and MHD Modeling". 
 
-We deeply acknowledge the reviewer, whose report reflects her/his very careful and interested read, containing a series of highly relevant, useful, and very constructive comments, criticisms, and suggestions.
+We deeply acknowledge the reviewer, whose report reflects her/his very careful and interested read, containing a series of relevant, useful, and constructive criticisms and suggestions.
 
 Below, we paste the full review. Following each query we include a response, highlighting the changes in the manuscript, where all edited/new text is marked in RED COLOR fonts.
 
@@ -34,17 +34,35 @@ We fully agree. Actually this affects more figures: Figures 3, 4, 11, and 14. In
 -----------------------------------------------------------------------------------------
 3. Page 14, paragraph starting at line 34. You discuss the latitudinal distribution of short and long loops, and state that the small legs mainly populate the equatorial latitudes, and longer legs at higher latitudes. But this is a skewed result - their spatial positioning was a criteria for their categorisation, so this should not be presented as a scientific result.
 
-(ESTO REQUIERE NO SOLO DISCUTIRLO, SINO QUE REVISEMOS CON DIEGO QUE MAPAS PODEMOS PRODUCIR SIN CONDICIONAR LOS FOOTPOINTS, SOLO DISTINGUIENDO TAMAÑOS. SI MAYORITARIAMENTE QUEDAN COMO AHORA YO HARÍA ESO Y EDITARIA EN FORMA ACORDE. SINO HAY QUE REPARAFRASEAR COSAS. ESTE ES UN PUNTO SUPER INTERESANTE PARA MI.)
+DIEGO, SUGERIMOS CON FEDE QUE REHAGAS COMO EXPERIMENTO LOS PANELES INFERIORES DE LA FIGURAS 3 CON OTRA DEFINICION DE TYPE 0, I Y II. SE QUE LO HICIMOS, PERO LO REVISITARIA Y SUGERIMOS AGREGAR UN GRAFICO DE HISTOGRAMA DE FOOTPOINT DE LAS CUATRO CLASES. FIJATE:
+
+* TYPE-0:   CLOSED-SMALL-DOWN
+* TYPE-I:   CLOSED-SMALL-UP
+* TYPE-II:  CLOSED-LARGE-UP
+* TYPE-III: TAL COMO ESTÁ (PARA QUE NO NOS ENSUCIE LA ESTADISTICA DE RESULTADOS DEMT LOS CHs DE LAT BAJA)
+
+SI VEMOS QUE NO ES TAN SUCIO EL RESULTADO, PODEMOS DEJAR ESA SELEECCION YE INCLUIR QUIZA UN NUEVO GRAFICO: HISTOGRAMA DE FOOTPOINT DE LOS 4 TIPPOS. (UNA SOLA FIURA DE 4 COLORES) QUE SEAN LOS NUEVOS DOS PANELES INFERIORES DE LA fIGURA 3, QUE TENDRIA 6 PANELES EN TOTAL. LUEGO DECIDAMOS SI QUEDA COMO ESTA O USAMOS UNA NUEVA VERSION, Y EN CUALQUIERA DE AMBOS CASOS RETOCAMOS UN POCO EL TEXTO DE PAG 14 QUE QUEDO "MISSLEADING".
+
 
 -----------------------------------------------------------------------------------------
 4. Table 2 summarises the differences of the median values of the DEMT and MHD model. This is OK. However, there is an opportunity here to present a more detailed comparison, including in particular the mean (or median) absolute deviation (MAD) of values between DEMT and MHD. The MAD is a more stringent, voxel-by-voxel test of the comparison, which cannot be seen from the histogram comparisons (e.g. figure 12/13) nor the median values of Table 2.
 
-(CREO QUE NO ES BUENA IDEA. ESTO ESTA HECHO EN EL PAPER DE NISCHTHA. DEBEMOS DISCUTIRLO LOS TRES Y DAR UNA EXPLICACION CLARA AL REFEREE. COMO MINIMO LA PREGUNTA DEL REFEREE INDICA UNA DEFICIENCIA DEL PAPER: ESTO NO ESTA CLARO. O YO NO ESTY ENTENDIENDO AÚN EL COMENTARIO.)
+REFERENCIA: https://en.wikipedia.org/wiki/Median_absolute_deviation
+
+DIEGO, PROPONEMOS HACER ESTO CON FEDE. 
+
+DEFINAMOS EL CAMPO ESCALAR Xi = (X_MHD - X_tom) / X_tom, DONDE "X" ES CUALQUIER RESULTADO A LO LARGO DE LOOP (Ncb, LAMDA_n, ó <Tm>). LA TABLA 2 INFORMA LOS VALORES: "[Med(X_MHD) - Med(X_tom)]/Med(X_tom)".
+
+PROPONEMOS DEJAR LOS HISTOGRAMAS DE LAS FIGS 12 Y 13 COMO ESTÁN, PERO EXPANDIR LA TABLA 2 A QUE INCLUYA DOS COLUMNAS MÁS INDICANDO ESTOS DOS INDICADORES DE CADA CAMPO "Xi":
+* Med(Xi)  (debería aproximarse a los porcentuales y signos entre paréntesis que actualmente informa la Tabla 2).
+* MAD = Med(Abs(Xi-Med(Xi))).
+
+LUEGO EDITAMOS TABLA Y TEXTO DEL PAPER.
 
 -----------------------------------------------------------------------------------------
 5. You discuss the less reliable results from AIA in coronal holes. The very recent paper by Saqri et al (Solar Physics 295, 2020) is relevant here, and should be referenced.
 
-(DEBEMOS TODOS MIRAR ESE PAPER Y LUEGO DISCUTIR DONDE ESTAMOS CON ESTE TEMA. TENEMOS QUE VER LAS CORRIDAS DE FEFE. TERMINAREMOS PONIENDO ALGÚN DETALLE MÁS DEL TEMA EN EL DRAFT. )
+YO PROPONGO HACER DOS O TRES EXPERIMENTOS DE CARACRTERIZACION Y RESOLUCION DEL PROBLEMA TESTEANDOLO A LAS TRES ALTURAS DEL PAPER. SI VEMOS QUE SALIO, POR QUE NO MEJORAR EL PAPER.
 
 -----------------------------------------------------------------------------------------
 6. The abstract can be shortened somewhat, reducing the number of introductory sentences and with a little less emphasis on the method and future improvements, and more on the science results. In particular: the results of the energy balance analysis and the estimate of energy flux at the coronal base, which are important.
@@ -56,13 +74,10 @@ We fully agree. Actually this affects more figures: Figures 3, 4, 11, and 14. In
 
 (A DISCUTIR ENTRE LOS TRES. HABRÁ FRASES NUEVAS EN EL DRAFT COMO CONSECUENCIA DE ESTO).
 
-
 -----------------------------------------------------------------------------------------
 8. The introduction does not have many references to works beyond DEMT and AWSoM. The 2nd paragraph of the introduction offers a chance to remedy this, where you discuss the quiet-Sun corona. I know there are very few works that address the quiet corona in the context of DEM analysis, but you can reference https://www.aanda.org/articles/aa/full_html/2014/04/aa23054-13/aa23054-13.html. You can also mention https://iopscience.iop.org/article/10.1088/0004-637X/795/2/111 here (although you do reference this paper in more detail in the discussion). Another relevant paper which can be referenced, with DEM analysis of a large amount of quiet coronal data over long time periods, is https://advances.sciencemag.org/content/3/7/e1602056 .
 
 (CREO QUE DEBEMOS HACER ESTO AL FINAL DE TODO, Y LUEGO EDITAR EL ABSTRACT).
-
-
 
 LO QUE SIGUE DEBE SER TODO HECHO POR DIEGO, CONSULTANDO PRINCIPALMENTE A ALBERT. TODO CAMBIO DEBERÁ ESTAR DESTACADO CON \EDIT{} EN ROJO.
 -----------------------------------------------------------------------------------------
