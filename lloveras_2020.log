@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.28)  21 FEB 2020 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.28)  17 FEB 2020 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**lloveras_2020_Albert.tex
-(./lloveras_2020_Albert.tex
+**lloveras_2020.tex
+(./lloveras_2020.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 6 language(s) loaded.
 (./solarphysics.cls
@@ -594,47 +594,25 @@ Now handling font encoding PD1 ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(./lloveras_2020.aux)
+\openout1 = `lloveras_2020.aux'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Package option `usenames' ignored on input line 216.
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-LaTeX Info: Redefining \color on input line 709.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-))
-(./lloveras_2020_Albert.aux)
-\openout1 = `lloveras_2020_Albert.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 101.
+Package hyperref Info: Link coloring OFF on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -644,13 +622,13 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count112
 )
-LaTeX Info: Redefining \ref on input line 101.
-LaTeX Info: Redefining \pageref on input line 101.
-LaTeX Info: Redefining \nameref on input line 101.
+LaTeX Info: Redefining \ref on input line 90.
+LaTeX Info: Redefining \pageref on input line 90.
+LaTeX Info: Redefining \nameref on input line 90.
 
-(./lloveras_2020_Albert.out) (./lloveras_2020_Albert.out)
+(./lloveras_2020.out) (./lloveras_2020.out)
 \@outlinefile=\write5
-\openout5 = `lloveras_2020_Albert.out'.
+\openout5 = `lloveras_2020.out'.
 
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -686,22 +664,22 @@ e
 Article 1
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 142.
+(Font)              size <12> substituted on input line 131.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 142.
+(Font)              size <12> substituted on input line 131.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 142.
+LaTeX Font Info:    Try loading font information for U+msa on input line 131.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 142.
+LaTeX Font Info:    Try loading font information for U+msb on input line 131.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 142.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 131.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -709,78 +687,78 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 <orcid.pdf, id=45, 9.03375pt x 9.03375pt>
 File: orcid.pdf Graphic file (type pdf)
 <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf  used on input line 142.
+Package pdftex.def Info: orcid.pdf  used on input line 131.
 (pdftex.def)             Requested size: 9.0337pt x 9.0337pt.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 142.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 131.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 142.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 131.
 
 File: orcid.pdf Graphic file (type pdf)
 <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf  used on input line 142.
+Package pdftex.def Info: orcid.pdf  used on input line 131.
 (pdftex.def)             Requested size: 9.0337pt x 9.0337pt.
 File: orcid.pdf Graphic file (type pdf)
 <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf  used on input line 142.
+Package pdftex.def Info: orcid.pdf  used on input line 131.
 (pdftex.def)             Requested size: 9.0337pt x 9.0337pt.
 File: orcid.pdf Graphic file (type pdf)
 <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf  used on input line 142.
+Package pdftex.def Info: orcid.pdf  used on input line 131.
 (pdftex.def)             Requested size: 9.0337pt x 9.0337pt.
 File: orcid.pdf Graphic file (type pdf)
 <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf  used on input line 142.
+Package pdftex.def Info: orcid.pdf  used on input line 131.
 (pdftex.def)             Requested size: 9.0337pt x 9.0337pt.
 File: orcid.pdf Graphic file (type pdf)
 <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf  used on input line 142.
+Package pdftex.def Info: orcid.pdf  used on input line 131.
 (pdftex.def)             Requested size: 9.0337pt x 9.0337pt.
 File: orcid.pdf Graphic file (type pdf)
 <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf  used on input line 142.
+Package pdftex.def Info: orcid.pdf  used on input line 131.
 (pdftex.def)             Requested size: 9.0337pt x 9.0337pt.
 File: orcid.pdf Graphic file (type pdf)
 <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf  used on input line 142.
+Package pdftex.def Info: orcid.pdf  used on input line 131.
 (pdftex.def)             Requested size: 9.0337pt x 9.0337pt.
-LaTeX Font Info:    Try loading font information for U+mvs on input line 142.
+LaTeX Font Info:    Try loading font information for U+mvs on input line 131.
 (/usr/share/texlive/texmf-dist/tex/latex/marvosym/umvs.fd)
-Underfull \hbox (badness 10000) detected at line 142
+Underfull \hbox (badness 10000) detected at line 131
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 142
+Underfull \hbox (badness 10000) detected at line 131
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 142
+Underfull \hbox (badness 10000) detected at line 131
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 142
+Underfull \hbox (badness 10000) detected at line 131
 [][][]
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 142.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 131.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
  Abstract [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./orcid.pdf>] 
 Keywords [2] [3]
 [4] [5] [6] [7] [8]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 260.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 249.
  [9] [10]
 <figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1025_Rsun.pdf, id=247, 975.64
 5pt x 487.8225pt>
@@ -788,7 +766,7 @@ File: figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1025_Rsun.pdf Graphic fi
 le (type pdf)
 <use figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1025_Rsun.pdf>
 Package pdftex.def Info: figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1025_
-Rsun.pdf  used on input line 324.
+Rsun.pdf  used on input line 313.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1025_Rsun.pdf, id=248, 975.64
 5pt x 487.8225pt>
@@ -796,7 +774,7 @@ File: figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1025_Rsun.pdf Graphic fi
 le (type pdf)
 <use figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1025_Rsun.pdf>
 Package pdftex.def Info: figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1025_
-Rsun.pdf  used on input line 325.
+Rsun.pdf  used on input line 314.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_Rsun.pdf, id=249, 975.64
 5pt x 487.8225pt>
@@ -804,7 +782,7 @@ File: figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_Rsun.pdf Graphic fi
 le (type pdf)
 <use figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_Rsun.pdf>
 Package pdftex.def Info: figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_
-Rsun.pdf  used on input line 326.
+Rsun.pdf  used on input line 315.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_Rsun.pdf, id=250, 975.64
 5pt x 487.8225pt>
@@ -812,7 +790,7 @@ File: figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_Rsun.pdf Graphic fi
 le (type pdf)
 <use figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_Rsun.pdf>
 Package pdftex.def Info: figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1065_
-Rsun.pdf  used on input line 327.
+Rsun.pdf  used on input line 316.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf, id=251, 975.64
 5pt x 487.8225pt>
@@ -820,7 +798,7 @@ File: figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf Graphic fi
 le (type pdf)
 <use figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf>
 Package pdftex.def Info: figs/map_Ne_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_
-Rsun.pdf  used on input line 328.
+Rsun.pdf  used on input line 317.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf, id=252, 975.64
 5pt x 487.8225pt>
@@ -828,7 +806,7 @@ File: figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf Graphic fi
 le (type pdf)
 <use figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_Rsun.pdf>
 Package pdftex.def Info: figs/map_Tm_CR2082_DEMT-EUVI_behind_H1-L3523_r3d_1105_
-Rsun.pdf  used on input line 329.
+Rsun.pdf  used on input line 318.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
  Figure 1 [11]
 <figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1025_Rsun.pdf, id=264, 975.645pt x 487
@@ -837,7 +815,7 @@ File: figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1025_Rsun.pdf Graphic file (type
 pdf)
 <use figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1025_Rsun.pdf>
 Package pdftex.def Info: figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1025_Rsun.pdf 
- used on input line 341.
+ used on input line 330.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1025_Rsun.pdf, id=265, 975.645pt x 487
 .8225pt>
@@ -845,7 +823,7 @@ File: figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1025_Rsun.pdf Graphic file (type
 pdf)
 <use figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1025_Rsun.pdf>
 Package pdftex.def Info: figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1025_Rsun.pdf 
- used on input line 342.
+ used on input line 331.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1065_Rsun.pdf, id=266, 975.645pt x 487
 .8225pt>
@@ -853,7 +831,7 @@ File: figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1065_Rsun.pdf Graphic file (type
 pdf)
 <use figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1065_Rsun.pdf>
 Package pdftex.def Info: figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1065_Rsun.pdf 
- used on input line 343.
+ used on input line 332.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1065_Rsun.pdf, id=267, 975.645pt x 487
 .8225pt>
@@ -861,7 +839,7 @@ File: figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1065_Rsun.pdf Graphic file (type
 pdf)
 <use figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1065_Rsun.pdf>
 Package pdftex.def Info: figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1065_Rsun.pdf 
- used on input line 344.
+ used on input line 333.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1105_Rsun.pdf, id=268, 975.645pt x 487
 .8225pt>
@@ -869,7 +847,7 @@ File: figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1105_Rsun.pdf Graphic file (type
 pdf)
 <use figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1105_Rsun.pdf>
 Package pdftex.def Info: figs/map_Ne_CR2208_DEMT-AIA_H1_L522_r3d_1105_Rsun.pdf 
- used on input line 345.
+ used on input line 334.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1105_Rsun.pdf, id=269, 975.645pt x 487
 .8225pt>
@@ -877,7 +855,7 @@ File: figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1105_Rsun.pdf Graphic file (type
 pdf)
 <use figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1105_Rsun.pdf>
 Package pdftex.def Info: figs/map_Tm_CR2208_DEMT-AIA_H1_L522_r3d_1105_Rsun.pdf 
- used on input line 346.
+ used on input line 335.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
  Figure 2
 
@@ -895,7 +873,7 @@ File: figs/Grispoint_2082_demt_paper_test_Rpoint-map.pdf Graphic file (type pdf
 )
 <use figs/Grispoint_2082_demt_paper_test_Rpoint-map.pdf>
 Package pdftex.def Info: figs/Grispoint_2082_demt_paper_test_Rpoint-map.pdf  us
-ed on input line 360.
+ed on input line 349.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Grispoint_2208_demt_paper_test_Rpoint-map.pdf, id=330, 722.7pt x 361.35pt
 >
@@ -903,7 +881,7 @@ File: figs/Grispoint_2208_demt_paper_test_Rpoint-map.pdf Graphic file (type pdf
 )
 <use figs/Grispoint_2208_demt_paper_test_Rpoint-map.pdf>
 Package pdftex.def Info: figs/Grispoint_2208_demt_paper_test_Rpoint-map.pdf  us
-ed on input line 361.
+ed on input line 350.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Highpoint_2082_demt_paper_cr2082_full_Rpoint-map.pdf, id=332, 722.7pt x 3
 61.35pt>
@@ -911,7 +889,7 @@ File: figs/Highpoint_2082_demt_paper_cr2082_full_Rpoint-map.pdf Graphic file (t
 ype pdf)
 <use figs/Highpoint_2082_demt_paper_cr2082_full_Rpoint-map.pdf>
 Package pdftex.def Info: figs/Highpoint_2082_demt_paper_cr2082_full_Rpoint-map.
-pdf  used on input line 362.
+pdf  used on input line 351.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Highpoint_2208_demt_paper_cr2208_full_Rpoint-map.pdf, id=334, 722.7pt x 3
 61.35pt>
@@ -919,7 +897,7 @@ File: figs/Highpoint_2208_demt_paper_cr2208_full_Rpoint-map.pdf Graphic file (t
 ype pdf)
 <use figs/Highpoint_2208_demt_paper_cr2208_full_Rpoint-map.pdf>
 Package pdftex.def Info: figs/Highpoint_2208_demt_paper_cr2208_full_Rpoint-map.
-pdf  used on input line 365.
+pdf  used on input line 354.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
  Figure 3
 
@@ -941,7 +919,7 @@ radt-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_cr2082_full_dob
 le_errortriple_gradt-eps-converted-to.pdf figs/histo_cr2082_full_doble_errortri
 ple_gradt.eps>
-(epstopdf)             \includegraphics on input line 379.
+(epstopdf)             \includegraphics on input line 368.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -954,7 +932,7 @@ File: figs/histo_cr2082_full_doble_errortriple_gradt-eps-converted-to.pdf Graph
 ic file (type pdf)
 <use figs/histo_cr2082_full_doble_errortriple_gradt-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_cr2082_full_doble_errortriple_gradt-eps-con
-verted-to.pdf  used on input line 379.
+verted-to.pdf  used on input line 368.
 (pdftex.def)             Requested size: 171.76433pt x 86.74782pt.
 Package epstopdf Info: Source file: <figs/histo_cr2208_full_doble_errortriple_g
 radt.eps>
@@ -967,7 +945,7 @@ radt-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_cr2208_full_dob
 le_errortriple_gradt-eps-converted-to.pdf figs/histo_cr2208_full_doble_errortri
 ple_gradt.eps>
-(epstopdf)             \includegraphics on input line 380.
+(epstopdf)             \includegraphics on input line 369.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -980,7 +958,7 @@ File: figs/histo_cr2208_full_doble_errortriple_gradt-eps-converted-to.pdf Graph
 ic file (type pdf)
 <use figs/histo_cr2208_full_doble_errortriple_gradt-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_cr2208_full_doble_errortriple_gradt-eps-con
-verted-to.pdf  used on input line 380.
+verted-to.pdf  used on input line 369.
 (pdftex.def)             Requested size: 171.76433pt x 86.74782pt.
 Figure 4
 
@@ -1001,7 +979,7 @@ n_ne_1055-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_streamer_down_ne_1055-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_st
 reamer_down_ne_1055.eps>
-(epstopdf)             \includegraphics on input line 392.
+(epstopdf)             \includegraphics on input line 381.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1014,7 +992,7 @@ File: figs/histo_2082_2208_fulldemt_streamer_down_ne_1055-eps-converted-to.pdf
 Graphic file (type pdf)
 <use figs/histo_2082_2208_fulldemt_streamer_down_ne_1055-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_streamer_down_ne_1055-ep
-s-converted-to.pdf  used on input line 392.
+s-converted-to.pdf  used on input line 381.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_streamer_dow
 n_lambda_n.eps>
@@ -1027,7 +1005,7 @@ n_lambda_n-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_streamer_down_lambda_n-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_s
 treamer_down_lambda_n.eps>
-(epstopdf)             \includegraphics on input line 393.
+(epstopdf)             \includegraphics on input line 382.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1041,7 +1019,7 @@ File: figs/histo_2082_2208_fulldemt_streamer_down_lambda_n-eps-converted-to.pdf
 <use figs/histo_2082_2208_fulldemt_streamer_down_lambda_n-eps-converted-to.pdf>
 
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_streamer_down_lambda_n-e
-ps-converted-to.pdf  used on input line 393.
+ps-converted-to.pdf  used on input line 382.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_streamer_dow
 n_Tm.eps>
@@ -1054,7 +1032,7 @@ n_Tm-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_streamer_down_Tm-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_streame
 r_down_Tm.eps>
-(epstopdf)             \includegraphics on input line 394.
+(epstopdf)             \includegraphics on input line 383.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1067,7 +1045,7 @@ File: figs/histo_2082_2208_fulldemt_streamer_down_Tm-eps-converted-to.pdf Graph
 ic file (type pdf)
 <use figs/histo_2082_2208_fulldemt_streamer_down_Tm-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_streamer_down_Tm-eps-con
-verted-to.pdf  used on input line 394.
+verted-to.pdf  used on input line 383.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_streamer_up_
 ne_1055.eps>
@@ -1080,7 +1058,7 @@ ne_1055-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_streamer_up_ne_1055-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_stre
 amer_up_ne_1055.eps>
-(epstopdf)             \includegraphics on input line 395.
+(epstopdf)             \includegraphics on input line 384.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1093,7 +1071,7 @@ File: figs/histo_2082_2208_fulldemt_streamer_up_ne_1055-eps-converted-to.pdf Gr
 aphic file (type pdf)
 <use figs/histo_2082_2208_fulldemt_streamer_up_ne_1055-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_streamer_up_ne_1055-eps-
-converted-to.pdf  used on input line 395.
+converted-to.pdf  used on input line 384.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_streamer_up_
 lambda_n.eps>
@@ -1106,7 +1084,7 @@ lambda_n-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_streamer_up_lambda_n-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_str
 eamer_up_lambda_n.eps>
-(epstopdf)             \includegraphics on input line 396.
+(epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1119,7 +1097,7 @@ File: figs/histo_2082_2208_fulldemt_streamer_up_lambda_n-eps-converted-to.pdf G
 raphic file (type pdf)
 <use figs/histo_2082_2208_fulldemt_streamer_up_lambda_n-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_streamer_up_lambda_n-eps
--converted-to.pdf  used on input line 396.
+-converted-to.pdf  used on input line 385.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_streamer_up_
 Tm.eps>
@@ -1132,7 +1110,7 @@ Tm-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_streamer_up_Tm-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_streamer_
 up_Tm.eps>
-(epstopdf)             \includegraphics on input line 397.
+(epstopdf)             \includegraphics on input line 386.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1145,7 +1123,7 @@ File: figs/histo_2082_2208_fulldemt_streamer_up_Tm-eps-converted-to.pdf Graphic
  file (type pdf)
 <use figs/histo_2082_2208_fulldemt_streamer_up_Tm-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_streamer_up_Tm-eps-conve
-rted-to.pdf  used on input line 397.
+rted-to.pdf  used on input line 386.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_bound_up_ne_
 1055.eps>
@@ -1158,7 +1136,7 @@ Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_bound_up_ne_
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_bound_up_ne_1055-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_bound_u
 p_ne_1055.eps>
-(epstopdf)             \includegraphics on input line 398.
+(epstopdf)             \includegraphics on input line 387.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1171,7 +1149,7 @@ File: figs/histo_2082_2208_fulldemt_bound_up_ne_1055-eps-converted-to.pdf Graph
 ic file (type pdf)
 <use figs/histo_2082_2208_fulldemt_bound_up_ne_1055-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_bound_up_ne_1055-eps-con
-verted-to.pdf  used on input line 398.
+verted-to.pdf  used on input line 387.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_bound_up_lam
 bda_n.eps>
@@ -1184,7 +1162,7 @@ bda_n-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_bound_up_lambda_n-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_bound_
 up_lambda_n.eps>
-(epstopdf)             \includegraphics on input line 399.
+(epstopdf)             \includegraphics on input line 388.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1197,7 +1175,7 @@ File: figs/histo_2082_2208_fulldemt_bound_up_lambda_n-eps-converted-to.pdf Grap
 hic file (type pdf)
 <use figs/histo_2082_2208_fulldemt_bound_up_lambda_n-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_bound_up_lambda_n-eps-co
-nverted-to.pdf  used on input line 399.
+nverted-to.pdf  used on input line 388.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_bound_up_Tm.
 eps>
@@ -1210,7 +1188,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_bound_up_Tm-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_bound_up_Tm.
 eps>
-(epstopdf)             \includegraphics on input line 400.
+(epstopdf)             \includegraphics on input line 389.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1223,7 +1201,7 @@ File: figs/histo_2082_2208_fulldemt_bound_up_Tm-eps-converted-to.pdf Graphic fi
 le (type pdf)
 <use figs/histo_2082_2208_fulldemt_bound_up_Tm-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_bound_up_Tm-eps-converte
-d-to.pdf  used on input line 400.
+d-to.pdf  used on input line 389.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_CH_up_ne_105
 5.eps>
@@ -1236,7 +1214,7 @@ Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_CH_up_ne_105
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_CH_up_ne_1055-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_CH_up_ne_1
 055.eps>
-(epstopdf)             \includegraphics on input line 401.
+(epstopdf)             \includegraphics on input line 390.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1249,7 +1227,7 @@ File: figs/histo_2082_2208_fulldemt_CH_up_ne_1055-eps-converted-to.pdf Graphic
 file (type pdf)
 <use figs/histo_2082_2208_fulldemt_CH_up_ne_1055-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_CH_up_ne_1055-eps-conver
-ted-to.pdf  used on input line 401.
+ted-to.pdf  used on input line 390.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_CH_up_lambda
 _n.eps>
@@ -1262,7 +1240,7 @@ _n-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_CH_up_lambda_n-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_CH_up_lam
 bda_n.eps>
-(epstopdf)             \includegraphics on input line 402.
+(epstopdf)             \includegraphics on input line 391.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1275,7 +1253,7 @@ File: figs/histo_2082_2208_fulldemt_CH_up_lambda_n-eps-converted-to.pdf Graphic
  file (type pdf)
 <use figs/histo_2082_2208_fulldemt_CH_up_lambda_n-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_CH_up_lambda_n-eps-conve
-rted-to.pdf  used on input line 402.
+rted-to.pdf  used on input line 391.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_CH_up_Tm.eps
 >
@@ -1287,7 +1265,7 @@ Package epstopdf Info: Source file: <figs/histo_2082_2208_fulldemt_CH_up_Tm.eps
 (epstopdf)                    size: 8567 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_2208_fulld
 emt_CH_up_Tm-eps-converted-to.pdf figs/histo_2082_2208_fulldemt_CH_up_Tm.eps>
-(epstopdf)             \includegraphics on input line 403.
+(epstopdf)             \includegraphics on input line 392.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1300,7 +1278,7 @@ File: figs/histo_2082_2208_fulldemt_CH_up_Tm-eps-converted-to.pdf Graphic file
 (type pdf)
 <use figs/histo_2082_2208_fulldemt_CH_up_Tm-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_2208_fulldemt_CH_up_Tm-eps-converted-t
-o.pdf  used on input line 403.
+o.pdf  used on input line 392.
 (pdftex.def)             Requested size: 107.56915pt x 80.67497pt.
 Figure 5
 
@@ -1317,7 +1295,7 @@ ed-to.pdf>
 (epstopdf)                    size: 11176 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/histocr2082_ccdownene
 rgia-eps-converted-to.pdf figs/histocr2082_ccdownenergia.eps>
-(epstopdf)             \includegraphics on input line 433.
+(epstopdf)             \includegraphics on input line 422.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1330,7 +1308,7 @@ File: figs/histocr2082_ccdownenergia-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figs/histocr2082_ccdownenergia-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histocr2082_ccdownenergia-eps-converted-to.pdf  u
-sed on input line 433.
+sed on input line 422.
 (pdftex.def)             Requested size: 171.7633pt x 128.81828pt.
 Package epstopdf Info: Source file: <figs/histocr2208_ccdownenergia.eps>
 (epstopdf)                    date: 2020-01-08 15:15:52
@@ -1341,7 +1319,7 @@ ed-to.pdf>
 (epstopdf)                    size: 11301 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/histocr2208_ccdownene
 rgia-eps-converted-to.pdf figs/histocr2208_ccdownenergia.eps>
-(epstopdf)             \includegraphics on input line 434.
+(epstopdf)             \includegraphics on input line 423.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1354,7 +1332,7 @@ File: figs/histocr2208_ccdownenergia-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figs/histocr2208_ccdownenergia-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histocr2208_ccdownenergia-eps-converted-to.pdf  u
-sed on input line 434.
+sed on input line 423.
 (pdftex.def)             Requested size: 171.7633pt x 128.81828pt.
 Package epstopdf Info: Source file: <figs/histocr2082_ccenergia.eps>
 (epstopdf)                    date: 2020-01-08 15:15:52
@@ -1365,7 +1343,7 @@ o.pdf>
 (epstopdf)                    size: 10752 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/histocr2082_ccenergia
 -eps-converted-to.pdf figs/histocr2082_ccenergia.eps>
-(epstopdf)             \includegraphics on input line 435.
+(epstopdf)             \includegraphics on input line 424.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1376,7 +1354,7 @@ f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: figs/histocr2082_ccenergia-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/histocr2082_ccenergia-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histocr2082_ccenergia-eps-converted-to.pdf  used 
-on input line 435.
+on input line 424.
 (pdftex.def)             Requested size: 171.7633pt x 128.81828pt.
 Package epstopdf Info: Source file: <figs/histocr2208_ccenergia.eps>
 (epstopdf)                    date: 2020-01-08 15:15:52
@@ -1387,7 +1365,7 @@ o.pdf>
 (epstopdf)                    size: 11550 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/histocr2208_ccenergia
 -eps-converted-to.pdf figs/histocr2208_ccenergia.eps>
-(epstopdf)             \includegraphics on input line 436.
+(epstopdf)             \includegraphics on input line 425.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1398,7 +1376,7 @@ f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: figs/histocr2208_ccenergia-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/histocr2208_ccenergia-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histocr2208_ccenergia-eps-converted-to.pdf  used 
-on input line 436.
+on input line 425.
 (pdftex.def)             Requested size: 171.7633pt x 128.81828pt.
 Package epstopdf Info: Source file: <figs/histocr2082_cgenergia.eps>
 (epstopdf)                    date: 2020-01-08 15:15:52
@@ -1409,7 +1387,7 @@ o.pdf>
 (epstopdf)                    size: 10807 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/histocr2082_cgenergia
 -eps-converted-to.pdf figs/histocr2082_cgenergia.eps>
-(epstopdf)             \includegraphics on input line 437.
+(epstopdf)             \includegraphics on input line 426.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1420,7 +1398,7 @@ f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: figs/histocr2082_cgenergia-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/histocr2082_cgenergia-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histocr2082_cgenergia-eps-converted-to.pdf  used 
-on input line 437.
+on input line 426.
 (pdftex.def)             Requested size: 171.7633pt x 128.81828pt.
 Package epstopdf Info: Source file: <figs/histocr2208_cgenergia.eps>
 (epstopdf)                    date: 2020-01-08 15:15:52
@@ -1431,7 +1409,7 @@ o.pdf>
 (epstopdf)                    size: 10753 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/histocr2208_cgenergia
 -eps-converted-to.pdf figs/histocr2208_cgenergia.eps>
-(epstopdf)             \includegraphics on input line 438.
+(epstopdf)             \includegraphics on input line 427.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1442,7 +1420,7 @@ f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: figs/histocr2208_cgenergia-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/histocr2208_cgenergia-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histocr2208_cgenergia-eps-converted-to.pdf  used 
-on input line 438.
+on input line 427.
 (pdftex.def)             Requested size: 171.7633pt x 128.81828pt.
 Figure 6
 
@@ -1471,14 +1449,14 @@ t>
 File: figs/map_Br_awsom_2082_185_extend_1005_Rsun.pdf Graphic file (type pdf)
 <use figs/map_Br_awsom_2082_185_extend_1005_Rsun.pdf>
 Package pdftex.def Info: figs/map_Br_awsom_2082_185_extend_1005_Rsun.pdf  used 
-on input line 460.
+on input line 449.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Br_awsom_2208_185_extend_1005_Rsun.pdf, id=655, 975.645pt x 487.8225p
 t>
 File: figs/map_Br_awsom_2208_185_extend_1005_Rsun.pdf Graphic file (type pdf)
 <use figs/map_Br_awsom_2208_185_extend_1005_Rsun.pdf>
 Package pdftex.def Info: figs/map_Br_awsom_2208_185_extend_1005_Rsun.pdf  used 
-on input line 461.
+on input line 450.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 
 Figure 7
@@ -1490,28 +1468,28 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: figs/map_Ne_awsom_2082_185_short_1065_Rsun.pdf Graphic file (type pdf)
 <use figs/map_Ne_awsom_2082_185_short_1065_Rsun.pdf>
 Package pdftex.def Info: figs/map_Ne_awsom_2082_185_short_1065_Rsun.pdf  used o
-n input line 471.
+n input line 460.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Te_awsom_2082_185_short_1065_Rsun.pdf, id=663, 975.645pt x 487.8225pt
 >
 File: figs/map_Te_awsom_2082_185_short_1065_Rsun.pdf Graphic file (type pdf)
 <use figs/map_Te_awsom_2082_185_short_1065_Rsun.pdf>
 Package pdftex.def Info: figs/map_Te_awsom_2082_185_short_1065_Rsun.pdf  used o
-n input line 472.
+n input line 461.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Ne_awsom_2082_185_short_1105_Rsun.pdf, id=664, 975.645pt x 487.8225pt
 >
 File: figs/map_Ne_awsom_2082_185_short_1105_Rsun.pdf Graphic file (type pdf)
 <use figs/map_Ne_awsom_2082_185_short_1105_Rsun.pdf>
 Package pdftex.def Info: figs/map_Ne_awsom_2082_185_short_1105_Rsun.pdf  used o
-n input line 473.
+n input line 462.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Te_awsom_2082_185_short_1105_Rsun.pdf, id=665, 975.645pt x 487.8225pt
 >
 File: figs/map_Te_awsom_2082_185_short_1105_Rsun.pdf Graphic file (type pdf)
 <use figs/map_Te_awsom_2082_185_short_1105_Rsun.pdf>
 Package pdftex.def Info: figs/map_Te_awsom_2082_185_short_1105_Rsun.pdf  used o
-n input line 474.
+n input line 463.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 Figure 8 [18]
 <figs/map_Ne_awsom_2208_185_short_1065_Rsun.pdf, id=675, 975.645pt x 487.8225pt
@@ -1519,28 +1497,28 @@ Figure 8 [18]
 File: figs/map_Ne_awsom_2208_185_short_1065_Rsun.pdf Graphic file (type pdf)
 <use figs/map_Ne_awsom_2208_185_short_1065_Rsun.pdf>
 Package pdftex.def Info: figs/map_Ne_awsom_2208_185_short_1065_Rsun.pdf  used o
-n input line 484.
+n input line 473.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Te_awsom_2208_185_short_1065_Rsun.pdf, id=676, 975.645pt x 487.8225pt
 >
 File: figs/map_Te_awsom_2208_185_short_1065_Rsun.pdf Graphic file (type pdf)
 <use figs/map_Te_awsom_2208_185_short_1065_Rsun.pdf>
 Package pdftex.def Info: figs/map_Te_awsom_2208_185_short_1065_Rsun.pdf  used o
-n input line 485.
+n input line 474.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Ne_awsom_2208_185_short_1105_Rsun.pdf, id=677, 975.645pt x 487.8225pt
 >
 File: figs/map_Ne_awsom_2208_185_short_1105_Rsun.pdf Graphic file (type pdf)
 <use figs/map_Ne_awsom_2208_185_short_1105_Rsun.pdf>
 Package pdftex.def Info: figs/map_Ne_awsom_2208_185_short_1105_Rsun.pdf  used o
-n input line 486.
+n input line 475.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
 <figs/map_Te_awsom_2208_185_short_1105_Rsun.pdf, id=678, 975.645pt x 487.8225pt
 >
 File: figs/map_Te_awsom_2208_185_short_1105_Rsun.pdf Graphic file (type pdf)
 <use figs/map_Te_awsom_2208_185_short_1105_Rsun.pdf>
 Package pdftex.def Info: figs/map_Te_awsom_2208_185_short_1105_Rsun.pdf  used o
-n input line 487.
+n input line 476.
 (pdftex.def)             Requested size: 171.7633pt x 85.87637pt.
  Figure 9
 
@@ -1554,36 +1532,36 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: figs/Perfil_Ne_demt_awsom_2082_1105_2.pdf Graphic file (type pdf)
 <use figs/Perfil_Ne_demt_awsom_2082_1105_2.pdf>
 Package pdftex.def Info: figs/Perfil_Ne_demt_awsom_2082_1105_2.pdf  used on inp
-ut line 499.
+ut line 488.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Perfil_Ne_demt_awsom_2208_1105_2.pdf, id=727, 722.7pt x 361.35pt>
 File: figs/Perfil_Ne_demt_awsom_2208_1105_2.pdf Graphic file (type pdf)
 <use figs/Perfil_Ne_demt_awsom_2208_1105_2.pdf>
 Package pdftex.def Info: figs/Perfil_Ne_demt_awsom_2208_1105_2.pdf  used on inp
-ut line 500.
+ut line 489.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Perfil_Te_demt_awsom_2082_1105_2.pdf, id=728, 722.7pt x 361.35pt>
 File: figs/Perfil_Te_demt_awsom_2082_1105_2.pdf Graphic file (type pdf)
 <use figs/Perfil_Te_demt_awsom_2082_1105_2.pdf>
 Package pdftex.def Info: figs/Perfil_Te_demt_awsom_2082_1105_2.pdf  used on inp
-ut line 501.
+ut line 490.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Perfil_Te_demt_awsom_2208_1105_2.pdf, id=729, 722.7pt x 361.35pt>
 File: figs/Perfil_Te_demt_awsom_2208_1105_2.pdf Graphic file (type pdf)
 <use figs/Perfil_Te_demt_awsom_2208_1105_2.pdf>
 Package pdftex.def Info: figs/Perfil_Te_demt_awsom_2208_1105_2.pdf  used on inp
-ut line 502.
+ut line 491.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Perfil_Br_2082_1105_2.pdf, id=730, 722.7pt x 361.35pt>
 File: figs/Perfil_Br_2082_1105_2.pdf Graphic file (type pdf)
 <use figs/Perfil_Br_2082_1105_2.pdf>
-Package pdftex.def Info: figs/Perfil_Br_2082_1105_2.pdf  used on input line 503
+Package pdftex.def Info: figs/Perfil_Br_2082_1105_2.pdf  used on input line 492
 .
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Perfil_Br_2208_1105_2.pdf, id=731, 722.7pt x 361.35pt>
 File: figs/Perfil_Br_2208_1105_2.pdf Graphic file (type pdf)
 <use figs/Perfil_Br_2208_1105_2.pdf>
-Package pdftex.def Info: figs/Perfil_Br_2208_1105_2.pdf  used on input line 504
+Package pdftex.def Info: figs/Perfil_Br_2208_1105_2.pdf  used on input line 493
 .
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 
@@ -1597,7 +1575,7 @@ File: figs/Grispoint_2082_awsom_paper_test_Rpoint-map.pdf Graphic file (type pd
 f)
 <use figs/Grispoint_2082_awsom_paper_test_Rpoint-map.pdf>
 Package pdftex.def Info: figs/Grispoint_2082_awsom_paper_test_Rpoint-map.pdf  u
-sed on input line 514.
+sed on input line 503.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Grispoint_2208_awsom_paper_test_Rpoint-map.pdf, id=735, 722.7pt x 361.35p
 t>
@@ -1605,7 +1583,7 @@ File: figs/Grispoint_2208_awsom_paper_test_Rpoint-map.pdf Graphic file (type pd
 f)
 <use figs/Grispoint_2208_awsom_paper_test_Rpoint-map.pdf>
 Package pdftex.def Info: figs/Grispoint_2208_awsom_paper_test_Rpoint-map.pdf  u
-sed on input line 515.
+sed on input line 504.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Highpoint_2082_awsom_paper_cr2082_up_Rpoint-map.pdf, id=737, 722.7pt x 36
 1.35pt>
@@ -1613,7 +1591,7 @@ File: figs/Highpoint_2082_awsom_paper_cr2082_up_Rpoint-map.pdf Graphic file (ty
 pe pdf)
 <use figs/Highpoint_2082_awsom_paper_cr2082_up_Rpoint-map.pdf>
 Package pdftex.def Info: figs/Highpoint_2082_awsom_paper_cr2082_up_Rpoint-map.p
-df  used on input line 516.
+df  used on input line 505.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Highpoint_2208_awsom_paper_cr2208_up_Rpoint-map.pdf, id=739, 722.7pt x 36
 1.35pt>
@@ -1621,7 +1599,7 @@ File: figs/Highpoint_2208_awsom_paper_cr2208_up_Rpoint-map.pdf Graphic file (ty
 pe pdf)
 <use figs/Highpoint_2208_awsom_paper_cr2208_up_Rpoint-map.pdf>
 Package pdftex.def Info: figs/Highpoint_2208_awsom_paper_cr2208_up_Rpoint-map.p
-df  used on input line 517.
+df  used on input line 506.
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 Figure 11
 
@@ -1676,7 +1654,7 @@ Package epstopdf Info: Source file: <figs/histo_2082_demt_awsom_streamer_up_ne_
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_demt_awsom
 _streamer_up_ne_1055-eps-converted-to.pdf figs/histo_2082_demt_awsom_streamer_u
 p_ne_1055.eps>
-(epstopdf)             \includegraphics on input line 527.
+(epstopdf)             \includegraphics on input line 516.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1689,7 +1667,7 @@ File: figs/histo_2082_demt_awsom_streamer_up_ne_1055-eps-converted-to.pdf Graph
 ic file (type pdf)
 <use figs/histo_2082_demt_awsom_streamer_up_ne_1055-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_demt_awsom_streamer_up_ne_1055-eps-con
-verted-to.pdf  used on input line 527.
+verted-to.pdf  used on input line 516.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2082_demt_awsom_streamer_up_lam
 bda_n.eps>
@@ -1702,7 +1680,7 @@ bda_n-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_demt_awsom
 _streamer_up_lambda_n-eps-converted-to.pdf figs/histo_2082_demt_awsom_streamer_
 up_lambda_n.eps>
-(epstopdf)             \includegraphics on input line 528.
+(epstopdf)             \includegraphics on input line 517.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1715,7 +1693,7 @@ File: figs/histo_2082_demt_awsom_streamer_up_lambda_n-eps-converted-to.pdf Grap
 hic file (type pdf)
 <use figs/histo_2082_demt_awsom_streamer_up_lambda_n-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_demt_awsom_streamer_up_lambda_n-eps-co
-nverted-to.pdf  used on input line 528.
+nverted-to.pdf  used on input line 517.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2082_demt_awsom_streamer_up_Tm.
 eps>
@@ -1728,7 +1706,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_demt_awsom
 _streamer_up_Tm-eps-converted-to.pdf figs/histo_2082_demt_awsom_streamer_up_Tm.
 eps>
-(epstopdf)             \includegraphics on input line 529.
+(epstopdf)             \includegraphics on input line 518.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1741,7 +1719,7 @@ File: figs/histo_2082_demt_awsom_streamer_up_Tm-eps-converted-to.pdf Graphic fi
 le (type pdf)
 <use figs/histo_2082_demt_awsom_streamer_up_Tm-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_demt_awsom_streamer_up_Tm-eps-converte
-d-to.pdf  used on input line 529.
+d-to.pdf  used on input line 518.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2082_demt_awsom_bound_up_ne_105
 5.eps>
@@ -1754,7 +1732,7 @@ Package epstopdf Info: Source file: <figs/histo_2082_demt_awsom_bound_up_ne_105
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_demt_awsom
 _bound_up_ne_1055-eps-converted-to.pdf figs/histo_2082_demt_awsom_bound_up_ne_1
 055.eps>
-(epstopdf)             \includegraphics on input line 530.
+(epstopdf)             \includegraphics on input line 519.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1767,7 +1745,7 @@ File: figs/histo_2082_demt_awsom_bound_up_ne_1055-eps-converted-to.pdf Graphic
 file (type pdf)
 <use figs/histo_2082_demt_awsom_bound_up_ne_1055-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_demt_awsom_bound_up_ne_1055-eps-conver
-ted-to.pdf  used on input line 530.
+ted-to.pdf  used on input line 519.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2082_demt_awsom_bound_up_lambda
 _n.eps>
@@ -1780,7 +1758,7 @@ _n-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_demt_awsom
 _bound_up_lambda_n-eps-converted-to.pdf figs/histo_2082_demt_awsom_bound_up_lam
 bda_n.eps>
-(epstopdf)             \includegraphics on input line 531.
+(epstopdf)             \includegraphics on input line 520.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1793,7 +1771,7 @@ File: figs/histo_2082_demt_awsom_bound_up_lambda_n-eps-converted-to.pdf Graphic
  file (type pdf)
 <use figs/histo_2082_demt_awsom_bound_up_lambda_n-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_demt_awsom_bound_up_lambda_n-eps-conve
-rted-to.pdf  used on input line 531.
+rted-to.pdf  used on input line 520.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2082_demt_awsom_bound_up_Tm.eps
 >
@@ -1805,7 +1783,7 @@ Package epstopdf Info: Source file: <figs/histo_2082_demt_awsom_bound_up_Tm.eps
 (epstopdf)                    size: 8266 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_demt_awsom
 _bound_up_Tm-eps-converted-to.pdf figs/histo_2082_demt_awsom_bound_up_Tm.eps>
-(epstopdf)             \includegraphics on input line 532.
+(epstopdf)             \includegraphics on input line 521.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1818,7 +1796,7 @@ File: figs/histo_2082_demt_awsom_bound_up_Tm-eps-converted-to.pdf Graphic file
 (type pdf)
 <use figs/histo_2082_demt_awsom_bound_up_Tm-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_demt_awsom_bound_up_Tm-eps-converted-t
-o.pdf  used on input line 532.
+o.pdf  used on input line 521.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2082_demt_awsom_CH_up_ne_1055.e
 ps>
@@ -1831,7 +1809,7 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_demt_awsom
 _CH_up_ne_1055-eps-converted-to.pdf figs/histo_2082_demt_awsom_CH_up_ne_1055.ep
 s>
-(epstopdf)             \includegraphics on input line 533.
+(epstopdf)             \includegraphics on input line 522.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1844,7 +1822,7 @@ File: figs/histo_2082_demt_awsom_CH_up_ne_1055-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figs/histo_2082_demt_awsom_CH_up_ne_1055-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_demt_awsom_CH_up_ne_1055-eps-converted
--to.pdf  used on input line 533.
+-to.pdf  used on input line 522.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2082_demt_awsom_CH_up_lambda_n.
 eps>
@@ -1857,7 +1835,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_demt_awsom
 _CH_up_lambda_n-eps-converted-to.pdf figs/histo_2082_demt_awsom_CH_up_lambda_n.
 eps>
-(epstopdf)             \includegraphics on input line 534.
+(epstopdf)             \includegraphics on input line 523.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1870,7 +1848,7 @@ File: figs/histo_2082_demt_awsom_CH_up_lambda_n-eps-converted-to.pdf Graphic fi
 le (type pdf)
 <use figs/histo_2082_demt_awsom_CH_up_lambda_n-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_demt_awsom_CH_up_lambda_n-eps-converte
-d-to.pdf  used on input line 534.
+d-to.pdf  used on input line 523.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2082_demt_awsom_CH_up_Tm.eps>
 (epstopdf)                    date: 2020-01-14 17:34:10
@@ -1881,7 +1859,7 @@ nverted-to.pdf>
 (epstopdf)                    size: 8415 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2082_demt_awsom
 _CH_up_Tm-eps-converted-to.pdf figs/histo_2082_demt_awsom_CH_up_Tm.eps>
-(epstopdf)             \includegraphics on input line 535.
+(epstopdf)             \includegraphics on input line 524.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1894,7 +1872,7 @@ File: figs/histo_2082_demt_awsom_CH_up_Tm-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figs/histo_2082_demt_awsom_CH_up_Tm-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2082_demt_awsom_CH_up_Tm-eps-converted-to.p
-df  used on input line 535.
+df  used on input line 524.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Figure 12
 Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_streamer_up_ne_
@@ -1908,7 +1886,7 @@ Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_streamer_up_ne_
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2208_demt_awsom
 _streamer_up_ne_1055-eps-converted-to.pdf figs/histo_2208_demt_awsom_streamer_u
 p_ne_1055.eps>
-(epstopdf)             \includegraphics on input line 545.
+(epstopdf)             \includegraphics on input line 534.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1921,7 +1899,7 @@ File: figs/histo_2208_demt_awsom_streamer_up_ne_1055-eps-converted-to.pdf Graph
 ic file (type pdf)
 <use figs/histo_2208_demt_awsom_streamer_up_ne_1055-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2208_demt_awsom_streamer_up_ne_1055-eps-con
-verted-to.pdf  used on input line 545.
+verted-to.pdf  used on input line 534.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_streamer_up_lam
 bda_n.eps>
@@ -1934,7 +1912,7 @@ bda_n-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2208_demt_awsom
 _streamer_up_lambda_n-eps-converted-to.pdf figs/histo_2208_demt_awsom_streamer_
 up_lambda_n.eps>
-(epstopdf)             \includegraphics on input line 546.
+(epstopdf)             \includegraphics on input line 535.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1947,7 +1925,7 @@ File: figs/histo_2208_demt_awsom_streamer_up_lambda_n-eps-converted-to.pdf Grap
 hic file (type pdf)
 <use figs/histo_2208_demt_awsom_streamer_up_lambda_n-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2208_demt_awsom_streamer_up_lambda_n-eps-co
-nverted-to.pdf  used on input line 546.
+nverted-to.pdf  used on input line 535.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_streamer_up_Tm.
 eps>
@@ -1960,7 +1938,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2208_demt_awsom
 _streamer_up_Tm-eps-converted-to.pdf figs/histo_2208_demt_awsom_streamer_up_Tm.
 eps>
-(epstopdf)             \includegraphics on input line 547.
+(epstopdf)             \includegraphics on input line 536.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1973,7 +1951,7 @@ File: figs/histo_2208_demt_awsom_streamer_up_Tm-eps-converted-to.pdf Graphic fi
 le (type pdf)
 <use figs/histo_2208_demt_awsom_streamer_up_Tm-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2208_demt_awsom_streamer_up_Tm-eps-converte
-d-to.pdf  used on input line 547.
+d-to.pdf  used on input line 536.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_bound_up_ne_105
 5.eps>
@@ -1986,7 +1964,7 @@ Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_bound_up_ne_105
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2208_demt_awsom
 _bound_up_ne_1055-eps-converted-to.pdf figs/histo_2208_demt_awsom_bound_up_ne_1
 055.eps>
-(epstopdf)             \includegraphics on input line 548.
+(epstopdf)             \includegraphics on input line 537.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1999,7 +1977,7 @@ File: figs/histo_2208_demt_awsom_bound_up_ne_1055-eps-converted-to.pdf Graphic
 file (type pdf)
 <use figs/histo_2208_demt_awsom_bound_up_ne_1055-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2208_demt_awsom_bound_up_ne_1055-eps-conver
-ted-to.pdf  used on input line 548.
+ted-to.pdf  used on input line 537.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_bound_up_lambda
 _n.eps>
@@ -2012,7 +1990,7 @@ _n-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2208_demt_awsom
 _bound_up_lambda_n-eps-converted-to.pdf figs/histo_2208_demt_awsom_bound_up_lam
 bda_n.eps>
-(epstopdf)             \includegraphics on input line 549.
+(epstopdf)             \includegraphics on input line 538.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2025,7 +2003,7 @@ File: figs/histo_2208_demt_awsom_bound_up_lambda_n-eps-converted-to.pdf Graphic
  file (type pdf)
 <use figs/histo_2208_demt_awsom_bound_up_lambda_n-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2208_demt_awsom_bound_up_lambda_n-eps-conve
-rted-to.pdf  used on input line 549.
+rted-to.pdf  used on input line 538.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_bound_up_Tm.eps
 >
@@ -2037,7 +2015,7 @@ Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_bound_up_Tm.eps
 (epstopdf)                    size: 8374 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2208_demt_awsom
 _bound_up_Tm-eps-converted-to.pdf figs/histo_2208_demt_awsom_bound_up_Tm.eps>
-(epstopdf)             \includegraphics on input line 550.
+(epstopdf)             \includegraphics on input line 539.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2050,7 +2028,7 @@ File: figs/histo_2208_demt_awsom_bound_up_Tm-eps-converted-to.pdf Graphic file
 (type pdf)
 <use figs/histo_2208_demt_awsom_bound_up_Tm-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2208_demt_awsom_bound_up_Tm-eps-converted-t
-o.pdf  used on input line 550.
+o.pdf  used on input line 539.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_CH_up_ne_1055.e
 ps>
@@ -2063,7 +2041,7 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2208_demt_awsom
 _CH_up_ne_1055-eps-converted-to.pdf figs/histo_2208_demt_awsom_CH_up_ne_1055.ep
 s>
-(epstopdf)             \includegraphics on input line 551.
+(epstopdf)             \includegraphics on input line 540.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2076,7 +2054,7 @@ File: figs/histo_2208_demt_awsom_CH_up_ne_1055-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figs/histo_2208_demt_awsom_CH_up_ne_1055-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2208_demt_awsom_CH_up_ne_1055-eps-converted
--to.pdf  used on input line 551.
+-to.pdf  used on input line 540.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_CH_up_lambda_n.
 eps>
@@ -2089,7 +2067,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2208_demt_awsom
 _CH_up_lambda_n-eps-converted-to.pdf figs/histo_2208_demt_awsom_CH_up_lambda_n.
 eps>
-(epstopdf)             \includegraphics on input line 552.
+(epstopdf)             \includegraphics on input line 541.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2102,7 +2080,7 @@ File: figs/histo_2208_demt_awsom_CH_up_lambda_n-eps-converted-to.pdf Graphic fi
 le (type pdf)
 <use figs/histo_2208_demt_awsom_CH_up_lambda_n-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2208_demt_awsom_CH_up_lambda_n-eps-converte
-d-to.pdf  used on input line 552.
+d-to.pdf  used on input line 541.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Package epstopdf Info: Source file: <figs/histo_2208_demt_awsom_CH_up_Tm.eps>
 (epstopdf)                    date: 2020-01-14 17:34:10
@@ -2113,7 +2091,7 @@ nverted-to.pdf>
 (epstopdf)                    size: 8788 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/histo_2208_demt_awsom
 _CH_up_Tm-eps-converted-to.pdf figs/histo_2208_demt_awsom_CH_up_Tm.eps>
-(epstopdf)             \includegraphics on input line 553.
+(epstopdf)             \includegraphics on input line 542.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2126,7 +2104,7 @@ File: figs/histo_2208_demt_awsom_CH_up_Tm-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figs/histo_2208_demt_awsom_CH_up_Tm-eps-converted-to.pdf>
 Package pdftex.def Info: figs/histo_2208_demt_awsom_CH_up_Tm-eps-converted-to.p
-df  used on input line 553.
+df  used on input line 542.
 (pdftex.def)             Requested size: 107.56915pt x 80.67332pt.
 Figure 13
 
@@ -2157,7 +2135,7 @@ ed-to.pdf>
 (epstopdf)                    size: 7543 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/perfil_paper_ne_cr208
 2_up-eps-converted-to.pdf figs/perfil_paper_ne_cr2082_up.eps>
-(epstopdf)             \includegraphics on input line 590.
+(epstopdf)             \includegraphics on input line 579.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2170,7 +2148,7 @@ File: figs/perfil_paper_ne_cr2082_up-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figs/perfil_paper_ne_cr2082_up-eps-converted-to.pdf>
 Package pdftex.def Info: figs/perfil_paper_ne_cr2082_up-eps-converted-to.pdf  u
-sed on input line 590.
+sed on input line 579.
 (pdftex.def)             Requested size: 171.7633pt x 120.23503pt.
 Package epstopdf Info: Source file: <figs/perfil_paper_te_cr2082_up.eps>
 (epstopdf)                    date: 2020-01-08 15:15:52
@@ -2181,7 +2159,7 @@ ed-to.pdf>
 (epstopdf)                    size: 7652 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/perfil_paper_te_cr208
 2_up-eps-converted-to.pdf figs/perfil_paper_te_cr2082_up.eps>
-(epstopdf)             \includegraphics on input line 591.
+(epstopdf)             \includegraphics on input line 580.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2194,7 +2172,7 @@ File: figs/perfil_paper_te_cr2082_up-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figs/perfil_paper_te_cr2082_up-eps-converted-to.pdf>
 Package pdftex.def Info: figs/perfil_paper_te_cr2082_up-eps-converted-to.pdf  u
-sed on input line 591.
+sed on input line 580.
 (pdftex.def)             Requested size: 171.7633pt x 120.23503pt.
 Package epstopdf Info: Source file: <figs/perfil_paper_ne_cr2208_up.eps>
 (epstopdf)                    date: 2020-01-14 17:34:10
@@ -2205,7 +2183,7 @@ ed-to.pdf>
 (epstopdf)                    size: 7962 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/perfil_paper_ne_cr220
 8_up-eps-converted-to.pdf figs/perfil_paper_ne_cr2208_up.eps>
-(epstopdf)             \includegraphics on input line 592.
+(epstopdf)             \includegraphics on input line 581.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2218,7 +2196,7 @@ File: figs/perfil_paper_ne_cr2208_up-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figs/perfil_paper_ne_cr2208_up-eps-converted-to.pdf>
 Package pdftex.def Info: figs/perfil_paper_ne_cr2208_up-eps-converted-to.pdf  u
-sed on input line 592.
+sed on input line 581.
 (pdftex.def)             Requested size: 171.7633pt x 120.23503pt.
 Package epstopdf Info: Source file: <figs/perfil_paper_te_cr2208_up.eps>
 (epstopdf)                    date: 2020-01-14 17:34:10
@@ -2229,7 +2207,7 @@ ed-to.pdf>
 (epstopdf)                    size: 7651 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/perfil_paper_te_cr220
 8_up-eps-converted-to.pdf figs/perfil_paper_te_cr2208_up.eps>
-(epstopdf)             \includegraphics on input line 593.
+(epstopdf)             \includegraphics on input line 582.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2242,7 +2220,7 @@ File: figs/perfil_paper_te_cr2208_up-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figs/perfil_paper_te_cr2208_up-eps-converted-to.pdf>
 Package pdftex.def Info: figs/perfil_paper_te_cr2208_up-eps-converted-to.pdf  u
-sed on input line 593.
+sed on input line 582.
 (pdftex.def)             Requested size: 171.7633pt x 120.23503pt.
 Figure 14
 
@@ -2251,13 +2229,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figs/Perfil_Vr_2082_5995_2.pdf, id=1099, 722.7pt x 361.35pt>
 File: figs/Perfil_Vr_2082_5995_2.pdf Graphic file (type pdf)
 <use figs/Perfil_Vr_2082_5995_2.pdf>
-Package pdftex.def Info: figs/Perfil_Vr_2082_5995_2.pdf  used on input line 603
+Package pdftex.def Info: figs/Perfil_Vr_2082_5995_2.pdf  used on input line 592
 .
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 <figs/Perfil_Vr_2208_5995_2.pdf, id=1100, 722.7pt x 361.35pt>
 File: figs/Perfil_Vr_2208_5995_2.pdf Graphic file (type pdf)
 <use figs/Perfil_Vr_2208_5995_2.pdf>
-Package pdftex.def Info: figs/Perfil_Vr_2208_5995_2.pdf  used on input line 604
+Package pdftex.def Info: figs/Perfil_Vr_2208_5995_2.pdf  used on input line 593
 .
 (pdftex.def)             Requested size: 171.7633pt x 85.88216pt.
 Figure 15
@@ -2276,39 +2254,39 @@ pdfTeX warning: pdflatex (file ./figs/Perfil_Vr_2082_5995_2.pdf): PDF inclusion
 pdfTeX warning: pdflatex (file ./figs/Perfil_Vr_2208_5995_2.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >] [26] [27]
-Overfull \hbox (6.32547pt too wide) in paragraph at lines 633--635
+Overfull \hbox (6.32547pt too wide) in paragraph at lines 622--624
 \OT1/cmr/m/n/8 tion in this re-search. W.M. also ac-knowl-edges NASA grants NNX
 16AL12G and 80NSSC17K0686.|
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 633--635
+Underfull \hbox (badness 10000) in paragraph at lines 622--624
 
  []
 
-(./lloveras_2020_Albert.bbl [28] [29]) [30]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 644.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 644.
- (./lloveras_2020_Albert.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 644.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 644.
-Package rerunfilecheck Info: File `lloveras_2020_Albert.out' has not changed.
+(./lloveras_2020.bbl [28] [29]) [30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 633.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 633.
+ (./lloveras_2020.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 633.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 633.
+Package rerunfilecheck Info: File `lloveras_2020.out' has not changed.
 (rerunfilecheck)             Checksum: 1D92922F0948E2EE11FBF7339BF0CD9F;677.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 644.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 633.
  ) 
 Here is how much of TeX's memory you used:
- 8946 strings out of 494861
- 139127 string characters out of 6178804
- 217987 words of memory out of 5000000
- 11952 multiletter control sequences out of 15000+600000
+ 8468 strings out of 494861
+ 133207 string characters out of 6178804
+ 204460 words of memory out of 5000000
+ 11483 multiletter control sequences out of 15000+600000
  15900 words of font info for 60 fonts, out of 8000000 for 9000
  45 hyphenation exceptions out of 8191
- 35i,12n,37p,1901b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,12n,37p,1894b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
@@ -2333,7 +2311,7 @@ ts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/marvosym/marvosym.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 >
-Output written on lloveras_2020_Albert.pdf (30 pages, 3757886 bytes).
+Output written on lloveras_2020.pdf (30 pages, 3757819 bytes).
 PDF statistics:
  1381 PDF objects out of 1440 (max. 8388607)
  1031 compressed objects within 11 object streams
