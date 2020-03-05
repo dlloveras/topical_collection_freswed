@@ -20,28 +20,17 @@ Medium concerns
 -----------------------------------------------------------------------------------------
 1. All of the multi-panel figures that show longitude-latitude maps (e.g. figure 1, 2, 3 etc) are too small, it is very difficult to see any details. There is a lot of white space between the panels that can be removed, and this would be one way to instantly make the maps larger.
 
-We fully  agree. We improved the use of space in Figures 1 through 3. We also changed colors in the latter (see also query #2 below). Let us know.
-
-(ESTO ES TRABAJO PARA DIEGO & ALBERT, XTOOLS).
+We fully  agree. We improved the use of space in Figures 1 through 3. We also changed colors in the latter (see also query #2 below).
 
 -----------------------------------------------------------------------------------------
 2. Figure 3 and 11, bottom panels. I find it difficult to distinguish between the red and magenta colours. Can you replace magenta with a different colour, maybe green?
 
-We fully agree. Actually this affects more figures: Figures 3, 4, 11, and 14. In all of these we made the changes: RED->ORANGE and MAGENTA->DarkRed. These changes emulate our previous choice of colors in Nuevo et al. 82013) and Lloveras et al. (2017). We like to keep all "up" structures in "warm" palette. We edited text accordingly all along the manuscript.
-
-(ESTO ES TRABAJO PARA DIEGO, CON LA ASESORIA ARTISTICA DE FEDE y ALBERT).
+We fully agree. Actually this affects all following Figures #: 3, 4, 11, and 14. In those, we applied the following changes: Red->Orange and Magenta->Red. These emulate our previous choice of colors in Nuevo et al. (2013) and Lloveras et al. (2017). We like to keep all "up" structures in a "warm" palette. We edited text accordingly all along the manuscript. We believe the colors are now clearly distinguishable in all figures.
 
 -----------------------------------------------------------------------------------------
 3. Page 14, paragraph starting at line 34. You discuss the latitudinal distribution of short and long loops, and state that the small legs mainly populate the equatorial latitudes, and longer legs at higher latitudes. But this is a skewed result - their spatial positioning was a criteria for their categorisation, so this should not be presented as a scientific result.
 
-DIEGO, SUGERIMOS CON FEDE QUE REHAGAS COMO EXPERIMENTO LOS PANELES INFERIORES DE LA FIGURAS 3 CON OTRA DEFINICION DE TYPE 0, I Y II. SE QUE LO HICIMOS, PERO LO REVISITARIA Y SUGERIMOS AGREGAR UN GRAFICO DE HISTOGRAMA DE FOOTPOINT DE LAS CUATRO CLASES. FIJATE:
-
-* TYPE-0:   CLOSED-SMALL-DOWN
-* TYPE-I:   CLOSED-SMALL-UP
-* TYPE-II:  CLOSED-LARGE-UP
-* TYPE-III: TAL COMO ESTÁ (PARA QUE NO NOS ENSUCIE LA ESTADISTICA DE RESULTADOS DEMT LOS CHs DE LAT BAJA)
-
-SI VEMOS QUE NO ES TAN SUCIO EL RESULTADO, PODEMOS DEJAR ESA SELEECCION YE INCLUIR QUIZA UN NUEVO GRAFICO: HISTOGRAMA DE FOOTPOINT DE LOS 4 TIPPOS. (UNA SOLA FIURA DE 4 COLORES) QUE SEAN LOS NUEVOS DOS PANELES INFERIORES DE LA fIGURA 3, QUE TENDRIA 6 PANELES EN TOTAL. LUEGO DECIDAMOS SI QUEDA COMO ESTA O USAMOS UNA NUEVA VERSION, Y EN CUALQUIERA DE AMBOS CASOS RETOCAMOS UN POCO EL TEXTO DE PAG 14 QUE QUEDO "MISSLEADING".
+Thanks for pointing this out.... ESTO REQUIERE CAMBIOS EN EL PAPER JUSTIFICANDO CON CLARIDAD LA ELECCION DE LOS LIMITES LATITUDINALES Y LA SELECCION DE SOLO UP EN TYPE II Y III. Y UNA RESPUESTA ACORDE.
 
 -----------------------------------------------------------------------------------------
 4. Table 2 summarises the differences of the median values of the DEMT and MHD model. This is OK. However, there is an opportunity here to present a more detailed comparison, including in particular the mean (or median) absolute deviation (MAD) of values between DEMT and MHD. The MAD is a more stringent, voxel-by-voxel test of the comparison, which cannot be seen from the histogram comparisons (e.g. figure 12/13) nor the median values of Table 2.
@@ -61,8 +50,8 @@ LUEGO EDITAMOS TABLA Y TEXTO DEL PAPER.
 -----------------------------------------------------------------------------------------
 5. You discuss the less reliable results from AIA in coronal holes. The very recent paper by Saqri et al (Solar Physics 295, 2020) is relevant here, and should be referenced.
 
-YO PROPONGO HACER DOS O TRES EXPERIMENTOS DE CARACRTERIZACION Y RESOLUCION DEL PROBLEMA TESTEANDOLO A LAS TRES ALTURAS DEL PAPER. SI VEMOS QUE SALIO, POR QUE NO MEJORAR EL PAPER.
-
+ESTO FUE SOLUCIONADO. EL ORIGEN DEL PROBLEMA NO RADICA EN STRAY-LIGHT DECON. EL EFECTO DE ESTO EN TOM, APLICADO A DATOS EUVI, FUE EXPLORADO EN LLOVERAS ET AL. (2017). CIERTAMENTE NOS INTERESA INCORPORAR ESTO AL PIPELINE DE AIA SI LA PFS ESTÁ BIEN CARACTERIZADA, PERO ES UN TEMA QUE DEBEMOS INVESTIGAR. EXPLICAR COMO SE SOLUCIONÓ Y REMOVER TODO LO NO NECESARIO EN EL PAPER (AZUL) Y AGREGAR COSAS NUEVAS (ROJO).
+ 
 -----------------------------------------------------------------------------------------
 6. The abstract can be shortened somewhat, reducing the number of introductory sentences and with a little less emphasis on the method and future improvements, and more on the science results. In particular: the results of the energy balance analysis and the estimate of energy flux at the coronal base, which are important.
 
@@ -71,9 +60,8 @@ YO PROPONGO HACER DOS O TRES EXPERIMENTOS DE CARACRTERIZACION Y RESOLUCION DEL P
 -----------------------------------------------------------------------------------------
 7. Page 5, paragraph beginning line 34. You briefly describe fitting the DEM to a Gaussian. I know this approach is covered in detail in Nuevo 2015, but I would like a little more detail here. You should mention that, in general, DEMs do not necessarily have a clean Gaussian profile and that more complicated inversions are needed (reference https://ui.adsabs.harvard.edu/abs/2012A%26A...539A.146H/abstract , https://ui.adsabs.harvard.edu/abs/2019SoPh..294..135M/abstract , https://ui.adsabs.harvard.edu/abs/2019SoPh..294..136P/abstract ). Then explain briefly why DEMT leads to cleaner, non-multithermal profiles (due to the 3D spatial reconstruction of the line of sight). I assume that this is why you can use a straightforward Gaussian fit? Also efficiency?
 
-Thanks for this comment and the references. As the LDEM describes the temeprature distribution of the plasma in a specific voxel it does not deal with different large scale structures, as it usually it may be the case for the DEM describing the plasma alog a full line-of.sight (LOS). In that sense one can expect as you say, cleaner, profiles than those observed by DEM studies. Still, if one adds tbhe 335 A channel, which adds two sensitivity poits at ~ 1.0 MK and ~ 2.5 MK, one finds that a a bi-Gaussian LDEM model best predics all the tomographic emissivities. That is the main conclusion of Nuevo et. al. (2015). The interpretation in that case is that the unresolved independent strands threading the voxel can have two different characteristic temperatures. Nuevo et al. (2015). So in this sense, the plasma within the voxel can be multi-thermal. As for efficiency, the parametric technique is comparably efficient independently of the chosen model. We did read the  We expanded this discussion in the text.
- 
- 
+Thanks for this comment and the references. As the LDEM describes the temperature distribution of the plasma in a specific voxel it does not deal with different large scale structures, as it usually it may be the case for the DEM describing the plasma alog a full line-of.sight (LOS). In that sense one can expect as you say, cleaner, profiles than those observed by DEM studies. Still, if one adds tbhe 335 A channel, which adds two sensitivity poits at ~ 1.0 MK and ~ 2.5 MK, one finds that a a bi-Gaussian LDEM model best predics all the tomographic emissivities. That is the main conclusion of Nuevo et. al. (2015). The interpretation in that case is that the unresolved independent strands threading the voxel can have two different characteristic temperatures. Nuevo et al. (2015). So in this sense, the plasma within the voxel can be multi-thermal. As for efficiency, the parametric technique is comparably efficient independently of the chosen model. We did read the  We expanded this discussion in the text.
+
 -----------------------------------------------------------------------------------------
 8. The introduction does not have many references to works beyond DEMT and AWSoM. The 2nd paragraph of the introduction offers a chance to remedy this, where you discuss the quiet-Sun corona. I know there are very few works that address the quiet corona in the context of DEM analysis, but you can reference https://www.aanda.org/articles/aa/full_html/2014/04/aa23054-13/aa23054-13.html. You can also mention https://iopscience.iop.org/article/10.1088/0004-637X/795/2/111 here (although you do reference this paper in more detail in the discussion). Another relevant paper which can be referenced, with DEM analysis of a large amount of quiet coronal data over long time periods, is https://advances.sciencemag.org/content/3/7/e1602056 .
 
