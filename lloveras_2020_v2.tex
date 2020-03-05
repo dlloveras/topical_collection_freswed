@@ -12,11 +12,16 @@
 \usepackage{comment}
 \usepackage{setspace}
 \usepackage[utf8]{inputenc}
-                                         
+\usepackage[usenames,dvipsnames]{xcolor}
+                                 
 %% Local definitions
 %% please place your own definitions here and don't use \def but
 %% \newcommand{}{} or 
 %% \renewcommand{}{} if it is already defined in LaTeX
+
+\def\edit#1{\textcolor{Red}{#1}}
+\def\del#1{\textcolor{Blue}{#1}}
+
 \renewcommand{\deg}{$^\circ$}
 \newcommand{\mdeg}{^\circ}
 \newcommand{\rsun}{R{$_\odot$}}
@@ -406,7 +411,7 @@ Type    & \multicolumn{4}{c}{$\med(\NCB)$}             & \multicolumn{4}{c}{$\me
 0    & 1&24 &(\Mi&19\%)  &   7&1 &(\Pl&~3\%) &   1&09 &(\Pl&24\%) \\
 I    & 1&15 &(\Mi&10\%)  &   7&5 &(\Pl&29\%) &   1&25 &(\Pl&24\%) \\
 II   & 0&98 &(\Mi&20\%)  &   9&9 &(\Pl&19\%) &   1&36 &(\Pl&16\%) \\
-III  & 0&66 &(\Mi&12\%)  &   7&7 &(\Pl&15\%) &   0&97 &(\Pl&18\%) \\
+III  & 0&66 &(\Mi&\edit{21}\%)  &   7&7 &(\Pl&15\%) &   0&97 &(\Pl&\edit{17}\%) \\
 \hline          
 \end{tabular}
 \caption{Median value (indicated as ``Md'') of the statistical distribution of $\NCB$, $\lN$, and $\aTm$ for each coronal type of legs defined in Section \ref{trace}. For CR-2082 values are expressed in absolute terms, while for CR-2208 they are informed as a percentual variation relative to the CR-2082 value.}
@@ -563,7 +568,7 @@ III  & 0&66 &(\Mi&17\%)  &   7&0 &(\Mi&~9\%) &   0&97 &(\Mi&~9\%) \\
 CR-2208\\
 I    & 1&03 &(\Pl&~6\%)  &   9&7 &(\Mi&~8\%) &   1&55 &(\Mi&17\%) \\
 II   & 0&79 &(\Pl&~9\%)  &  11&8 &(\Mi&14\%) &   1&58 &(\Mi&~8\%) \\
-III  & 0&58 &(\Mi&~3\%)  &   8&9 &(\Mi&18\%) &   1&14 &(\Mi&18\%) \\
+III  & 0&\edit{52} &(\edit{\Pl}&~\edit{8}\%)  &   8&9 &(\Mi&18\%) &   1&\edit{13} &(\Mi&18\%) \\
 \hline   
 \end{tabular}
 \caption{Median value (indicated as ``Md'') of the statistical distribution of $\NCB$, $\lN$, and $\aTm$ for each coronal type of leg defined in Section \ref{trace}. DEMT values are expressed in absolute terms, while AWSoM results are expressed relative to the corresponding DEMT value.}
