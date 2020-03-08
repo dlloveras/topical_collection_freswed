@@ -20,17 +20,19 @@ Medium concerns
 -----------------------------------------------------------------------------------------
 1. All of the multi-panel figures that show longitude-latitude maps (e.g. figure 1, 2, 3 etc) are too small, it is very difficult to see any details. There is a lot of white space between the panels that can be removed, and this would be one way to instantly make the maps larger.
 
-We fully  agree. We improved the use of space in Figures 1 through 3. We also changed colors in the latter (see also query #2 below).
+We agree. We improved the use of space in Figures 1,2,8 and 9.
 
 -----------------------------------------------------------------------------------------
 2. Figure 3 and 11, bottom panels. I find it difficult to distinguish between the red and magenta colours. Can you replace magenta with a different colour, maybe green?
 
-We fully agree. Actually this affects all following Figures #: 3, 4, 11, and 14. In those, we applied the following changes: Red->Orange and Magenta->Red. These emulate our previous choice of colors in Nuevo et al. (2013) and Lloveras et al. (2017). We like to keep all "up" structures in a "warm" palette. We edited text accordingly all along the manuscript. We believe the colors are now clearly distinguishable in all figures.
+We agree. Actually this affects all following Figures #: 3, 4, 11, and 14. In those, we applied the following changes: Red->Orange and Magenta->Red. These emulate our previous choice of colors in Nuevo et al. (2013) and Lloveras et al. (2017). We like to keep all "up" structures in a "warm" palette. We edited text accordingly all along the manuscript. We believe the colors are now clearly distinguishable in all figures.
 
 -----------------------------------------------------------------------------------------
 3. Page 14, paragraph starting at line 34. You discuss the latitudinal distribution of short and long loops, and state that the small legs mainly populate the equatorial latitudes, and longer legs at higher latitudes. But this is a skewed result - their spatial positioning was a criteria for their categorisation, so this should not be presented as a scientific result.
 
 Thanks for pointing this out.... ESTO REQUIERE CAMBIOS EN EL PAPER JUSTIFICANDO CON CLARIDAD LA ELECCION DE LOS LIMITES LATITUDINALES Y LA SELECCION DE SOLO UP EN TYPE II Y III. Y UNA RESPUESTA ACORDE.
+
+That's right, we used it as a criterion of selection aiming to distinguish different layers. we changed the text avoiding confusion
 
 -----------------------------------------------------------------------------------------
 4. Table 2 summarises the differences of the median values of the DEMT and MHD model. This is OK. However, there is an opportunity here to present a more detailed comparison, including in particular the mean (or median) absolute deviation (MAD) of values between DEMT and MHD. The MAD is a more stringent, voxel-by-voxel test of the comparison, which cannot be seen from the histogram comparisons (e.g. figure 12/13) nor the median values of Table 2.
@@ -47,11 +49,15 @@ PROPONEMOS DEJAR LOS HISTOGRAMAS DE LAS FIGS 12 Y 13 COMO ESTÁN, PERO EXPANDIR 
 
 LUEGO EDITAMOS TABLA Y TEXTO DEL PAPER.
 
+The populations shown in the histograms are about types of legs associated with different latitudinal regions. The selection of these legs is not the same for AWSoM and DEMT. This is why calculating the MAD a on the relationship of the populations of the histograms reported is not simple. In the future we plan to make a comparative analysis leg-to-leg between AWSoM and DEMT and in that case we will undoubtedly report some statistics associated with the standard deviation such as being the MAD.
+
 -----------------------------------------------------------------------------------------
 5. You discuss the less reliable results from AIA in coronal holes. The very recent paper by Saqri et al (Solar Physics 295, 2020) is relevant here, and should be referenced.
 
 ESTO FUE SOLUCIONADO. EL ORIGEN DEL PROBLEMA NO RADICA EN STRAY-LIGHT DECON. EL EFECTO DE ESTO EN TOM, APLICADO A DATOS EUVI, FUE EXPLORADO EN LLOVERAS ET AL. (2017). CIERTAMENTE NOS INTERESA INCORPORAR ESTO AL PIPELINE DE AIA SI LA PFS ESTÁ BIEN CARACTERIZADA, PERO ES UN TEMA QUE DEBEMOS INVESTIGAR. EXPLICAR COMO SE SOLUCIONÓ Y REMOVER TODO LO NO NECESARIO EN EL PAPER (AZUL) Y AGREGAR COSAS NUEVAS (ROJO).
- 
+
+The problem in the magnetically open AIA region was actually because the minimization in the voxels used to converge to a local minimum. This was resolved by modifying the starting values of the minimization. Now the voxels takes correct values of density and temperature. This affects the figures that report type III legs for CR2208. Therefore, figures 4, 5, 10, 13 and 14 were modified. Now the temperature gradients are correct and the temperature profile reported in Figure 10 is improved.
+
 -----------------------------------------------------------------------------------------
 6. The abstract can be shortened somewhat, reducing the number of introductory sentences and with a little less emphasis on the method and future improvements, and more on the science results. In particular: the results of the energy balance analysis and the estimate of energy flux at the coronal base, which are important.
 
