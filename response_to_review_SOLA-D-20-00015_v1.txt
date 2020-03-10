@@ -1,15 +1,15 @@
 Dear Editor,
 
-Thank you very much for your email with the report on the first version of our manuscript SOLA-D-20-00015, titled "Thermodynamic Structure of the Solar Corona: Tomographic Reconstructions and MHD Modeling". 
+Thank you very much for your email with the report on the first version of our manuscript ID SOLA-D-20-00015, titled "Thermodynamic Structure of the Solar Corona: Tomographic Reconstructions and MHD Modeling". 
 
-We deeply acknowledge the reviewer, whose report reflects her/his very careful and interested read, containing a series of relevant, useful, and constructive criticisms and suggestions.
+We deeply acknowledge the reviewer, whose report reflects her/his very careful and interested read. We found all queries very relevant, with useful and constructive criticisms and suggestions. We believe we addressed all points, as a result of which we believe the manuscript has gained in both content and clarity.
 
-Below, we paste the full review. Following each query we include a response, highlighting the changes in the manuscript, where all edited/new text is marked in RED COLOR fonts.
+Below, we copy/paste all queries (Q) of the review. Following each query we include an answer (A), commenting the changes in the manuscript, in which all edited/new text is highlighted in red color font.
 
 Looking forward to your response. Sincerely,
 The Authors.
 
-------------------------------begin of response------------------------------------------
+------------------------------beginning of review and response---------------------------
 COMMENTS FOR THE AUTHOR:
 
 Review of Thermodynamic Structure of the Solar corona: tomographic reconstructions and MHD modeling
@@ -18,64 +18,54 @@ This is a well-structured and clearly-written paper, presenting a detailed compa
 
 Medium concerns
 -----------------------------------------------------------------------------------------
-1. All of the multi-panel figures that show longitude-latitude maps (e.g. figure 1, 2, 3 etc) are too small, it is very difficult to see any details. There is a lot of white space between the panels that can be removed, and this would be one way to instantly make the maps larger.
+Q1. All of the multi-panel figures that show longitude-latitude maps (e.g. figure 1, 2, 3 etc) are too small, it is very difficult to see any details. There is a lot of white space between the panels that can be removed, and this would be one way to instantly make the maps larger.
 
-We agree. We improved the use of space in Figures 1,2,8 and 9.
-
------------------------------------------------------------------------------------------
-2. Figure 3 and 11, bottom panels. I find it difficult to distinguish between the red and magenta colours. Can you replace magenta with a different colour, maybe green?
-
-We agree. Actually this affects all following Figures #: 3, 4, 11, and 14. In those, we applied the following changes: Red->Orange and Magenta->Red. These emulate our previous choice of colors in Nuevo et al. (2013) and Lloveras et al. (2017). We like to keep all "up" structures in a "warm" palette. We edited text accordingly all along the manuscript. We believe the colors are now clearly distinguishable in all figures.
+A1. We agree. We improved the use of space in the long-lat maps in Figures 1, 2, 8 and 9, while the one in Figure 3 remains the same (we believe those are fine).
 
 -----------------------------------------------------------------------------------------
-3. Page 14, paragraph starting at line 34. You discuss the latitudinal distribution of short and long loops, and state that the small legs mainly populate the equatorial latitudes, and longer legs at higher latitudes. But this is a skewed result - their spatial positioning was a criteria for their categorisation, so this should not be presented as a scientific result.
+Q2. Figure 3 and 11, bottom panels. I find it difficult to distinguish between the red and magenta colours. Can you replace magenta with a different colour, maybe green?
 
-Thanks for pointing this out.... ESTO REQUIERE CAMBIOS EN EL PAPER JUSTIFICANDO CON CLARIDAD LA ELECCION DE LOS LIMITES LATITUDINALES Y LA SELECCION DE SOLO UP EN TYPE II Y III. Y UNA RESPUESTA ACORDE.
-
-That's right, we used it as a criterion of selection aiming to distinguish different layers. we changed the text avoiding confusion
+A2. We agree. Actually this affects all following Figures: 3, 4, 11, and 14. In those, we applied the following changes: Red->Orange and Magenta->Red. These emulate our previous choice of colors in Nuevo et al. (2013) and Lloveras et al. (2017). We like to keep all "up" structures in a "warm" palette. We edited text accordingly all along the manuscript. We believe the colors are now clearly distinguishable in all figures.
 
 -----------------------------------------------------------------------------------------
-4. Table 2 summarises the differences of the median values of the DEMT and MHD model. This is OK. However, there is an opportunity here to present a more detailed comparison, including in particular the mean (or median) absolute deviation (MAD) of values between DEMT and MHD. The MAD is a more stringent, voxel-by-voxel test of the comparison, which cannot be seen from the histogram comparisons (e.g. figure 12/13) nor the median values of Table 2.
+Q3. Page 14, paragraph starting at line 34. You discuss the latitudinal distribution of short and long loops, and state that the small legs mainly populate the equatorial latitudes, and longer legs at higher latitudes. But this is a skewed result - their spatial positioning was a criteria for their categorisation, so this should not be presented as a scientific result.
 
-REFERENCIA: https://en.wikipedia.org/wiki/Median_absolute_deviation
-
-DIEGO, PROPONEMOS HACER ESTO CON FEDE. 
-
-DEFINAMOS EL CAMPO ESCALAR Xi = (X_MHD - X_tom) / X_tom, DONDE "X" ES CUALQUIER RESULTADO A LO LARGO DE LOOP (Ncb, LAMDA_n, ó <Tm>). LA TABLA 2 INFORMA LOS VALORES: "[Med(X_MHD) - Med(X_tom)]/Med(X_tom)".
-
-PROPONEMOS DEJAR LOS HISTOGRAMAS DE LAS FIGS 12 Y 13 COMO ESTÁN, PERO EXPANDIR LA TABLA 2 A QUE INCLUYA DOS COLUMNAS MÁS INDICANDO ESTOS DOS INDICADORES DE CADA CAMPO "Xi":
-* Med(Xi)  (debería aproximarse a los porcentuales y signos entre paréntesis que actualmente informa la Tabla 2).
-* MAD = Med(Abs(Xi-Med(Xi))).
-
-LUEGO EDITAMOS TABLA Y TEXTO DEL PAPER.
-
-The populations shown in the histograms are about types of legs associated with different latitudinal regions. The selection of these legs is not the same for AWSoM and DEMT. This is why calculating the MAD a on the relationship of the populations of the histograms reported is not simple. In the future we plan to make a comparative analysis leg-to-leg between AWSoM and DEMT and in that case we will undoubtedly report some statistics associated with the standard deviation such as being the MAD.
+A3. Several aspects are involved here, the discussion in the paragraph you indicate heavily depends on that in the final paragraph of Section 2.3. Both were confusing as they were, specially the latter, so we edited both. Actually, we do not say that *small* legs populate the equatorial latitudes and *large* ones the mid latitudes. We say that if one classifies the *small-closed* loops in DOWN and UP, the former peak near the equator and the latter peak near mid latitudes (at least for the deep minimum rotation CR-2082). The classification of legs in four classes in Section 2.3 includes limits for the latitude of their footpoints, to distinguish different layers of the streamer belt (legs of type 0, I and II), as well as to separate field lines of the high latitude CHs (legs of type III). We included two new panels in Figure 3, showing frequency histograms of the latitude of the four types of legs at 1.105 Rsun. Within the range Abs(latitude) < 50 deg, and for the solar minimum target CR-2082, down-legs are peaked near the equator while up-legs peak at mid-latitudes. This is less obvious for CR-2208, although it is clear that down-legs peak in the core of the streamer belt. Now, it turns out that down-legs are scarce for Abs(latitude) > 50 deg. Should have we not included the limit of Abs(latitude) < 50 deg for closed-small down and up legs (i.e., legs of type 0 and I), their histograms would still peak at around the same latitudes. As our main objective here is to be able to analyze progressively outer layers of the streamer belt, we include these limits in the latitude of the footpoints. We edited in full the final paragraph of Section 2.3, as well as parts of the paragraph of Section 3.1 you point out. We trust the new graphs and discussions are clear now. Let us know.
 
 -----------------------------------------------------------------------------------------
-5. You discuss the less reliable results from AIA in coronal holes. The very recent paper by Saqri et al (Solar Physics 295, 2020) is relevant here, and should be referenced.
+Q4. Table 2 summarises the differences of the median values of the DEMT and MHD model. This is OK. However, there is an opportunity here to present a more detailed comparison, including in particular the mean (or median) absolute deviation (MAD) of values between DEMT and MHD. The MAD is a more stringent, voxel-by-voxel test of the comparison, which cannot be seen from the histogram comparisons (e.g. figure 12/13) nor the median values of Table 2.
 
-ESTO FUE SOLUCIONADO. EL ORIGEN DEL PROBLEMA NO RADICA EN STRAY-LIGHT DECON. EL EFECTO DE ESTO EN TOM, APLICADO A DATOS EUVI, FUE EXPLORADO EN LLOVERAS ET AL. (2017). CIERTAMENTE NOS INTERESA INCORPORAR ESTO AL PIPELINE DE AIA SI LA PFS ESTÁ BIEN CARACTERIZADA, PERO ES UN TEMA QUE DEBEMOS INVESTIGAR. EXPLICAR COMO SE SOLUCIONÓ Y REMOVER TODO LO NO NECESARIO EN EL PAPER (AZUL) Y AGREGAR COSAS NUEVAS (ROJO).
-
-The problem in the magnetically open AIA region was actually because the minimization in the voxels used to converge to a local minimum. This was resolved by modifying the starting values of the minimization. Now the voxels takes correct values of density and temperature. This affects the figures that report type III legs for CR2208. Therefore, figures 4, 5, 10, 13 and 14 were modified. Now the temperature gradients are correct and the temperature profile reported in Figure 10 is improved.
+A4. The populations shown in the histograms are about types of legs associated with different latitudinal regions. The selection of these legs is not the same for AWSoM and DEMT. This is why calculating the MAD a on the relationship of the populations of the histograms reported is not simple. In the future we plan to make a comparative analysis leg-to-leg between AWSoM and DEMT and in that case we will undoubtedly report some statistics associated with the standard deviation such as being the MAD.
 
 -----------------------------------------------------------------------------------------
-6. The abstract can be shortened somewhat, reducing the number of introductory sentences and with a little less emphasis on the method and future improvements, and more on the science results. In particular: the results of the energy balance analysis and the estimate of energy flux at the coronal base, which are important.
+Q5. You discuss the less reliable results from AIA in coronal holes. The very recent paper by Saqri et al (Solar Physics 295, 2020) is relevant here, and should be referenced.
 
-(TOTALMENTE, HAGAMOS ESTO LUEGO DE EDITAR TODO).
+A5. Thanks for the refernce, certainly relevant and now mentioned in the paper (see below). As mentioned in the discussion section of v1: "The source of this distinct performance of DEMT when applied to EUVI or AIA data is related to the TRFs of the respective filter sets. We are currently implementing an improved LDEM determination algorithm to deal with this issue that will be used in a follow up article." We have successfully implemented the improved version of the code, as a result of which this problem has been solved. The issue was related to the algorithm that solves the optimization problem posed in each voxel to find the LDEM. When based on AIA data, the previous algorithm tended to converge to a non-optimal (local minimum of the objective function) in specific voxels located in the CHs. We addressed the problem by exploring multiple starting points when solving the optimization problem in cases where the initial solution was not good enough. In this draft, this improved algorithm affects results concerning type III legs for CR2208. As a result, the following Figures have been updated: 2, 3, 4, 5, 10, 13 and 14. You will notice all these Figures are just like the original ones, except the problem in the CHs of CR-2208 has been solved. Text throughout the manuscript was edited accordingly, in the following locations of v2 of the draft:
+ - Second paragraph after Figure 2.
+ - Paragraph following Figure 4.
+ - Numerical values concerning legs of type-III for CR-2208 in Tables 1 and 2.
+ - Most of the third paragraph of the Conclusion section in V1 was devoted to this solved issue, so it was eliminated. The remaining text is now the end of the second paragraph of that section (highlighted in red color).
+ 
+-----------------------------------------------------------------------------------------
+Q6. The abstract can be shortened somewhat, reducing the number of introductory sentences and with a little less emphasis on the method and future improvements, and more on the science results. In particular: the results of the energy balance analysis and the estimate of energy flux at the coronal base, which are important.
+
+A6. (TOTALMENTE, HAGAMOS ESTO LUEGO DE EDITAR TODO).
 
 -----------------------------------------------------------------------------------------
-7. Page 5, paragraph beginning line 34. You briefly describe fitting the DEM to a Gaussian. I know this approach is covered in detail in Nuevo 2015, but I would like a little more detail here. You should mention that, in general, DEMs do not necessarily have a clean Gaussian profile and that more complicated inversions are needed (reference https://ui.adsabs.harvard.edu/abs/2012A%26A...539A.146H/abstract , https://ui.adsabs.harvard.edu/abs/2019SoPh..294..135M/abstract , https://ui.adsabs.harvard.edu/abs/2019SoPh..294..136P/abstract ). Then explain briefly why DEMT leads to cleaner, non-multithermal profiles (due to the 3D spatial reconstruction of the line of sight). I assume that this is why you can use a straightforward Gaussian fit? Also efficiency?
+Q7. Page 5, paragraph beginning line 34. You briefly describe fitting the DEM to a Gaussian. I know this approach is covered in detail in Nuevo 2015, but I would like a little more detail here. You should mention that, in general, DEMs do not necessarily have a clean Gaussian profile and that more complicated inversions are needed (reference https://ui.adsabs.harvard.edu/abs/2012A%26A...539A.146H/abstract , https://ui.adsabs.harvard.edu/abs/2019SoPh..294..135M/abstract , https://ui.adsabs.harvard.edu/abs/2019SoPh..294..136P/abstract ). Then explain briefly why DEMT leads to cleaner, non-multithermal profiles (due to the 3D spatial reconstruction of the line of sight). I assume that this is why you can use a straightforward Gaussian fit? Also efficiency?
 
-Thanks for this comment and the references. As the LDEM describes the temperature distribution of the plasma in a specific voxel it does not deal with different large scale structures, as it usually it may be the case for the DEM describing the plasma alog a full line-of.sight (LOS). In that sense one can expect as you say, cleaner, profiles than those observed by DEM studies. Still, if one adds tbhe 335 A channel, which adds two sensitivity poits at ~ 1.0 MK and ~ 2.5 MK, one finds that a a bi-Gaussian LDEM model best predics all the tomographic emissivities. That is the main conclusion of Nuevo et. al. (2015). The interpretation in that case is that the unresolved independent strands threading the voxel can have two different characteristic temperatures. Nuevo et al. (2015). So in this sense, the plasma within the voxel can be multi-thermal. As for efficiency, the parametric technique is comparably efficient independently of the chosen model. We did read the  We expanded this discussion in the text.
+A7. Thanks for this comment and the references. As the LDEM describes the temperature distribution of the plasma in a specific voxel it does not deal with different large scale structures, as it usually it may be the case for the DEM describing the plasma alog a full line-of.sight (LOS). In that sense one can expect as you say, cleaner, profiles than those observed by DEM studies. Still, if one adds tbhe 335 A channel, which adds two sensitivity poits at ~ 1.0 MK and ~ 2.5 MK, one finds that a a bi-Gaussian LDEM model best predics all the tomographic emissivities. That is the main conclusion of Nuevo et. al. (2015). The interpretation in that case is that the unresolved independent strands threading the voxel can have two different characteristic temperatures. Nuevo et al. (2015). So in this sense, the plasma within the voxel can be multi-thermal. As for efficiency, the parametric technique is comparably efficient independently of the chosen model. We did read the  We expanded this discussion in the text.
 
 -----------------------------------------------------------------------------------------
-8. The introduction does not have many references to works beyond DEMT and AWSoM. The 2nd paragraph of the introduction offers a chance to remedy this, where you discuss the quiet-Sun corona. I know there are very few works that address the quiet corona in the context of DEM analysis, but you can reference https://www.aanda.org/articles/aa/full_html/2014/04/aa23054-13/aa23054-13.html. You can also mention https://iopscience.iop.org/article/10.1088/0004-637X/795/2/111 here (although you do reference this paper in more detail in the discussion). Another relevant paper which can be referenced, with DEM analysis of a large amount of quiet coronal data over long time periods, is https://advances.sciencemag.org/content/3/7/e1602056 .
+Q8. The introduction does not have many references to works beyond DEMT and AWSoM. The 2nd paragraph of the introduction offers a chance to remedy this, where you discuss the quiet-Sun corona. I know there are very few works that address the quiet corona in the context of DEM analysis, but you can reference https://www.aanda.org/articles/aa/full_html/2014/04/aa23054-13/aa23054-13.html. You can also mention https://iopscience.iop.org/article/10.1088/0004-637X/795/2/111 here (although you do reference this paper in more detail in the discussion). Another relevant paper which can be referenced, with DEM analysis of a large amount of quiet coronal data over long time periods, is https://advances.sciencemag.org/content/3/7/e1602056 .
 
+A8.
 ALBERT VA A ESCRIBIR UN POCO DE TEXTO.
 
 LO QUE SIGUE DEBE SER TODO HECHO POR DIEGO, CONSULTANDO PRINCIPALMENTE A ALBERT. TODO CAMBIO DEBERÁ ESTAR DESTACADO CON \EDIT{} EN ROJO.
+
 -----------------------------------------------------------------------------------------
-9. Some sections can benefit from weeding out of repetitions. You tend to repeat statements regarding the method a lot. For example:
+Q9. Some sections can benefit from weeding out of repetitions. You tend to repeat statements regarding the method a lot. For example:
 - Paragraph starting page 13, line 41. This has already been said in the method.
 - Sentence Page 14, line 25 'For each leg…
 - statement in parenthesis at page 15, line 24.
@@ -85,8 +75,14 @@ LO QUE SIGUE DEBE SER TODO HECHO POR DIEGO, CONSULTANDO PRINCIPALMENTE A ALBERT.
 Shorten to: 'The energy input phi at the coronal base, required to maintain stable coronal loops, is in the range…'
 - Page 26, lines 38-43, between 'Results of the AWSoM….summarized as follows.' can be omitted.
 
+A9. Thanks for pointing this out. We have improved the text in the following parts:
+ 
+
 -----------------------------------------------------------------------------------------
-Minor grammatical improvements, typos, and removal of redundant statements
+Q10. Minor grammatical improvements, typos, and removal of redundant statements
+
+A10. Thanks very much for this detailed corrections. We have addressed them all.
+
 Page number, line number: 
 3,36: quantitive analysis
 3, 44: based on data

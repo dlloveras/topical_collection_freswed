@@ -1,0 +1,12 @@
+
+REFERENCIA: https://en.wikipedia.org/wiki/Median_absolute_deviation
+
+DIEGO, PROPONEMOS HACER ESTO CON FEDE. 
+
+DEFINAMOS EL CAMPO ESCALAR Xi = (X_MHD - X_tom) / X_tom, DONDE "X" ES CUALQUIER RESULTADO A LO LARGO DE LOOP (Ncb, LAMDA_n, ó <Tm>). LA TABLA 2 INFORMA LOS VALORES: "[Med(X_MHD) - Med(X_tom)]/Med(X_tom)".
+
+PROPONEMOS DEJAR LOS HISTOGRAMAS DE LAS FIGS 12 Y 13 COMO ESTÁN, PERO EXPANDIR LA TABLA 2 A QUE INCLUYA DOS COLUMNAS MÁS INDICANDO ESTOS DOS INDICADORES DE CADA CAMPO "Xi":
+* Med(Xi)  (debería aproximarse a los porcentuales y signos entre paréntesis que actualmente informa la Tabla 2).
+* MAD = Med(Abs(Xi-Med(Xi))).
+
+LUEGO EDITAMOS TABLA Y TEXTO DEL PAPER.
