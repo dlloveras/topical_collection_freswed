@@ -1,4 +1,10 @@
 
+
+PSF deconvolution in AIA images?
+
+-----------------------------------------------------------------
+line-by-line MAD:
+
 REFERENCIA: https://en.wikipedia.org/wiki/Median_absolute_deviation
 
 DIEGO, PROPONEMOS HACER ESTO CON FEDE. 
