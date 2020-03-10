@@ -35,6 +35,9 @@ A3. Several aspects are involved here, the discussion in the paragraph you indic
 -----------------------------------------------------------------------------------------
 Q4. Table 2 summarises the differences of the median values of the DEMT and MHD model. This is OK. However, there is an opportunity here to present a more detailed comparison, including in particular the mean (or median) absolute deviation (MAD) of values between DEMT and MHD. The MAD is a more stringent, voxel-by-voxel test of the comparison, which cannot be seen from the histogram comparisons (e.g. figure 12/13) nor the median values of Table 2.
 
+
+........... debo trabajar esta respuesta de abajo---------------------
+
 A4. The populations shown in the histograms are about types of legs associated with different latitudinal regions. The selection of these legs is not the same for AWSoM and DEMT. This is why calculating the MAD a on the relationship of the populations of the histograms reported is not simple. In the future we plan to make a comparative analysis leg-to-leg between AWSoM and DEMT and in that case we will undoubtedly report some statistics associated with the standard deviation such as being the MAD.
 
 -----------------------------------------------------------------------------------------
@@ -45,6 +48,8 @@ A5. Thanks for the refernce, certainly relevant and now mentioned in the paper (
  - Paragraph following Figure 4.
  - Numerical values concerning legs of type-III for CR-2208 in Tables 1 and 2.
  - Most of the third paragraph of the Conclusion section in V1 was devoted to this solved issue, so it was eliminated. The remaining text is now the end of the second paragraph of that section (highlighted in red color).
+ 
+ .........HERE WE NEED TO DISCUSS THE PAPER ABOVE----- and include it in the article.
  
 -----------------------------------------------------------------------------------------
 Q6. The abstract can be shortened somewhat, reducing the number of introductory sentences and with a little less emphasis on the method and future improvements, and more on the science results. In particular: the results of the energy balance analysis and the estimate of energy flux at the coronal base, which are important.
