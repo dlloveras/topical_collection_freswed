@@ -68,21 +68,38 @@ A8. We agree it is relevant to expand the references in the Introduction to othe
 -----------------------------------------------------------------------------------------
 Q9. Some sections can benefit from weeding out of repetitions. You tend to repeat statements regarding the method a lot. For example:
 
+A9: We agree, and answer below point-by-point.
+
 - Paragraph starting page 13, line 41. This has already been said in the method.
+
+Agreed. We deleted that paragraph moved the detail on the leg-averaged temperature <Tm> right before Table 1 (text in red).
+
 - Sentence Page 14, line 25 'For each leg…
+
+Agreed, removed.
+
 - statement in parenthesis at page 15, line 24.
+
+Agreed, removed.
+
 - Section 4, first two paragraphs.
+
+Agreed, removed. We edited the new first paragraph in this section (red text) following also your suggestions in Q10 below, although we wanted to keep references to specific Figures and Tables here.
+
 - Page 26, line 26:
  'In the streamer belt region we combined the DEMT results and the AWSom magnetic model to infer the energy input phi at the coronal base required to maintain stable coronal loops. We found characteristic values in the range…'
 Shorten to: 'The energy input phi at the coronal base, required to maintain stable coronal loops, is in the range…'
+
+Agreed, done.
+
 - Page 26, lines 38-43, between 'Results of the AWSoM….summarized as follows.' can be omitted.
 
-A9. Thanks or the careful read. We have improved the text in those passages, and others similar that we found, with changes highlighted in red.
+Agreed, done. A little edit was introduced (red text) to start the paragraph.
 
 -----------------------------------------------------------------------------------------
 Q10. Minor grammatical improvements, typos, and removal of redundant statements
 
-A10. Thanks very much for this detailed corrections. We believe we addressed them all. Changes highlighted in red.
+A10. Thanks very much for this detailed corrections. We agreed with basically all of them and addressed them all. Changes highlighted in red.
 
 Page number, line number: 
 3,36: quantitive analysis
