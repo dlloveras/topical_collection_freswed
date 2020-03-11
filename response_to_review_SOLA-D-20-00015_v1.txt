@@ -99,7 +99,7 @@ Agreed, done. A little edit was introduced (red text) to start the paragraph.
 -----------------------------------------------------------------------------------------
 Q10. Minor grammatical improvements, typos, and removal of redundant statements
 
-A10. Thanks very much for this detailed corrections. We agreed with basically all of them and addressed them all. Changes highlighted in red.
+A10. Thanks very much for this detailed corrections. We basically agreed with all of them and addressed them all. Changes highlighted in red.
 
 Page number, line number: 
 3,36: quantitive analysis
