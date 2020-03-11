@@ -65,9 +65,7 @@ A7. Thanks for this comment and the references. We were aware of those, discussi
 -----------------------------------------------------------------------------------------
 Q8. The introduction does not have many references to works beyond DEMT and AWSoM. The 2nd paragraph of the introduction offers a chance to remedy this, where you discuss the quiet-Sun corona. I know there are very few works that address the quiet corona in the context of DEM analysis, but you can reference https://www.aanda.org/articles/aa/full_html/2014/04/aa23054-13/aa23054-13.html. You can also mention https://iopscience.iop.org/article/10.1088/0004-637X/795/2/111 here (although you do reference this paper in more detail in the discussion). Another relevant paper which can be referenced, with DEM analysis of a large amount of quiet coronal data over long time periods, is https://advances.sciencemag.org/content/3/7/e1602056 .
 
-A8. ALBERT VA A ESCRIBIR UN POCO DE TEXTO. -- FALTA ESTO --
-
-LO QUE SIGUE DEBE SER TODO HECHO POR DIEGO, CONSULTANDO PRINCIPALMENTE A ALBERT. TODO CAMBIO DEBERÁ ESTAR DESTACADO CON \EDIT{} EN ROJO.
+A8. We agree it is important to expand the references in the article to other studies of the quiet Sun. As you mention, we do refer to Hahn & Savin (2014) alreadyin the discussion. In the Introduction, we included now the other references you provided, as well as another one (new text in red).
 
 -----------------------------------------------------------------------------------------
 Q9. Some sections can benefit from weeding out of repetitions. You tend to repeat statements regarding the method a lot. For example:
@@ -81,7 +79,6 @@ Shorten to: 'The energy input phi at the coronal base, required to maintain stab
 - Page 26, lines 38-43, between 'Results of the AWSoM….summarized as follows.' can be omitted.
 
 A9. Thanks for pointing this out. We have improved the text in the following parts:
- 
 
 -----------------------------------------------------------------------------------------
 Q10. Minor grammatical improvements, typos, and removal of redundant statements
