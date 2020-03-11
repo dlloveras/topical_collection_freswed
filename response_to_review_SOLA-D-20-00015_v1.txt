@@ -69,6 +69,7 @@ A8. We agree it is important to expand the references in the article to other st
 
 -----------------------------------------------------------------------------------------
 Q9. Some sections can benefit from weeding out of repetitions. You tend to repeat statements regarding the method a lot. For example:
+
 - Paragraph starting page 13, line 41. This has already been said in the method.
 - Sentence Page 14, line 25 'For each leg…
 - statement in parenthesis at page 15, line 24.
@@ -78,12 +79,12 @@ Q9. Some sections can benefit from weeding out of repetitions. You tend to repea
 Shorten to: 'The energy input phi at the coronal base, required to maintain stable coronal loops, is in the range…'
 - Page 26, lines 38-43, between 'Results of the AWSoM….summarized as follows.' can be omitted.
 
-A9. Thanks for pointing this out. We have improved the text in the following parts:
+A9. Thanks or the careful read. We have improved the text in those passages, and others similar that we found, with changes highlighted in red.
 
 -----------------------------------------------------------------------------------------
 Q10. Minor grammatical improvements, typos, and removal of redundant statements
 
-A10. Thanks very much for this detailed corrections. We have addressed them all.
+A10. Thanks very much for this detailed corrections. We believe we addressed them all. Changes highlighted in red.
 
 Page number, line number: 
 3,36: quantitive analysis
