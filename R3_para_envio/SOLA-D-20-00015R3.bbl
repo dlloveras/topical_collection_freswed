@@ -1,0 +1,957 @@
+\begin{thebibliography}{49}
+% BibTex style file: spr-mp-sola.bst (nameyear), 2019-03-01
+\ifx\bisbn     \undefined \def\bisbn  #1{ISBN #1}\fi
+\ifx\binits    \undefined \def\binits#1{#1}\fi
+\ifx\bauthor   \undefined \def\bauthor#1{#1}\fi
+\ifx\batitle   \undefined \def\batitle#1{#1}\fi
+\ifx\bjtitle   \undefined \def\bjtitle#1{\textit{#1}}\fi
+\ifx\bvolume   \undefined \def\bvolume#1{\textbf{#1}}\fi
+\ifx\byear     \undefined \def\byear#1{#1}\fi
+\ifx\bissue    \undefined \def\bissue#1{#1}\fi
+\ifx\bfpage    \undefined \def\bfpage#1{#1}\fi
+\ifx\blpage    \undefined \def\blpage #1{#1}\fi
+\ifx\burl      \undefined \def\burl#1{\textsf{#1}}\fi
+\ifx\href      \undefined \def\href#1#2{\textsf{#2}}\fi
+\ifx\betal     \undefined \def\betal{\textit{et al.}}\fi
+\ifx\bctitle   \undefined \def\bctitle#1{#1}\fi
+\ifx\beditor   \undefined \def\beditor#1{#1}\fi
+\ifx\bbtitle   \undefined \def\bbtitle#1{\textit{#1}}\fi
+\ifx\bedition  \undefined \def\bedition#1{#1}\fi
+\ifx\bseriesno \undefined \def\bseriesno#1{\textbf{#1}}\fi
+\ifx\blocation \undefined \def\blocation#1{#1}\fi
+\ifx\bsertitle \undefined \def\bsertitle#1{\textit{#1}}\fi
+\ifx\bsnm      \undefined \def\bsnm#1{#1}\fi
+\ifx\bsuffix   \undefined \def\bsuffix#1{#1}\fi
+\ifx\bparticle \undefined \def\bparticle#1{#1}\fi
+\ifx\barticle  \undefined \def\barticle#1{}\fi
+\ifx\binstitute  \undefined \def\binstitute#1{#1}\fi
+\ifx\bpublisher  \undefined \def\bpublisher#1{#1}\fi
+\ifx\doiurl    \undefined \def\doiurl#1{\href{#1}{\textsf{DOI}}}\fi
+\makeatletter
+\def\safeHref#1#2#3{\in@{http}{#2}\ifin@\href{#2}{#3}\else\href{#1#2}{#3}\fi}
+\makeatother
+\ifx\adsurl    \undefined
+  \def\adsurl#1{\safeHref{http://adsabs.harvard.edu/abs/}{#1}{\textsf{ADS}}}\fi
+\ifx\arxivurl  \undefined
+  \def\arxivurl#1{\safeHref{http://arxiv.org/abs/}{#1}{\textsf{arXiv}}}\fi
+\ifx\botherref \undefined \def\botherref#1{}\fi
+\ifx\url       \undefined \def\url#1{\textsf{#1}}\fi
+\ifx\bchapter  \undefined \def\bchapter#1{}\fi
+\ifx\bbook     \undefined \def\bbook#1{}\fi
+\ifx\bcomment  \undefined \def\bcomment#1{#1}\fi
+\ifx\oauthor   \undefined \def\oauthor#1{#1}\fi
+\ifx\citeauthoryear \undefined\def \citeauthoryear#1{#1}\fi
+\def\endbibitem {}
+\ifx\bconflocation  \undefined \def\bconflocation#1{#1} \fi
+
+\bibitem[\protect\citeauthoryear{{Arge} \textit{et~al.}}{2010}]{Arg2010}
+\begin{bchapter}
+\bauthor{\bsnm{{Arge}}, \binits{C.N.}},
+\bauthor{\bsnm{{Henney}}, \binits{C.J.}},
+\bauthor{\bsnm{{Koller}}, \binits{J.}},
+\bauthor{\bsnm{{Compeau}}, \binits{C.R.}},
+\bauthor{\bsnm{{Young}}, \binits{S.}},
+\bauthor{\bsnm{{MacKenzie}}, \binits{D.}},
+\bauthor{\bsnm{{Fay}}, \binits{A.}},
+\bauthor{\bsnm{{Harvey}}, \binits{J.W.}}:
+\byear{2010},
+\bctitle{{Air Force Data Assimilative Photospheric Flux Transport (ADAPT)
+  Model}}.
+In: \beditor{\bsnm{{Maksimovic}}, \binits{M.}},
+\beditor{\bsnm{{Issautier}}, \binits{K.}},
+\beditor{\bsnm{{Meyer-Vernet}}, \binits{N.}},
+\beditor{\bsnm{{Moncuquet}}, \binits{M.}},
+\beditor{\bsnm{{Pantellini}}, \binits{F.}} (eds.)
+\bbtitle{Twelfth International Solar Wind Conference},
+\bsertitle{American Institute of Physics Conference Series}
+\bseriesno{1216},
+\bfpage{343}.
+\doiurl{https://doi.org/10.1063/1.3395870}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2010AIPC.1216..343A}.
+\end{bchapter}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Aschwanden}}{2004}]{aschwanden_2004}
+\begin{bbook}
+\bauthor{\bsnm{{Aschwanden}}, \binits{M.J.}}:
+\byear{2004},
+\bbtitle{{Physics of the Solar Corona. An Introduction}}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2004psci.book.....A}.
+\end{bbook}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Aschwanden} and
+  {Boerner}}{2011}]{aschwanden_2011}
+\begin{barticle}
+\bauthor{\bsnm{{Aschwanden}}, \binits{M.J.}},
+\bauthor{\bsnm{{Boerner}}, \binits{P.}}:
+\byear{2011},
+\batitle{{Solar Corona Loop Studies with the Atmospheric Imaging Assembly. I.
+  Cross-sectional Temperature Structure}}.
+\bjtitle{\apj}
+\bvolume{732},
+\bfpage{81}.
+\doiurl{https://doi.org/10.1088/0004-637X/732/2/81}.
+\adsurl{2011ApJ...732...81A}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Aschwanden} and
+  {Schrijver}}{2002}]{aschwanden_2002}
+\begin{barticle}
+\bauthor{\bsnm{{Aschwanden}}, \binits{M.J.}},
+\bauthor{\bsnm{{Schrijver}}, \binits{C.J.}}:
+\byear{2002},
+\batitle{{Analytical Approximations to Hydrostatic Solutions and Scaling Laws
+  of Coronal Loops}}.
+\bjtitle{\apjs}
+\bvolume{142}(\bissue{2}),
+\bfpage{269}.
+\doiurl{https://doi.org/10.1086/341945}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2002ApJS..142..269A}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Chandran} \textit{et~al.}}{2011}]{Cha2011}
+\begin{barticle}
+\bauthor{\bsnm{{Chandran}}, \binits{B.D.G.}},
+\bauthor{\bsnm{{Dennis}}, \binits{T.J.}},
+\bauthor{\bsnm{{Quataert}}, \binits{E.}},
+\bauthor{\bsnm{{Bale}}, \binits{S.D.}}:
+\byear{2011},
+\batitle{{Incorporating Kinetic Physics into a Two-fluid Solar-wind Model with
+  Temperature Anisotropy and Low-frequency Alfv{\'e}n-wave Turbulence}}.
+\bjtitle{\apj}
+\bvolume{743}(\bissue{2}),
+\bfpage{197}.
+\doiurl{https://doi.org/10.1088/0004-637X/743/2/197}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2011ApJ...743..197C}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Del Zanna}}{2013}]{delzanna_2013}
+\begin{barticle}
+\bauthor{\bsnm{{Del Zanna}}, \binits{G.}}:
+\byear{2013},
+\batitle{{The multi-thermal emission in solar active regions}}.
+\bjtitle{\aap}
+\bvolume{558},
+\bfpage{A73}.
+\doiurl{https://doi.org/10.1051/0004-6361/201321653}.
+\adsurl{2013A\%26A...558A..73D}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Del Zanna}
+  \textit{et~al.}}{2015}]{delzanna_2015}
+\begin{barticle}
+\bauthor{\bsnm{{Del Zanna}}, \binits{G.}},
+\bauthor{\bsnm{{Dere}}, \binits{K.P.}},
+\bauthor{\bsnm{{Young}}, \binits{P.R.}},
+\bauthor{\bsnm{{Landi}}, \binits{E.}},
+\bauthor{\bsnm{{Mason}}, \binits{H.E.}}:
+\byear{2015},
+\batitle{{CHIANTI - An atomic database for emission lines. Version 8}}.
+\bjtitle{\aap}
+\bvolume{582},
+\bfpage{A56}.
+\doiurl{https://doi.org/10.1051/0004-6361/201526827}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2015A&A...582A..56D}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Frazin}}{2000}]{frazin_2000}
+\begin{barticle}
+\bauthor{\bsnm{{Frazin}}, \binits{R.A.}}:
+\byear{2000},
+\batitle{{Tomography of the Solar Corona. I. A Robust, Regularized, Positive
+  Estimation Method}}.
+\bjtitle{\apj}
+\bvolume{530},
+\bfpage{1026}.
+\doiurl{https://doi.org/10.1086/308412}.
+\adsurl{2000ApJ...530.1026F}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Frazin}, {V{\'a}squez}, and
+  {Kamalabadi}}{2009}]{frazin_2009}
+\begin{barticle}
+\bauthor{\bsnm{{Frazin}}, \binits{R.A.}},
+\bauthor{\bsnm{{V{\'a}squez}}, \binits{A.M.}},
+\bauthor{\bsnm{{Kamalabadi}}, \binits{F.}}:
+\byear{2009},
+\batitle{{Quantitative, Three-dimensional Analysis of the Global Corona with
+  Multi-spacecraft Differential Emission Measure Tomography}}.
+\bjtitle{\apj}
+\bvolume{701},
+\bfpage{547}.
+\doiurl{https://doi.org/10.1088/0004-637X/701/1/547}.
+\adsurl{2009ApJ...701..547F}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Hahn} and {Savin}}{2014}]{hahn_2014}
+\begin{barticle}
+\bauthor{\bsnm{{Hahn}}, \binits{M.}},
+\bauthor{\bsnm{{Savin}}, \binits{D.W.}}:
+\byear{2014},
+\batitle{{Evidence for Wave Heating of the Quiet-Sun Corona}}.
+\bjtitle{\apj}
+\bvolume{795}(\bissue{2}),
+\bfpage{111}.
+\doiurl{https://doi.org/10.1088/0004-637X/795/2/111}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2014ApJ...795..111H}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Hannah} and {Kontar}}{2012}]{hannah_2012}
+\begin{barticle}
+\bauthor{\bsnm{{Hannah}}, \binits{I.G.}},
+\bauthor{\bsnm{{Kontar}}, \binits{E.P.}}:
+\byear{2012},
+\batitle{{Differential emission measures from the regularized inversion of
+  Hinode and SDO data}}.
+\bjtitle{\aap}
+\bvolume{539},
+\bfpage{A146}.
+\doiurl{https://doi.org/10.1051/0004-6361/201117576}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2012A&A...539A.146H}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Henney} \textit{et~al.}}{2012}]{Hen2012}
+\begin{barticle}
+\bauthor{\bsnm{{Henney}}, \binits{C.J.}},
+\bauthor{\bsnm{{Toussaint}}, \binits{W.A.}},
+\bauthor{\bsnm{{White}}, \binits{S.M.}},
+\bauthor{\bsnm{{Arge}}, \binits{C.N.}}:
+\byear{2012},
+\batitle{{Forecasting F$_{10.7}$ with solar magnetic flux transport modeling}}.
+\bjtitle{Space Weather}
+\bvolume{10},
+\bfpage{S02011}.
+\doiurl{https://doi.org/10.1029/2011SW000748}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2012SpWea..10.2011H}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Hill} \textit{et~al.}}{1994}]{gong}
+\begin{barticle}
+\bauthor{\bsnm{{Hill}}, \binits{F.}},
+\bauthor{\bsnm{{Fischer}}, \binits{G.}},
+\bauthor{\bsnm{{Grier}}, \binits{J.}},
+\bauthor{\bsnm{{Leibacher}}, \binits{J.W.}},
+\bauthor{\bsnm{{Jones}}, \binits{H.B.}},
+\bauthor{\bsnm{{Jones}}, \binits{P.P.}},
+\bauthor{\bsnm{{Kupke}}, \binits{R.}},
+\bauthor{\bsnm{{Stebbins}}, \binits{R.T.}}:
+\byear{1994},
+\batitle{{The Global Oscillation Network Group Site Survey - Part One}}.
+\bjtitle{\solphys}
+\bvolume{152}(\bissue{2}),
+\bfpage{321}.
+\doiurl{https://doi.org/10.1007/BF00680443}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/1994SoPh..152..321H}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Huang} \textit{et~al.}}{2012}]{huang_2012}
+\begin{barticle}
+\bauthor{\bsnm{{Huang}}, \binits{Z.}},
+\bauthor{\bsnm{{Frazin}}, \binits{R.A.}},
+\bauthor{\bsnm{{Landi}}, \binits{E.}},
+\bauthor{\bsnm{{Manchester}}, \binits{W.B.}},
+\bauthor{\bsnm{{V{\'a}squez}}, \binits{A.M.}},
+\bauthor{\bsnm{{Gombosi}}, \binits{T.I.}}:
+\byear{2012},
+\batitle{{Newly Discovered Global Temperature Structures in the Quiet Sun at
+  Solar Minimum}}.
+\bjtitle{\apj}
+\bvolume{755},
+\bfpage{86}.
+\doiurl{https://doi.org/10.1088/0004-637X/755/2/86}.
+\adsurl{2012ApJ...755...86H}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Jin} \textit{et~al.}}{2012}]{jin_2012}
+\begin{bchapter}
+\bauthor{\bsnm{{Jin}}, \binits{M.}},
+\bauthor{\bsnm{{Manchester}}, \binits{W.B.}},
+\bauthor{\bsnm{{van der Holst}}, \binits{B.}},
+\bauthor{\bsnm{{Oran}}, \binits{R.}},
+\bauthor{\bsnm{{Sokolov}}, \binits{I.}},
+\bauthor{\bsnm{{Toth}}, \binits{G.}},
+\bauthor{\bsnm{{Gombosi}}, \binits{T.I.}},
+\bauthor{\bsnm{{Vourlidas}}, \binits{A.}},
+\bauthor{\bsnm{{Liu}}, \binits{Y.}},
+\bauthor{\bsnm{{Sun}}, \binits{X.}}:
+\byear{2012},
+\bctitle{{Simulate the Coronal Mass Ejection on 2011 March 7 from Chromosphere
+  to 1 AU}}.
+In: \bbtitle{AGU Fall Meeting Abstracts}
+\bseriesno{2012},
+\bfpage{SH33E}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2012AGUFMSH33E..04J}.
+\end{bchapter}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Landi} \textit{et~al.}}{2013}]{landi_2013}
+\begin{barticle}
+\bauthor{\bsnm{{Landi}}, \binits{E.}},
+\bauthor{\bsnm{{Young}}, \binits{P.R.}},
+\bauthor{\bsnm{{Dere}}, \binits{K.P.}},
+\bauthor{\bsnm{{Del Zanna}}, \binits{G.}},
+\bauthor{\bsnm{{Mason}}, \binits{H.E.}}:
+\byear{2013},
+\batitle{{CHIANTI - An Atomic Database for Emission Lines. XIII. Soft X-Ray
+  Improvements and Other Changes}}.
+\bjtitle{\apj}
+\bvolume{763},
+\bfpage{86}.
+\doiurl{https://doi.org/10.1088/0004-637X/763/2/86}.
+\adsurl{2013ApJ...763...86L}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Lemen} \textit{et~al.}}{2012}]{lemen_2012}
+\begin{barticle}
+\bauthor{\bsnm{{Lemen}}, \binits{J.R.}},
+\bauthor{\bsnm{{Title}}, \binits{A.M.}},
+\bauthor{\bsnm{{Akin}}, \binits{D.J.}},
+\bauthor{\bsnm{{Boerner}}, \binits{P.F.}},
+\bauthor{\bsnm{{Chou}}, \binits{C.}},
+\bauthor{\bsnm{{Drake}}, \binits{J.F.}},
+\bauthor{\bsnm{{Duncan}}, \binits{D.W.}},
+\bauthor{\bsnm{{Edwards}}, \binits{C.G.}},
+\bauthor{\bsnm{{Friedlaender}}, \binits{F.M.}},
+\bauthor{\bsnm{{Heyman}}, \binits{G.F.}},
+\bauthor{\bsnm{{Hurlburt}}, \binits{N.E.}},
+\bauthor{\bsnm{{Katz}}, \binits{N.L.}},
+\bauthor{\bsnm{{Kushner}}, \binits{G.D.}},
+\bauthor{\bsnm{{Levay}}, \binits{M.}},
+\bauthor{\bsnm{{Lindgren}}, \binits{R.W.}},
+\bauthor{\bsnm{{Mathur}}, \binits{D.P.}},
+\bauthor{\bsnm{{McFeaters}}, \binits{E.L.}},
+\bauthor{\bsnm{{Mitchell}}, \binits{S.}},
+\bauthor{\bsnm{{Rehse}}, \binits{R.A.}},
+\bauthor{\bsnm{{Schrijver}}, \binits{C.J.}},
+\bauthor{\bsnm{{Springer}}, \binits{L.A.}},
+\bauthor{\bsnm{{Stern}}, \binits{R.A.}},
+\bauthor{\bsnm{{Tarbell}}, \binits{T.D.}},
+\bauthor{\bsnm{{Wuelser}}, \binits{J.-P.}},
+\bauthor{\bsnm{{Wolfson}}, \binits{C.J.}},
+\bauthor{\bsnm{{Yanari}}, \binits{C.}},
+\bauthor{\bsnm{{Bookbinder}}, \binits{J.A.}},
+\bauthor{\bsnm{{Cheimets}}, \binits{P.N.}},
+\bauthor{\bsnm{{Caldwell}}, \binits{D.}},
+\bauthor{\bsnm{{Deluca}}, \binits{E.E.}},
+\bauthor{\bsnm{{Gates}}, \binits{R.}},
+\bauthor{\bsnm{{Golub}}, \binits{L.}},
+\bauthor{\bsnm{{Park}}, \binits{S.}},
+\bauthor{\bsnm{{Podgorski}}, \binits{W.A.}},
+\bauthor{\bsnm{{Bush}}, \binits{R.I.}},
+\bauthor{\bsnm{{Scherrer}}, \binits{P.H.}},
+\bauthor{\bsnm{{Gummin}}, \binits{M.A.}},
+\bauthor{\bsnm{{Smith}}, \binits{P.}},
+\bauthor{\bsnm{{Auker}}, \binits{G.}},
+\bauthor{\bsnm{{Jerram}}, \binits{P.}},
+\bauthor{\bsnm{{Pool}}, \binits{P.}},
+\bauthor{\bsnm{{Soufli}}, \binits{R.}},
+\bauthor{\bsnm{{Windt}}, \binits{D.L.}},
+\bauthor{\bsnm{{Beardsley}}, \binits{S.}},
+\bauthor{\bsnm{{Clapp}}, \binits{M.}},
+\bauthor{\bsnm{{Lang}}, \binits{J.}},
+\bauthor{\bsnm{{Waltham}}, \binits{N.}}:
+\byear{2012},
+\batitle{{The Atmospheric Imaging Assembly (AIA) on the Solar Dynamics
+  Observatory (SDO)}}.
+\bjtitle{\solphys}
+\bvolume{275},
+\bfpage{17}.
+\doiurl{https://doi.org/10.1007/s11207-011-9776-8}.
+\adsurl{2012SoPh..275...17L}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Lionello}, {Linker}, and
+  {Miki{\'c}}}{2009}]{Lio2009}
+\begin{barticle}
+\bauthor{\bsnm{{Lionello}}, \binits{R.}},
+\bauthor{\bsnm{{Linker}}, \binits{J.A.}},
+\bauthor{\bsnm{{Miki{\'c}}}, \binits{Z.}}:
+\byear{2009},
+\batitle{{Multispectral Emission of the Sun During the First Whole Sun Month:
+  Magnetohydrodynamic Simulations}}.
+\bjtitle{\apj}
+\bvolume{690}(\bissue{1}),
+\bfpage{902}.
+\doiurl{https://doi.org/10.1088/0004-637X/690/1/902}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2009ApJ...690..902L}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Lithwick}, {Goldreich}, and
+  {Sridhar}}{2007}]{Lit2007}
+\begin{barticle}
+\bauthor{\bsnm{{Lithwick}}, \binits{Y.}},
+\bauthor{\bsnm{{Goldreich}}, \binits{P.}},
+\bauthor{\bsnm{{Sridhar}}, \binits{S.}}:
+\byear{2007},
+\batitle{{Imbalanced Strong MHD Turbulence}}.
+\bjtitle{\apj}
+\bvolume{655}(\bissue{1}),
+\bfpage{269}.
+\doiurl{https://doi.org/10.1086/509884}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2007ApJ...655..269L}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Lloveras
+  \textit{et~al.}}{2017}]{lloveras_2017}
+\begin{barticle}
+\bauthor{\bsnm{Lloveras}, \binits{D.G.}},
+\bauthor{\bsnm{V{\'a}squez}, \binits{A.M.}},
+\bauthor{\bsnm{Nuevo}, \binits{F.A.}},
+\bauthor{\bsnm{Frazin}, \binits{R.A.}}:
+\byear{2017},
+\batitle{{Comparative Study of the Three-Dimensional Thermodynamical Structure
+  of the Inner Corona of Solar Minimum Carrington Rotations 1915 and 2081}}.
+\bjtitle{\solphys}
+\bvolume{292}(\bissue{10}),
+\bfpage{153}.
+\doiurl{https://doi.org/10.1007/s11207-017-1179-z}.
+\burl{https://doi.org/10.1007/s11207-017-1179-z}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{L{\'o}pez}
+  \textit{et~al.}}{2019}]{lopez_2019}
+\begin{barticle}
+\bauthor{\bsnm{{L{\'o}pez}}, \binits{F.M.}},
+\bauthor{\bsnm{{Cremades}}, \binits{H.}},
+\bauthor{\bsnm{{Balmaceda}}, \binits{L.A.}},
+\bauthor{\bsnm{{Nuevo}}, \binits{F.A.}},
+\bauthor{\bsnm{{V{\'a}squez}}, \binits{A.M.}}:
+\byear{2019},
+\batitle{{Estimating the mass of CMEs from the analysis of EUV dimmings}}.
+\bjtitle{\aap}
+\bvolume{627},
+\bfpage{A8}.
+\doiurl{https://doi.org/10.1051/0004-6361/201834163}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2019A&A...627A...8L}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Mac Cormack}
+  \textit{et~al.}}{2017}]{maccormack_2017}
+\begin{barticle}
+\bauthor{\bsnm{{Mac Cormack}}, \binits{C.}},
+\bauthor{\bsnm{{V{\'a}squez}}, \binits{A.M.}},
+\bauthor{\bsnm{{L{\'o}pez Fuentes}}, \binits{M.}},
+\bauthor{\bsnm{{Nuevo}}, \binits{F.A.}},
+\bauthor{\bsnm{{Landi}}, \binits{E.}},
+\bauthor{\bsnm{{Frazin}}, \binits{R.A.}}:
+\byear{2017},
+\batitle{{Energy Input Flux in the Global Quiet-Sun Corona}}.
+\bjtitle{\apj}
+\bvolume{843},
+\bfpage{70}.
+\doiurl{https://doi.org/10.3847/1538-4357/aa76e9}.
+\adsurl{2017ApJ...843...70M}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Mackovjak}, {Dzif{\v{c}}{\'a}kov{\'a}}, and
+  {Dud{\'\i}k}}{2014}]{mackovjak_2014}
+\begin{barticle}
+\bauthor{\bsnm{{Mackovjak}}, \binits{{\v{S}}.}},
+\bauthor{\bsnm{{Dzif{\v{c}}{\'a}kov{\'a}}}, \binits{E.}},
+\bauthor{\bsnm{{Dud{\'\i}k}}, \binits{J.}}:
+\byear{2014},
+\batitle{{Differential emission measure analysis of active region cores and
+  quiet Sun for the non-Maxwellian {\ensuremath{\kappa}}-distributions}}.
+\bjtitle{\aap}
+\bvolume{564},
+\bfpage{A130}.
+\doiurl{https://doi.org/10.1051/0004-6361/201323054}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2014A&A...564A.130M}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Morgan} and {Pickering}}{2019}]{morgan_2019}
+\begin{barticle}
+\bauthor{\bsnm{{Morgan}}, \binits{H.}},
+\bauthor{\bsnm{{Pickering}}, \binits{J.}}:
+\byear{2019},
+\batitle{{SITES: Solar Iterative Temperature Emission Solver for Differential
+  Emission Measure Inversion of EUV Observations}}.
+\bjtitle{\solphys}
+\bvolume{294}(\bissue{10}),
+\bfpage{135}.
+\doiurl{https://doi.org/10.1007/s11207-019-1525-4}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2019SoPh..294..135M}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Morgan} and {Taroyan}}{2017}]{morgan_2017}
+\begin{barticle}
+\bauthor{\bsnm{{Morgan}}, \binits{H.}},
+\bauthor{\bsnm{{Taroyan}}, \binits{Y.}}:
+\byear{2017},
+\batitle{{Global conditions in the solar corona from 2010 to 2017}}.
+\bjtitle{Science Advances}
+\bvolume{3}(\bissue{7}),
+\bfpage{e1602056}.
+\doiurl{https://doi.org/10.1126/sciadv.1602056}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2017SciA....3E2056M}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Nuevo} \textit{et~al.}}{2013}]{nuevo_2013}
+\begin{barticle}
+\bauthor{\bsnm{{Nuevo}}, \binits{F.A.}},
+\bauthor{\bsnm{{Huang}}, \binits{Z.}},
+\bauthor{\bsnm{{Frazin}}, \binits{R.}},
+\bauthor{\bsnm{{Manchester}}, \binits{W.B.}},
+\bauthor{\bsnm{{Jin}}, \binits{M.}},
+\bauthor{\bsnm{{V{\'a}squez}}, \binits{A.M.}}:
+\byear{2013},
+\batitle{{Evolution of the Global Temperature Structure of the Solar Corona
+  during the Minimum between Solar Cycles 23 and 24}}.
+\bjtitle{\apj}
+\bvolume{773}(\bissue{1}),
+\bfpage{9}.
+\doiurl{https://doi.org/10.1088/0004-637X/773/1/9}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2013ApJ...773....9N}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Nuevo} \textit{et~al.}}{2015}]{nuevo_2015}
+\begin{barticle}
+\bauthor{\bsnm{{Nuevo}}, \binits{F.A.}},
+\bauthor{\bsnm{{V{\'a}squez}}, \binits{A.M.}},
+\bauthor{\bsnm{{Landi}}, \binits{E.}},
+\bauthor{\bsnm{{Frazin}}, \binits{R.}}:
+\byear{2015},
+\batitle{{Multimodal Differential Emission Measure in the Solar Corona}}.
+\bjtitle{\apj}
+\bvolume{811}(\bissue{2}),
+\bfpage{128}.
+\doiurl{https://doi.org/10.1088/0004-637X/811/2/128}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2015ApJ...811..128N}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Oran} \textit{et~al.}}{2015}]{oran_2015}
+\begin{barticle}
+\bauthor{\bsnm{{Oran}}, \binits{R.}},
+\bauthor{\bsnm{{Landi}}, \binits{E.}},
+\bauthor{\bsnm{{van der Holst}}, \binits{B.}},
+\bauthor{\bsnm{{Lepri}}, \binits{S.T.}},
+\bauthor{\bsnm{{V{\'a}squez}}, \binits{A.M.}},
+\bauthor{\bsnm{{Nuevo}}, \binits{F.A.}},
+\bauthor{\bsnm{{Frazin}}, \binits{R.}},
+\bauthor{\bsnm{{Manchester}}, \binits{W.}},
+\bauthor{\bsnm{{Sokolov}}, \binits{I.}},
+\bauthor{\bsnm{{Gombosi}}, \binits{T.I.}}:
+\byear{2015},
+\batitle{{A Steady-state Picture of Solar Wind Acceleration and Charge State
+  Composition Derived from a Global Wave-driven MHD Model}}.
+\bjtitle{\apj}
+\bvolume{806}(\bissue{1}),
+\bfpage{55}.
+\doiurl{https://doi.org/10.1088/0004-637X/806/1/55}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2015ApJ...806...55O}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Pickering} and
+  {Morgan}}{2019}]{pickering_2019}
+\begin{barticle}
+\bauthor{\bsnm{{Pickering}}, \binits{J.}},
+\bauthor{\bsnm{{Morgan}}, \binits{H.}}:
+\byear{2019},
+\batitle{{GRID-SITES: Gridded Solar Iterative Temperature Emission Solver for
+  Fast DEM Inversion}}.
+\bjtitle{\solphys}
+\bvolume{294}(\bissue{10}),
+\bfpage{136}.
+\doiurl{https://doi.org/10.1007/s11207-019-1526-3}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2019SoPh..294..136P}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Plowman}, {Kankelborg}, and
+  {Martens}}{2013}]{plowman_2013}
+\begin{barticle}
+\bauthor{\bsnm{{Plowman}}, \binits{J.}},
+\bauthor{\bsnm{{Kankelborg}}, \binits{C.}},
+\bauthor{\bsnm{{Martens}}, \binits{P.}}:
+\byear{2013},
+\batitle{{Fast Differential Emission Measure Inversion of Solar Coronal Data}}.
+\bjtitle{\apj}
+\bvolume{771},
+\bfpage{2}.
+\doiurl{https://doi.org/10.1088/0004-637X/771/1/2}.
+\adsurl{2013ApJ...771....2P}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Powell} \textit{et~al.}}{1999}]{Pow1999}
+\begin{barticle}
+\bauthor{\bsnm{{Powell}}, \binits{K.G.}},
+\bauthor{\bsnm{{Roe}}, \binits{P.L.}},
+\bauthor{\bsnm{{Linde}}, \binits{T.J.}},
+\bauthor{\bsnm{{Gombosi}}, \binits{T.I.}},
+\bauthor{\bsnm{{De Zeeuw}}, \binits{D.L.}}:
+\byear{1999},
+\batitle{{A Solution-Adaptive Upwind Scheme for Ideal Magnetohydrodynamics}}.
+\bjtitle{Journal of Computational Physics}
+\bvolume{154}(\bissue{2}),
+\bfpage{284}.
+\doiurl{https://doi.org/10.1006/jcph.1999.6299}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/1999JCoPh.154..284P}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Press} \textit{et~al.}}{2002}]{recipes}
+\begin{bbook}
+\bauthor{\bsnm{{Press}}, \binits{W.H.}},
+\bauthor{\bsnm{{Teukolsky}}, \binits{S.A.}},
+\bauthor{\bsnm{{Vetterling}}, \binits{W.T.}},
+\bauthor{\bsnm{{Flannery}}, \binits{B.P.}}:
+\byear{2002},
+\bbtitle{{Numerical recipes in C++ : the art of scientific computing}}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2002nrca.book.....P}.
+\end{bbook}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Sachdeva}
+  \textit{et~al.}}{2019}]{sachdeva_2019}
+\begin{barticle}
+\bauthor{\bsnm{{Sachdeva}}, \binits{N.}},
+\bauthor{\bsnm{{van der Holst}}, \binits{B.}},
+\bauthor{\bsnm{{Manchester}}, \binits{W.B.}},
+\bauthor{\bsnm{{T{\'o}th}}, \binits{G.}},
+\bauthor{\bsnm{{Chen}}, \binits{Y.}},
+\bauthor{\bsnm{{Lloveras}}, \binits{D.G.}},
+\bauthor{\bsnm{{V{\'a}squez}}, \binits{A.M.}},
+\bauthor{\bsnm{{Lamy}}, \binits{P.}},
+\bauthor{\bsnm{{Wojak}}, \binits{J.}},
+\bauthor{\bsnm{{Jackson}}, \binits{B.V.}},
+\bauthor{\bsnm{{Yu}}, \binits{H.-S.}},
+\bauthor{\bsnm{{Henney}}, \binits{C.J.}}:
+\byear{2019},
+\batitle{{Validation of the Alfv{\'e}n Wave Solar Atmosphere Model (AWSoM) with
+  Observations from the Low Corona to 1 au}}.
+\bjtitle{\apj}
+\bvolume{887}(\bissue{1}),
+\bfpage{83}.
+\doiurl{https://doi.org/10.3847/1538-4357/ab4f5e}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2019ApJ...887...83S}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Saqri} \textit{et~al.}}{2020}]{saqri_2020}
+\begin{barticle}
+\bauthor{\bsnm{{Saqri}}, \binits{J.}},
+\bauthor{\bsnm{{Veronig}}, \binits{A.M.}},
+\bauthor{\bsnm{{Heinemann}}, \binits{S.G.}},
+\bauthor{\bsnm{{Hofmeister}}, \binits{S.J.}},
+\bauthor{\bsnm{{Temmer}}, \binits{M.}},
+\bauthor{\bsnm{{Dissauer}}, \binits{K.}},
+\bauthor{\bsnm{{Su}}, \binits{Y.}}:
+\byear{2020},
+\batitle{{Differential Emission Measure Plasma Diagnostics of a Long-Lived
+  Coronal Hole}}.
+\bjtitle{\solphys}
+\bvolume{295}(\bissue{1}),
+\bfpage{6}.
+\doiurl{https://doi.org/10.1007/s11207-019-1570-z}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2020SoPh..295....6S}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Schiff} and {Cranmer}}{2016}]{schiff_2016}
+\begin{barticle}
+\bauthor{\bsnm{{Schiff}}, \binits{A.J.}},
+\bauthor{\bsnm{{Cranmer}}, \binits{S.R.}}:
+\byear{2016},
+\batitle{{Explaining Inverted-temperature Loops in the Quiet Solar Corona with
+  Magnetohydrodynamic Wave-mode Conversion}}.
+\bjtitle{\apj}
+\bvolume{831}(\bissue{1}),
+\bfpage{10}.
+\doiurl{https://doi.org/10.3847/0004-637X/831/1/10}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2016ApJ...831...10S}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Schmelz}, {Christian}, and
+  {Chastain}}{2016}]{schmeltz_2016}
+\begin{barticle}
+\bauthor{\bsnm{{Schmelz}}, \binits{J.T.}},
+\bauthor{\bsnm{{Christian}}, \binits{G.M.}},
+\bauthor{\bsnm{{Chastain}}, \binits{R.A.}}:
+\byear{2016},
+\batitle{{The Coronal Loop Inventory Project: Expanded Analysis and Results}}.
+\bjtitle{\apj}
+\bvolume{831}(\bissue{2}),
+\bfpage{199}.
+\doiurl{https://doi.org/10.3847/0004-637X/831/2/199}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2016ApJ...831..199S}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Serio} \textit{et~al.}}{1981}]{serio_1981}
+\begin{barticle}
+\bauthor{\bsnm{{Serio}}, \binits{S.}},
+\bauthor{\bsnm{{Peres}}, \binits{G.}},
+\bauthor{\bsnm{{Vaiana}}, \binits{G.S.}},
+\bauthor{\bsnm{{Golub}}, \binits{L.}},
+\bauthor{\bsnm{{Rosner}}, \binits{R.}}:
+\byear{1981},
+\batitle{{Closed coronal structures. II - Generalized hydrostatic model}}.
+\bjtitle{\apj}
+\bvolume{243},
+\bfpage{288}.
+\doiurl{https://doi.org/10.1086/158597}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/1981ApJ...243..288S}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Shearer}
+  \textit{et~al.}}{2012}]{shearer_2012}
+\begin{barticle}
+\bauthor{\bsnm{{Shearer}}, \binits{P.}},
+\bauthor{\bsnm{{Frazin}}, \binits{R.A.}},
+\bauthor{\bsnm{{Hero}}, \binits{I.} \bsuffix{Alfred~O.}},
+\bauthor{\bsnm{{Gilbert}}, \binits{A.C.}}:
+\byear{2012},
+\batitle{{The First Stray Light Corrected Extreme-ultraviolet Images of Solar
+  Coronal Holes}}.
+\bjtitle{\apjl}
+\bvolume{749}(\bissue{1}),
+\bfpage{L8}.
+\doiurl{https://doi.org/10.1088/2041-8205/749/1/L8}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2012ApJ...749L...8S}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Sokolov \textit{et~al.}}{2013}]{Sok2013}
+\begin{barticle}
+\bauthor{\bsnm{Sokolov}, \binits{I.V.}},
+\bauthor{\bparticle{van~der} \bsnm{Holst}, \binits{B.}},
+\bauthor{\bsnm{Oran}, \binits{R.}},
+\bauthor{\bsnm{Downs}, \binits{C.}},
+\bauthor{\bsnm{Roussev}, \binits{I.I.}},
+\bauthor{\bsnm{Jin}, \binits{M.}},
+\bauthor{\bsnm{Manchester}, \binits{W.B.}},
+\bauthor{\bsnm{Evans}, \binits{R.M.}},
+\bauthor{\bsnm{Gombosi}, \binits{T.I.}}:
+\byear{2013},
+\batitle{{MAGNETOHYDRODYNAMIC} {WAVES} {AND} {CORONAL} {HEATING}: {UNIFYING}
+  {EMPIRICAL} {AND} {MHD} {TURBULENCE} {MODELS}}.
+\bjtitle{/apj}
+\bvolume{764}(\bissue{1}),
+\bfpage{23}.
+\doiurl{https://doi.org/10.1088/0004-637x/764/1/23}.
+\burl{https://doi.org/10.1088\%2F0004-637x\%2F764\%2F1\%2F23}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Spitzer}}{1962}]{spitzer_1962}
+\begin{bbook}
+\bauthor{\bsnm{{Spitzer}}, \binits{L.}}:
+\byear{1962},
+\bbtitle{{Physics of Fully Ionized Gases}}.
+\adsurl{1962pfig.book.....S}.
+\end{bbook}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{T\'{o}th \textit{et~al.}}{2012}]{Tot2012}
+\begin{barticle}
+\bauthor{\bsnm{T\'{o}th}, \binits{G.}},
+\bauthor{\bparticle{van~der} \bsnm{Holst}, \binits{B.}},
+\bauthor{\bsnm{Sokolov}, \binits{I.V.}},
+\bauthor{\bsnm{De~Zeeuw}, \binits{D.L.}},
+\bauthor{\bsnm{Gombosi}, \binits{T.I.}},
+\bauthor{\bsnm{Fang}, \binits{F.}},
+\bauthor{\bsnm{Manchester}, \binits{W.B.}},
+\bauthor{\bsnm{Meng}, \binits{X.}},
+\bauthor{\bsnm{Najib}, \binits{D.}},
+\bauthor{\bsnm{Powell}, \binits{K.G.}},
+\bauthor{\bparticle{et} \bsnm{al.}}:
+\byear{2012},
+\batitle{Adaptive numerical algorithms in space weather modeling}.
+\bjtitle{J. Comput. Phys.}
+\bvolume{231}(\bissue{3}),
+\bfpage{870–903}.
+\doiurl{https://doi.org/10.1016/j.jcp.2011.02.006}.
+\burl{https://doi.org/10.1016/j.jcp.2011.02.006}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{van der Holst}}{2019}]{Van2019b}
+\begin{botherref}
+\oauthor{\bsnm{{van der Holst}}, \binits{B.}}:
+2019,
+{to be accepted}.
+\textit{\apj}.
+\end{botherref}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{van der Holst}
+  \textit{et~al.}}{2010}]{vander_2010}
+\begin{barticle}
+\bauthor{\bsnm{{van der Holst}}, \binits{B.}},
+\bauthor{\bsnm{{Manchester}}, \binits{I.} \bsuffix{W.~B.}},
+\bauthor{\bsnm{{Frazin}}, \binits{R.A.}},
+\bauthor{\bsnm{{V{\'a}squez}}, \binits{A.M.}},
+\bauthor{\bsnm{{T{\'o}th}}, \binits{G.}},
+\bauthor{\bsnm{{Gombosi}}, \binits{T.I.}}:
+\byear{2010},
+\batitle{{A Data-driven, Two-temperature Solar Wind Model with Alfv{\'e}n
+  Waves}}.
+\bjtitle{\apj}
+\bvolume{725}(\bissue{1}),
+\bfpage{1373}.
+\doiurl{https://doi.org/10.1088/0004-637X/725/1/1373}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2010ApJ...725.1373V}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{van der Holst}
+  \textit{et~al.}}{2014}]{Van2014}
+\begin{barticle}
+\bauthor{\bsnm{{van der Holst}}, \binits{B.}},
+\bauthor{\bsnm{{Sokolov}}, \binits{I.V.}},
+\bauthor{\bsnm{{Meng}}, \binits{X.}},
+\bauthor{\bsnm{{Jin}}, \binits{M.}},
+\bauthor{\bsnm{{Manchester}}, \binits{I.} \bsuffix{W.~B.}},
+\bauthor{\bsnm{{T{\'o}th}}, \binits{G.}},
+\bauthor{\bsnm{{Gombosi}}, \binits{T.I.}}:
+\byear{2014},
+\batitle{{Alfv{\'e}n Wave Solar Model (AWSoM): Coronal Heating}}.
+\bjtitle{\apj}
+\bvolume{782}(\bissue{2}),
+\bfpage{81}.
+\doiurl{https://doi.org/10.1088/0004-637X/782/2/81}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2014ApJ...782...81V}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{V\'asquez}}{2016}]{vasquez_2016}
+\begin{barticle}
+\bauthor{\bsnm{{V\'asquez}}, \binits{A.M.}}:
+\byear{2016},
+\batitle{{Seeing the solar corona in three dimensions}}.
+\bjtitle{Advances in Space Research}
+\bvolume{57},
+\bfpage{1286}.
+\doiurl{https://doi.org/10.1016/j.asr.2015.05.047}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{V{\'a}squez}, {Frazin}, and
+  {Kamalabadi}}{2009}]{vasquez_2009}
+\begin{barticle}
+\bauthor{\bsnm{{V{\'a}squez}}, \binits{A.M.}},
+\bauthor{\bsnm{{Frazin}}, \binits{R.A.}},
+\bauthor{\bsnm{{Kamalabadi}}, \binits{F.}}:
+\byear{2009},
+\batitle{{3D Temperatures and Densities of the Solar Corona via
+  Multi-Spacecraft EUV Tomography: Analysis of Prominence Cavities}}.
+\bjtitle{\solphys}
+\bvolume{256}(\bissue{1-2}),
+\bfpage{73}.
+\doiurl{https://doi.org/10.1007/s11207-009-9321-1}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2009SoPh..256...73V}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{V{\'a}squez}, {Frazin}, and
+  {Manchester}}{2010}]{vasquez_2010}
+\begin{barticle}
+\bauthor{\bsnm{{V{\'a}squez}}, \binits{A.M.}},
+\bauthor{\bsnm{{Frazin}}, \binits{R.A.}},
+\bauthor{\bsnm{{Manchester}}, \binits{I.} \bsuffix{Ward~B.}}:
+\byear{2010},
+\batitle{{The Solar Minimum Corona from Differential Emission Measure
+  Tomography}}.
+\bjtitle{\apj}
+\bvolume{715}(\bissue{2}),
+\bfpage{1352}.
+\doiurl{https://doi.org/10.1088/0004-637X/715/2/1352}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2010ApJ...715.1352V}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Worden} and {Harvey}}{2000}]{Wor2000}
+\begin{barticle}
+\bauthor{\bsnm{{Worden}}, \binits{J.}},
+\bauthor{\bsnm{{Harvey}}, \binits{J.}}:
+\byear{2000},
+\batitle{{An Evolving Synoptic Magnetic Flux map and Implications for the
+  Distribution of Photospheric Magnetic Flux}}.
+\bjtitle{\solphys}
+\bvolume{195}(\bissue{2}),
+\bfpage{247}.
+\doiurl{https://doi.org/10.1023/A:1005272502885}.
+\adsurl{https://ui.adsabs.harvard.edu/abs/2000SoPh..195..247W}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Wuelser}
+  \textit{et~al.}}{2004}]{wuelser_2004}
+\begin{bchapter}
+\bauthor{\bsnm{{Wuelser}}, \binits{J.-P.}},
+\bauthor{\bsnm{{Lemen}}, \binits{J.R.}},
+\bauthor{\bsnm{{Tarbell}}, \binits{T.D.}},
+\bauthor{\bsnm{{Wolfson}}, \binits{C.J.}},
+\bauthor{\bsnm{{Cannon}}, \binits{J.C.}},
+\bauthor{\bsnm{{Carpenter}}, \binits{B.A.}},
+\bauthor{\bsnm{{Duncan}}, \binits{D.W.}},
+\bauthor{\bsnm{{Gradwohl}}, \binits{G.S.}},
+\bauthor{\bsnm{{Meyer}}, \binits{S.B.}},
+\bauthor{\bsnm{{Moore}}, \binits{A.S.}},
+\bauthor{\bsnm{{Navarro}}, \binits{R.L.}},
+\bauthor{\bsnm{{Pearson}}, \binits{J.D.}},
+\bauthor{\bsnm{{Rossi}}, \binits{G.R.}},
+\bauthor{\bsnm{{Springer}}, \binits{L.A.}},
+\bauthor{\bsnm{{Howard}}, \binits{R.A.}},
+\bauthor{\bsnm{{Moses}}, \binits{J.D.}},
+\bauthor{\bsnm{{Newmark}}, \binits{J.S.}},
+\bauthor{\bsnm{{Delaboudiniere}}, \binits{J.-P.}},
+\bauthor{\bsnm{{Artzner}}, \binits{G.E.}},
+\bauthor{\bsnm{{Auchere}}, \binits{F.}},
+\bauthor{\bsnm{{Bougnet}}, \binits{M.}},
+\bauthor{\bsnm{{Bouyries}}, \binits{P.}},
+\bauthor{\bsnm{{Bridou}}, \binits{F.}},
+\bauthor{\bsnm{{Clotaire}}, \binits{J.-Y.}},
+\bauthor{\bsnm{{Colas}}, \binits{G.}},
+\bauthor{\bsnm{{Delmotte}}, \binits{F.}},
+\bauthor{\bsnm{{Jerome}}, \binits{A.}},
+\bauthor{\bsnm{{Lamare}}, \binits{M.}},
+\bauthor{\bsnm{{Mercier}}, \binits{R.}},
+\bauthor{\bsnm{{Mullot}}, \binits{M.}},
+\bauthor{\bsnm{{Ravet}}, \binits{M.-F.}},
+\bauthor{\bsnm{{Song}}, \binits{X.}},
+\bauthor{\bsnm{{Bothmer}}, \binits{V.}},
+\bauthor{\bsnm{{Deutsch}}, \binits{W.}}:
+\byear{2004},
+\bctitle{{EUVI: the STEREO-SECCHI extreme ultraviolet imager}}.
+In: \beditor{\bsnm{{Fineschi}}, \binits{S.}},
+\beditor{\bsnm{{Gummin}}, \binits{M.A.}} (eds.)
+\bbtitle{Telescopes and Instrumentation for Solar Astrophysics},
+\bsertitle{\procspie}
+\bseriesno{5171},
+\bfpage{111}.
+\doiurl{https://doi.org/10.1117/12.506877}.
+\adsurl{2004SPIE.5171..111W}.
+\end{bchapter}
+\endbibitem
+
+\end{thebibliography}
